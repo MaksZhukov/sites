@@ -1,0 +1,36 @@
+.carousel .item {
+    display: block;
+    position: absolute;
+}
+
+.carousel .item img {
+    opacity: 0.5;
+}
+
+.carousel .item.active img {
+    opacity: 1;
+}
+
+.carousel .item.active h4,
+.carousel .item.active p {
+    visibility: visible;
+}
+
+.carousel .item h4,
+.carousel .item p {
+    visibility: hidden;
+}
+
+.carousel .item.active {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.carousel .item.transition {
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}

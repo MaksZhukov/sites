@@ -1,0 +1,609 @@
+//////////////////////////////////////////  MIXINS   /////////////////////////////////////////
+.add-font(@font-url, @font-name, @font-weight: normal, @font-style: normal) {
+    font-family: @font-name;
+    src: url('../fonts/@{font-url}.eot');
+    src: url('../fonts/@{font-url}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/@{font-url}.woff') format('woff'),
+    url('../fonts/@{font-url}.woff2') format('woff2'),
+    url('../fonts/@{font-url}.ttf') format('truetype'),
+    url('../fonts/@{font-url}.svg#@{font-name}') format('svg');
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.transition(@prop: all,
+@time: 0.3s,
+@ease: ease-in-out) {
+    transition: @prop @time @ease;
+}
+
+//////////////////////////////////////////  COMPONENTS   /////////////////////////////////////////
+//////////////////////////////////////////  SPRITES   /////////////////////////////////////////
+.kia-lg,
+.ford-lg,
+.mazda-lg,
+.ford-sm,
+.volkswagen-lg,
+.kia-sm,
+.mazda-sm,
+.volkswagen-sm {
+    display: inline-block;
+    background: url('../img/sprites.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.kia-lg {
+    background-position: -1px -0px;
+    width: 93px;
+    height: 47px;
+    margin-top: 4px;
+}
+
+.ford-lg {
+    background-position: -1px -48px;
+    width: 71px;
+    height: 34px;
+    margin-top: 10px;
+}
+
+.mazda-lg {
+    background-position: -1px -83px;
+    width: 50px;
+    height: 46px;
+    margin-top: 3px;
+}
+
+.ford-sm {
+    background-position: -1px -130px;
+    width: 42px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.volkswagen-lg {
+    background-position: -44px -130px;
+    width: 42px;
+    height: 42px;
+    margin-top: 7px;
+}
+
+.kia-sm {
+    background-position: -52px -83px;
+    width: 38px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.mazda-sm {
+    background-position: -52px -106px;
+    width: 31px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.volkswagen-sm {
+    background-position: -1px -149px;
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+}
+
+//////////////////////////////////////////  FONTS   /////////////////////////////////////////
+@font-face {
+    .add-font('opensans-regular-webfont',
+    'OpenSans');
+}
+
+@font-face {
+    .add-font('opensans-semibold-webfont',
+    'OpenSans',
+    700);
+}
+
+@font-face {
+    .add-font('opensans-bold-webfont',
+    'OpenSans',
+    800);
+}
+
+//////////////////////////////////////////  BASE SETTINGS   /////////////////////////////////////////
+@basecolor: #5c5555;
+@font-family: 'OpenSans';
+@font-size: 13px;
+body {
+    font: @font-size @font-family;
+    color: @basecolor;
+    background: #fff;
+}
+
+//////////////////////////////////////////  HEADER   /////////////////////////////////////////
+header {
+    margin: 24px 0 36px;
+    img {
+        margin-left: -15px;
+    }
+    .contacts {
+        .row {
+            margin: 0;
+        }
+        .col-lg-5,
+        .col-lg-7 {
+            padding: 0;
+        }
+        margin-top: 14px;
+        .select-diler {
+            display: inline-block;
+            color: #878787;
+            margin: 5px 14px 0;
+        }
+        .dropdown {
+            button {
+                position: relative;
+                &:after {
+                    content: "\f107";
+                    font-family: FontAwesome;
+                    margin-left: 120px;
+                    position: absolute;
+                    right: 10px;
+                    top: 8px;
+                }
+            }
+            position: relative;
+            display: inline-block;
+            .combobox {
+                border: 1px solid #c7cece;
+                background: none;
+                width: 279px;
+                height: 31px;
+                .fa-angle-down {
+                    color: #202020;
+                    margin-left: 120px;
+                    vertical-align: middle;
+                    position: absolute;
+                }
+            }
+            ul {
+                width: 279px;
+                border-radius: 0;
+                li a {
+                    padding: 0;
+                    color: #333;
+                }
+            }
+        }
+    }
+    .telephone {
+        margin: 14px 0 0 10px;
+        font-size: 24px;
+        color: #1B1B1B;
+        display: block;
+        &:hover {
+            color: darken(#1b1b1b, 30%);
+        }
+    }
+    .location {
+        margin-left: 10px;
+        color: #333;
+    }
+}
+
+//////////////////////////////////////////  SECTION SALE   /////////////////////////////////////////
+section.sale {
+    background: url('../img/section_sale_bg.jpg') no-repeat;
+    padding-top: 23px;
+    #gridsale {
+        .saleitem-1 {
+            background: url('../img/sale_item_bg_1.jpg') no-repeat;
+            width: 570px;
+            height: 385px;
+            padding: 111px 0 0 60px;
+            .first-line {
+                color: #000;
+                font-weight: 800;
+                font-size: 35px;
+                background: #FFC000;
+                padding: 12px 18px 9px 10px;
+                display: inline-block;
+            }
+            .second-line {
+                color: #fff;
+                font-size: 36px;
+                margin-top: 5px;
+                display: inline-block;
+            }
+            .third-line {
+                display: inline-block;
+                margin-top: -10px;
+                color: #fff;
+                font-weight: 800;
+                font-size: 55px;
+                &:first-letter {
+                    font-size: 36px;
+                    text-transform: none;
+                }
+            }
+        }
+        .saleitem-2 {
+            background: url('../img/sale_item_bg_2.jpg') no-repeat;
+            width: 285px;
+            height: 385px;
+        }
+        .saleitem-3 {
+            background: url('../img/sale_item_bg_3.jpg') no-repeat;
+            width: 285px;
+            height: 550px;
+            padding: 165px 0 0 15px;
+            .first-line {
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 800;
+                img {
+                    margin-left: 5px;
+                }
+            }
+            .second-line {
+                margin: 0;
+                color: #fffef9;
+                li {
+                    padding: 0;
+                }
+                a {
+                    color: #fffef9;
+                    font-size: 14px;
+                    font-weight: 700;
+                    margin-right: 3px;
+                }
+            }
+        }
+        .saleitem-4 {
+            background: url('../img/sale_item_bg_4.jpg') no-repeat;
+            width: 285px;
+            height: 165px;
+        }
+        .saleitem-5 {
+            background-color: #FFC000;
+            width: 285px;
+            height: 165px;
+            color: #000;
+            padding-top: 45px;
+            .first-line {
+                font-size: 24px;
+                font-weight: 800;
+            }
+            .second-line {
+                font-size: 18px;
+                font-weight: 800;
+                display: inline-block;
+                margin-top: -5px;
+            }
+            .third-line {
+                display: inline-block;
+                margin-top: -3px;
+                font-size: 19px;
+            }
+        }
+        .saleitem-6 {
+            background-color: #000;
+            width: 285px;
+            height: 165px;
+            padding: 50px 0 0 50px;
+            .first-line,
+            .third-line {
+                font-size: 18px;
+                color: #f9fafb;
+                display: block;
+            }
+            .second-line {
+                color: #FFC000;
+                font-size: 41px;
+                display: block;
+            }
+            .first-line {
+                margin-bottom: -10px;
+            }
+            .third-line {
+                margin-top: -15px;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////  SECTION CAR   /////////////////////////////////////////
+section.car {
+    margin-top: 36px;
+    .item {
+        padding-top: 50px;
+        width: 360px;
+        height: 165px;
+        margin-bottom: 25px;
+        background: #f9fafb;
+        &:hover {
+            border: 5px solid #ffc000;
+            padding-top: 45px;
+        }
+        p {
+            font-size: 15px;
+            color: #333;
+            margin-top: 10px;
+        }
+    }
+}
+
+//////////////////////////////////////////  SECTION OFFER   /////////////////////////////////////////
+section.offer {
+    margin-top: 60px;
+    h3 {
+        font-size: 24px;
+        color: #1E2129;
+        font-weight: 800;
+        margin-bottom: 25px;
+    }
+    .tabbable .nav-tabs {
+        border: none;
+        margin-bottom: 45px;
+        .col-lg-4,
+        .col-lg-8,
+        .col-lg-5,
+        .col-lg-7 {
+            padding: 0;
+        }
+        li {
+            width: 292.5px;
+
+            border-bottom: 4px solid #f9fafb;
+            &:after {
+                content: '';
+                display: block;
+                width: 30px;
+                height: 4px;
+                right: 0;
+                position: absolute;
+                background: #F9FAFB;
+            }
+            a {
+                opacity: 0.5;
+                height: 80px;
+                .info {
+
+                    h4 {
+                        color: #333;
+                        font-weight: 800;
+                        font-size: 18px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &:last-child {
+                width: 262.5px;
+                &:after {
+                    content: '';
+                    display: none;
+                }
+            }
+        }
+        li.active {
+
+            border-radius: 0;
+            border: none;
+            border-bottom: 4px solid #ffc000;
+            a {
+                opacity: 1;
+                border: none;
+            }
+        }
+    }
+    .tab-pane {
+        .itemcar {
+            height: 375px;
+            margin-bottom: 40px;
+            position: relative;
+            h4 {
+                color: #010101;
+                font-size: 15px;
+                font-weight: 800;
+                margin-top: 20px;
+            }
+            p {
+                line-height: 1.2;
+                padding-right: 40px;
+            }
+            button {
+                position: absolute;
+                bottom: 0;
+                padding: 10px 25px;
+                background: #FFC000;
+                border: none;
+                border-radius: 2px;
+                color: #000;
+                &:hover {
+                    background: darken(#ffc000, 10%);
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////  SECTION CONTACT   /////////////////////////////////////////
+section.contact {
+    background: #242526;
+    padding: 30px 0 35px;
+    h3 {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 0;
+    }
+    p {
+        color: #989B9E;
+        line-height: 1.2;
+    }
+    ul li {
+        margin-bottom: 10px;
+        a {
+            color: #F9FAFB;
+            text-decoration: underline;
+            &:hover {
+                color: darken(#f9fafb, 20%);
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////  FOOTER   /////////////////////////////////////////
+footer {
+    margin: 22px 0 605px 0;
+    p {
+        color: #7C7C7C;
+        span {
+            color: #000;
+        }
+    }
+}
+
+//////////////////////////////////////////  RESPONSIVE   /////////////////////////////////////////
+@media (max-width:767px) {
+    header {
+        text-align: center;
+        img.logo {
+            display: inline;
+        }
+        .contacts {
+            text-align: center;
+            .select-diler {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    section.sale #gridsale .saleitem-1 {
+        .first-line {
+            font-size: 25px;
+        }
+        .second-line {
+            font-size: 20px;
+        }
+        .third-line {
+            font-size: 30px;
+        }
+    }
+    section.sale #gridsale .saleitem-1,
+    section.sale #gridsale .saleitem-2,
+    section.sale #gridsale .saleitem-3,
+    section.sale #gridsale .saleitem-4,
+    section.sale #gridsale .saleitem-5,
+    section.sale #gridsale .saleitem-6 {
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+    }
+    section.car {
+        .item {
+            width: 100%;
+        }
+    }
+    section.offer .tabbable {
+        text-align: center;
+        .nav-tabs li {
+            margin: 0 10%;
+
+            width: 80%;
+            &:after {
+                content: '';
+                display: none;
+            }
+            &:last-child {
+                width: 80%;
+            }
+        }
+        .itemcar {
+            width: 262px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            p {
+                padding: 0;
+            }
+            button {
+                left: 70px;
+            }
+        }
+    }
+    section.contact {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    header .contacts .dropdown {
+        display: block;
+        .combobox {
+            width: 100%;
+        }
+        ul {
+            width: 100%;
+        }
+    }
+    section.sale #gridsale .saleitem-1 {
+        width: 375px;
+        .first-line,
+        .second-line {
+            font-size: 31px;
+        }
+        .third-line {
+            font-size: 45px;
+        }
+    }
+    section.sale #gridsale .saleitem-6 {
+        .first-line,
+        .third-line {
+            font-size: 20px;
+        }
+        .second-line {
+            font-size: 28px;
+        }
+    }
+
+    section.sale #gridsale .saleitem-2,
+    section.sale #gridsale .saleitem-3,
+    section.sale #gridsale .saleitem-4,
+    section.sale #gridsale .saleitem-5,
+    section.sale #gridsale .saleitem-6 {
+        width: 187.5px;
+    }
+    section.offer .tabbable .nav-tabs li {
+        width: 360px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    header {
+        .telephone {
+            font-size: 21px;
+        }
+    }
+    section.sale #gridsale .saleitem-1 {
+        width: 485px;
+    }
+    section.sale #gridsale .saleitem-2,
+    section.sale #gridsale .saleitem-3,
+    section.sale #gridsale .saleitem-4,
+    section.sale #gridsale .saleitem-5,
+    section.sale #gridsale .saleitem-6 {
+        width: 242.5px;
+    }
+    section.car {
+        .item {
+            width: 100%;
+        }
+    }
+    section.offer .tabbable .nav-tabs li {
+        width: 242.5px;
+        &:last-child {
+            width: 212.5px;
+        }
+    }
+}
+
+@media (min-width:1200px) {}

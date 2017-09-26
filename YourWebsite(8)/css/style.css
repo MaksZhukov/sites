@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'HelveticaNeueLTPro-Th';
+    src: url(../fonts/HelveticaNeueLTPro-Th.otf) format('otf');
+}
+
+body {
+    background: url(../img/bg.jpg) center top;
+    font-family: 'Verdana', 'Sans-serif';
+}
+
+
+/* header */
+
+.navbar {
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #b4b4b4;
+}
+
+.navbar-header .logo {
+    display: inline-block;
+    max-width: 194px;
+}
+
+.navbar-header .logo p,
+footer .logo p {
+    padding-right: 15px;
+    padding-top: 5px;
+    line-height: 15px;
+    text-align: right;
+}
+
+.navbar-header a,
+footer .logo a,
+footer .logo p,
+.navbar-header p {
+    color: #b4b4b4;
+    display: block;
+    font-size: 32px;
+    font-family: 'HelveticaNeuelTPro-Th', 'Sans-serif';
+}
+
+.navbar-nav li a {
+    color: #b3b3b3;
+}
+
+.navbar-header p,
+footer .logo p {
+    font-size: 12px;
+    text-align: right;
+    display: block;
+}
+
+.navbar-nav li a {
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.navbar-nav li {
+    padding-left: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #fefefe;
+    background-color: #0ea1de;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-header span,
+footer a.navbar-brand span {
+    color: #00b4ff;
+}
+
+.icon-bar-color {
+    background: #0cabf9;
+}
+
+
+/* Main */
+
+main {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid #626262;
+    padding: 18px 15px;
+    margin-bottom: 50px;
+}
+
+main section {
+    background-color: #ededed;
+    height: 100%;
+    width: 100%;
+    padding: 15px 15px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.6);
+}
+
+main section .page {
+    padding: 6px;
+    border: 2px solid #e4e4e4;
+    font-size: 20px;
+}
+
+.widjets {
+    margin-top: 20px;
+}
+
+.widjets ul li {
+    list-style-image: url(../img/list-arrow.png);
+}
+
+.widjets ul li a {
+    font-size: 12px;
+    color: #858585;
+    font-style: italic;
+}
+
+.widjets p {
+    font-size: 12px;
+    color: #858585;
+}
+
+.widjets h2 {
+    color: #0b81be;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.widjets .line-sm {
+    border-left: 1px solid #e4e4e4;
+    padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+    .line-xs {
+        border-left: 0 !important;
+        padding-left: 15px !important;
+        border-top: 1px solid #e4e4e4 !important;
+    }
+}
+
+.widjets .line.col-xs-12 {
+    background: blue;
+    border-left: 1px solid #e4e4e4;
+    padding-left: 30px;
+}
+
+.widjets .line span {
+    color: #424242;
+}
+
+.widjets .area-two div {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.widjets .area-two img {
+    float: left;
+    padding-right: 20px;
+}
+
+.widjets .area-two {
+    border: 1px solid #e4e4e4;
+    background-color: #ffffff;
+    padding: 3px 5px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+
+/* footer */
+
+footer {
+    padding-top: 40px;
+    background-color: rgba(35, 35, 35, 0.8);
+    border-top: 1px solid #4a4a4a;
+    padding-bottom: 40px;
+}
+
+footer .follows h2 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+}
+
+footer .follows p {
+    color: #727272;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+footer .follows {
+    overflow: hidden;
+}
+
+footer .follows img {
+    float: left;
+}
+
+footer .follows .info {
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+footer .follows .info .comment {
+    background-color: rgba(19, 19, 19, 0.4);
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-left: -20px;
+    margin-top: 25px;
+}
+
+footer .follows .info .comment::before {
+    position: absolute;
+    content: '';
+    border-right: 18px solid transparent;
+    border: 12px solid transparent;
+    border-top: 12px solid rgba(19, 19, 19, 0.4);
+    border-left: 24px solid transparent;
+    border-bottom: 23px solid transparent;
+    -webkit-transform: translate(-30px, -50px);
+    transform: rotate(45deg) translate(-48px, 2px);
+    -webkit-transform: rotate(45deg) translate(-48px, 2px);
+    -moz-transform: rotate(45deg) translate(-48px, 2px);
+    -o-transform: rotate(45deg) translate(-48px, 2px);
+    -ms-transform: rotate(45deg) translate(-48px, 2px);
+}
+
+footer .follows .info .comment p {
+    color: #858585;
+}
+
+footer .follows .info .comment a {
+    color: #0b81be;
+    font-style: italic;
+    font-size: 12px;
+}
+
+footer .text-before-logo {
+    margin-top: 30px;
+    font-size: 11px;
+    color: #ffffff;
+    text-align: right;
+    padding-right: 15px;
+}
+
+footer .logo a {
+    text-align: right;
+}
+
+footer .logo {
+    margin-top: 25px;
+}

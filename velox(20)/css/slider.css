@@ -1,0 +1,63 @@
+.bullets ul li {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #999999;
+}
+
+.bullets ul li:hover {
+    background: #3a3f4b;
+    cursor: pointer;
+}
+
+.bullets .active {
+    background: #3a3f4b;
+}
+
+.bullets {
+    margin-top: 400px;
+    padding-left: 120px;
+}
+
+.carousel {
+    height: 370px;
+    padding: 0;
+}
+
+.carousel .item h4 {
+    margin-top: 20px;
+    width: 400px;
+    margin-bottom: 20px;
+    font-family: 'Lora-Regular', 'Sans-serif';
+}
+
+.carousel .item p,
+.carousel .item a {
+    font-family: 'Roboto-Light', 'Sans-serif';
+}
+
+.carousel .item a,
+.carousel .item a:hover {
+    color: #86898f;
+    text-decoration: underline;
+}
+
+.controls {
+    position: relative;
+}
+
+.controls .previous {
+    display: block;
+    margin-top: 250px;
+    background: url(../images/slider-arrow-left.png) no-repeat;
+    width: 17px;
+    height: 32px;
+}
+
+.controls .next {
+    display: block;
+    float: right;
+    width: 17px;
+    height: 32px;
+    background: url(../images/slider-arrow-right.png) no-repeat right;
+}

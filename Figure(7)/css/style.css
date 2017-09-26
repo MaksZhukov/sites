@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/bebas-neue-bold-webfont.eot');
+  src: url('../fonts/bebas-neue-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebas-neue-bold-webfont.woff') format('woff'), url('../fonts/bebas-neue-bold-webfont.woff2') format('woff2'), url('../fonts/bebas-neue-bold-webfont.ttf') format('truetype'), url('../fonts/bebas-neue-bold-webfont.svg#BebasNeue') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima_nova_light-webfont.eot');
+  src: url('../fonts/proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima_nova_light-webfont.woff') format('woff'), url('../fonts/proxima_nova_light-webfont.woff2') format('woff2'), url('../fonts/proxima_nova_light-webfont.ttf') format('truetype'), url('../fonts/proxima_nova_light-webfont.svg#ProximaNova') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima_nova_regular-webfont.eot');
+  src: url('../fonts/proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima_nova_regular-webfont.woff') format('woff'), url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'), url('../fonts/proxima_nova_regular-webfont.ttf') format('truetype'), url('../fonts/proxima_nova_regular-webfont.svg#ProximaNova') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima_nova_bold-webfont.eot');
+  src: url('../fonts/proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima_nova_bold-webfont.woff') format('woff'), url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'), url('../fonts/proxima_nova_bold-webfont.ttf') format('truetype'), url('../fonts/proxima_nova_bold-webfont.svg#ProximaNova') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../fonts/proxima_nova_extrabold-webfont.eot');
+  src: url('../fonts/proxima_nova_extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff'), url('../fonts/proxima_nova_extrabold-webfont.woff2') format('woff2'), url('../fonts/proxima_nova_extrabold-webfont.ttf') format('truetype'), url('../fonts/proxima_nova_extrabold-webfont.svg#ProximaNova') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+body {
+  font: 400 18px 'ProximaNova', 'sans-serif';
+  color: #000000;
+}
+header {
+  border-top: 9px solid #ffd200;
+}
+header h1 {
+  margin-top: 55px;
+  font-size: 2.333em;
+  font-weight: 700;
+  color: #3c3636;
+}
+section.main {
+  background: #ffd200;
+  margin-top: 90px;
+}
+section.main .row {
+  position: relative;
+}
+section.main .loseweight {
+  padding-right: 30px;
+}
+section.main .loseweight h2 {
+  font: 700 3.167em 'BebasNeue', 'sans-serif';
+  border-bottom: 1px solid #e3bb00;
+  -webkit-box-shadow: 0 1px 0 0 #ffe363;
+  box-shadow: 0 1px 0 0 #ffe363;
+  padding-bottom: 10px;
+}
+section.main .loseweight p {
+  margin-top: 20px;
+  font-size: 1.111em;
+}
+section.main .loseweight ul {
+  list-style: none;
+  margin-top: 20px;
+}
+section.main .loseweight ul li {
+  font-size: 1.056em;
+  margin-bottom: 5px;
+}
+section.main .loseweight ul li:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  margin-right: 10px;
+}
+section.main img {
+  position: absolute;
+  left: 370px;
+  top: -55px;
+}
+section.main .form {
+  width: 325px;
+  background: #3C3636;
+  padding: 20px 20px;
+  border-bottom: 1px solid #2a2626;
+}
+section.main .form span {
+  display: block;
+}
+section.main .form span.bestseller {
+  font-size: 1.111em;
+  color: #FFF;
+  font-weight: 300;
+}
+section.main .form span.free {
+  margin-top: 5px;
+  color: #FFD200;
+  font-size: 2.556em;
+  font-weight: 800;
+}
+section.main .form span.dateonly {
+  color: #fff;
+  font-size: 0.889em;
+}
+section.main .form form {
+  margin-top: 20px;
+}
+section.main .form form input,
+section.main .form form button {
+  width: 100%;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 18px;
+  padding: 15px;
+}
+section.main .form form input:last-child,
+section.main .form form button:last-child {
+  margin-bottom: 0;
+}
+section.main .form form input {
+  color: #1F2129;
+  font-size: 1.111em;
+}
+section.main .form form button {
+  color: #FFF;
+  font-size: 1.278em;
+  font-weight: 800;
+  background: -moz-linear-gradient(90deg, #a71d45 0%, #ff5a8a 100%);
+  /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff5a8a), color-stop(100%, #a71d45));
+  /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #a71d45 0%, #ff5a8a 100%);
+  /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #a71d45 0%, #ff5a8a 100%);
+  /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #a71d45 0%, #ff5a8a 100%);
+  /* ie10+ */
+  background: linear-gradient(0deg, #a71d45 0%, #ff5a8a 100%);
+  /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5a8a', endColorstr='#a71d45', GradientType=0);
+  /* ie6-9 */
+}
+section.main .form form button:hover {
+  background: #9a1b40;
+}
+section.textforbuttonform {
+  padding-top: 90px;
+  background: #EFEFEF;
+}
+section.textforbuttonform h3 {
+  margin: 0 0 0 70px;
+  font-size: 1.500em;
+  font-weight: 700;
+  position: relative;
+}
+section.textforbuttonform h3:after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: url('../img/arrow.png') no-repeat;
+  width: 147px;
+  height: 117px;
+  right: 174px;
+  top: -98px;
+}
+section.sliders {
+  background: #EFEFEF;
+  padding-top: 30px;
+}
+section.sliders .container {
+  padding: 30px 0 630px 0;
+  border-top: 1px solid #dfdfdf;
+}
+section.sliders .slider p {
+  line-height: 1.333;
+}
+section.sliders .slider .line {
+  margin: 25px 0;
+  width: 95%;
+  height: 1px;
+  background: #FFE400;
+}
+section.sliders .slider .line:after {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #FFE400;
+}
+section.sliders .slider span {
+  display: block;
+}
+section.sliders .slider span.name {
+  font-weight: 700;
+  font-size: 1.278em;
+}
+section.sliders .slider span.town {
+  font-size: 0.889em;
+}
+@media (max-width: 767px) {
+  header {
+    font-size: 13px;
+  }
+  section.main .loseweight {
+    font-size: 13px;
+  }
+  section.main img {
+    left: -35px;
+    top: 50%;
+    width: 65%;
+    height: 291px;
+  }
+  section.main .form {
+    width: 50%;
+    font-size: 11px;
+    padding: 30px 15px;
+  }
+  section.main .form span.free {
+    font-size: 1.6em;
+  }
+  section.textforbuttonform {
+    font-size: 14px;
+  }
+  section.textforbuttonform h3 {
+    margin-left: 0;
+  }
+  section.textforbuttonform h3:after {
+    content: '';
+    background-position: -87px 0;
+    top: -126px;
+    right: 20px;
+    transform: rotate(-42deg);
+  }
+  section.sliders .slider {
+    font-size: 12px;
+  }
+  section.sliders .slider .people {
+    margin-top: 30px;
+  }
+  .bx-wrapper .bx-prev {
+    left: 5%;
+    background: url('../img/arrow_left.png') no-repeat;
+  }
+  .bx-wrapper .bx-next {
+    right: 5%;
+    background: url('../img/arrow_right.png') no-repeat;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.main img {
+    left: -80px;
+    top: 350px;
+    width: 60%;
+  }
+  section.textforbuttonform {
+    font-size: 16px;
+  }
+  section.textforbuttonform h3 {
+    margin-left: -210px;
+  }
+  section.textforbuttonform h3:after {
+    content: '';
+    background-position: -40px 0;
+    right: 110px;
+  }
+  section.sliders .slider {
+    font-size: 16px;
+  }
+  .bx-wrapper .bx-prev {
+    left: 5%;
+    background: url('../img/arrow_left.png') no-repeat;
+  }
+  .bx-wrapper .bx-next {
+    right: 5%;
+    background: url('../img/arrow_right.png') no-repeat;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  header {
+    font-size: 17px;
+  }
+  section.main .loseweight {
+    font-size: 15px;
+  }
+  section.main img {
+    left: 210px;
+  }
+  section.main .form {
+    width: 275px;
+    font-size: 15px;
+    padding: 30px 15px;
+  }
+  section.textforbuttonform {
+    font-size: 17px;
+  }
+  section.textforbuttonform h3:after {
+    content: '';
+    background-position: -25px 0;
+    right: 110px;
+  }
+  .bx-wrapper .bx-prev {
+    left: 1%;
+    background: url('../img/arrow_left.png') no-repeat;
+  }
+  .bx-wrapper .bx-next {
+    right: 1%;
+    background: url('../img/arrow_right.png') no-repeat;
+  }
+}

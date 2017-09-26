@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bxslider.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-uppercase text-center">Обретите фигуру своеЙ мечты</h1></div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+                    <div class="loseweight">
+                        <h2>Похудейте <br> на 10 кг за 10 дней!</h2>
+                        <p>Оставьте свой e-mail книгу с 330 простыми и вкусными рецептами для ускарения метаболизма
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>Никакого спорта</li>
+                            <li>Никкаих диет</li>
+                            <li>Никаких медикаментов</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/book.png" alt="Book">
+                <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-4 col-xs-12">
+                    <div class="form text-center pull-right">
+                        <span class="bestseller">Бестселлер Милы Гриценко</span> <span class="free text-uppercase">бесплатно</span><span class="dateonly"></span>
+                        <form method="POST" id="form">
+                            <input type="text" id="name" placeholder="Ваше имя" required pattern="[A-Za-zА-Яа-я0-9^/s]+">
+                            <input type="mail" id="email" placeholder="Ваш e-mail" required pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+                            <button id="submit" type="submit" class="text-uppercase">Получить книгу</button>
+                            <a class="hidden open-popup" data-toggle="modal" href='#popup'></a>
+                            <div class="modal fade" id="popup">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <a type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+                                        </div>
+                                        <div class="modal-body">
+                                            Ваша заявка успешно отправлена!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="textforbuttonform">
+        <div class="container">
+            <div class="row text-center">
+                <h3>Стройное, подтянутое тело без складок <br> и целлюлита всего за 10 дней</h3></div>
+        </div>
+    </section>
+    <section class="sliders">
+        <div class="container">
+            <div class="slider">
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Марта, 28 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Алена, 30 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 45 лет</span>
+                                        <span class="town">Брест</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Ангелина, 25 лет</span>
+                                        <span class="town">Минск</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Анна, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Светлана, 30 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Марта, 28 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Марта, 28 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Марта, 28 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Марта, 28 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-5 col-sm-offset-1 col-lg-6 col-lg-offset-0">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"><img src="img/people-1.png" alt="People-1"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Никогда не готовила ничего сложнее
+                                            <br> отварных макарон. Теперь готовлю, как
+                                            <br> шеф-повар модного ресторана! Все безумно
+                                            <br> вкусно и полезно. И тающие килограммы
+                                            <br> в качестве бонуса. Разве не прекрасно?</p>
+                                        <div class="line"></div>
+                                        <span class="name">Марта, 28 лет</span>
+                                        <span class="town">Гомель</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-5 col-lg-6">
+                            <div class="people">
+                                <div class="col-xs-4 col-sm-5 col-md-4"> <img src="img/people-2.jpg" alt="People-2"></div>
+                                <div class="col-xs-8 col-sm-7 col-md-8">
+                                    <div class="info">
+                                        <p>Не думала, что в моем возрасте смогу
+                                            <br> выглядеть как девчонка. Всю жизнь была
+                                            <br> пышкой, а тут такая красота – сама на себя
+                                            <br> не налюбуюсь. Мой случай – подтверждение
+                                            <br> того, что после 40 жизнь только начинается.
+                                            <br> Мила Гриценко – мой герой.
+                                        </p>
+                                        <div class="line"></div>
+                                        <span class="name">Марина, 40 лет</span>
+                                        <span class="town">Мачулищи</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bxslider.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

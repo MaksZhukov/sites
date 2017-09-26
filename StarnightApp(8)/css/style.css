@@ -1,0 +1,400 @@
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/helveticaneue-regular-webfont.eot');
+  src: url('../fonts/helveticaneue-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneue-regular-webfont.woff') format('woff'), url('../fonts/helveticaneue-regular-webfont.ttf') format('truetype'), url('../fonts/helveticaneue-regular-webfont.svg#HelveticaNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../fonts/helveticaneue-bold-webfont.eot');
+  src: url('../fonts/helveticaneue-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/helveticaneue-bold-webfont.woff') format('woff'), url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype'), url('../fonts/helveticaneue-bold-webfont.svg#HelveticaNeue') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-light-webfont.eot');
+  src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-webfont.woff') format('woff'), url('../fonts/lato-light-webfont.ttf') format('truetype'), url('../fonts/lato-light-webfont.svg#Lato') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato-lightitalic-webfont.eot');
+  src: url('../fonts/lato-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-lightitalic-webfont.woff') format('woff'), url('../fonts/lato-lightitalic-webfont.ttf') format('truetype'), url('../fonts/lato-lightitalic-webfont.svg#Lato') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/latobold-webfont.eot');
+  src: url('../fonts/latobold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/latobold-webfont.woff') format('woff'), url('../fonts/latobold-webfont.ttf') format('truetype'), url('../fonts/latobold-webfont.svg#Lato') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/latoitalic-webfont.eot');
+  src: url('../fonts/latoitalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/latoitalic-webfont.woff') format('woff'), url('../fonts/latoitalic-webfont.ttf') format('truetype'), url('../fonts/latoitalic-webfont.svg#Lato') format('svg');
+  font-weight: norma;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/latoregular-webfont.eot');
+  src: url('../fonts/latoregular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/latoregular-webfont.woff') format('woff'), url('../fonts/latoregular-webfont.ttf') format('truetype'), url('../fonts/latoregular-webfont.svg#Lato') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'QuickSand';
+  src: url('../fonts/quicksand-bold-webfont.eot');
+  src: url('../fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/quicksand-bold-webfont.woff') format('woff'), url('../fonts/quicksand-bold-webfont.ttf') format('truetype'), url('../fonts/quicksand-bold-webfont.svg#QuickSand') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font: 16px 'Lato', 'sans-serif';
+  color: #fff;
+}
+header {
+  background: url('../img/header_bg.jpg') no-repeat top center;
+  background-size: cover;
+  padding: 180px 0 65px 0;
+}
+header h1 {
+  font-size: 3.750em;
+  font-weight: 300;
+  display: block;
+  max-width: 460px;
+  margin-bottom: 20px;
+}
+header p {
+  font-size: 1.063em;
+  font-weight: 300;
+  font-style: italic;
+  color: #d0e7e9;
+  max-width: 675px;
+  line-height: 2;
+  margin-bottom: 65px;
+}
+header .btn-play {
+  position: relative;
+  margin-bottom: 260px;
+  width: 90px;
+  height: 90px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+}
+header .btn-play:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  border-style: solid;
+  border-width: 13.5px 0 13.5px 18px;
+  border-color: transparent transparent transparent #ffffff;
+}
+header .btn-get-started {
+  padding: 26px 92px;
+  background-color: #7accc8;
+  font-size: 1.125em;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.41);
+  width: 280px;
+}
+header .btn-get-started:hover {
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+  transition: all 0.3s ease-in-out;
+}
+.section-1 {
+  background: url('../img/section_1_bg.jpg') no-repeat top center;
+  background-size: cover;
+  padding: 90px 0 180px 0;
+}
+.section-1 h2 {
+  font-weight: 300;
+  font-size: 3.438em;
+  max-width: 660px;
+  margin-bottom: 30px;
+}
+.section-1 p {
+  max-width: 690px;
+  line-height: 1.875;
+  margin-top: 25px;
+}
+.section-1 .btn-download-now {
+  padding: 20px 70px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 3px solid #fff;
+  font-weight: bold;
+  font-size: 1.125em;
+  line-height: 7;
+}
+.section-1 .btn-download-now:hover {
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+  transition: all 0.3s ease-in-out;
+}
+.section-2 {
+  background: url('../img/section_2_bg.jpg') no-repeat top center;
+  background-size: cover;
+  position: relative;
+}
+.section-2::after {
+  position: absolute;
+  left: 48.55%;
+  content: '';
+  border-style: solid;
+  border-width: 25px 19.5px 0 19.5px;
+  border-color: #5a6768 transparent transparent transparent;
+}
+.section-3 {
+  padding: 90px 0 135px;
+}
+.section-3 .block-text h3 {
+  font-weight: bold;
+  font-size: 0.938em;
+  text-transform: uppercase;
+  color: #9197a8;
+  letter-spacing: 4px;
+  margin: 0 0 15px 0;
+}
+.section-3 .block-text p {
+  color: #7a8387;
+  line-height: 1.875;
+}
+.section-3 .block-text:nth-child(2n+1) {
+  padding-right: 50px;
+}
+.section-3 .block-text:nth-child(2n) {
+  padding-left: 50px;
+  border-left: 1px solid #ecf0f3;
+}
+.section-3 .block-text:nth-child(n+3) h3 {
+  margin-top: 35px;
+}
+.section-3 .btn-try-demo {
+  padding: 20px 49px;
+  background-color: #f69679;
+  font-size: 1.125em;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.41);
+  width: 180px;
+  margin-top: 75px;
+}
+.section-3 .btn-try-demo:hover {
+  color: #e6e6e6;
+  border-color: #e6e6e6;
+  transition: all 0.3s ease-in-out;
+}
+.section-4 {
+  background-color: #f6f6f4;
+  padding: 90px 0 150px;
+}
+footer {
+  background-color: #7accc8;
+  padding: 75px 0 240px 0;
+}
+footer p {
+  font: 0.875em 'HelveticaNeue', 'sans-serif';
+  line-height: 1.714;
+  display: inline-block;
+  float: left;
+}
+footer .text-1 {
+  max-width: 412px;
+  margin-right: 30px;
+}
+footer .text-2 {
+  max-width: 230px;
+}
+footer .menu {
+  list-style: none;
+  padding-left: 25px;
+}
+footer .menu li {
+  margin-bottom: 23px;
+}
+footer .menu li a {
+  font: 0.875em 'HelveticaNeue', 'Sans-serif';
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+footer .menu li a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #e6e6e6;
+}
+footer img {
+  margin: 65px 0 80px;
+}
+footer span {
+  display: block;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 0.750em;
+}
+@media (max-width: 768px) {
+  .section-1 h2,
+  .section-1 p {
+    max-width: 75%;
+  }
+  .section-3 .container .block-text {
+    padding: 0 15px;
+    border: none;
+  }
+  .section-3 .container .block-text:nth-child(n+2) h3 {
+    margin-top: 35px;
+  }
+  .section-4 #slider-arrow .info {
+    margin: 20px 0 0 0;
+  }
+  .section-4 #slider-arrow .slide-block:first-child {
+    margin-bottom: 10px;
+  }
+  .section-4 #slider-arrow .slide-block:first-child {
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-1 h2,
+  .section-1 p {
+    max-width: 75%;
+  }
+  .section-3 .container .block-text {
+    padding: 0 15px;
+    border: none;
+  }
+  .section-3 .container .block-text:nth-child(n+2) h3 {
+    margin-top: 35px;
+  }
+  .section-4 #slider-arrow .info {
+    margin: 20px 0 0 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-1 h2,
+  .section-1 p {
+    max-width: 70%;
+  }
+  .section-4 #slider-arrow .info {
+    margin-left: 0;
+  }
+}
+/*Slider-point*/
+#slider-points {
+  margin-top: 133px;
+  margin-bottom: 120px;
+}
+#slider-points .slide {
+  display: none;
+}
+#slider-points .slide img {
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+#slider-points .slide p {
+  margin-top: 20px;
+  font-size: 2.688em;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 60px;
+}
+#slider-points .slide.active {
+  display: block;
+}
+#slider-points .point {
+  display: inline-block;
+  margin-right: 22px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#slider-points .point.active,
+#slider-points .point:hover {
+  background-color: #fff;
+}
+#slider-points .point:last-child {
+  margin-right: 0;
+}
+/*Slider-arrow*/
+#slider-arrow {
+  position: relative;
+}
+#slider-arrow .slide-arrow {
+  display: none;
+}
+#slider-arrow .slide-arrow.active {
+  display: block;
+}
+#slider-arrow .slide-block {
+  max-width: 337px;
+  display: inline-block;
+  float: left;
+}
+#slider-arrow .slide-block:first-child {
+  margin-right: 22px;
+}
+#slider-arrow .slide-block .description {
+  padding: 30px 50px 60px 40px;
+  box-shadow: 0px 1px 0px 0px #eaeaea;
+  background-color: #fff;
+}
+#slider-arrow .slide-block .description h3 {
+  font-size: 0.938em;
+  color: #9197a8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+#slider-arrow .slide-block .description p {
+  font-style: italic;
+  color: #7a8387;
+}
+#slider-arrow .info {
+  margin-left: -40px;
+}
+#slider-arrow .info h2 {
+  font-weight: 300;
+  font-size: 2.813em;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #abbcc3;
+}
+#slider-arrow .info p {
+  color: #abbcc3;
+  line-height: 1.875;
+}
+#slider-arrow .arrows {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#slider-arrow .arrows .left,
+#slider-arrow .arrows .right {
+  display: inline-block;
+  cursor: pointer;
+  color: #959595;
+  text-decoration: none;
+  font: bold 1.5em 'QuickSand', 'sans-serif';
+}
+#slider-arrow .arrows .left:hover,
+#slider-arrow .arrows .right:hover {
+  transition: all 0.3s ease-in-out;
+  color: #555555;
+}

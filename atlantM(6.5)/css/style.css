@@ -1,0 +1,621 @@
+.kia-lg,
+.ford-lg,
+.mazda-lg,
+.ford-sm,
+.volkswagen-lg,
+.kia-sm,
+.mazda-sm,
+.volkswagen-sm {
+    display: inline-block;
+    background: url('../img/sprites.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.kia-lg {
+    background-position: -1px 0px;
+    width: 93px;
+    height: 47px;
+    margin-top: 4px;
+}
+
+.ford-lg {
+    background-position: -1px -48px;
+    width: 71px;
+    height: 34px;
+    margin-top: 10px;
+}
+
+.mazda-lg {
+    background-position: -1px -83px;
+    width: 50px;
+    height: 46px;
+    margin-top: 3px;
+}
+
+.ford-sm {
+    background-position: -1px -130px;
+    width: 42px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.volkswagen-lg {
+    background-position: -44px -130px;
+    width: 42px;
+    height: 42px;
+    margin-top: 7px;
+}
+
+.kia-sm {
+    background-position: -52px -83px;
+    width: 38px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+.mazda-sm {
+    background-position: -52px -106px;
+    width: 31px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.volkswagen-sm {
+    background-position: -1px -149px;
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-regular-webfont.woff') format('woff'), url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.ttf') format('truetype'), url('../fonts/opensans-regular-webfont.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-semibold-webfont.woff') format('woff'), url('../fonts/opensans-semibold-webfont.woff2') format('woff2'), url('../fonts/opensans-semibold-webfont.ttf') format('truetype'), url('../fonts/opensans-semibold-webfont.svg#OpenSans') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-bold-webfont.woff') format('woff'), url('../fonts/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans-bold-webfont.ttf') format('truetype'), url('../fonts/opensans-bold-webfont.svg#OpenSans') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    font: 13px 'OpenSans';
+    color: #5c5555;
+    background: #fff;
+}
+
+header {
+    margin: 24px 0 36px;
+}
+
+header img {
+    margin-left: -15px;
+}
+
+header .contacts {
+    margin-top: 14px;
+}
+
+header .contacts .row {
+    margin: 0;
+}
+
+header .contacts .col-lg-5,
+header .contacts .col-lg-7 {
+    padding: 0;
+}
+
+header .contacts .select-diler {
+    display: inline-block;
+    color: #878787;
+    margin: 5px 14px 0;
+}
+
+header .contacts .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .contacts .dropdown button {
+    position: relative;
+}
+
+header .contacts .dropdown button:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    margin-left: 120px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+header .contacts .dropdown .combobox {
+    border: 1px solid #c7cece;
+    background: none;
+    width: 279px;
+    height: 31px;
+}
+
+header .contacts .dropdown .combobox .fa-angle-down {
+    color: #202020;
+    margin-left: 120px;
+    vertical-align: middle;
+    position: absolute;
+}
+
+header .contacts .dropdown ul {
+    width: 279px;
+    border-radius: 0;
+}
+
+header .contacts .dropdown ul li a {
+    padding: 0;
+    color: #333;
+}
+
+header .telephone {
+    margin: 14px 0 0 10px;
+    font-size: 24px;
+    color: #1B1B1B;
+    display: block;
+}
+
+header .telephone:hover {
+    color: #000000;
+}
+
+header .location {
+    margin-left: 10px;
+    color: #333;
+}
+
+section.sale {
+    background: url('../img/section_sale_bg.jpg') no-repeat;
+    padding-top: 23px;
+}
+
+section.sale #gridsale .saleitem-1 {
+    background: url('../img/sale_item_bg_1.jpg') no-repeat;
+    width: 570px;
+    height: 385px;
+    padding: 111px 0 0 60px;
+}
+
+section.sale #gridsale .saleitem-1 .first-line {
+    color: #000;
+    font-weight: 800;
+    font-size: 35px;
+    background: #FFC000;
+    padding: 12px 18px 9px 10px;
+    display: inline-block;
+}
+
+section.sale #gridsale .saleitem-1 .second-line {
+    color: #fff;
+    font-size: 36px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+section.sale #gridsale .saleitem-1 .third-line {
+    display: inline-block;
+    margin-top: -10px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 55px;
+}
+
+section.sale #gridsale .saleitem-1 .third-line:first-letter {
+    font-size: 36px;
+    text-transform: none;
+}
+
+section.sale #gridsale .saleitem-2 {
+    background: url('../img/sale_item_bg_2.jpg') no-repeat;
+    width: 285px;
+    height: 385px;
+}
+
+section.sale #gridsale .saleitem-3 {
+    background: url('../img/sale_item_bg_3.jpg') no-repeat;
+    width: 285px;
+    height: 550px;
+    padding: 165px 0 0 15px;
+}
+
+section.sale #gridsale .saleitem-3 .first-line {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+section.sale #gridsale .saleitem-3 .first-line img {
+    margin-left: 5px;
+}
+
+section.sale #gridsale .saleitem-3 .second-line {
+    margin: 0;
+    color: #fffef9;
+}
+
+section.sale #gridsale .saleitem-3 .second-line li {
+    padding: 0;
+}
+
+section.sale #gridsale .saleitem-3 .second-line a {
+    color: #fffef9;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+section.sale #gridsale .saleitem-4 {
+    background: url('../img/sale_item_bg_4.jpg') no-repeat;
+    width: 285px;
+    height: 165px;
+}
+
+section.sale #gridsale .saleitem-5 {
+    background-color: #FFC000;
+    width: 285px;
+    height: 165px;
+    color: #000;
+    padding-top: 45px;
+}
+
+section.sale #gridsale .saleitem-5 .first-line {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+section.sale #gridsale .saleitem-5 .second-line {
+    font-size: 18px;
+    font-weight: 800;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+section.sale #gridsale .saleitem-5 .third-line {
+    display: inline-block;
+    margin-top: -3px;
+    font-size: 19px;
+}
+
+section.sale #gridsale .saleitem-6 {
+    background-color: #000;
+    width: 285px;
+    height: 165px;
+    padding: 50px 0 0 50px;
+}
+
+section.sale #gridsale .saleitem-6 .first-line,
+section.sale #gridsale .saleitem-6 .third-line {
+    font-size: 18px;
+    color: #f9fafb;
+    display: block;
+}
+
+section.sale #gridsale .saleitem-6 .second-line {
+    color: #FFC000;
+    font-size: 41px;
+    display: block;
+}
+
+section.sale #gridsale .saleitem-6 .first-line {
+    margin-bottom: -10px;
+}
+
+section.sale #gridsale .saleitem-6 .third-line {
+    margin-top: -15px;
+}
+
+section.car {
+    margin-top: 36px;
+}
+
+section.car .item {
+    padding-top: 50px;
+    width: 360px;
+    height: 165px;
+    margin-bottom: 25px;
+    background: #f9fafb;
+}
+
+section.car .item:hover {
+    border: 5px solid #ffc000;
+    padding-top: 45px;
+}
+
+section.car .item p {
+    font-size: 15px;
+    color: #333;
+    margin-top: 10px;
+}
+
+section.offer {
+    margin-top: 60px;
+}
+
+section.offer h3 {
+    font-size: 24px;
+    color: #1E2129;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+section.offer .tabbable .nav-tabs {
+    border: none;
+    margin-bottom: 45px;
+}
+
+section.offer .tabbable .nav-tabs .col-lg-4,
+section.offer .tabbable .nav-tabs .col-lg-8,
+section.offer .tabbable .nav-tabs .col-lg-5,
+section.offer .tabbable .nav-tabs .col-lg-7 {
+    padding: 0;
+}
+
+section.offer .tabbable .nav-tabs li {
+    width: 292.5px;
+    border-bottom: 4px solid #f9fafb;
+}
+
+section.offer .tabbable .nav-tabs li:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: #F9FAFB;
+}
+
+section.offer .tabbable .nav-tabs li a {
+    opacity: 0.5;
+    height: 80px;
+}
+
+section.offer .tabbable .nav-tabs li a .info h4 {
+    color: #333;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+section.offer .tabbable .nav-tabs li:last-child {
+    width: 262.5px;
+}
+
+section.offer .tabbable .nav-tabs li:last-child:after {
+    content: '';
+    display: none;
+}
+
+section.offer .tabbable .nav-tabs li.active {
+    border-radius: 0;
+    border: none;
+    border-bottom: 4px solid #ffc000;
+}
+
+section.offer .tabbable .nav-tabs li.active a {
+    opacity: 1;
+    border: none;
+}
+
+section.offer .tab-pane .itemcar {
+    height: 375px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+section.offer .tab-pane .itemcar h4 {
+    color: #010101;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+section.offer .tab-pane .itemcar p {
+    line-height: 1.2;
+    padding-right: 40px;
+}
+
+section.offer .tab-pane .itemcar button {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 25px;
+    background: #FFC000;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+}
+
+section.offer .tab-pane .itemcar button:hover {
+    background: #cc9a00;
+}
+
+section.contact {
+    background: #242526;
+    padding: 30px 0 35px;
+}
+
+section.contact h3 {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+section.contact p {
+    color: #989B9E;
+    line-height: 1.2;
+}
+
+section.contact ul li {
+    margin-bottom: 10px;
+}
+
+section.contact ul li a {
+    color: #F9FAFB;
+    text-decoration: underline;
+}
+
+section.contact ul li a:hover {
+    color: #bcc7d2;
+}
+
+footer {
+    margin: 22px 0 605px 0;
+}
+
+footer p {
+    color: #7C7C7C;
+}
+
+footer p span {
+    color: #000;
+}
+
+@media (max-width: 767px) {
+    header {
+        text-align: center;
+    }
+    header img.logo {
+        display: inline;
+    }
+    header .contacts {
+        text-align: center;
+    }
+    header .contacts .select-diler {
+        margin-bottom: 10px;
+    }
+    section.sale #gridsale .saleitem-1 .first-line {
+        font-size: 25px;
+    }
+    section.sale #gridsale .saleitem-1 .second-line {
+        font-size: 20px;
+    }
+    section.sale #gridsale .saleitem-1 .third-line {
+        font-size: 30px;
+    }
+    section.sale #gridsale .saleitem-1,
+    section.sale #gridsale .saleitem-2,
+    section.sale #gridsale .saleitem-3,
+    section.sale #gridsale .saleitem-4,
+    section.sale #gridsale .saleitem-5,
+    section.sale #gridsale .saleitem-6 {
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+    }
+    section.car .item {
+        width: 100%;
+    }
+    section.offer .tabbable {
+        text-align: center;
+    }
+    section.offer .tabbable .nav-tabs li {
+        margin: 0 10%;
+        width: 80%;
+    }
+    section.offer .tabbable .nav-tabs li:after {
+        content: '';
+        display: none;
+    }
+    section.offer .tabbable .nav-tabs li:last-child {
+        width: 80%;
+    }
+    section.offer .tabbable .itemcar {
+        width: 262px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    section.offer .tabbable .itemcar p {
+        padding: 0;
+    }
+    section.offer .tabbable .itemcar button {
+        left: 70px;
+    }
+    section.contact {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header .contacts .dropdown {
+        display: block;
+    }
+    header .contacts .dropdown .combobox {
+        width: 100%;
+    }
+    header .contacts .dropdown ul {
+        width: 100%;
+    }
+    section.sale #gridsale .saleitem-1 {
+        width: 375px;
+    }
+    section.sale #gridsale .saleitem-1 .first-line,
+    section.sale #gridsale .saleitem-1 .second-line {
+        font-size: 31px;
+    }
+    section.sale #gridsale .saleitem-1 .third-line {
+        font-size: 45px;
+    }
+    section.sale #gridsale .saleitem-6 .first-line,
+    section.sale #gridsale .saleitem-6 .third-line {
+        font-size: 20px;
+    }
+    section.sale #gridsale .saleitem-6 .second-line {
+        font-size: 28px;
+    }
+    section.sale #gridsale .saleitem-2,
+    section.sale #gridsale .saleitem-3,
+    section.sale #gridsale .saleitem-4,
+    section.sale #gridsale .saleitem-5,
+    section.sale #gridsale .saleitem-6 {
+        width: 187.5px;
+    }
+    section.offer .tabbable .nav-tabs li {
+        width: 360px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    header .telephone {
+        font-size: 21px;
+    }
+    section.sale #gridsale .saleitem-1 {
+        width: 485px;
+    }
+    section.sale #gridsale .saleitem-2,
+    section.sale #gridsale .saleitem-3,
+    section.sale #gridsale .saleitem-4,
+    section.sale #gridsale .saleitem-5,
+    section.sale #gridsale .saleitem-6 {
+        width: 242.5px;
+    }
+    section.car .item {
+        width: 100%;
+    }
+    section.offer .tabbable .nav-tabs li {
+        width: 242.5px;
+    }
+    section.offer .tabbable .nav-tabs li:last-child {
+        width: 212.5px;
+    }
+}

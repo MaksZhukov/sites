@@ -1,0 +1,372 @@
+@font-face {
+    font-family: Open-Sans-Semibold;
+    src: url(../fonts/open-sans-semibold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Lora-Bold;
+    src: url(../fonts/Lora-Bold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Open-Sans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Open-Sans-Light;
+    src: url(../fonts/OpenSans-Light.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Source-SansPro-Sembiod;
+    src: url(../fonts/SourceSansPro-Semibold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Lora-Regular;
+    src: url(../fonts/LoraRegular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/RobotoLight.ttf) format("opentype");
+}
+
+a {
+    font-family: 'Open-Sans-Semibold', 'Sans-serif';
+}
+
+header {
+    height: 713px;
+    background: url(../images/header-bg.jpg) no-repeat top center fixed;
+    background-size: cover;
+}
+
+.navbar {
+    padding-top: 22px;
+}
+
+.navbar-brand-logo {
+    padding-top: 0px;
+}
+
+.navmenu a {
+    color: #c2c3c7;
+}
+
+.icon-bar-color {
+    background-color: #406ea5;
+}
+
+.navbar-toggle-color {
+    border-color: #406ea5;
+}
+
+.fix-header {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+}
+
+.font-header-lora-bold,
+.font-header-open-sans-regular {
+    color: #ffffff;
+}
+
+.font-header-open-sans-regular {
+    font-size: 14pt;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.font-header-open-sans-regular,
+.portfolio-list-post li {
+    font-family: 'Open-Sans-Regular', 'Sans-serif';
+}
+
+.font-header-lora-bold {
+    font-family: 'Lora-Bold', 'Sans-serif';
+    font-size: 33pt;
+}
+
+.btn-get-started-now {
+    padding: 16px 60px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 35px;
+    background: #00A5FF;
+    box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    color: #3a3f4b;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Lora-Bold', 'Sans-serif';
+}
+
+h3,
+h4 {
+    font-family: 'Source-SansPro-Sembiod', 'Sans-serif';
+}
+
+#services p {
+    color: #999999;
+    font-family: 'Open-Sans-Light', 'Sans-serif';
+    width: 270px;
+    position: relative;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 70px;
+}
+
+.line-after-h2 {
+    width: 100px;
+    height: 4px;
+    background: #00a5ff;
+}
+
+.line-after-h2 {
+    margin-bottom: 90px;
+}
+
+.line-after-h3 {
+    width: 40px;
+    height: 1px;
+    background: #888888;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 0;
+}
+
+#portfolio,
+#about {
+    background: #f5f6f8;
+}
+
+.portfolio-menu {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-menu li {
+    margin-left: 55px;
+    color: #999999;
+}
+
+.portfolio-menu li a,
+h4 {
+    color: #999999;
+}
+
+.portfolio-menu li a {
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.portfolio-menu li a:hover {
+    color: #a3d3fb;
+    border-bottom: 1px solid #a3d3fb;
+    text-decoration: none;
+}
+
+.portfolio-list-post {
+    margin: 0;
+}
+
+.post {
+    box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+    width: 100%;
+}
+
+#portfolio h4 {
+    height: 75px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 25px;
+    color: #999999;
+}
+
+.portfolio-btn {
+    text-transform: uppercase;
+    margin-top: 55px;
+    margin-bottom: 80px;
+}
+
+#testimonals {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#testimonals img {
+    opacity: 0.5;
+}
+
+.brand {
+    height: 120px;
+    display: flex;
+}
+
+#testimonals a {
+    margin: auto;
+}
+
+#testimonals img:hover {
+    opacity: 1;
+}
+
+#about {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+.hidden-lg li {
+    margin-top: 20px;
+}
+
+#contact {
+    background-color: #3B404C;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-top: 0;
+}
+
+#contact h4 {
+    display: inline-block;
+    font-family: 'Lora-Bold', 'Sans-serif';
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+.contact-menu li a {
+    color: #ffffff;
+    font-size: 17px;
+    font-family: 'Open-Sans-Regular', 'Sans-serif';
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h5 {
+    text-transform: uppercase;
+    font-family: 'Open-Sans-Sembiod', 'Sans-serif';
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.contact-info p {
+    font-family: 'Open-Sans-Regular', 'Sans-serif';
+    width: 250px;
+    color: #999999;
+}
+
+form {
+    margin-top: 55px;
+}
+
+form label,
+form input,
+form textarea {
+    font-family: 'Open-Sans-Regular';
+    color: #ffffff;
+    font-size: 18px;
+}
+
+form input,
+form textarea {
+    background: none;
+    border: 0;
+    width: 100%;
+    border-bottom: 1px solid #72747b;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #00a5ff;
+}
+
+form input[type="submit"] {
+    border: 0;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 240px;
+}
+
+.contact-form-message {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+footer .row {
+    padding-left: 0;
+}
+
+footer p {
+    padding-top: 5px;
+    display: inline-block;
+    color: #999999;
+    font-family: 'Montserrat-Regular', 'Sans-serif';
+}
+
+.footer-btn-up {
+    position: absolute;
+    top: -50px;
+    left: 49%;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 45px;
+    height: 14px;
+    -ms-transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.checkmark_stem {
+    position: absolute;
+    background-color: #ffffff;
+    width: 3px;
+    height: 13px;
+    left: 12px;
+    top: -14px;
+}
+
+.checkmark_kick {
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    background-color: #ffffff;
+    left: 1px;
+    top: -3px;
+}
