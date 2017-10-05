@@ -1,0 +1,681 @@
+//==========================================================  MIXINS   ==========================================================//
+.add-font(@font-url, @font-name, @font-weight: normal, @font-style: normal) {
+    font-family: @font-name;
+    src: url('../fonts/@{font-url}.eot');
+    src: url('../fonts/@{font-url}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/@{font-url}.woff') format('woff'),
+    url('../fonts/@{font-url}.woff2') format('woff2'),
+    url('../fonts/@{font-url}.ttf') format('truetype'),
+    url('../fonts/@{font-url}.svg#@{font-name}') format('svg');
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.transition(@prop: all,
+@time: 0.3s,
+@ease: ease-in-out) {
+    transition: @prop @time @ease;
+}
+
+.button(@padd-left,
+@padd-right) {
+    background-color: #f3379d;
+    height: 67px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    padding-left: @padd-left;
+    padding-right: @padd-right;
+    border-bottom: 3px solid #b12873;
+    color: #fff;
+    font-size: 1.150em;
+    font-weight: 700;
+    &:hover {
+        .transition;
+        background-color: darken(#f3379d, 10%);
+    }
+}
+
+//==========================================================  SPRITES   ==========================================================//
+.hospital,
+.school,
+.museum,
+.cafe,
+.event,
+.home,
+.suitcase,
+.shop,
+.transport,
+.question {
+    display: inline-block;
+    background: url('../img/sprite_icons.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.hospital {
+    background-position: -1px -486px;
+    width: 46px;
+    height: 33px;
+}
+
+.school {
+    background-position: -1px -644px;
+    width: 46px;
+    height: 39px;
+}
+
+.museum {
+    background-position: -1px -521px;
+    width: 39px;
+    height: 39px;
+}
+
+.cafe {
+    background-position: -1px -346px;
+    width: 38px;
+    height: 33px;
+}
+
+.event {
+    background-position: -1px -1px;
+    width: 37px;
+    height: 25px;
+}
+
+.home {
+    background-position: -1px -175px;
+    width: 37px;
+    height: 31px;
+}
+
+.suitcase {
+    background-position: -1px -109px;
+    width: 36px;
+    height: 31px;
+}
+
+.shop {
+    background-position: -1px -416px;
+    width: 33px;
+    height: 33px;
+}
+
+.transport {
+    background-position: -1px -241px;
+    width: 33px;
+    height: 33px;
+}
+
+.question {
+    background-position: -1px -55px;
+    width: 15px;
+    height: 25px;
+}
+
+//==========================================================  FONTS   ==========================================================//
+@font-face {
+    .add-font('GothamPro-Medium',
+    'GothamPro',
+    500);
+}
+
+@font-face {
+    .add-font('roboto-light-webfont',
+    'Roboto',
+    300);
+}
+
+@font-face {
+    .add-font('ubuntu-r-webfont',
+    'Ubuntu',
+    400);
+}
+
+@font-face {
+    .add-font('Ubuntu Bold',
+    'Ubuntu',
+    700);
+}
+
+.GothamPro {
+    font-family: 'GothamPro', sans-serif;
+}
+
+.RobotoL {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.UbuntuR {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.UbuntuB {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+//==========================================================  BASE SETTINGS   ==========================================================//
+@basecolor: #000;
+@baseweight: 400;
+@basefontsize: 20px;
+@basefontfamily: 'Ubuntu',
+'sans-serif';
+body {
+    font: @baseweight @basefontsize @basefontfamily;
+    color: @basecolor;
+}
+
+//==========================================================   HEADER   ==========================================================//
+header {
+    padding: 22px 0 24px 0;
+    background: #F1F4F6;
+    .logo {
+        padding-top: 10px;
+    }
+    .navbar {
+        min-height: 0;
+        margin-bottom: 0;
+        .navbar-header {
+            background: none;
+        }
+        .navbar-toggle {
+            margin-top: -30px;
+        }
+        .active>a {
+            border: 1px solid #4a4d4e;
+            padding: 15px 13px 11px 12px;
+        }
+        a {
+            display: inline-block;
+            font-size: 0.800em;
+            font-weight: 700;
+            color: #242321;
+            padding: 16px 14px 12px 13px;
+            border-radius: 3px;
+            &:hover,
+            &:focus {
+                .transition;
+                border: 1px solid #4a4d4e;
+                background: none;
+                padding: 15px 13px 11px 12px;
+            }
+        }
+    }
+}
+
+//==========================================================   VISITORS   ==========================================================//
+section.visitors {
+    padding: 60px 0 70px;
+    background: #f5f5f5;
+    .telephone {
+        .icons {
+            margin-top: 20px;
+            li {
+                padding: 0 15px;
+                i {
+                    padding-top: 6px;
+                    color: #fff;
+                    width: 34px;
+                    height: 34px;
+                    font-size: 1em;
+                    border-radius: 50%;
+                    background: #353535;
+                }
+            }
+        }
+    }
+    .ibeacon {
+        margin-top: 40px;
+    }
+    .howup {
+        h2 {
+            .GothamPro;
+            font-weight: 1.900em;
+            margin: 0 0 30px 0;
+            line-height: 1.368;
+        }
+
+        p {
+            color: #4A4D4E;
+            line-height: 1.5;
+            span {
+                font-weight: 700;
+            }
+        }
+        button {
+            .button(20px,
+            20px);
+            margin-top: 30px;
+            i.fa-chevron-down {
+                color: #B12873;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+//==========================================================   HOWITWORK   ==========================================================//
+section.howitwork {
+    padding: 60px 0 70px;
+    h2 {
+        .GothamPro;
+        font-size: 1.900em;
+        margin-top: 0;
+    }
+    .phone {
+        button {
+            .button(20px,
+            20px);
+            margin-top: 50px;
+        }
+    }
+}
+
+//==========================================================   FIRSTPROJECT   ==========================================================//
+section.firstproject {
+    color: #fff;
+    padding: 40px 0 70px;
+    background-color: #01B5E6;
+    .aboutproject {
+        h2 {
+            .GothamPro;
+            font-size: 1.900em;
+            margin-bottom: 35px;
+            line-height: 1.368;
+        }
+        p {
+            line-height: 1.6;
+        }
+        a {
+            font-weight: 700;
+            display: block;
+            margin: 50px 0 30px 0;
+            color: #fff;
+            text-decoration: underline;
+            &:hover {
+                .transition;
+                color: darken(#fff, 10%);
+            }
+        }
+    }
+    .slider {
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+        button {
+            margin-top: 70px;
+            .button(25px,
+            27px);
+            margin-top: 50px;
+        }
+    }
+}
+
+//==========================================================   FEATUREBEACON   ==========================================================//
+section.featurebeacon {
+    padding: 40px 0 70px;
+    background: url('../img/puck.jpg') no-repeat 50% 50% / cover;
+    h2 {
+        .GothamPro;
+        font-size: 1.900em;
+        line-height: 1.368;
+        padding-right: 150px;
+        margin-bottom: 40px;
+    }
+    ul {
+        padding-left: 20px;
+        list-style-type: square;
+        li {
+            margin-bottom: 32px;
+        }
+    }
+    button {
+        .button(20px,
+        20px);
+        margin-top: 30px;
+    }
+}
+
+//==========================================================   BUSINESS   ==========================================================//
+section.business {
+    background-color: #fff;
+    background-image: linear-gradient(to right, transparent 66%, #F7F7F7 34%);
+    .description {
+        padding-top: 60px;
+        padding-bottom: 70px;
+        h2 {
+            .GothamPro;
+            font-size: 1.900em;
+            margin: 0 0 40px;
+            line-height: 1.368;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .icons {
+            margin: 10px 0 0 -10px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .item {
+                margin-top: 55px;
+                flex-basis: 20%;
+                .contentitem {
+                    display: inline-block;
+                    width: 120px;
+                    .wrapicon {
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        border: 1px solid #dcdcdc;
+                    }
+                    span {
+                        padding-top: 10px;
+                        font-size: 0.900em;
+                        font-weight: 700;
+                        text-align: center;
+                        display: block;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        .wrapicon {
+                            background: #f3379d;
+                            color: #FFF;
+                            .hospital {
+                                background-position: -1px -381px;
+                            }
+
+                            .school {
+                                background-position: -1px -603px;
+                            }
+
+                            .museum {
+                                background-position: -1px -562px;
+                            }
+
+                            .cafe {
+                                background-position: -1px -276px;
+                            }
+
+                            .event {
+                                background-position: -1px -82px;
+                            }
+
+                            .home {
+                                background-position: -1px -208px;
+                            }
+                            .suitcase {
+                                background-position: -1px -142px;
+                            }
+
+                            .shop {
+                                background-position: -1px -451px;
+                            }
+
+                            .transport {
+                                background-position: -1px -311px;
+                            }
+
+                            .question {
+                                background-position: -1px -28px;
+                            }
+                        }
+                        span {
+                            cursor: pointer;
+                            text-shadow: 1px 1px 1px #000;
+                        }
+                    }
+                }
+                &:last-child {
+                    .contentitem {
+                        .wrapicon {
+                            background: #ECF3F9;
+                        }
+                        &:hover {
+                            .wrapicon {
+                                background: #FFF;
+                                border-color: #f3379d;
+                                border-width: 3px;
+                            }
+                            &:after {
+                                content: '';
+                                background: url('../img/arrow.png') no-repeat;
+                                width: 147px;
+                                height: 141px;
+                                display: block;
+                                position: absolute;
+                                margin-top: -65px;
+                                margin-left: 100px;
+                                z-index: 10;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .telephone {
+        background: #F7F7F7;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        button {
+            .button(36px,
+            33px);
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+//==========================================================   CONTACT   ==========================================================//
+section.contact {
+    background: #F5F5F5;
+    padding: 60px 0 70px;
+    .description {
+        h2 {
+            .GothamPro;
+            font-size: 1.900em;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.6;
+        }
+    }
+    .form {
+
+        margin-top: 50px;
+        color: #242321;
+        input {
+            margin-bottom: 20px;
+            height: 52px;
+        }
+        input,
+        textarea {
+            font-size: 1.100em;
+            border-radius: 0;
+            border: 1px solid #d2d2d2;
+            &::placeholder {
+                color: #242321;
+            }
+        }
+        button {
+            .button(60px,
+            60px);
+            margin-top: 55px;
+        }
+    }
+}
+
+//==========================================================   FOOTER   ==========================================================//
+footer {
+    padding: 20px 0 10px;
+    .RobotoL;
+    font-size: 0.800em;
+}
+
+//==========================================================   RESPONSIVE   ==========================================================//
+@media (max-width:767px) {
+    header .navbar {
+        text-align: right;
+    }
+
+    section.visitors {
+        .telephone img,
+        .ibeacon img {
+            margin: auto;
+        }
+        .ibeacon {
+            margin: 20px 0;
+        }
+    }
+
+    section.howitwork {
+        font-size: 14px;
+        .phone {
+            margin-top: 10px;
+            button {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    section.firstproject {
+        font-size: 16px;
+    }
+
+    section.featurebeacon {
+        font-size: 18px;
+    }
+    section.business {
+        background: none;
+        .description .icons {
+            margin-left: 0;
+            justify-content: space-around;
+            .item {
+                flex-basis: auto;
+                .contentitem:last-child:hover:after {
+                    margin-top: -35px;
+                    margin-left: -99px;
+                    transform: scaleX(-1) rotate(20deg);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    section.visitors {
+        font-size: 16px;
+        .telephone .icons li i {
+            width: 30px;
+            height: 30px;
+        }
+        .howup {
+            padding-right: 15px;
+            button {
+                padding: 0 7px;
+                i.fa-chevron-down {
+                    margin-left: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    section.howitwork {
+        font-size: 16px;
+        .phone button {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    section.firstproject {
+        font-size: 16px;
+    }
+    section.business {
+        .description {
+            h2 {
+                margin-bottom: 5px;
+            }
+            .icons .item {
+                margin-top: 15px;
+                .contentitem {
+                    width: 100%;
+                }
+            }
+        }
+        font-size: 16px;
+        .telephone {
+            button {
+                padding: 0 10px;
+            }
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1289px) {
+    section.visitors {
+        font-size: 19px;
+        .howup {
+            padding-right: 15px;
+        }
+    }
+
+    section.howitwork {
+
+        .phone button {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    section.firstproject {
+        font-size: 18px;
+    }
+    section.business {
+        .description {
+            h2 {
+                margin-bottom: 15px;
+            }
+            .icons .item {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width:1290px) {
+    section.visitors {
+        .howup {
+            padding-right: 75px;
+        }
+        .telephone .icons {
+            margin-right: 70px;
+        }
+    }
+
+    section.howitwork .phone button {
+        padding: 0 27px 0 25px;
+    }
+    section.contact .form {
+        padding-right: 60px;
+        button {
+            .button(100px,
+            100px);
+            margin-top: 55px;
+        }
+    }
+}

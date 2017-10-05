@@ -1,0 +1,796 @@
+.hospital,
+.school,
+.museum,
+.cafe,
+.event,
+.home,
+.suitcase,
+.shop,
+.transport,
+.question {
+    display: inline-block;
+    background: url('../img/sprite_icons.png') no-repeat;
+    overflow: hidden;
+    text-indent: -9999px;
+    text-align: left;
+}
+
+.hospital {
+    background-position: -1px -486px;
+    width: 46px;
+    height: 33px;
+}
+
+.school {
+    background-position: -1px -644px;
+    width: 46px;
+    height: 39px;
+}
+
+.museum {
+    background-position: -1px -521px;
+    width: 39px;
+    height: 39px;
+}
+
+.cafe {
+    background-position: -1px -346px;
+    width: 38px;
+    height: 33px;
+}
+
+.event {
+    background-position: -1px -1px;
+    width: 37px;
+    height: 25px;
+}
+
+.home {
+    background-position: -1px -175px;
+    width: 37px;
+    height: 31px;
+}
+
+.suitcase {
+    background-position: -1px -109px;
+    width: 36px;
+    height: 31px;
+}
+
+.shop {
+    background-position: -1px -416px;
+    width: 33px;
+    height: 33px;
+}
+
+.transport {
+    background-position: -1px -241px;
+    width: 33px;
+    height: 33px;
+}
+
+.question {
+    background-position: -1px -55px;
+    width: 15px;
+    height: 25px;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/GothamPro-Medium.woff') format('woff'), url('../fonts/GothamPro-Medium.woff2') format('woff2'), url('../fonts/GothamPro-Medium.ttf') format('truetype'), url('../fonts/GothamPro-Medium.svg#GothamPro') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-light-webfont.eot');
+    src: url('../fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/roboto-light-webfont.woff') format('woff'), url('../fonts/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto-light-webfont.ttf') format('truetype'), url('../fonts/roboto-light-webfont.svg#Roboto') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu-r-webfont.eot');
+    src: url('../fonts/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ubuntu-r-webfont.woff') format('woff'), url('../fonts/ubuntu-r-webfont.woff2') format('woff2'), url('../fonts/ubuntu-r-webfont.ttf') format('truetype'), url('../fonts/ubuntu-r-webfont.svg#Ubuntu') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu Bold.eot');
+    src: url('../fonts/Ubuntu Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu Bold.woff') format('woff'), url('../fonts/Ubuntu Bold.woff2') format('woff2'), url('../fonts/Ubuntu Bold.ttf') format('truetype'), url('../fonts/Ubuntu Bold.svg#Ubuntu') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.GothamPro {
+    font-family: 'GothamPro', sans-serif;
+}
+
+.RobotoL {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.UbuntuR {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.UbuntuB {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    font: 400 20px 'Ubuntu', 'sans-serif';
+    color: #000000;
+}
+
+header {
+    padding: 22px 0 24px 0;
+    background: #F1F4F6;
+}
+
+header .logo {
+    padding-top: 10px;
+}
+
+header .navbar {
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+header .navbar .navbar-header {
+    background: none;
+}
+
+header .navbar .navbar-toggle {
+    margin-top: -30px;
+}
+
+header .navbar .active>a {
+    border: 1px solid #4a4d4e;
+    padding: 15px 13px 11px 12px;
+}
+
+header .navbar a {
+    display: inline-block;
+    font-size: 0.800em;
+    font-weight: 700;
+    color: #242321;
+    padding: 16px 14px 12px 13px;
+    border-radius: 3px;
+}
+
+header .navbar a:hover,
+header .navbar a:focus {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #4a4d4e;
+    background: none;
+    padding: 15px 13px 11px 12px;
+}
+
+section.visitors {
+    padding: 60px 0 70px;
+    background: #f5f5f5;
+}
+
+section.visitors .telephone .icons {
+    margin-top: 20px;
+}
+
+section.visitors .telephone .icons li {
+    padding: 0 15px;
+}
+
+section.visitors .telephone .icons li i {
+    padding-top: 6px;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    font-size: 1em;
+    border-radius: 50%;
+    background: #353535;
+}
+
+section.visitors .ibeacon {
+    margin-top: 40px;
+}
+
+section.visitors .howup h2 {
+    font-family: 'GothamPro', sans-serif;
+    font-weight: 1.900em;
+    margin: 0 0 30px 0;
+    line-height: 1.368;
+}
+
+section.visitors .howup p {
+    color: #4A4D4E;
+    line-height: 1.5;
+}
+
+section.visitors .howup p span {
+    font-weight: 700;
+}
+
+section.visitors .howup button {
+    background-color: #f3379d;
+    height: 67px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 3px solid #b12873;
+    color: #fff;
+    font-size: 1.150em;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+section.visitors .howup button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e90e85;
+}
+
+section.visitors .howup button i.fa-chevron-down {
+    color: #B12873;
+    margin-left: 15px;
+}
+
+section.howitwork {
+    padding: 60px 0 70px;
+}
+
+section.howitwork h2 {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 1.900em;
+    margin-top: 0;
+}
+
+section.howitwork .phone button {
+    background-color: #f3379d;
+    height: 67px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 3px solid #b12873;
+    color: #fff;
+    font-size: 1.150em;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+section.howitwork .phone button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e90e85;
+}
+
+section.firstproject {
+    color: #fff;
+    padding: 40px 0 70px;
+    background-color: #01B5E6;
+}
+
+section.firstproject .aboutproject h2 {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 1.900em;
+    margin-bottom: 35px;
+    line-height: 1.368;
+}
+
+section.firstproject .aboutproject p {
+    line-height: 1.6;
+}
+
+section.firstproject .aboutproject a {
+    font-weight: 700;
+    display: block;
+    margin: 50px 0 30px 0;
+    color: #fff;
+    text-decoration: underline;
+}
+
+section.firstproject .aboutproject a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: #e6e6e6;
+}
+
+section.firstproject .slider {
+    text-align: center;
+}
+
+section.firstproject .slider img {
+    margin: 0 auto;
+}
+
+section.firstproject .slider button {
+    margin-top: 70px;
+    background-color: #f3379d;
+    height: 67px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    padding-left: 25px;
+    padding-right: 27px;
+    border-bottom: 3px solid #b12873;
+    color: #fff;
+    font-size: 1.150em;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+section.firstproject .slider button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e90e85;
+}
+
+section.featurebeacon {
+    padding: 40px 0 70px;
+    background: url('../img/puck.jpg') no-repeat 50% 50% / cover;
+}
+
+section.featurebeacon h2 {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 1.900em;
+    line-height: 1.368;
+    padding-right: 150px;
+    margin-bottom: 40px;
+}
+
+section.featurebeacon ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+section.featurebeacon ul li {
+    margin-bottom: 32px;
+}
+
+section.featurebeacon button {
+    background-color: #f3379d;
+    height: 67px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 3px solid #b12873;
+    color: #fff;
+    font-size: 1.150em;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+section.featurebeacon button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e90e85;
+}
+
+section.business {
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(66%, transparent), color-stop(34%, #f7f7f7));
+    background-image: -webkit-linear-gradient(left, transparent 66%, #f7f7f7 34%);
+    background-image: -o-linear-gradient(left, transparent 66%, #f7f7f7 34%);
+    background-image: linear-gradient(to right, transparent 66%, #f7f7f7 34%);
+}
+
+section.business .description {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+section.business .description h2 {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 1.900em;
+    margin: 0 0 40px;
+    line-height: 1.368;
+}
+
+section.business .description p {
+    line-height: 1.6;
+}
+
+section.business .description .icons {
+    margin: 10px 0 0 -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+section.business .description .icons .item {
+    margin-top: 55px;
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+}
+
+section.business .description .icons .item .contentitem {
+    display: inline-block;
+    width: 120px;
+}
+
+section.business .description .icons .item .contentitem .wrapicon {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+}
+
+section.business .description .icons .item .contentitem span {
+    padding-top: 10px;
+    font-size: 0.900em;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+}
+
+section.business .description .icons .item .contentitem:hover {
+    cursor: pointer;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon {
+    background: #f3379d;
+    color: #FFF;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .hospital {
+    background-position: -1px -381px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .school {
+    background-position: -1px -603px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .museum {
+    background-position: -1px -562px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .cafe {
+    background-position: -1px -276px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .event {
+    background-position: -1px -82px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .home {
+    background-position: -1px -208px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .suitcase {
+    background-position: -1px -142px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .shop {
+    background-position: -1px -451px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .transport {
+    background-position: -1px -311px;
+}
+
+section.business .description .icons .item .contentitem:hover .wrapicon .question {
+    background-position: -1px -28px;
+}
+
+section.business .description .icons .item .contentitem:hover span {
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #000;
+}
+
+section.business .description .icons .item:last-child .contentitem .wrapicon {
+    background: #ECF3F9;
+}
+
+section.business .description .icons .item:last-child .contentitem:hover .wrapicon {
+    background: #FFF;
+    border-color: #f3379d;
+    border-width: 3px;
+}
+
+section.business .description .icons .item:last-child .contentitem:hover:after {
+    content: '';
+    background: url('../img/arrow.png') no-repeat;
+    width: 147px;
+    height: 141px;
+    display: block;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 100px;
+    z-index: 10;
+}
+
+section.business .telephone {
+    background: #F7F7F7;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+section.business .telephone button {
+    background-color: #f3379d;
+    height: 67px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    padding-left: 36px;
+    padding-right: 33px;
+    border-bottom: 3px solid #b12873;
+    color: #fff;
+    font-size: 1.150em;
+    font-weight: 700;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+section.business .telephone button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e90e85;
+}
+
+section.contact {
+    background: #F5F5F5;
+    padding: 60px 0 70px;
+}
+
+section.contact .description h2 {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 1.900em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+section.contact .description p {
+    line-height: 1.6;
+}
+
+section.contact .form {
+    margin-top: 50px;
+    color: #242321;
+}
+
+section.contact .form input {
+    margin-bottom: 20px;
+    height: 52px;
+}
+
+section.contact .form input,
+section.contact .form textarea {
+    font-size: 1.100em;
+    border-radius: 0;
+    border: 1px solid #d2d2d2;
+}
+
+section.contact .form input::-webkit-input-placeholder,
+section.contact .form textarea::-webkit-input-placeholder {
+    color: #242321;
+}
+
+section.contact .form input::-moz-placeholder,
+section.contact .form textarea::-moz-placeholder {
+    color: #242321;
+}
+
+section.contact .form input:-ms-input-placeholder,
+section.contact .form textarea:-ms-input-placeholder {
+    color: #242321;
+}
+
+section.contact .form input::placeholder,
+section.contact .form textarea::placeholder {
+    color: #242321;
+}
+
+section.contact .form button {
+    background-color: #f3379d;
+    height: 67px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-bottom: 3px solid #b12873;
+    color: #fff;
+    font-size: 1.150em;
+    font-weight: 700;
+    margin-top: 55px;
+}
+
+section.contact .form button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e90e85;
+}
+
+footer {
+    padding: 20px 0 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.800em;
+}
+
+@media (max-width: 767px) {
+    header .navbar {
+        text-align: right;
+    }
+    section.visitors .telephone img,
+    section.visitors .ibeacon img {
+        margin: auto;
+    }
+    section.visitors .ibeacon {
+        margin: 20px 0;
+    }
+    section.howitwork {
+        font-size: 14px;
+    }
+    section.howitwork .phone {
+        margin-top: 10px;
+    }
+    section.howitwork .phone button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section.firstproject {
+        font-size: 16px;
+    }
+    section.featurebeacon {
+        font-size: 18px;
+    }
+    section.business {
+        background: none;
+    }
+    section.business .description .icons {
+        margin-left: 0;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    section.business .description .icons .item {
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+    section.business .description .icons .item .contentitem:last-child:hover:after {
+        margin-top: -35px;
+        margin-left: -99px;
+        -webkit-transform: scaleX(-1) rotate(20deg);
+        -ms-transform: scaleX(-1) rotate(20deg);
+        transform: scaleX(-1) rotate(20deg);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section.visitors {
+        font-size: 16px;
+    }
+    section.visitors .telephone .icons li i {
+        width: 30px;
+        height: 30px;
+    }
+    section.visitors .howup {
+        padding-right: 15px;
+    }
+    section.visitors .howup button {
+        padding: 0 7px;
+    }
+    section.visitors .howup button i.fa-chevron-down {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    section.howitwork {
+        font-size: 16px;
+    }
+    section.howitwork .phone button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section.firstproject {
+        font-size: 16px;
+    }
+    section.business {
+        font-size: 16px;
+    }
+    section.business .description h2 {
+        margin-bottom: 5px;
+    }
+    section.business .description .icons .item {
+        margin-top: 15px;
+    }
+    section.business .description .icons .item .contentitem {
+        width: 100%;
+    }
+    section.business .telephone button {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1289px) {
+    section.visitors {
+        font-size: 19px;
+    }
+    section.visitors .howup {
+        padding-right: 15px;
+    }
+    section.howitwork .phone button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section.firstproject {
+        font-size: 18px;
+    }
+    section.business .description h2 {
+        margin-bottom: 15px;
+    }
+    section.business .description .icons .item {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1290px) {
+    section.visitors .howup {
+        padding-right: 75px;
+    }
+    section.visitors .telephone .icons {
+        margin-right: 70px;
+    }
+    section.howitwork .phone button {
+        padding: 0 27px 0 25px;
+    }
+    section.contact .form {
+        padding-right: 60px;
+    }
+    section.contact .form button {
+        background-color: #f3379d;
+        height: 67px;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border-bottom: 3px solid #b12873;
+        color: #fff;
+        font-size: 1.150em;
+        font-weight: 700;
+        margin-top: 55px;
+    }
+    section.contact .form button:hover {
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #e90e85;
+    }
+}
