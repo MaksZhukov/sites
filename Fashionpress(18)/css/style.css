@@ -97,6 +97,8 @@ header .autorization .shopping-bag .count {
   color: #231f20;
 }
 header .autorization a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 section.nav-menu {
@@ -111,6 +113,8 @@ section.nav-menu #responsive-menu ul li {
   margin-left: 27px;
 }
 section.nav-menu #responsive-menu ul li a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 section.nav-menu #responsive-menu ul li:first-child {
@@ -228,6 +232,8 @@ section.search .change-format-output .two .bar:before {
 }
 .main .product .hot span {
   display: block;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin: -2px 0 0 -40px;
   font-size: 10px;
@@ -240,6 +246,8 @@ section.search .change-format-output .two .bar:before {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   position: absolute;
+  -webkit-transform: rotate(-44deg);
+  -ms-transform: rotate(-44deg);
   transform: rotate(-44deg);
   top: 31px;
   left: -17px;
@@ -340,7 +348,6 @@ section.search .change-format-output .two .bar:before {
   background-color: #df1f26;
 }
 .sidebar .product-categoryes ul {
-  background-image: -moz-linear-gradient(180deg, #f4f6f7 1%, #eeeeee 100%);
   background-image: -webkit-linear-gradient(180deg, #f4f6f7 1%, #eeeeee 100%);
   background-image: -ms-linear-gradient(180deg, #f4f6f7 1%, #eeeeee 100%);
   padding-bottom: 5px;
@@ -349,10 +356,11 @@ section.search .change-format-output .two .bar:before {
   content: '';
   display: block;
   height: 1px;
-  background: -moz-linear-gradient(left, rgba(227, 227, 227, 0.2) -1%, rgba(227, 227, 227, 0.2) 0%, #e3e3e3 37%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(227, 227, 227, 0.2) -1%, rgba(227, 227, 227, 0.2) 0%, #e3e3e3 37%);
   /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, color-stop(-1%, rgba(227, 227, 227, 0.2)), color-stop(0%, rgba(227, 227, 227, 0.2)), color-stop(37%, #e3e3e3));
+  background: -o-linear-gradient(left, rgba(227, 227, 227, 0.2) -1%, rgba(227, 227, 227, 0.2) 0%, #e3e3e3 37%);
   background: linear-gradient(to right, rgba(227, 227, 227, 0.2) -1%, rgba(227, 227, 227, 0.2) 0%, #e3e3e3 37%);
 }
 .sidebar .product-categoryes ul a {
@@ -796,6 +804,7 @@ footer .menu-footer p {
 /*Slider*/
 .bx-wrapper {
   border: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   margin-bottom: 0;
 }
@@ -820,6 +829,7 @@ footer .menu-footer p {
   border: 1px solid rgba(73, 85, 101, 0.03);
   border-radius: 50%;
   background-color: rgba(73, 85, 101, 0.15);
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.12);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.12);
 }
 .bx-wrapper .bx-controls-direction a.bx-prev:after {

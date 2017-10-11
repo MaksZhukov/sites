@@ -1,0 +1,213 @@
+//==========================================================  MIXINS   ==========================================================//
+.add-font(@font-url, @font-name, @font-weight: normal, @font-style: normal) {
+    font-family: @font-name;
+    src: url('../fonts/@{font-url}.eot');
+    src: url('../fonts/@{font-url}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/@{font-url}.woff') format('woff'),
+    url('../fonts/@{font-url}.woff2') format('woff2'),
+    url('../fonts/@{font-url}.ttf') format('truetype'),
+    url('../fonts/@{font-url}.svg#@{font-name}') format('svg');
+    font-weight: @font-weight;
+    font-style: @font-style;
+}
+
+.transition(@prop: all,
+@time: 0.3s,
+@ease: ease-in-out) {
+    transition: @prop @time @ease;
+}
+
+//==========================================================  COMPONENTS   ==========================================================//
+//==========================================================  FONTS   ==========================================================//
+@font-face {
+    .add-font('opensans-bold-webfont',
+    'OpenSans',
+    700);
+}
+
+@font-face {
+    .add-font('opensans-semibold-webfont',
+    'OpenSans',
+    600);
+}
+
+@font-face {
+    .add-font('opensans-regular-webfont',
+    'OpenSans',
+    400);
+}
+
+@font-face {
+    .add-font('opensans-light-webfont',
+    'OpenSans',
+    300);
+}
+
+//==========================================================  BASE SETTINGS   ==========================================================//
+@basecolor: #000;
+@basefontfamily: OpenSans,
+Sans-serif;
+@basefontweight: 400;
+@basefontsize: 14px;
+body {
+    font: @basefontweight @basefontsize @basefontfamily;
+    color: @basecolor;
+}
+
+//==========================================================  HEADER   ==========================================================//
+header {
+    font-size: 1.143em;
+    padding: 20px 0;
+    .phone {
+        display: inline-block;
+        a {
+            display: block;
+            font-weight: 600;
+            color: #2C8BFF;
+            &:before {
+                content: '';
+                background: url('../img/icon_phone.png');
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+    }
+    .street {
+        display: inline-block;
+        margin-left: 30px;
+        font-weight: 400;
+        color: #30303C;
+        margin-top: 10px;
+        transform: translateY(-9px);
+        &:before {
+            content: '';
+            background: url('../img/icon_marker.png');
+            width: 11px;
+            height: 12px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+}
+
+//==========================================================  MAIN   ==========================================================//
+section.main {
+    background: url('../img/bg.jpg') 100% 100% / cover no-repeat;
+    padding: 40px 0 56px;
+    h1 {
+        font-weight: 700;
+        font-size: 3.000em;
+        color: #FFF;
+    }
+    p {
+        font-size: 1.429em;
+        font-weight: 300;
+        color: #FFF;
+        span {
+            font-weight: 700;
+        }
+    }
+    form {
+        width: 300px;
+        padding: 30px;
+        background: #FFF;
+        legend {
+            font-size: 1.286em;
+            font-weight: 600;
+            border: 0;
+            color: #30303c;
+        }
+        label {
+            font-size: 0.857em;
+            color: #55555C;
+        }
+        input,
+        button {
+            font-weight: 600;
+            border-radius: 0;
+        }
+        >button {
+            width: 100%;
+            background: #2B8AFE;
+            border: none;
+        }
+        input#name::placeholder,
+        input#name {
+            color: #30303C;
+        }
+        input#phone::placeholder,
+        input#phone {
+            color: #71717A;
+        }
+    }
+}
+
+//==========================================================  MODAL   ==========================================================//
+#order .modal-content {
+    width: 350px;
+    border-radius: 2px;
+    margin: 0 auto;
+    button.close {
+        margin: 2px 3px 0 0;
+    }
+    form {
+        font-family: Roboto, sans-serif;
+        padding: 25px;
+        legend {
+            border: 0;
+            font-size: 1.286em;
+            font-weight: 500;
+        }
+        input,
+        button {
+            font-weight: 600;
+            border-radius: 1px;
+        }
+        input::placeholder,
+        input {
+            color: #303030;
+        }
+        input#name {
+            font-weight: 300;
+        }
+        input#phone {
+            font-weight: 400;
+        }
+        button {
+            font-weight: 500;
+            border-radius: 20px;
+            background: #FCD590;
+            border: 0;
+            color: #1E1E1E;
+            &:hover {
+                background: darken(#FCD590, 10%);
+            }
+        }
+    }
+}
+
+//==========================================================   RESPONSIVE   ==========================================================//
+@media (max-width:767px) {
+    section.main {
+        h1,
+        p {
+            text-align: center;
+        }
+        form {
+            width: 270px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    }
+    #order .modal-content {
+        width: 300px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {}
+
+@media (min-width:992px) and (max-width:1199px) {}
+
+@media (min-width:1200px) {}

@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-bold-webfont.woff') format('woff'), url('../fonts/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans-bold-webfont.ttf') format('truetype'), url('../fonts/opensans-bold-webfont.svg#OpenSans') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-semibold-webfont.eot');
+  src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-semibold-webfont.woff') format('woff'), url('../fonts/opensans-semibold-webfont.woff2') format('woff2'), url('../fonts/opensans-semibold-webfont.ttf') format('truetype'), url('../fonts/opensans-semibold-webfont.svg#OpenSans') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-regular-webfont.woff') format('woff'), url('../fonts/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans-regular-webfont.ttf') format('truetype'), url('../fonts/opensans-regular-webfont.svg#OpenSans') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/opensans-light-webfont.eot');
+  src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans-light-webfont.woff') format('woff'), url('../fonts/opensans-light-webfont.woff2') format('woff2'), url('../fonts/opensans-light-webfont.ttf') format('truetype'), url('../fonts/opensans-light-webfont.svg#OpenSans') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+body {
+  font: 400 14px OpenSans, Sans-serif;
+  color: #000;
+}
+header {
+  font-size: 1.143em;
+  padding: 20px 0;
+}
+header .phone {
+  display: inline-block;
+}
+header .phone a {
+  display: block;
+  font-weight: 600;
+  color: #2C8BFF;
+}
+header .phone a:before {
+  content: '';
+  background: url('../img/icon_phone.png');
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 8px;
+}
+header .street {
+  display: inline-block;
+  margin-left: 30px;
+  font-weight: 400;
+  color: #30303C;
+  margin-top: 10px;
+  -webkit-transform: translateY(-9px);
+  -ms-transform: translateY(-9px);
+  transform: translateY(-9px);
+}
+header .street:before {
+  content: '';
+  background: url('../img/icon_marker.png');
+  width: 11px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 10px;
+}
+section.main {
+  background: url('../img/bg.jpg') 100% 100% / cover no-repeat;
+  padding: 40px 0 56px;
+}
+section.main h1 {
+  font-weight: 700;
+  font-size: 3.000em;
+  color: #FFF;
+}
+section.main p {
+  font-size: 1.429em;
+  font-weight: 300;
+  color: #FFF;
+}
+section.main p span {
+  font-weight: 700;
+}
+section.main form {
+  width: 300px;
+  padding: 30px;
+  background: #FFF;
+}
+section.main form legend {
+  font-size: 1.286em;
+  font-weight: 600;
+  border: 0;
+  color: #30303c;
+}
+section.main form label {
+  font-size: 0.857em;
+  color: #55555C;
+}
+section.main form input,
+section.main form button {
+  font-weight: 600;
+  border-radius: 0;
+}
+section.main form > button {
+  width: 100%;
+  background: #2B8AFE;
+  border: none;
+}
+section.main form input#name::-webkit-input-placeholder,
+section.main form input#name {
+  color: #30303C;
+}
+section.main form input#name:-ms-input-placeholder,
+section.main form input#name {
+  color: #30303C;
+}
+section.main form input#name::-ms-input-placeholder,
+section.main form input#name {
+  color: #30303C;
+}
+section.main form input#name::placeholder,
+section.main form input#name {
+  color: #30303C;
+}
+section.main form input#phone::-webkit-input-placeholder,
+section.main form input#phone {
+  color: #71717A;
+}
+section.main form input#phone:-ms-input-placeholder,
+section.main form input#phone {
+  color: #71717A;
+}
+section.main form input#phone::-ms-input-placeholder,
+section.main form input#phone {
+  color: #71717A;
+}
+section.main form input#phone::placeholder,
+section.main form input#phone {
+  color: #71717A;
+}
+#order .modal-content {
+  width: 350px;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+#order .modal-content button.close {
+  margin: 2px 3px 0 0;
+}
+#order .modal-content form {
+  font-family: Roboto, sans-serif;
+  padding: 25px;
+}
+#order .modal-content form legend {
+  border: 0;
+  font-size: 1.286em;
+  font-weight: 500;
+}
+#order .modal-content form input,
+#order .modal-content form button {
+  font-weight: 600;
+  border-radius: 1px;
+}
+#order .modal-content form input::-webkit-input-placeholder,
+#order .modal-content form input {
+  color: #303030;
+}
+#order .modal-content form input:-ms-input-placeholder,
+#order .modal-content form input {
+  color: #303030;
+}
+#order .modal-content form input::-ms-input-placeholder,
+#order .modal-content form input {
+  color: #303030;
+}
+#order .modal-content form input::placeholder,
+#order .modal-content form input {
+  color: #303030;
+}
+#order .modal-content form input#name {
+  font-weight: 300;
+}
+#order .modal-content form input#phone {
+  font-weight: 400;
+}
+#order .modal-content form button {
+  font-weight: 500;
+  border-radius: 20px;
+  background: #FCD590;
+  border: 0;
+  color: #1E1E1E;
+}
+#order .modal-content form button:hover {
+  background: #fbc25e;
+}
+@media (max-width: 767px) {
+  section.main h1,
+  section.main p {
+    text-align: center;
+  }
+  section.main form {
+    width: 270px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  #order .modal-content {
+    width: 300px;
+  }
+}

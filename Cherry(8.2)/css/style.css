@@ -69,6 +69,7 @@ header .container-header .form-searh input {
   width: 200px;
   padding-left: 9px;
   background: #24272d;
+  -webkit-box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
   color: #5b636e;
 }
@@ -185,6 +186,7 @@ header .container-header .form-searh button {
   border-radius: 4px;
   color: #757575;
   background-color: #e3e4e5;
+  -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .container-main .contact input[type="text"]:placeholder {
@@ -236,9 +238,9 @@ header .container-header .form-searh button {
   color: #fff;
   padding: 8px 16px;
   border: 5px solid #fff;
-  background-image: -moz-linear-gradient(90deg, #95161f 0%, #b0252e 100%);
   background-image: -webkit-linear-gradient(90deg, #95161f 0%, #b0252e 100%);
   background-image: -ms-linear-gradient(90deg, #95161f 0%, #b0252e 100%);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
 }
 .container-main .headline {
@@ -279,6 +281,7 @@ header .container-header .form-searh button {
 }
 .page .list-img li img {
   border: 1px solid #fff;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 .page .listsh2 {
