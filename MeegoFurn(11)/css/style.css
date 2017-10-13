@@ -59,6 +59,8 @@ a {
 
 
 
+
+
 /*Header*/
 
 header {
@@ -127,6 +129,7 @@ header a {
     text-transform: uppercase;
     padding: 13px 19px 11px 17px;
     background: -webkit-gradient(linear, left top, left bottom, from(#c3dae6), to(#a9bfd2));
+    background: -o-linear-gradient(#c3dae6, #a9bfd2);
     background: linear-gradient(#c3dae6, #a9bfd2);
     background: -webkit-linear-gradient(#c3dae6, #a9bfd2);
     border-left: 1px solid #a9bfd2;
@@ -223,6 +226,8 @@ hr {
     opacity: 0.33;
     margin-top: -4px;
 }
+
+
 
 
 
@@ -383,7 +388,6 @@ section {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    flexitems
 }
 
 .widjets-form .contact {
@@ -400,6 +404,8 @@ input[type="submit"] {
     font-family: 'Charis Sil', 'Sans-serif';
     color: #62889a;
     background: -webkit-gradient(linear, left top, left bottom, from(#c3dae6), to(#a9bfd2));
+    background: -webkit-linear-gradient(#c3dae6, #a9bfd2);
+    background: -o-linear-gradient(#c3dae6, #a9bfd2);
     background: linear-gradient(#c3dae6, #a9bfd2);
     font-size: 13px;
     border: 1px solid #b4c8d9;
@@ -434,6 +440,8 @@ input[type="submit"]:hover {
     font-size: 12px;
     color: #505050;
 }
+
+
 
 
 

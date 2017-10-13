@@ -104,12 +104,15 @@ header .btn-get-started {
   font-weight: bold;
   border-radius: 3px;
   text-decoration: none;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.41);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), inset 0px 1px 0px 0px rgba(255, 255, 255, 0.41);
   width: 280px;
 }
 header .btn-get-started:hover {
   color: #e6e6e6;
   border-color: #e6e6e6;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .section-1 {
@@ -142,6 +145,8 @@ header .btn-get-started:hover {
 .section-1 .btn-download-now:hover {
   color: #e6e6e6;
   border-color: #e6e6e6;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .section-2 {
@@ -190,6 +195,7 @@ header .btn-get-started:hover {
   font-weight: bold;
   border-radius: 3px;
   text-decoration: none;
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.41);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.41);
   width: 180px;
   margin-top: 75px;
@@ -197,6 +203,8 @@ header .btn-get-started:hover {
 .section-3 .btn-try-demo:hover {
   color: #e6e6e6;
   border-color: #e6e6e6;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .section-4 {
@@ -234,6 +242,8 @@ footer .menu li a {
   text-decoration: none;
 }
 footer .menu li a:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #e6e6e6;
 }
@@ -351,6 +361,7 @@ footer span {
 }
 #slider-arrow .slide-block .description {
   padding: 30px 50px 60px 40px;
+  -webkit-box-shadow: 0px 1px 0px 0px #eaeaea;
   box-shadow: 0px 1px 0px 0px #eaeaea;
   background-color: #fff;
 }
@@ -395,6 +406,8 @@ footer span {
 }
 #slider-arrow .arrows .left:hover,
 #slider-arrow .arrows .right:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #555555;
 }

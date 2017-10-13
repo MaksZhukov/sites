@@ -119,6 +119,7 @@ h1 {
     display: inline-block;
     padding-bottom: 5px;
     -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -193,6 +194,7 @@ h2 {
     display: inline-block;
     margin-right: 8px;
     -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -323,6 +325,7 @@ h4 {
 
 .footer-menu li a {
     -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 

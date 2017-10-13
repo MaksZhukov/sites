@@ -44,7 +44,7 @@ a {
 
 header {
     height: 713px;
-    background: url(../images/header-bg.jpg) no-repeat top center fixed;
+    background: url(../img/header-bg.jpg) no-repeat top center fixed;
     background-size: cover;
 }
 
@@ -101,6 +101,7 @@ header {
     line-height: 1.3333333;
     border-radius: 35px;
     background: #00A5FF;
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -185,6 +186,7 @@ h4 {
 }
 
 .post {
+    -webkit-box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -217,6 +219,8 @@ h4 {
 
 .brand {
     height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
