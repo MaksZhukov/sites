@@ -1,0 +1,3104 @@
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/loraregular.eot');
+  src: url('../fonts/loraregular.eot?#iefix') format('embedded-opentype'), url('../fonts/loraregular.woff') format('woff'), url('../fonts/loraregular.woff2') format('woff2'), url('../fonts/loraregular.ttf') format('truetype'), url('../fonts/loraregular.svg#Lora') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntulight.eot');
+  src: url('../fonts/ubuntulight.eot?#iefix') format('embedded-opentype'), url('../fonts/ubuntulight.woff') format('woff'), url('../fonts/ubuntulight.woff2') format('woff2'), url('../fonts/ubuntulight.ttf') format('truetype'), url('../fonts/ubuntulight.svg#Ubuntu') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubunturegular.eot');
+  src: url('../fonts/ubunturegular.eot?#iefix') format('embedded-opentype'), url('../fonts/ubunturegular.woff') format('woff'), url('../fonts/ubunturegular.woff2') format('woff2'), url('../fonts/ubunturegular.ttf') format('truetype'), url('../fonts/ubunturegular.svg#Ubuntu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/UbuntuItalic.eot');
+  src: url('../fonts/UbuntuItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/UbuntuItalic.woff') format('woff'), url('../fonts/UbuntuItalic.woff2') format('woff2'), url('../fonts/UbuntuItalic.ttf') format('truetype'), url('../fonts/UbuntuItalic.svg#Ubuntu') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntumedium.eot');
+  src: url('../fonts/ubuntumedium.eot?#iefix') format('embedded-opentype'), url('../fonts/ubuntumedium.woff') format('woff'), url('../fonts/ubuntumedium.woff2') format('woff2'), url('../fonts/ubuntumedium.ttf') format('truetype'), url('../fonts/ubuntumedium.svg#Ubuntu') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntubold.eot');
+  src: url('../fonts/ubuntubold.eot?#iefix') format('embedded-opentype'), url('../fonts/ubuntubold.woff') format('woff'), url('../fonts/ubuntubold.woff2') format('woff2'), url('../fonts/ubuntubold.ttf') format('truetype'), url('../fonts/ubuntubold.svg#Ubuntu') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+.icon_in_stock {
+  width: 24px;
+  height: 24px;
+  background: url('../img/Main/icon_in_stock.png') no-repeat;
+}
+.icon_in_order {
+  width: 23px;
+  height: 23px;
+  background: url('../img/Main/icon_in_order.png') no-repeat;
+}
+.icon_big_choise {
+  width: 78px;
+  height: 76px;
+  background: url('../img/Main/icon_big_choise.png') no-repeat;
+}
+.icon_service {
+  width: 78px;
+  height: 78px;
+  background: url('../img/Main/icon_service.png') no-repeat;
+}
+.icon_time {
+  width: 77px;
+  height: 77px;
+  background: url('../img/Main/icon_time.png') no-repeat;
+}
+.icon_order {
+  width: 76px;
+  height: 76px;
+  background: url('../img/Main/icon_order.png') no-repeat;
+}
+.icon_price_and_quality {
+  width: 85px;
+  height: 77px;
+  background: url('../img/Main/icon_price_and_quality.png') no-repeat;
+}
+.icon_sofa {
+  background: url('../img/icon_sofa.png') no-repeat;
+  width: 19px;
+  height: 12px;
+}
+.icon_chair {
+  background: url('../img/icon_chair.png') no-repeat;
+  width: 9px;
+  height: 16px;
+}
+.icon_table {
+  background: url('../img/icon_table.png') no-repeat;
+  width: 21px;
+  height: 10px;
+}
+.icon_furniture_living_room {
+  background: url('../img/icon_furniture_living_room.png') no-repeat;
+  width: 18px;
+  height: 18px;
+}
+.icon_furniture_kitchen {
+  background: url('../img/icon_furniture_kitchen.png') no-repeat;
+  width: 12px;
+  height: 20px;
+}
+.icon_furniture_bedroom {
+  background: url('../img/icon_furniture_bedroom.png') no-repeat;
+  width: 20px;
+  height: 16px;
+}
+.icon_armchairs {
+  background: url('../img/icon_armchairs.png') no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.icon_search {
+  background: url('../img/icon_search.png') no-repeat;
+  width: 17px;
+  height: 17px;
+}
+.icon_sofa_time {
+  background: url('../img/icon_sofa_time.png') no-repeat;
+  width: 16px;
+  height: 16px;
+}
+.icon_close {
+  background: url('../img/icon_close.png') no-repeat;
+  width: 33px;
+  height: 33px;
+}
+.icon_bed_kat {
+  background: url('../img/Katalog/icon_bed_kat.png') no-repeat;
+  width: 33px;
+  height: 26px;
+}
+.icon_armchair_kat {
+  background: url('../img/Katalog/icon_armchair_kat.png') no-repeat;
+  width: 27px;
+  height: 28px;
+}
+.icon_chair_kat {
+  background: url('../img/Katalog/icon_chair_kat.png') no-repeat;
+  width: 18px;
+  height: 31px;
+}
+.icon_cupboard_kat {
+  background: url('../img/Katalog/icon_cupboard_kat.png') no-repeat;
+  width: 24px;
+  height: 26px;
+}
+.icon_curbstone_kat {
+  background: url('../img/Katalog/icon_curbstone_kat.png') no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.icon_sofa_kat {
+  background: url('../img/Katalog/icon_sofa_kat.png') no-repeat;
+  width: 41px;
+  height: 26px;
+}
+.icon_table_kat {
+  background: url('../img/Katalog/icon_table_kat.png') no-repeat;
+  width: 46px;
+  height: 22px;
+}
+.icon_walls_and_shelves_kat {
+  background: url('../img/Katalog/icon_walls_and_shelves_kat.png') no-repeat;
+  width: 36px;
+  height: 28px;
+}
+.icon_chest_of_drawers_kat {
+  background: url('../img/Katalog/icon_chest_of_drawers_kat.png') no-repeat;
+  width: 27px;
+  height: 20px;
+}
+.icon_armchair_product {
+  background: url('../img/Katalog/icon_armchair_product.png') no-repeat;
+  width: 27px;
+  height: 28px;
+}
+.icon_cupboard_product {
+  background: url('../img/Katalog/icon_cupboard_product.png') no-repeat;
+  width: 24px;
+  height: 26px;
+}
+.icon_curbstone_product {
+  background: url('../img/Katalog/icon_curbstone_product.png') no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.icon_chest_of_drawers_product {
+  background: url('../img/Katalog/icon_chest_of_drawers_product.png') no-repeat;
+  width: 27px;
+  height: 20px;
+}
+.icon_table_product {
+  background: url('../img/Katalog/icon_table_product.png') no-repeat;
+  width: 46px;
+  height: 22px;
+}
+.icon_sofa_product {
+  background: url('../img/Katalog/icon_sofa_product.png') no-repeat;
+  width: 41px;
+  height: 26px;
+}
+.icon_walls_and_shelves_product {
+  background: url('../img/Katalog/icon_walls_and_shelves_product.png') no-repeat;
+  width: 36px;
+  height: 28px;
+}
+.icon_chair_product {
+  background: url('../img/Katalog/icon_chair_product.png') no-repeat;
+  width: 18px;
+  height: 31px;
+}
+.icon_bed_product {
+  background: url('../img/Katalog/icon_bed_product.png') no-repeat;
+  width: 33px;
+  height: 26px;
+}
+.icon_time_one_product {
+  background: url('../img/Product/icon_time.png') no-repeat;
+  width: 26px;
+  height: 26px;
+}
+.icon_phone_contact {
+  background: url('../img/Contact/icon_phone.png') no-repeat;
+  width: 74px;
+  height: 76px;
+}
+.icon_location_contact {
+  background: url('../img/Contact/icon_location.png') no-repeat;
+  width: 59px;
+  height: 77px;
+}
+.icon_email_contact {
+  background: url('../img/Contact/icon_email.png') no-repeat;
+  width: 77px;
+  height: 73px;
+}
+.icon_lightning_accessories {
+  background: url('../img/Accessories/icon_lighting.png') no-repeat;
+  width: 19px;
+  height: 29px;
+}
+.icon_shelves_accessories {
+  background: url('../img/Accessories/icon_shelves.png') no-repeat;
+  width: 51px;
+  height: 32px;
+}
+.icon_spares_accessories {
+  background: url('../img/Accessories/icon_spares.png') no-repeat;
+  width: 38px;
+  height: 38px;
+}
+.icon_spoon_and_fork_accessories {
+  background: url('../img/Accessories/icon_spoon_and_fork.png') no-repeat;
+  width: 24px;
+  height: 40px;
+}
+.icon_stop_watch_about {
+  background: url('../img/AboutCompany/stop_watch.png') no-repeat;
+  width: 99px;
+  height: 99px;
+}
+.icon_diamond_about {
+  background: url('../img/AboutCompany/diamond.png') no-repeat;
+  width: 101px;
+  height: 91px;
+}
+.icon_compose_about {
+  background: url('../img/AboutCompany/compose.png') no-repeat;
+  width: 100px;
+  height: 100px;
+}
+.icon_like_about {
+  background: url('../img/AboutCompany/like.png') no-repeat;
+  width: 94px;
+  height: 100px;
+}
+body {
+  font: 400 16px Ubuntu, sans-serif;
+  color: #fff;
+}
+header {
+  padding: 16px 0 18px;
+}
+header .street {
+  margin: 12px 0 0 0;
+  padding-right: 15%;
+  font: 1.25em Lora, sans-serif;
+  color: #080808;
+  position: relative;
+}
+header .street:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 68px;
+  position: absolute;
+  background: #e2e2e2;
+  right: 0;
+  top: -20px;
+}
+header .number {
+  display: inline-block;
+}
+header .number a {
+  font-size: 1.200em;
+  color: #080808;
+  display: block;
+}
+div.menu {
+  background: #e8e8e8;
+  padding: 7px 0;
+}
+div.menu ul {
+  margin-bottom: 0;
+}
+div.menu ul li {
+  padding: 0 10px;
+}
+div.menu ul li:last-child {
+  padding-right: 0;
+}
+div.menu ul li a {
+  display: inline;
+  color: #080808;
+  text-decoration: none;
+  padding: 0;
+}
+div.menu ul li a:active,
+div.menu ul li a:hover,
+div.menu ul li a:focus {
+  border-bottom: 6px solid #ea0000;
+  background: none;
+}
+div.menu ul li > ul.dropdown-menu {
+  min-width: 240px;
+  margin: 6px 0 0 -30px;
+  padding-bottom: 10px;
+  border: none;
+}
+div.menu ul li > ul.dropdown-menu > li {
+  margin-top: 7px;
+}
+div.menu ul li > ul.dropdown-menu > li div {
+  background-position: center center;
+  width: 25px;
+  display: inline-block;
+  margin-right: 3px;
+}
+div.menu ul li > ul.dropdown-menu > li a {
+  padding-bottom: 2px;
+}
+div.menu ul li > ul.dropdown-menu > li a:hover {
+  border-bottom: 2px solid #ea0000;
+  background: none;
+}
+div.menu ul li > ul.dropdown-menu > li:after {
+  content: '';
+  margin-left: 5%;
+  width: 85%;
+  height: 1px;
+  background: #f5f5f5;
+  display: block;
+}
+div.menu ul li.dropdown:hover > a {
+  border-bottom: 6px solid #ea0000;
+  background: none;
+}
+div.menu ul li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+div.menu button {
+  border: 1px solid #ea0000;
+}
+div.menu button span {
+  background: #ea0000;
+}
+section.slider .bxslider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+section.slider .bxslider .slide img {
+  width: 100%;
+}
+section.slider .bxslider .slide .info {
+  width: 50.7%;
+  z-index: 10;
+  position: absolute;
+}
+section.slider .bxslider .slide .info h3 {
+  font: 2.47vw Lora, sans-serif;
+  letter-spacing: 2px;
+}
+section.slider .bxslider .slide:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(69, 69, 69, 0.702);
+  top: 0;
+}
+div.orders {
+  padding-top: 15px;
+}
+div.orders [class*='col'] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+div.orders [class*='col']:first-child {
+  padding-left: 15px;
+}
+div.orders [class*='col']:last-child {
+  padding-right: 15px;
+}
+div.orders button {
+  position: relative;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 20px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font: 400 1.35vw Ubuntu, sans-serif;
+}
+div.orders button i {
+  position: absolute;
+  right: 8%;
+}
+div.orders button.order-project {
+  background: #de2e34;
+}
+div.orders button.order-project:hover {
+  background: #ff3c42;
+}
+div.orders button.order-project:focus {
+  border: 1px solid #d21116;
+  padding: 19px 0;
+}
+div.orders button.order-project i {
+  color: #ab2328;
+}
+div.orders button.count-kitchen {
+  background: #ec1622;
+}
+div.orders button.count-kitchen:hover {
+  background: #bf070f;
+}
+div.orders button.count-kitchen:focus {
+  border: 1px solid #ac0005;
+  padding: 19px 0;
+}
+div.orders button.count-kitchen i {
+  color: #800b0f;
+}
+div.orders button.appointment-consultation {
+  background: #b10104;
+}
+div.orders button.appointment-consultation:hover {
+  background: #7f0104;
+}
+div.orders button.appointment-consultation:hover {
+  border: 1px solid #af0100;
+  padding: 19px 0;
+}
+div.orders button.appointment-consultation i {
+  color: #390002;
+}
+section.classic_kitchens {
+  margin-top: 30px;
+  color: #fff;
+}
+section.classic_kitchens .container {
+  background: url('../img/Main/classic_kitchen_decorate_left.png') top left no-repeat, url('../img/Main/classic_kitchen_decorate_left.png') top right no-repeat;
+}
+section.classic_kitchens .container > h2 {
+  color: #1b1b1b;
+  margin-top: 15px;
+  font: 2.25em Lora, sans-serif;
+}
+section.classic_kitchens .container > p {
+  color: #9b9b9b;
+  font: 1.25em Ubuntu, sans-serif;
+}
+section.classic_kitchens .grid {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.classic_kitchens .grid .grid-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+section.classic_kitchens .grid .grid-item .info {
+  position: absolute;
+  width: 80%;
+  z-index: 10;
+}
+section.classic_kitchens .grid .grid-item .info h3 {
+  margin: 0 auto;
+  width: 66%;
+  font-size: 1.875em;
+}
+section.classic_kitchens .grid .grid-item .info h3:after {
+  content: '';
+  background: url('../img/Main/under_bg_title_kitchen.png') top center no-repeat;
+  margin-top: 10px;
+  width: 100%;
+  height: 21px;
+  display: block;
+}
+section.classic_kitchens .grid .grid-item .info p {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 66%;
+}
+section.classic_kitchens .grid .grid-item a.state {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  bottom: 15px;
+  right: 11px;
+  font-size: 0.875em;
+}
+section.classic_kitchens .grid .grid-item a.state .icon_in_order {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  display: inline-block;
+  margin-left: 10px;
+}
+section.classic_kitchens .grid .grid-item a.state .icon_in_stock {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  display: inline-block;
+  margin-left: 10px;
+}
+section.classic_kitchens .grid .grid-item-1 {
+  width: 49%;
+}
+section.classic_kitchens .grid .grid-item-2 {
+  width: 50%;
+}
+section.classic_kitchens .grid .grid-item-two-lines {
+  width: 59.3%;
+}
+section.classic_kitchens .grid .grid-item-3 {
+  margin-top: 10px;
+  width: 100%;
+}
+section.classic_kitchens .grid .grid-item-4 {
+  margin-top: 10px;
+  width: 100%;
+}
+section.classic_kitchens .grid .grid-item-5 {
+  margin-top: 10px;
+  width: 39.6%;
+}
+section.classic_kitchens .grid .grid-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(69, 69, 69, 0.702);
+  top: 0;
+  left: 0;
+}
+section.classic_kitchens .grid .grid-item:hover:after {
+  background: rgba(69, 69, 69, 0.82);
+}
+section.modern_kitchens .container > h2 {
+  color: #1b1b1b;
+  margin-top: 15px;
+  font: 2.25em Lora, sans-serif;
+}
+section.modern_kitchens .container > p {
+  color: #9b9b9b;
+  font: 1.25em Ubuntu, sans-serif;
+}
+section.modern_kitchens .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.modern_kitchens .grid .grid-item {
+  overflow: hidden;
+  position: relative;
+  margin-top: 15px;
+}
+section.modern_kitchens .grid .grid-item .info {
+  font-size: 1vw;
+  color: #FFF;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(69, 69, 69, 0.702);
+  z-index: 10;
+  width: 45%;
+}
+section.modern_kitchens .grid .grid-item .info h3 {
+  font-size: 2.250em;
+  display: inline-block;
+  max-width: 80%;
+}
+section.modern_kitchens .grid .grid-item .info h3:after {
+  content: '';
+  display: block;
+  background: #B3B2B1;
+  width: 100%;
+  height: 2px;
+}
+section.modern_kitchens .grid .grid-item .info.left {
+  left: 0;
+}
+section.modern_kitchens .grid .grid-item .info.right {
+  right: 0;
+}
+section.modern_kitchens .grid .grid-item a.state {
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+  z-index: 10;
+  bottom: 15px;
+  right: 11px;
+  font-size: 0.875em;
+  font-weight: 300;
+}
+section.modern_kitchens .grid .grid-item a.state .icon_in_order {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  display: inline-block;
+  margin-left: 10px;
+}
+section.modern_kitchens .grid .grid-item a.state .icon_in_stock {
+  -webkit-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  transform: translateY(3px);
+  display: inline-block;
+  margin-left: 10px;
+}
+section.modern_kitchens .grid .grid-item-1 {
+  width: 51.3%;
+}
+section.modern_kitchens .grid .grid-item-2 {
+  width: 47.7%;
+}
+section.modern_kitchens .grid .grid-item-3 {
+  width: 42.4%;
+}
+section.modern_kitchens .grid .grid-item-3 .info {
+  width: 65%;
+}
+section.modern_kitchens .grid .grid-item-4 {
+  width: 56.5%;
+}
+section.modern_kitchens .grid .grid-item-5 {
+  width: 58.7%;
+}
+section.modern_kitchens .grid .grid-item-6 {
+  width: 40.3%;
+}
+section.modern_kitchens .grid .grid-item-7 {
+  width: 50.1%;
+}
+section.modern_kitchens .grid .grid-item-8 {
+  width: 48.93%;
+}
+section.modern_kitchens .grid .grid-item-9 {
+  width: 58.7%;
+}
+section.modern_kitchens .grid .grid-item-10 {
+  width: 40.3%;
+}
+section.modern_kitchens .grid .grid-item img {
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+section.modern_kitchens .grid .grid-item:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.row_info_shop_block .container {
+  color: #3E3E3E;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.row_info_shop_block .container p {
+  margin-top: 10px;
+  width: 80%;
+  font-size: 1.125em;
+}
+.sale {
+  background: #F1F1F1;
+  margin-top: 60px;
+  padding-bottom: 45px;
+}
+.sale [class*='col'] {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.sale h2 {
+  margin: 25px 0 30px 0;
+  font: 2.25em Lora, sans-serif;
+  color: #1b1b1b;
+}
+.sale-item {
+  border: 1px solid #bebebe;
+  background: #fff;
+}
+.sale-item .info {
+  background: #fff;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  margin-top: -15%;
+  padding: 20px 40px;
+}
+.sale-item .info h3 {
+  display: inline-block;
+  margin-top: 0;
+  color: #171616;
+  font: 1.875em Lora, sans-serif;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e8e8e8;
+}
+.sale-item .info > div {
+  margin-top: 7px;
+}
+.sale-item .info > div.sale-date {
+  display: inline-block;
+  color: #383838;
+  font-size: 0.875em;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 10px;
+}
+.sale-item .info > div.size,
+.sale-item .info > div.price,
+.sale-item .info > div.sale-procent {
+  color: #767676;
+  font-size: 1.500em;
+}
+.sale-item .info > div.size .value,
+.sale-item .info > div.price .value,
+.sale-item .info > div.sale-procent .value {
+  font-size: 0.833em;
+  color: #000;
+  font-weight: 500;
+}
+.sale-item .info > div.sale-procent span.wrap-procent {
+  padding: 3px 5px;
+  color: #FFF;
+  background: #EC3232;
+}
+.sale-item .wrap_img {
+  overflow: hidden;
+}
+.sale-item img {
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.sale-item:hover img {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+section.elegant_italian_kitchen [class*='col']:first-child {
+  padding-right: 0;
+}
+section.elegant_italian_kitchen [class*='col']:last-child {
+  padding-left: 0;
+}
+section.elegant_italian_kitchen h3 {
+  color: #171616;
+  font: 2.25em Lora, sans-serif;
+  margin-bottom: 60px;
+}
+section.elegant_italian_kitchen p {
+  font-size: 1.125em;
+  color: #6b6b6b;
+  line-height: 1.667;
+}
+section.elegant_italian_kitchen img {
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+}
+div.breadcrumbs {
+  margin-bottom: 0;
+  background: #FFF;
+}
+div.breadcrumbs .breadcrumb {
+  margin-bottom: 0;
+}
+div.breadcrumbs .breadcrumb ul {
+  margin-bottom: 0;
+}
+div.breadcrumbs .breadcrumb ul li {
+  position: relative;
+}
+div.breadcrumbs .breadcrumb ul li a {
+  font-size: 1.125em;
+  color: #696969;
+}
+div.breadcrumbs .breadcrumb ul li:not(:last-child):after {
+  content: '\331';
+  font-size: 19px;
+  position: absolute;
+  right: -2%;
+  top: -42%;
+  color: #000;
+}
+div.breadcrumbs.product {
+  margin-top: 10px;
+}
+div.breadcrumbs.product .breadcrumb {
+  margin-bottom: 0;
+  background: transparent;
+}
+div.breadcrumbs.product .breadcrumb a.back {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875em;
+  margin: 0 10px 10px 0;
+  color: #080808;
+  background: #e8e8e8;
+  padding: 10px 12px;
+  border-radius: 7px;
+}
+div.breadcrumbs.product .breadcrumb ul {
+  display: inline-block;
+}
+div.breadcrumbs.product .breadcrumb ul li a {
+  font-size: 0.875em;
+}
+div.breadcrumbs.contact {
+  margin-top: 10px;
+}
+div.breadcrumbs.contact .breadcrumb {
+  margin-bottom: 0;
+}
+div.breadcrumbs.contact .breadcrumb ul {
+  display: inline-block;
+}
+div.breadcrumbs.contact .breadcrumb ul li a {
+  font-size: 0.875em;
+}
+div.breadcrumbs.brends .breadcrumb {
+  padding-left: 0;
+  background: transparent;
+}
+div.breadcrumbs.stock .breadcrumb,
+div.breadcrumbs.accessories .breadcrumb,
+div.breadcrumbs.one_brend .breadcrumb,
+div.breadcrumbs.about .breadcrumb {
+  padding-left: 0;
+  background: transparent;
+}
+div.breadcrumbs.stock .breadcrumb ul li a,
+div.breadcrumbs.accessories .breadcrumb ul li a,
+div.breadcrumbs.one_brend .breadcrumb ul li a,
+div.breadcrumbs.about .breadcrumb ul li a {
+  font-size: 0.875em;
+}
+div.categories {
+  padding: 14px 0;
+  background: #D3D3D3;
+}
+div.categories .container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+div.categories .container a.category {
+  text-decoration: none;
+  color: #474747;
+  font-size: 1.250em;
+  display: block;
+  width: 20%;
+}
+div.categories .container a.category > div {
+  display: inline-block;
+  margin-right: 10%;
+}
+section.armchairs_berloni {
+  margin-top: 15px;
+}
+section.armchairs_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.armchairs_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+section.armchairs_berloni .grid .grid-col-one {
+  width: 73%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+section.armchairs_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.armchairs_berloni .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.armchairs_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.armchairs_berloni .grid .grid-item .info h3 .name {
+  display: block;
+}
+section.armchairs_berloni .grid .grid-item-1 {
+  width: 49%;
+}
+section.armchairs_berloni .grid .grid-item-2 {
+  width: 49.1%;
+}
+section.armchairs_berloni .grid .grid-item-3 {
+  width: 49%;
+}
+section.armchairs_berloni .grid .grid-item-4 {
+  width: 49.1%;
+}
+section.armchairs_berloni .grid .grid-item-5 {
+  width: 26%;
+}
+section.cupboard_berloni {
+  margin-top: 15px;
+}
+section.cupboard_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.cupboard_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+section.cupboard_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.cupboard_berloni .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.cupboard_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.cupboard_berloni .grid .grid-item .info h3 .name {
+  display: block;
+}
+section.cupboard_berloni .grid .grid-item-1 {
+  width: 33.96%;
+}
+section.cupboard_berloni .grid .grid-item-2 {
+  width: 30.61%;
+}
+section.cupboard_berloni .grid .grid-item-3 {
+  width: 34.27%;
+}
+section.cubstone_berloni {
+  margin-top: 15px;
+}
+section.cubstone_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.cubstone_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.cubstone_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.cubstone_berloni .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.cubstone_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.cubstone_berloni .grid .grid-item .info h3 .name {
+  display: block;
+}
+section.cubstone_berloni .grid .grid-item-1 {
+  width: 33.96%;
+}
+section.table_berloni {
+  margin-top: 15px;
+}
+section.table_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.table_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+section.table_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.table_berloni .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.table_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.table_berloni .grid .grid-item .info h3 .name {
+  display: block;
+}
+section.table_berloni .grid .grid-item-1 {
+  width: 50.38%;
+}
+section.table_berloni .grid .grid-item-2 {
+  width: 49%;
+}
+section.table_berloni .grid .grid-item-3 {
+  width: 50.38%;
+}
+section.table_berloni .grid .grid-item-4 {
+  width: 49%;
+}
+section.table_berloni .grid .grid-item-5 {
+  width: 50.38%;
+}
+section.table_berloni .grid .grid-item-6 {
+  width: 49%;
+}
+section.chest_of_drawers {
+  margin-top: 15px;
+}
+section.chest_of_drawers h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.chest_of_drawers .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.chest_of_drawers .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.chest_of_drawers .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.chest_of_drawers .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.chest_of_drawers .grid .grid-item .info h3 .name {
+  display: block;
+}
+section.chest_of_drawers .grid .grid-item-1 {
+  width: 50.45%;
+}
+section.chest_of_drawers .grid .grid-item-2 {
+  width: 49%;
+}
+section.sofa_berloni {
+  margin-top: 15px;
+}
+section.sofa_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.sofa_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+section.sofa_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.sofa_berloni .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.sofa_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.sofa_berloni .grid .grid-item .info h3 .name {
+  display: block;
+}
+section.sofa_berloni .grid .grid-item-1 {
+  width: 33.97%;
+}
+section.sofa_berloni .grid .grid-item-2 {
+  width: 30.61%;
+}
+section.sofa_berloni .grid .grid-item-3 {
+  width: 34.12%;
+}
+section.sofa_berloni .grid .grid-item-4 {
+  width: 33.97%;
+}
+section.sofa_berloni .grid .grid-item-5 {
+  width: 30.61%;
+}
+section.sofa_berloni .grid .grid-item-6 {
+  width: 34.12%;
+}
+section.sofa_berloni .grid .grid-item-7 {
+  width: 33.97%;
+}
+section.sofa_berloni .grid .grid-item-8 {
+  width: 30.61%;
+}
+section.sofa_berloni .grid .grid-item-9 {
+  width: 34.12%;
+}
+section.sofa_berloni .grid .grid-item-10 {
+  width: 33.97%;
+}
+section.sofa_berloni .grid .grid-item-11 {
+  width: 30.61%;
+}
+section.sofa_berloni .grid .grid-item-12 {
+  width: 34.12%;
+}
+section.sofa_berloni .grid .grid-item-13 {
+  width: 33.97%;
+}
+section.sofa_berloni .grid .grid-item-14 {
+  width: 30.61%;
+}
+section.sofa_berloni .grid .grid-item-15 {
+  width: 34.12%;
+}
+section.sofa_berloni .grid .grid-item-16 {
+  width: 51.14%;
+}
+section.sofa_berloni .grid .grid-item-17 {
+  width: 48.16%;
+}
+section.walls_and_shelves_berloni {
+  margin-top: 15px;
+}
+section.walls_and_shelves_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.walls_and_shelves_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+section.walls_and_shelves_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.walls_and_shelves_berloni .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.walls_and_shelves_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.walls_and_shelves_berloni .grid .grid-item .info h3 .name {
+  display: block;
+}
+section.walls_and_shelves_berloni .grid .grid-item-1 {
+  width: 33.91%;
+}
+section.walls_and_shelves_berloni .grid .grid-item-2 {
+  width: 31.23%;
+}
+section.walls_and_shelves_berloni .grid .grid-item-3 {
+  width: 33.26%;
+}
+section.chair_berloni {
+  margin-top: 15px;
+}
+section.chair_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.chair_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+section.chair_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.chair_berloni .grid .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.chair_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.chair_berloni .grid .grid-item .info h3 .name {
+  margin-left: 10px;
+}
+section.chair_berloni .grid .grid-item-1 {
+  width: 33.87%;
+}
+section.chair_berloni .grid .grid-item-2 {
+  width: 31.20%;
+}
+section.chair_berloni .grid .grid-item-3 {
+  width: 33.87%;
+}
+section.chair_berloni .grid .grid-item-4 {
+  width: 33.87%;
+}
+section.chair_berloni .grid .grid-item-5 {
+  width: 31.20%;
+}
+section.chair_berloni .grid .grid-item-6 {
+  width: 33.87%;
+}
+section.chair_berloni .grid .grid-item-7 {
+  width: 30.61%;
+}
+section.bed_berloni {
+  margin-top: 15px;
+}
+section.bed_berloni h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #010101;
+}
+section.bed_berloni .grid {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+section.bed_berloni .grid .grid-item {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-table;
+}
+section.bed_berloni .grid .grid-item .info {
+  bottom: 0;
+  position: absolute;
+  background: rgba(69, 69, 69, 0.702);
+  padding: 4% 9%;
+}
+section.bed_berloni .grid .grid-item .info h3 {
+  font-size: 1.500em;
+  font-weight: 400;
+  margin-right: 10px;
+}
+section.bed_berloni .grid .grid-item .info h3 .name {
+  margin-left: 10px;
+}
+section.bed_berloni .grid .grid-item .info div {
+  margin-left: 80%;
+}
+section.bed_berloni .grid .grid-item-1 {
+  width: 34.04%;
+}
+section.bed_berloni .grid .grid-item-2 {
+  width: 31.22%;
+}
+section.bed_berloni .grid .grid-item-3 {
+  width: 33.35%;
+}
+section.bed_berloni .grid .grid-item-4 {
+  width: 50.53%;
+}
+section.bed_berloni .grid .grid-item-5 {
+  width: 48.93%;
+}
+section.product .product-item .photo {
+  position: relative;
+}
+section.product .product-item .photo .card {
+  padding: 30px 20px;
+  top: 2.5%;
+  right: 2.5%;
+  background: rgba(56, 56, 56, 0.91);
+  position: absolute;
+}
+section.product .product-item .photo .card h3 {
+  margin-top: 0;
+  font: 2.5em Lora, sans-serif;
+}
+section.product .product-item .photo .card div:not(.price) {
+  color: #999494;
+  font-size: 1.125em;
+}
+section.product .product-item .photo .card div:not(.price) .value {
+  color: #FFF;
+}
+section.product .product-item .photo .card .price {
+  margin: 20px 0;
+  font-size: 1.875em;
+}
+section.product .product-item .photo .card .buttons .order {
+  display: inline-block;
+  color: #FFF;
+  font-size: 1.250em;
+  padding: 12px 60px;
+  background: #F83C40;
+  border-radius: 4px;
+  text-decoration: none;
+}
+section.product .product-item .photo .card .buttons .under-order {
+  display: inline-block;
+  font-size: 1.250em;
+  color: #FFF;
+  text-decoration: none;
+  border: 3px solid #959595;
+  padding: 4px 40px 8px 40px;
+  border-radius: 4px;
+}
+section.product .product-item .photo .card .buttons .under-order div {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  display: inline-block;
+  background-size: contain;
+}
+section.product .product-item h4 {
+  font: 2.25em Lora, sans-serif;
+  color: #000;
+  margin-bottom: 20px;
+}
+section.product .product-item .description {
+  padding: 35px 20px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+}
+section.product .product-item .description p {
+  color: #575757;
+  font-size: 1.250em;
+}
+section.other_sections {
+  margin-top: 20px;
+}
+section.other_sections h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #292727;
+  margin-bottom: 35px;
+}
+section.other_sections [class*='col'] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+section.other_sections .section {
+  margin-bottom: 10px;
+  border: 1px solid #bebebe;
+  background: #fff;
+  min-height: 385px;
+}
+section.other_sections .section img {
+  width: 100%;
+}
+section.other_sections .section .info {
+  padding: 20px 5px;
+  left: 5%;
+  width: 90%;
+  background: #FFF;
+  margin-top: -15%;
+  position: relative;
+}
+section.other_sections .section .info h3 {
+  display: inline-block;
+  font: 1.5em Lora, sans-serif;
+  color: #292727;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e8e8e8;
+  margin-bottom: 20px;
+}
+section.other_sections .section .info p {
+  font-size: 1.125em;
+  color: #575757;
+}
+.bg_contact {
+  background: url('../img/Contact/bg.jpg') center center;
+}
+section.contact {
+  margin-top: 45px;
+  padding-bottom: 70px;
+}
+section.contact h2 {
+  display: inline-block;
+  font: 2.25em Lora, sans-serif;
+  color: #000;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #9e9e9e;
+}
+section.contact .grid {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+section.contact .grid .grid-item {
+  padding: 20px 30px 25px;
+  margin: 0 1%;
+  background: #F2F2F2;
+  width: 25%;
+  border-radius: 7px;
+  border: 1px solid #8d8d8d;
+}
+section.contact .grid .grid-item h4 {
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #9e9e9e;
+  font: 1.875em Lora, sans-serif;
+  color: #000;
+}
+section.contact .grid .grid-item .phone {
+  display: inline-block;
+}
+section.contact .grid .grid-item .phone a {
+  color: #000;
+  display: block;
+  font-size: 1.500em;
+}
+section.contact .grid .grid-item .location,
+section.contact .grid .grid-item .email a {
+  color: #000;
+  font-size: 1.500em;
+}
+section.brends h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #000;
+}
+section.brends p {
+  line-height: 1.667;
+  font-size: 1.125em;
+  color: #000;
+}
+section.brends .brend-2 {
+  position: relative;
+}
+section.brends .brend-2 .info {
+  width: 40%;
+  top: 5%;
+  right: 1px;
+  position: absolute;
+}
+section.brends .row-brend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.brends .row-brend .brend-3 {
+  width: 34.045%;
+}
+section.brends .row-brend .brend-4 {
+  width: 27.48%;
+}
+section.brends .row-brend .brend-5 {
+  width: 34.427%;
+}
+section.brends .brend-6 {
+  position: relative;
+}
+section.brends .brend-6 .info {
+  width: 40%;
+  bottom: 0%;
+  left: 0;
+  position: absolute;
+}
+section.brends .brend-1,
+section.brends .brend-2,
+section.brends .row-brend,
+section.brends .brend-6,
+section.brends .brend-7 {
+  margin-bottom: 30px;
+}
+section.stock {
+  margin-top: 30px;
+}
+section.stock h2 {
+  font: 2.15em Lora, sans-serif;
+  color: #0d0c0c;
+}
+section.stock h3 {
+  font: 1.2em lora, sans-serif;
+  color: #0d0c0c;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #bfbebe;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+section.stock .info {
+  border: 1px solid #b5b5b5;
+  border-radius: 4px;
+  font-size: 1.150em;
+  padding: 10% 8%;
+}
+section.stock .description {
+  color: #100F0F;
+  font-style: italic;
+}
+section.stock .value {
+  color: #100F0F;
+}
+section.stock .discount {
+  display: block;
+  margin-top: 3px;
+  margin-left: -2%;
+  color: #100F0F;
+}
+section.stock .discount .procent {
+  color: #fff;
+  padding: 2px 9px;
+  background: #F00005;
+}
+section.stock .additionally {
+  color: #100F0F;
+  display: block;
+  margin-top: 3px;
+}
+section.stock .bx-wrapper-stock .bx-controls-direction a {
+  width: 8%;
+  background-color: rgba(98, 98, 98, 0.722);
+}
+section.stock .stock-item-1 .info .attribute .height,
+section.stock .stock-item-1 .info .attribute .size,
+section.stock .stock-item-1 .info .attribute .price {
+  color: #797777;
+  display: block;
+  margin-top: 3px;
+}
+section.stock .stock-item-2 {
+  margin-top: 80px;
+}
+section.stock .stock-item-2 h2 {
+  margin: 0 0 20px;
+}
+section.stock .stock-item-2 .info {
+  min-height: 340px;
+}
+section.stock .stock-item-2 .info .description {
+  color: #100F0F;
+  font-style: italic;
+}
+section.stock .stock-item-2 .info .attribute .size,
+section.stock .stock-item-2 .info .attribute .price {
+  color: #797777;
+  display: block;
+  margin-top: 3px;
+}
+section.stock .stock-item-3 {
+  margin-top: 80px;
+}
+section.stock .stock-item-3 h2 {
+  margin: 0 0 20px;
+}
+section.stock .stock-item-3 .info {
+  min-height: 340px;
+}
+section.stock .stock-item-3 .info .carpet h3,
+section.stock .stock-item-3 .info .kitchen h3 {
+  border: none;
+}
+section.stock .stock-item-3 .info .carpet .attribute .size,
+section.stock .stock-item-3 .info .kitchen .attribute .size,
+section.stock .stock-item-3 .info .carpet .attribute .price,
+section.stock .stock-item-3 .info .kitchen .attribute .price {
+  color: #797777;
+  display: block;
+  margin-top: 3px;
+}
+section.stock .stock-item-3 .info .carpet {
+  margin-top: 20px;
+  border-top: 1px solid #b6b5b5;
+}
+section.stock .stock-item-4 {
+  -webkit-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  transform: translateY(-30px);
+}
+section.stock .stock-item-4 h2 {
+  margin: 0 0 20px;
+}
+section.stock .stock-item-4 .info {
+  min-height: 340px;
+}
+section.stock .stock-item-4 .info .table h3,
+section.stock .stock-item-4 .info .chair h3 {
+  margin: 15px 0 15px;
+  border: none;
+}
+section.stock .stock-item-4 .info .table .attribute .size,
+section.stock .stock-item-4 .info .chair .attribute .size,
+section.stock .stock-item-4 .info .table .attribute .price,
+section.stock .stock-item-4 .info .chair .attribute .price {
+  color: #797777;
+  display: block;
+  margin-top: 3px;
+}
+section.stock .stock-item-4 .info .chair {
+  margin-top: 20px;
+  border-top: 1px solid #b6b5b5;
+}
+section.stock .stock-item-5 {
+  margin-top: 30px;
+}
+section.stock .stock-item-5 h2 {
+  margin: 0 0 20px;
+}
+section.stock .stock-item-5 .info {
+  min-height: 360px;
+}
+section.stock .stock-item-5 .info h3 {
+  margin: 15px 0 15px;
+}
+section.stock .stock-item-5 .info .attribute .size,
+section.stock .stock-item-5 .info .attribute .price {
+  color: #797777;
+  display: block;
+  margin-top: 3px;
+}
+div.kinds_accessories {
+  background: #D3D3D3;
+  padding: 15px 0;
+}
+div.kinds_accessories .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+div.kinds_accessories .container a {
+  text-decoration: none;
+  color: #474747;
+  display: block;
+  font-size: 1.125em;
+}
+div.kinds_accessories .container a > div {
+  display: inline-block;
+  margin-right: 5%;
+}
+div.kinds_accessories .container a.kind_accessory-1 {
+  width: 15%;
+}
+div.kinds_accessories .container a.kind_accessory-2 {
+  width: 30%;
+}
+div.kinds_accessories .container a.kind_accessory-3 {
+  width: 25%;
+}
+div.kinds_accessories .container a.kind_accessory-4 {
+  width: 18%;
+}
+div.kinds_accessories .container a.kind_accessory-5 {
+  width: 12%;
+}
+section.lightnings h2 {
+  font: 2.15em Lora, sans-serif;
+  color: #000;
+}
+section.lightnings .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.lightnings .grid-item {
+  margin-top: 10px;
+  position: relative;
+  display: inline-table;
+}
+section.lightnings .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5%;
+  min-width: 50%;
+  min-height: 30%;
+  background: rgba(56, 56, 56, 0.88);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+section.lightnings .grid-item .info h3 {
+  max-width: 100%;
+  font-size: 1.250em;
+  margin: 5px 0;
+}
+section.lightnings .grid-item .info p {
+  max-width: 100%;
+  margin: 0;
+}
+section.lightnings .grid-item-1,
+section.lightnings .grid-item-2,
+section.lightnings .grid-item-3,
+section.lightnings .grid-item-5,
+section.lightnings .grid-item-6,
+section.lightnings .grid-item-7 {
+  width: 23.816%;
+}
+section.lightnings .grid-item-4,
+section.lightnings .grid-item-8 {
+  width: 26.488%;
+}
+section.accessories_handing_cabinets {
+  margin-top: 30px;
+}
+section.accessories_handing_cabinets h2 {
+  font: 2.15em Lora, sans-serif;
+  color: #000;
+}
+section.accessories_handing_cabinets .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.accessories_handing_cabinets .grid-item {
+  margin-top: 10px;
+  position: relative;
+  display: inline-table;
+}
+section.accessories_handing_cabinets .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4%;
+  min-width: 50%;
+  max-width: 80%;
+  min-height: 30%;
+  background: rgba(56, 56, 56, 0.88);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+section.accessories_handing_cabinets .grid-item .info h3 {
+  max-width: 100%;
+  font-size: 1.125em;
+  margin: 5px 0;
+  line-height: 1.1;
+}
+section.accessories_handing_cabinets .grid-item-1,
+section.accessories_handing_cabinets .grid-item-2,
+section.accessories_handing_cabinets .grid-item-3,
+section.accessories_handing_cabinets .grid-item-5,
+section.accessories_handing_cabinets .grid-item-6,
+section.accessories_handing_cabinets .grid-item-7 {
+  width: 23.816%;
+}
+section.accessories_handing_cabinets .grid-item-4,
+section.accessories_handing_cabinets .grid-item-8 {
+  width: 26.488%;
+}
+section.trays_for_cutlerys {
+  margin-top: 30px;
+}
+section.trays_for_cutlerys h2 {
+  font: 2.15em Lora, sans-serif;
+  color: #000;
+}
+section.trays_for_cutlerys .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.trays_for_cutlerys .grid-item {
+  margin-top: 10px;
+  position: relative;
+  display: inline-table;
+}
+section.trays_for_cutlerys .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1%;
+  min-width: 50%;
+  max-width: 80%;
+  min-height: 30%;
+  background: rgba(56, 56, 56, 0.88);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+section.trays_for_cutlerys .grid-item .info h3 {
+  max-width: 100%;
+  font-size: 1.125em;
+  margin: 5px 0;
+  line-height: 1.1;
+}
+section.trays_for_cutlerys .grid-item-1,
+section.trays_for_cutlerys .grid-item-2,
+section.trays_for_cutlerys .grid-item-3,
+section.trays_for_cutlerys .grid-item-5,
+section.trays_for_cutlerys .grid-item-6,
+section.trays_for_cutlerys .grid-item-7 {
+  width: 23.816%;
+}
+section.trays_for_cutlerys .grid-item-4,
+section.trays_for_cutlerys .grid-item-8 {
+  width: 26.488%;
+}
+section.spare_parts {
+  margin-top: 30px;
+}
+section.spare_parts h2 {
+  font: 2.15em Lora, sans-serif;
+  color: #000;
+}
+section.spare_parts .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.spare_parts .grid-item {
+  margin-top: 10px;
+  position: relative;
+  display: inline-table;
+}
+section.spare_parts .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4%;
+  min-width: 50%;
+  max-width: 80%;
+  min-height: 30%;
+  background: rgba(56, 56, 56, 0.88);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+section.spare_parts .grid-item .info h3 {
+  max-width: 100%;
+  font-size: 1.125em;
+  margin: 5px 0;
+  line-height: 1.1;
+}
+section.spare_parts .grid-item-1,
+section.spare_parts .grid-item-2,
+section.spare_parts .grid-item-3,
+section.spare_parts .grid-item-5,
+section.spare_parts .grid-item-6,
+section.spare_parts .grid-item-7 {
+  width: 23.816%;
+}
+section.spare_parts .grid-item-4,
+section.spare_parts .grid-item-8 {
+  width: 26.488%;
+}
+section.shelf {
+  margin-top: 30px;
+}
+section.shelf h2 {
+  font: 2.15em Lora, sans-serif;
+  color: #000;
+}
+section.shelf .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+section.shelf .grid-item {
+  margin-top: 10px;
+  position: relative;
+  display: inline-table;
+}
+section.shelf .grid-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4%;
+  min-width: 50%;
+  max-width: 80%;
+  min-height: 30%;
+  background: rgba(56, 56, 56, 0.88);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+section.shelf .grid-item .info h3 {
+  max-width: 100%;
+  font-size: 1.125em;
+  margin: 5px 0;
+  line-height: 1.1;
+  margin: 0;
+}
+section.shelf .grid-item .info p {
+  max-width: 100%;
+  margin: 0;
+}
+section.shelf .grid-item-1,
+section.shelf .grid-item-2,
+section.shelf .grid-item-3,
+section.shelf .grid-item-5,
+section.shelf .grid-item-6,
+section.shelf .grid-item-7 {
+  width: 23.816%;
+}
+section.shelf .grid-item-4,
+section.shelf .grid-item-8 {
+  width: 26.488%;
+}
+section.brend p {
+  margin: 15px 0 20px;
+  color: #424242;
+  font-size: 1.125em;
+}
+section.brend .product {
+  position: relative;
+}
+section.brend .product .info {
+  bottom: 0;
+  left: 0;
+  min-width: 50%;
+  max-width: 80%;
+  height: 20vh;
+  position: absolute;
+  background: rgba(64, 64, 64, 0.84);
+  display: table;
+  padding: 3% 2%;
+}
+section.brend .product .info .content {
+  vertical-align: middle;
+  display: table-cell;
+}
+section.brend .product .info .content h4 {
+  margin: 0;
+  font-size: 1.125em;
+}
+section.brend .product .info .content .additionally {
+  display: block;
+  color: #DCDCDC;
+}
+section.other_Brends {
+  margin-top: 30px;
+}
+section.other_Brends h2 {
+  font: 2.25em Lora, sans-serif;
+  color: #000;
+}
+section.other_Brends .slick-slider {
+  padding: 20px 8%;
+  border: 1px solid #999999;
+}
+section.about_company h2 {
+  margin-top: 0;
+  font: 2em Lora, sans-serif;
+  color: #000;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dfdfdf;
+  display: inline-block;
+}
+section.about_company p {
+  line-height: 1.3;
+  color: #474747;
+  font-size: 1.125em;
+}
+section.about_company p.about_kitchen {
+  margin: 30px 0;
+  font-size: 1.500em;
+}
+section.about_company p.every-detal {
+  font-size: 1.500em;
+  line-height: 1.1;
+}
+section.differentiates_us_from_others {
+  margin-top: 30px;
+  padding: 30px 0;
+  background: #e8e8e8;
+}
+section.differentiates_us_from_others .container-item {
+  padding: 30px 75px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+}
+section.differentiates_us_from_others .container-item h2 {
+  margin-top: 0;
+  font: 2.15em Lora, sans-serif;
+  color: #474747;
+}
+section.differentiates_us_from_others .container-item .item {
+  margin-top: 30px;
+}
+section.differentiates_us_from_others .container-item .item p {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 1.400em;
+  color: #1C1B1B;
+}
+section.use_best_materials {
+  margin-top: 50px;
+}
+section.use_best_materials h2 {
+  display: inline-block;
+  margin-top: 0;
+  font: 2em Lora, sans-serif;
+  color: #000;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 30px;
+}
+section.use_best_materials p {
+  line-height: 1.3;
+  color: #474747;
+  font-size: 1.1em;
+}
+section.video_about_us_shop {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  background: #F5F5F5;
+}
+section.video_about_us_shop h2 {
+  font: 1.9em Lora, sans-serif;
+  color: #100F0F;
+  margin-bottom: 20px;
+}
+section.video_about_us_shop .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+section.video_about_us_shop .video-container iframe,
+section.video_about_us_shop .video-container object,
+section.video_about_us_shop .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+div.map_container {
+  position: relative;
+  margin-top: 20px;
+  height: 300px;
+}
+div.map_container #map {
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+div.map_container.contact {
+  height: 390px;
+}
+div.map_container.about {
+  margin-top: 0;
+}
+div.pre_footer {
+  margin-top: 20px;
+}
+div.pre_footer img {
+  display: block;
+  margin: 10px 0 20px;
+}
+div.pre_footer .numbers a {
+  font: 1.25em Lora, sans-serif;
+  margin-top: 5px;
+  color: #080808;
+  display: inline-block;
+}
+div.pre_footer p {
+  font-size: 1.250em;
+  color: #7b7b7b;
+  line-height: 1.5;
+  text-align: justify;
+}
+footer {
+  margin-top: 10px;
+  padding: 7px 0 7px;
+  background: #e8e8e8;
+}
+footer [class*='col']:first-child {
+  padding-right: 0;
+}
+footer [class*='col']:last-child {
+  padding-left: 0;
+}
+footer ul {
+  margin-bottom: 0;
+}
+footer ul li {
+  padding: 0 10px;
+}
+footer ul li:last-child {
+  padding-right: 0;
+}
+footer ul li a {
+  font-size: 1.250em;
+  display: inline;
+  color: #080808;
+  text-decoration: none;
+  padding: 0 0 8px;
+}
+footer ul li a:active,
+footer ul li a:hover,
+footer ul li a:focus {
+  border-bottom: 4px solid #ea0000;
+  background: none;
+  text-decoration: none;
+  color: #080808;
+}
+footer .social-icons a {
+  color: #fff;
+  display: inline-block;
+  padding-top: 5px;
+  background: #909090;
+  margin: 0 4px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+footer .social-icons a:hover {
+  background: #525252;
+}
+#count_the_project .modal-dialog {
+  min-width: 750px;
+}
+#count_the_project .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+#count_the_project .modal-dialog .modal-content .modal-header button.close {
+  opacity: 1;
+}
+#count_the_project .modal-dialog .modal-content .modal-header h4 {
+  margin-top: 30px;
+  color: #383637;
+  font-weight: 400;
+  font-size: 1.250em;
+}
+#count_the_project .modal-dialog .modal-content .modal-body {
+  padding: 15px 65px;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form input,
+#count_the_project .modal-dialog .modal-content .modal-body form label {
+  font-size: 1.1em;
+  border-radius: 7px;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form label {
+  color: #222222;
+  font-weight: 400;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file {
+  padding: 3px 0;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file {
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 190px;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type=file] {
+  -webkit-transform: translateY(4px);
+  -ms-transform: translateY(4px);
+  transform: translateY(4px);
+  border-radius: 10px;
+  outline: none;
+  color: #222222;
+  font-size: 1em;
+  margin-left: -140px;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file:before {
+  content: 'Выбрать Файлы';
+  color: #222222;
+  position: absolute;
+  background: #E9E9E9;
+  z-index: 10;
+  left: 15px;
+  border-radius: 10px;
+  padding: 6px 30px;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form button {
+  margin-top: 40px;
+  padding: 18px 0;
+  border-radius: 7px;
+  background: #FF2A34;
+  width: 100%;
+  border: none;
+  font-size: 1.3em;
+  outline: none;
+}
+#count_the_project .modal-dialog .modal-content .modal-body form button i {
+  margin-left: 3%;
+  color: #ab2328;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-header {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-header .close {
+  opacity: 1;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-header h4 {
+  margin-bottom: 0;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.250em;
+  color: #383637;
+  border-bottom: 1px solid #d7d7d7;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-body {
+  padding: 15px 65px;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-body p {
+  font-size: 1.1em;
+  color: #483637;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-body form {
+  margin-top: 15px;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-body form input {
+  font-size: 1.1em;
+  border-radius: 7px;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-body form button {
+  margin-top: 20px;
+  padding: 18px 0;
+  border-radius: 7px;
+  background: #FF2A34;
+  width: 100%;
+  border: none;
+  font-size: 1.3em;
+  outline: none;
+}
+#appointment_for_consultation .modal-dialog .modal-content .modal-body form button i {
+  margin-left: 3%;
+  color: #ab2328;
+}
+.ImgPreview {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#ModalImgPreview {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#ModalImg {
+  margin: auto;
+  display: block;
+  width: 35%;
+}
+#ModalImg {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.ModalImgPreviewClose {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.ModalImgPreviewClose:hover,
+.ModalImgPreviewClose:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+  }
+  header img {
+    margin: 0 auto;
+  }
+  header .street {
+    text-align: center;
+    padding-right: 0;
+  }
+  header .street:after {
+    content: none;
+    display: none;
+  }
+  header .number,
+  header .street {
+    margin-top: 15px;
+  }
+  div.menu .navbar-collapse.in {
+    overflow: inherit;
+  }
+  div.menu ul {
+    margin-bottom: 10px;
+  }
+  div.menu ul > li {
+    margin-top: 10px;
+  }
+  div.menu ul > li > ul {
+    left: -100%;
+  }
+  div.orders [class*='col'] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  div.orders button {
+    font-size: 1em;
+  }
+  section.classic_kitchens .grid .grid-item {
+    font-size: 2.5vw;
+    width: 100%;
+    margin-top: 10px;
+  }
+  section.classic_kitchens .grid .grid-item-two-lines {
+    width: 100%;
+  }
+  section.classic_kitchens .grid .grid-item img {
+    width: 100%;
+  }
+  section.classic_kitchens .grid .grid-item .state > div {
+    width: 5vw;
+    height: 5vw;
+    background-size: 100%;
+    margin-left: 1%;
+  }
+  section.modern_kitchens .grid .grid-item {
+    width: 100%;
+    margin-top: 10px;
+  }
+  section.modern_kitchens .grid .grid-item .info {
+    font-size: 2.5vw;
+  }
+  section.modern_kitchens .grid .grid-item:hover img {
+    position: inherit;
+  }
+  section.modern_kitchens .grid .grid-item img {
+    width: 100%;
+  }
+  div.row_info_shop_block .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  div.row_info_shop_block .container > div {
+    margin-top: 10px;
+    text-align: center;
+  }
+  div.row_info_shop_block .container > div > div,
+  div.row_info_shop_block .container > div p {
+    margin: 0 auto;
+  }
+  section.sale .sale-item {
+    margin-bottom: 20px;
+  }
+  section.sale .sale-item .info {
+    font-size: 2.5vw;
+  }
+  section.sale .sale-item img {
+    width: 100%;
+  }
+  section.elegant_italian_kitchen [class*='col']:first-child {
+    padding-right: 15px;
+  }
+  section.elegant_italian_kitchen [class*='col']:last-child {
+    padding-left: 15px;
+  }
+  div.categories .container {
+    width: 95%;
+  }
+  div.categories .container a.category {
+    width: auto;
+  }
+  section.armchairs_berloni,
+  section.cupboard_berloni,
+  section.cubstone_berloni,
+  section.table_berloni,
+  section.chest_of_drawers,
+  section.sofa_berloni,
+  section.walls_and_shelves_berloni,
+  section.chair_berloni,
+  section.bed_berloni {
+    font-size: 14px;
+  }
+  section.armchairs_berloni .grid,
+  section.cupboard_berloni .grid,
+  section.cubstone_berloni .grid,
+  section.table_berloni .grid,
+  section.chest_of_drawers .grid,
+  section.sofa_berloni .grid,
+  section.walls_and_shelves_berloni .grid,
+  section.chair_berloni .grid,
+  section.bed_berloni .grid {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  section.armchairs_berloni .grid .grid-item,
+  section.cupboard_berloni .grid .grid-item,
+  section.cubstone_berloni .grid .grid-item,
+  section.table_berloni .grid .grid-item,
+  section.chest_of_drawers .grid .grid-item,
+  section.sofa_berloni .grid .grid-item,
+  section.walls_and_shelves_berloni .grid .grid-item,
+  section.chair_berloni .grid .grid-item,
+  section.bed_berloni .grid .grid-item,
+  section.armchairs_berloni .grid .grid-item img,
+  section.cupboard_berloni .grid .grid-item img,
+  section.cubstone_berloni .grid .grid-item img,
+  section.table_berloni .grid .grid-item img,
+  section.chest_of_drawers .grid .grid-item img,
+  section.sofa_berloni .grid .grid-item img,
+  section.walls_and_shelves_berloni .grid .grid-item img,
+  section.chair_berloni .grid .grid-item img,
+  section.bed_berloni .grid .grid-item img,
+  section.armchairs_berloni .grid .grid-col-one,
+  section.cupboard_berloni .grid .grid-col-one,
+  section.cubstone_berloni .grid .grid-col-one,
+  section.table_berloni .grid .grid-col-one,
+  section.chest_of_drawers .grid .grid-col-one,
+  section.sofa_berloni .grid .grid-col-one,
+  section.walls_and_shelves_berloni .grid .grid-col-one,
+  section.chair_berloni .grid .grid-col-one,
+  section.bed_berloni .grid .grid-col-one {
+    width: 100%;
+  }
+  section.product .product-item .photo .card {
+    font-size: 1.3vw;
+    padding: 1.3vw 0.8vw;
+  }
+  section.product .product-item .photo .card .price {
+    margin: 1.3vw 0;
+  }
+  section.product .product-item .photo .card .buttons .order {
+    padding: 0.8vw 1.3vw;
+  }
+  section.product .product-item .photo .card .buttons .under-order {
+    border-width: 0.3vw;
+    padding: 0.1vw 1vw 0.4vw;
+  }
+  section.product .product-item .photo .card .buttons .under-order div {
+    -webkit-transform: translateY(0.6vw);
+    -ms-transform: translateY(0.6vw);
+    transform: translateY(0.6vw);
+    width: 2.3vw;
+    height: 2.3vw;
+  }
+  section.other_sections {
+    font-size: 14px;
+  }
+  section.other_sections [class*='col'] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  section.contact .grid {
+    font-size: 3vw;
+  }
+  section.contact .grid .grid-item {
+    margin-bottom: 10px;
+    width: 70%;
+  }
+  section.brends .row-brend .brend-3,
+  section.brends .row-brend .brend-4,
+  section.brends .row-brend .brend-5 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  section.stock {
+    font-size: 12px;
+  }
+  section.stock .stock-item-2 {
+    margin-top: 10px;
+  }
+  section.stock .stock-item-1,
+  section.stock .stock-item-2,
+  section.stock .stock-item-3,
+  section.stock .stock-item-4,
+  section.stock .stock-item-5 {
+    margin-top: 30px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  section.stock .stock-item-1 .info,
+  section.stock .stock-item-2 .info,
+  section.stock .stock-item-3 .info,
+  section.stock .stock-item-4 .info,
+  section.stock .stock-item-5 .info {
+    min-height: 250px;
+  }
+  div.kinds_accessories .container a.kind_accessory-1,
+  div.kinds_accessories .container a.kind_accessory-2,
+  div.kinds_accessories .container a.kind_accessory-3,
+  div.kinds_accessories .container a.kind_accessory-4,
+  div.kinds_accessories .container a.kind_accessory-5 {
+    width: inherit;
+  }
+  section.lightnings,
+  section.accessories_handing_cabinets,
+  section.trays_for_cutlerys,
+  section.spare_parts,
+  section.shelf {
+    font-size: 3vw;
+  }
+  section.lightnings .grid .grid-item,
+  section.accessories_handing_cabinets .grid .grid-item,
+  section.trays_for_cutlerys .grid .grid-item,
+  section.spare_parts .grid .grid-item,
+  section.shelf .grid .grid-item {
+    width: 100%;
+  }
+  section.lightnings .grid .grid-item img,
+  section.accessories_handing_cabinets .grid .grid-item img,
+  section.trays_for_cutlerys .grid .grid-item img,
+  section.spare_parts .grid .grid-item img,
+  section.shelf .grid .grid-item img {
+    width: 100%;
+  }
+  section.brend {
+    font-size: 5vw;
+  }
+  section.brend .product {
+    margin-bottom: 10px;
+  }
+  section.brend .product img {
+    width: 100%;
+  }
+  section.brend .product .info {
+    padding: 2%;
+  }
+  section.about_company,
+  section.differentiates_us_from_others,
+  section.use_best_materials,
+  section.video_about_us_shop {
+    font-size: 12px;
+  }
+  section.differentiates_us_from_others .item {
+    text-align: center;
+  }
+  section.differentiates_us_from_others .item > div {
+    margin: 0 auto;
+  }
+  div.pre_footer {
+    font-size: 14px;
+  }
+  div.pre_footer [class*='col']:first-child {
+    padding-right: 15px;
+  }
+  div.pre_footer [class*='col']:last-child {
+    padding-left: 15px;
+  }
+  footer {
+    font-size: 14px;
+    text-align: center;
+  }
+  footer ul li {
+    margin: 5px 0;
+  }
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  #count_the_project .modal-dialog {
+    min-width: 90%;
+  }
+  #count_the_project .modal-dialog .modal-content .modal-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13px;
+  }
+  #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file:before {
+    left: 15px;
+  }
+  #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file {
+    margin-left: 165px;
+  }
+  #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type=file] {
+    margin-left: -116px;
+  }
+  #appointment_for_consultation {
+    font-size: 14px;
+  }
+  #appointment_for_consultation .modal-dialog .modal-content .modal-body {
+    padding: 2%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.classic_kitchens .grid .grid-item {
+    font-size: 14px;
+  }
+  div.row_info_shop_block .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  section.sale .sale-item .info {
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+  section.elegant_italian_kitchen [class*='col']:first-child {
+    padding-right: 15px;
+  }
+  section.elegant_italian_kitchen [class*='col']:last-child {
+    padding-left: 15px;
+  }
+  div.categories .container {
+    width: 85%;
+  }
+  section.product .product-item .photo .card {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+  section.product .product-item .photo .card .price {
+    margin: 10px 0;
+  }
+  section.product .product-item .photo .card .buttons .order {
+    padding: 5px 10px;
+  }
+  section.product .product-item .photo .card .buttons .under-order {
+    padding: 1px 10px;
+  }
+  section.product .product-item .photo .card .buttons .under-order div {
+    width: 17px;
+    height: 17px;
+  }
+  section.contact .grid {
+    font-size: 12px;
+  }
+  section.contact .grid .grid-item {
+    width: 31%;
+  }
+  section.stock {
+    font-size: 12px;
+  }
+  section.stock .stock-item-3,
+  section.stock .stock-item-2 {
+    margin-top: 30px;
+  }
+  section.stock .stock-item-1 .info,
+  section.stock .stock-item-2 .info,
+  section.stock .stock-item-3 .info,
+  section.stock .stock-item-4 .info,
+  section.stock .stock-item-5 .info {
+    min-height: 250px;
+  }
+  section.lightnings,
+  section.accessories_handing_cabinets,
+  section.trays_for_cutlerys,
+  section.spare_parts,
+  section.shelf {
+    font-size: 10px;
+  }
+  section.brend {
+    font-size: 14px;
+  }
+  section.brend .product .info {
+    padding: 1%;
+  }
+  section.about_company,
+  section.differentiates_us_from_others,
+  section.use_best_materials,
+  section.video_about_us_shop {
+    font-size: 12px;
+  }
+  div.pre_footer {
+    font-size: 13px;
+  }
+  footer {
+    font-size: 14px;
+  }
+  footer ul li {
+    margin: 5px 0;
+  }
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  #count_the_project .modal-dialog {
+    min-width: 700px;
+  }
+  #count_the_project .modal-dialog .modal-content .modal-body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  section.sale .sale-item .info {
+    font-size: 14px;
+    padding: 20px 20px;
+  }
+  section.elegant_italian_kitchen {
+    font-size: 13px;
+  }
+  section.elegant_italian_kitchen h3 {
+    margin-bottom: 30px;
+  }
+  section.elegant_italian_kitchen p {
+    padding-right: 5px;
+  }
+  div.categories .container {
+    width: 75%;
+  }
+  section.product .product-item .photo .card {
+    font-size: 14px;
+    padding: 20px 10px;
+  }
+  section.product .product-item .photo .card .price {
+    margin: 10px 0;
+  }
+  section.product .product-item .photo .card .buttons .order {
+    padding: 5px 10px;
+  }
+  section.product .product-item .photo .card .buttons .under-order {
+    padding: 1px 10px;
+  }
+  section.product .product-item .photo .card .buttons .under-order div {
+    width: 20px;
+    height: 20px;
+  }
+  section.contact .grid .grid-item {
+    width: 31%;
+  }
+  section.stock {
+    font-size: 14px;
+  }
+  section.lightnings,
+  section.accessories_handing_cabinets,
+  section.trays_for_cutlerys,
+  section.spare_parts,
+  section.shelf {
+    font-size: 14px;
+  }
+  section.brend {
+    font-size: 14px;
+  }
+  section.brend .product .info {
+    padding: 1%;
+  }
+  section.about_company,
+  section.differentiates_us_from_others,
+  section.use_best_materials,
+  section.video_about_us_shop {
+    font-size: 14px;
+  }
+  div.pre_footer {
+    font-size: 13px;
+  }
+  footer {
+    font-size: 15px;
+  }
+  footer ul li {
+    margin: 5px 0;
+  }
+  #count_the_project .modal-dialog .modal-content .modal-body form input[type=file]:after {
+    width: 47%;
+  }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  section.slider .bxslider .slide {
+    display: block;
+  }
+  section.slider .bxslider .slide .info {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  section.classic_kitchens .grid .grid-item {
+    display: block;
+  }
+  section.classic_kitchens .grid .grid-item .info {
+    width: inherit;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  section.classic_kitchens .grid .grid-item .info p {
+    width: 60%;
+  }
+  section.lightnings .grid .grid-item,
+  section.accessories_handing_cabinets .grid .grid-item,
+  section.trays_for_cutlerys .grid .grid-item,
+  section.spare_parts .grid .grid-item,
+  section.shelf .grid .grid-item {
+    display: block;
+  }
+  #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type=file] {
+    margin-left: -340px;
+  }
+}
+@media all and (-ms-high-contrast: none) and (max-width: 767px), (-ms-high-contrast: active) and (max-width: 767px) {
+  section.classic_kitchens .grid .grid-item .info {
+    width: auto;
+  }
+}
+@-moz-document url-prefix() {
+  #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type="file"] {
+    margin-left: -85px;
+  }
+  @media (max-width: 767px) {
+    #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type="file"] {
+      margin-left: -70px;
+    }
+  }
+}

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berloni</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-3"><a href="index.html"><img class="img-responsive" src="img/logo.png"
+                                                                     alt="Logo"></a></div>
+                <div class="col-sm-5 col-md-4 col-md-offset-2 col-lg-offset-3">
+                    <p class="street text-right">ул. Богдановича, 108</p>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="number">
+                        <a href="tel:+375296789777">+ 375 29 6789 777</a>
+                        <a href="tel:+375172900026">
+                        + 375 17 2900 026
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" data-target="#topmenu" data-toggle="collapse" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="topmenu" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a href="about.html">О компании</a></li>
+                        <li class="dropdown"><a href="#">Мебель</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="icon_sofa"></div>
+                                    <a href="#">
+                                    Диваны</a>
+                                </li>
+                                <li>
+                                    <div class="icon_chair"></div>
+                                    <a href="#">
+                                    Стулья</a>
+                                </li>
+                                <li>
+                                    <div class="icon_table"></div>
+                                    <a href="#">
+                                    Столы</a>
+                                </li>
+                                <li>
+                                    <div class="icon_sofa"></div>
+                                    <a href="#">
+                                    Мягкая мебель</a>
+                                </li>
+                                <li>
+                                    <div class="icon_table"></div>
+                                    <a href="#">
+                                    Офисная мебель</a>
+                                </li>
+                                <li>
+                                    <div class="icon_furniture_living_room"></div>
+                                    <a href="#">
+                                    Мебель для гостинной</a>
+                                </li>
+                                <li>
+                                    <div class="icon_furniture_kitchen"></div>
+                                    <a href="#">
+                                    Мебель для кухни</a>
+                                </li>
+                                <li>
+                                    <div class="icon_furniture_bedroom"></div>
+                                    <a href="#">
+                                    Мебель для спальни</a>
+                                </li>
+                                <li>
+                                    <div class="icon_armchairs"></div>
+                                    <a href="#">
+                                    Кресла</a>
+                                </li>
+                                <li>
+                                    <div class="icon_search"></div>
+                                    <a href="#">
+                                    Подбор мебели</a>
+                                </li>
+                                <li>
+                                    <div class="icon_furniture_kitchen"></div>
+                                    <a href="#">
+                                    Кухни</a>
+                                </li>
+                                <li>
+                                    <div class="icon_sofa_time"></div>
+                                    <a href="#">
+                                    Мебель на заказ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Техника</a></li>
+                        <li><a href="accessories.html">Аксессуары</a></li>
+                        <li><a href="stock.html">Акции</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orders">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <button class="order-project" data-toggle="modal" data-target="#count_the_project">Заказать проект <i class="fa fa-check-circle" aria-hidden="true"></i></button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="count-kitchen" data-toggle="modal" data-target="#count_the_project">Посчитать кухню <i class="fa fa-usd" aria-hidden="true"></i></button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="appointment-consultation" data-toggle="modal" data-target="#appointment_for_consultation">Запись на консультацию <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumbs accessories">
+        <div class="container">
+            <div class="breadcrumb">
+                <ul class="list-inline">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Аксессуары</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="kinds_accessories">
+        <div class="container text-center">
+            <a href="#" class="kind_accessory-1">
+                <div class="icon_lightning_accessories"></div>Освещение
+            </a>
+            <a href="#" class="kind_accessory-2">
+                <div class="icon_cupboard_kat"></div>Аксессуары под навесные шкафы</a>
+            <a href="#" class="kind_accessory-3">
+                <div class="icon_spoon_and_fork_accessories"></div> Внутреннее наполнение - лотки для столовых приборов</a>
+            <a href="#" class="kind_accessory-4">
+                <div class="icon_spares_accessories"></div>Запасные детали</a>
+            <a href="#" class="kind_accessory-5">
+                <div class="icon_shelves_accessories"></div>Полки</a>
+        </div>
+    </div>
+    <section class="lightnings">
+        <div class="container">
+            <h2>Освещение</h2>
+            <div class="grid text-center">
+                <div class="grid-item grid-item-1">
+                    <img src="img/Accessories/lightning_1.jpg" alt="Lightning 1" class="img-responsive">
+                    <div class="info">
+                        <h3>ANTHEA</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <img src="img/Accessories/lightning_2.jpg" alt="Lightning 2" class="img-responsive">
+                    <div class="info">
+                        <h3>NEBULA</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <img src="img/Accessories/lightning_3.jpg" alt="Lightning 3" class="img-responsive">
+                    <div class="info">
+                        <h3>ALA</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <img src="img/Accessories/lightning_4.jpg" alt="Lightning 4" class="img-responsive">
+                    <div class="info">
+                        <h3>PEP USO SCOLAPIATTI</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-5">
+                    <img src="img/Accessories/lightning_5.jpg" alt="Lightning 5" class="img-responsive">
+                    <div class="info">
+                        <h3>LEAF TLD</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-6">
+                    <img src="img/Accessories/lightning_6.jpg" alt="Lightning 6" class="img-responsive">
+                    <div class="info">
+                        <h3>FLEXY LED CR</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-7">
+                    <img src="img/Accessories/lightning_7.jpg" alt="Lightning 7" class="img-responsive">
+                    <div class="info">
+                        <h3>LEAF US</h3>
+                        <p>Pen interno mobili</p>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-8">
+                    <img src="img/Accessories/lightning_8.jpg" alt="Lightning 8" class="img-responsive">
+                    <div class="info">
+                        <h3>TOUCAN</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="accessories_handing_cabinets">
+        <div class="container">
+            <h2>Аксессуары под навесные шкафы</h2>
+            <div class="grid text-center">
+                <div class="grid-item grid-item-1">
+                    <img src="img/Accessories/accessories_handing_cabinets_1.jpg" alt="Accessories handing cabinets 1" class="img-responsive">
+                    <div class="info">
+                        <h3>Аксессуары
+под навесные
+шкафы</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <img src="img/Accessories/accessories_handing_cabinets_2.jpg" alt="Accessories handing cabinets 2" class="img-responsive">
+                    <div class="info">
+                        <h3>Аксессуары
+под навесные 
+шкафы</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <img src="img/Accessories/accessories_handing_cabinets_3.jpg" alt="Accessories handing cabinets 3" class="img-responsive">
+                    <div class="info">
+                        <h3>Полка держатель
+рулона Г.16 В.23,5
+Глянцевая нержавеющая стальLA</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <img src="img/Accessories/accessories_handing_cabinets_4.jpg" alt="Accessories handing cabinets 4" class="img-responsive">
+                    <div class="info">
+                        <h3>Аксессуары
+под навесные шкафы</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-5">
+                    <img src="img/Accessories/accessories_handing_cabinets_5.jpg" alt="Accessories handing cabinets 5" class="img-responsive">
+                    <div class="info">
+                        <h3>Подставка длятаблета, алюминий/стекло В.20,2 Ш.22  Г.18,8</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-6">
+                    <img src="img/Accessories/accessories_handing_cabinets_6.jpg" alt="Accessories handing cabinets 6" class="img-responsive">
+                    <div class="info">
+                        <h3>Разделочная доска
+В.36, Толщ. 4,3
+глянцевая нержавеющая сталь/стекло</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-7">
+                    <img src="img/Accessories/accessories_handing_cabinets_7.jpg" alt="Accessories handing cabinets 7" class="img-responsive">
+                    <div class="info">
+                        <h3>Алюминиевая полка Г.16</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-8">
+                    <img src="img/Accessories/accessories_handing_cabinets_8.jpg" alt="Accessories handing cabinets 8" class="img-responsive">
+                    <div class="info">
+                        <h3>Держатель для рулона 
+бумажных полотенец  
+и пленки  В.37 Ш.33 Г.15</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="trays_for_cutlerys">
+        <div class="container">
+            <h2>Внутреннее наполнение - лотки для столовых приборов</h2>
+            <div class="grid text-center">
+                <div class="grid-item grid-item-1">
+                    <img src="img/Accessories/trays_for_cutlery_1.jpg" alt="Trays for cutlery 1" class="img-responsive">
+                    <div class="info">
+                        <h3>Полка для столовых
+приборов</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <img src="img/Accessories/trays_for_cutlery_2.jpg" alt="Trays for cutlery 2" class="img-responsive">
+                    <div class="info">
+                        <h3>Внутренний ящик и В.8,
+укомплектованные
+направляющими</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <img src="img/Accessories/trays_for_cutlery_3.jpg" alt="Trays for cutlery 3" class="img-responsive">
+                    <div class="info">
+                        <h3>Лоток для ножей мод
+ORGA-LINE
+I.18 Г.26</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <img src="img/Accessories/trays_for_cutlery_4.jpg" alt="Trays for cutlery 4" class="img-responsive">
+                    <div class="info">
+                        <h3>Лоток для
+столовых приборов
+Ш.60</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-5">
+                    <img src="img/Accessories/trays_for_cutlery_5.jpg" alt="Trays for cutlery 5" class="img-responsive">
+                    <div class="info">
+                        <h3>Лоток для столовых
+приборов из термоформованного  материала</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-6">
+                    <img src="img/Accessories/trays_for_cutlery_6.jpg" alt="Trays for cutlery 6" class="img-responsive">
+                    <div class="info">
+                        <h3>Защитное покрытие
+дна мойки из
+термоформованого материала
+для угловой базы на  125 см</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-7">
+                    <img src="img/Accessories/trays_for_cutlery_7.jpg" alt="Trays for cutlery 7" class="img-responsive">
+                    <div class="info">
+                        <h3>Лоток для столовых
+приборов</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-8">
+                    <img src="img/Accessories/trays_for_cutlery_8.jpg" alt="Trays for cutlery 8" class="img-responsive">
+                    <div class="info">
+                        <h3>Внутренний ящик
+и В.8, укомплектованные
+направляющими</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="spare_parts">
+        <div class="container">
+            <h2>Запасные детали</h2>
+            <div class="grid text-center">
+                <div class="grid-item grid-item-1">
+                    <img src="img/Accessories/spare_parts_1.jpg" alt="Spare parts 1" class="img-responsive">
+                    <div class="info">
+                        <h3>Держатели для полок</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <img src="img/Accessories/spare_parts_2.jpg" alt="Spare parts 2" class="img-responsive">
+                    <div class="info">
+                        <h3>Начинка
+сушки</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <img src="img/Accessories/spare_parts_3.jpg" alt="Spare parts 3" class="img-responsive">
+                    <div class="info">
+                        <h3>Для верхних
+шкафов и БАЗ</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <img src="img/Accessories/spare_parts_4.jpg" alt="Spare parts 4" class="img-responsive">
+                    <div class="info">
+                        <h3>Держатели для
+полок</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-5">
+                    <img src="img/Accessories/spare_parts_5.jpg" alt="Spare parts 5" class="img-responsive">
+                    <div class="info">
+                        <h3>Лестница</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-6">
+                    <img src="img/Accessories/spare_parts_6.jpg" alt="Spare parts 6" class="img-responsive">
+                    <div class="info">
+                        <h3>Держатели 
+для полок</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-7">
+                    <img src="img/Accessories/spare_parts_7.jpg" alt="Spare parts 7" class="img-responsive">
+                    <div class="info">
+                        <h3>Детали</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-8">
+                    <img src="img/Accessories/spare_parts_8.jpg" alt="Spare parts 8" class="img-responsive">
+                    <div class="info">
+                        <h3>Хромированые
+полки</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="shelf">
+        <div class="container">
+            <h2>Полки</h2>
+            <div class="grid text-center">
+                <div class="grid-item grid-item-1">
+                    <img src="img/Accessories/shelf.jpg" alt="Shelf 1" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки 
+с меламиновым
+покрытием</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <img src="img/Accessories/shelf.jpg" alt="Shelf 2" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки
+ALKORCELL</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <img src="img/Accessories/shelf.jpg" alt="Shelf 3" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки
+шпонированная</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-4">
+                    <img src="img/Accessories/shelf_two.jpg" alt="Shelf 4" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки
+Крашеная со 
+скругленным профилем</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-5">
+                    <img src="img/Accessories/shelf.jpg" alt="Shelf 5" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки</h3>
+                        <p>Крашеная со скругленным профилем</p>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-6">
+                    <img src="img/Accessories/shelf.jpg" alt="Shelf 6" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки
+Крашеный</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-7">
+                    <img src="img/Accessories/shelf.jpg" alt="Shelf 7" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки и задние
+стенки
+сзади острова</h3>
+                    </div>
+                </div>
+                <div class="grid-item grid-item-8">
+                    <img src="img/Accessories/shelf_two.jpg" alt="Shelf 8" class="img-responsive">
+                    <div class="info">
+                        <h3>Полки 
+в цвет отделке</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="map_container">
+        <div id="map"></div>
+    </div>
+    <div class="pre_footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-3 ">
+                    <img class="img-responsive " src="img/logo.png " alt="Logo ">
+                    <div class="numbers ">
+                        <a href="tel:+375296789777 ">+ 375 (29) 67-89-777</a>
+                        <a href="tel:+375172900026 ">+ 375 (17) 29-00-026 </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <p>Кухни Berloni соединяют в себе изысканный классический и современный стиль. Дом для Berloni является самым глубоким выражением настроения людей, живущих в нем. </p>
+                </div>
+                <div class="cols-m-5 ">
+                    <p>Качество, функциональность и стиль итальянской мебели BERLONI создает особую атмосферу в доме. Итальянские кухни, гостиные, спальни уже давно покорили своей функциональностью и долговечностью. Поэтому кухня от Berloni – будет отражением вашей души! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-6 col-md-8 col-lg-9 ">
+                    <ul class="list-inline ">
+                        <li><a href="# ">Классические кухни</a></li>
+                        <li><a href="# ">Современные кухни</a></li>
+                        <li><a href="# ">Диваны</a></li>
+                        <li><a href="# ">Стулья</a></li>
+                        <li><a href="# ">Столы</a></li>
+                        <li><a href="# ">Техника</a></li>
+                        <li><a href="# ">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 ">
+                    <div class="social-icons text-center ">
+                        <a href="# "><i class="fa fa-facebook " aria-hidden="true "></i></a>
+                        <a href="# "> <i class="fa fa-google-plus " aria-hidden="true "></i></a>
+                        <a href="# "><i class="fa fa-vk " aria-hidden="true "></i></a>
+                        <a href="# "><i class="fa fa-odnoklassniki " aria-hidden="true "></i></a>
+                        <a href="# "><i class="fa fa-twitter " aria-hidden="true "></i></a>
+                        <a href="# "><i class="fa fa-pinterest-p " aria-hidden="true "></i></a>
+                        <a href="# "><i class="fa fa-instagram " aria-hidden="true "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="count_the_project" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <div class="icon_close"></div>
+                    </button>
+                    <h4 class="modal-title text-center">Посчитать проект</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Введите ваше email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Введите ваше телефон" required>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label>Прикрепить файл</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="custom-input-file">
+                                    <div class="wrap_old_file">
+                                        <input id="old_input_file" type="file" multiple>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button>Отправить<i class="fa fa-check-circle" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="appointment_for_consultation" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <div class="icon_close"></div>
+                    </button>
+                    <h4 class="modal-title">Запись на консультацию</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Встреча возможна и в послерабочее время - оставте свои контактные данные и желаемое время встречи.
+                        <br>Мы скоро свяжемся с вами!</p>
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Введите ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Введите ваше email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Введите ваше телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Введите желаемое рабочее время" required>
+                        </div>
+                        <button>Отправить<i class="fa fa-check-circle" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalImgPreview">
+        <span class="close">&times;</span>
+        <img id="ModalImg">
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js "></script>
+    <!-- build:js -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <!-- endbuild -->
+    <script>
+    function initMap() {
+        var latlng = new google.maps.LatLng(53.932627, 27.579776);
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: latlng,
+            zoom: 17,
+            styles: [
+                { elementType: 'geometry', stylers: [{ color: '#212121' }] },
+                { elementType: 'labels.text.stroke', stylers: [{ color: '#242f3e' }] },
+                { elementType: 'labels.text.fill', stylers: [{ color: '#fff' }] },
+                {
+                    featureType: 'administrative.locality',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                },
+                {
+                    featureType: 'poi',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#181818' }]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#6b9a76' }]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#373737' }]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry.stroke',
+                    stylers: [{ color: '#212a37' }]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#9ca5b3' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#746855' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry.stroke',
+                    stylers: [{ color: '#1f2835' }]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#f3d19c' }]
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#2f3948' }]
+                },
+                {
+                    featureType: 'transit.station',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#d59563' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry',
+                    stylers: [{ color: '#17263c' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill',
+                    stylers: [{ color: '#515c6d' }]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.stroke',
+                    stylers: [{ color: '#17263c' }]
+                },
+                {
+                    featureType: 'transit.station.bus',
+                    elementType: 'all',
+                    stylers: [
+                        { visibility: 'off' }
+                    ]
+                }
+            ]
+        });
+        new google.maps.Marker({
+            position: latlng,
+            map: map,
+            icon: './img/marker.png'
+        });
+
+        google.maps.event.addDomListener(window, "resize ", function() {
+            var center = map.getCenter();
+            google.maps.event.trigger(map, "resize ");
+            map.setCenter(center);
+        });
+        google.maps.event.addDomListener(window, 'load', initMap);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdM9Ffq8FddQayqGdBs9x27LOirYe190&callback=initMap " async defer></script>
+</body>
+
+</html>

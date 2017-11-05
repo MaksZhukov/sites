@@ -1,0 +1,3075 @@
+    //==========================================================  MIXINS   ==========================================================//
+    .add-font(@font-url, @font-name, @font-weight: normal, @font-style: normal) {
+        font-family: @font-name;
+        src: url('../fonts/@{font-url}.eot');
+        src: url('../fonts/@{font-url}.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/@{font-url}.woff') format('woff'),
+        url('../fonts/@{font-url}.woff2') format('woff2'),
+        url('../fonts/@{font-url}.ttf') format('truetype'),
+        url('../fonts/@{font-url}.svg#@{font-name}') format('svg');
+        font-weight: @font-weight;
+        font-style: @font-style;
+    }
+
+    .transition(@prop: all,
+    @time: 0.3s,
+    @ease: ease-in-out) {
+        transition: @prop @time @ease;
+    } //==========================================================  FONTS   ==========================================================//
+    @font-face {
+        .add-font('loraregular',
+        'Lora',
+        400);
+    }
+
+    @font-face {
+        .add-font('ubuntulight',
+        'Ubuntu',
+        300);
+    }
+
+    @font-face {
+        .add-font('ubunturegular',
+        'Ubuntu');
+    }
+
+    @font-face {
+        .add-font('UbuntuItalic',
+        'Ubuntu',
+        400,
+        italic);
+    }
+
+    @font-face {
+        .add-font('ubuntumedium',
+        'Ubuntu',
+        500);
+    }
+
+    @font-face {
+        .add-font('ubuntubold',
+        'Ubuntu',
+        700);
+    } //==========================================================  ICONS   ==========================================================//
+    .icon_in_stock {
+        width: 24px;
+        height: 24px;
+        background: url('../img/Main/icon_in_stock.png') no-repeat;
+    }
+
+    .icon_in_order {
+        width: 23px;
+        height: 23px;
+        background: url('../img/Main/icon_in_order.png') no-repeat;
+    }
+
+    .icon_big_choise {
+        width: 78px;
+        height: 76px;
+        background: url('../img/Main/icon_big_choise.png') no-repeat;
+    }
+
+    .icon_service {
+        width: 78px;
+        height: 78px;
+        background: url('../img/Main/icon_service.png') no-repeat;
+    }
+
+    .icon_time {
+        width: 77px;
+        height: 77px;
+        background: url('../img/Main/icon_time.png') no-repeat;
+    }
+
+    .icon_order {
+        width: 76px;
+        height: 76px;
+        background: url('../img/Main/icon_order.png') no-repeat;
+    }
+
+    .icon_price_and_quality {
+        width: 85px;
+        height: 77px;
+        background: url('../img/Main/icon_price_and_quality.png') no-repeat;
+    }
+
+    .icon_sofa {
+        background: url('../img/icon_sofa.png') no-repeat;
+        width: 19px;
+        height: 12px;
+    }
+
+    .icon_chair {
+        background: url('../img/icon_chair.png') no-repeat;
+        width: 9px;
+        height: 16px;
+    }
+
+    .icon_table {
+        background: url('../img/icon_table.png') no-repeat;
+        width: 21px;
+        height: 10px;
+    }
+
+    .icon_furniture_living_room {
+        background: url('../img/icon_furniture_living_room.png') no-repeat;
+        width: 18px;
+        height: 18px;
+    }
+
+    .icon_furniture_kitchen {
+        background: url('../img/icon_furniture_kitchen.png') no-repeat;
+        width: 12px;
+        height: 20px;
+    }
+
+    .icon_furniture_bedroom {
+        background: url('../img/icon_furniture_bedroom.png') no-repeat;
+        width: 20px;
+        height: 16px;
+    }
+
+    .icon_armchairs {
+        background: url('../img/icon_armchairs.png') no-repeat;
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon_search {
+        background: url('../img/icon_search.png') no-repeat;
+        width: 17px;
+        height: 17px;
+    }
+
+    .icon_sofa_time {
+        background: url('../img/icon_sofa_time.png') no-repeat;
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon_close {
+        background: url('../img/icon_close.png') no-repeat;
+        width: 33px;
+        height: 33px;
+    }
+
+    .icon_bed_kat {
+        background: url('../img/Katalog/icon_bed_kat.png') no-repeat;
+        width: 33px;
+        height: 26px;
+    }
+
+    .icon_armchair_kat {
+        background: url('../img/Katalog/icon_armchair_kat.png') no-repeat;
+        width: 27px;
+        height: 28px;
+    }
+
+    .icon_chair_kat {
+        background: url('../img/Katalog/icon_chair_kat.png') no-repeat;
+        width: 18px;
+        height: 31px;
+    }
+
+    .icon_cupboard_kat {
+        background: url('../img/Katalog/icon_cupboard_kat.png') no-repeat;
+        width: 24px;
+        height: 26px;
+    }
+
+    .icon_curbstone_kat {
+        background: url('../img/Katalog/icon_curbstone_kat.png') no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+
+    .icon_sofa_kat {
+        background: url('../img/Katalog/icon_sofa_kat.png') no-repeat;
+        width: 41px;
+        height: 26px;
+    }
+
+    .icon_table_kat {
+        background: url('../img/Katalog/icon_table_kat.png') no-repeat;
+        width: 46px;
+        height: 22px;
+    }
+
+    .icon_walls_and_shelves_kat {
+        background: url('../img/Katalog/icon_walls_and_shelves_kat.png') no-repeat;
+        width: 36px;
+        height: 28px;
+    }
+
+    .icon_chest_of_drawers_kat {
+        background: url('../img/Katalog/icon_chest_of_drawers_kat.png') no-repeat;
+        width: 27px;
+        height: 20px;
+    }
+
+    .icon_armchair_product {
+        background: url('../img/Katalog/icon_armchair_product.png') no-repeat;
+        width: 27px;
+        height: 28px;
+    }
+
+    .icon_cupboard_product {
+        background: url('../img/Katalog/icon_cupboard_product.png') no-repeat;
+        width: 24px;
+        height: 26px;
+    }
+
+    .icon_curbstone_product {
+        background: url('../img/Katalog/icon_curbstone_product.png') no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+
+    .icon_chest_of_drawers_product {
+        background: url('../img/Katalog/icon_chest_of_drawers_product.png') no-repeat;
+        width: 27px;
+        height: 20px;
+    }
+
+    .icon_table_product {
+        background: url('../img/Katalog/icon_table_product.png') no-repeat;
+        width: 46px;
+        height: 22px;
+    }
+
+    .icon_sofa_product {
+        background: url('../img/Katalog/icon_sofa_product.png') no-repeat;
+        width: 41px;
+        height: 26px;
+    }
+
+    .icon_walls_and_shelves_product {
+        background: url('../img/Katalog/icon_walls_and_shelves_product.png') no-repeat;
+        width: 36px;
+        height: 28px;
+    }
+
+    .icon_chair_product {
+        background: url('../img/Katalog/icon_chair_product.png') no-repeat;
+        width: 18px;
+        height: 31px;
+    }
+
+    .icon_bed_product {
+        background: url('../img/Katalog/icon_bed_product.png') no-repeat;
+        width: 33px;
+        height: 26px;
+    }
+
+    .icon_time_one_product {
+        background: url('../img/Product/icon_time.png') no-repeat;
+        width: 26px;
+        height: 26px;
+    }
+
+    .icon_phone_contact {
+        background: url('../img/Contact/icon_phone.png') no-repeat;
+        width: 74px;
+        height: 76px;
+    }
+
+    .icon_location_contact {
+        background: url('../img/Contact/icon_location.png') no-repeat;
+        width: 59px;
+        height: 77px;
+    }
+
+    .icon_email_contact {
+        background: url('../img/Contact/icon_email.png') no-repeat;
+        width: 77px;
+        height: 73px;
+    }
+
+    .icon_lightning_accessories {
+        background: url('../img/Accessories/icon_lighting.png') no-repeat;
+        width: 19px;
+        height: 29px;
+    }
+
+    .icon_shelves_accessories {
+        background: url('../img/Accessories/icon_shelves.png') no-repeat;
+        width: 51px;
+        height: 32px;
+    }
+
+    .icon_spares_accessories {
+        background: url('../img/Accessories/icon_spares.png') no-repeat;
+        width: 38px;
+        height: 38px;
+    }
+
+    .icon_spoon_and_fork_accessories {
+        background: url('../img/Accessories/icon_spoon_and_fork.png') no-repeat;
+        width: 24px;
+        height: 40px;
+    }
+
+    .icon_stop_watch_about {
+        background: url('../img/AboutCompany/stop_watch.png') no-repeat;
+        width: 99px;
+        height: 99px;
+    }
+
+    .icon_diamond_about {
+        background: url('../img/AboutCompany/diamond.png') no-repeat;
+        width: 101px;
+        height: 91px;
+    }
+
+    .icon_compose_about {
+        background: url('../img/AboutCompany/compose.png') no-repeat;
+        width: 100px;
+        height: 100px;
+    }
+
+    .icon_like_about {
+        background: url('../img/AboutCompany/like.png') no-repeat;
+        width: 94px;
+        height: 100px;
+    } //==========================================================  BASE SETTINGS   ==========================================================//
+    @basecolor: #fff;
+    @basefontsize: 16px;
+    @baseweight: 400;
+    @basefontfamily: Ubuntu,
+    sans-serif;
+    body {
+        font: @baseweight @basefontsize @basefontfamily;
+        color: @basecolor;
+    }
+
+    @black: #080808;
+    @bggray: #e8e8e8;
+    @red: #ea0000; //==========================================================  HEADER (ALL)  ==========================================================//
+    header {
+        padding: 16px 0 18px;
+        .street {
+            margin: 12px 0 0 0;
+            padding-right: 15%;
+            font: 1.250em Lora, sans-serif;
+            color: @black;
+            position: relative;
+            &:after {
+                content: '';
+                display: block;
+                width: 1px;
+                height: 68px;
+                position: absolute;
+                background: #e2e2e2;
+                right: 0;
+                top: -20px;
+            }
+        }
+        .number {
+            display: inline-block;
+            a {
+                font-size: 1.200em;
+                color: @black;
+                display: block;
+            }
+        }
+    } //==========================================================  MENU (ALL)   ==========================================================//
+    div.menu {
+        background: @bggray;
+        padding: 7px 0;
+        ul> {
+            margin-bottom: 0;
+            li> {
+                padding: 0 10px;
+                &:last-child {
+                    padding-right: 0;
+                }
+                a {
+                    display: inline;
+                    color: @black;
+                    text-decoration: none;
+                    padding: 0;
+                    &:active,
+                    &:hover,
+                    &:focus {
+                        border-bottom: 6px solid @red;
+                        background: none;
+                    }
+                }
+                >ul.dropdown-menu {
+                    min-width: 240px;
+                    margin: 6px 0 0 -30px;
+                    padding-bottom: 10px;
+                    border: none;
+                    >li {
+                        margin-top: 7px;
+                        div {
+                            background-position: center center;
+                            width: 25px;
+                            display: inline-block;
+                            margin-right: 3px;
+                        }
+                        a {
+                            padding-bottom: 2px;
+                            &:hover {
+                                border-bottom: 2px solid @red;
+                                background: none;
+                            }
+                        }
+                        &:after {
+                            content: '';
+                            margin-left: 5%;
+                            width: 85%;
+                            height: 1px;
+                            background: #f5f5f5;
+                            display: block;
+                        }
+                    }
+                }
+                &.dropdown:hover {
+                    >a {
+                        border-bottom: 6px solid @red;
+                        background: none;
+                    }
+                    >ul.dropdown-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+        button {
+            border: 1px solid @red;
+            span {
+                background: @red;
+            }
+        }
+    } //==========================================================  SLIDER (index.html)   ==========================================================//
+    section.slider {
+        .bxslider {
+            .slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                }
+                position: relative;
+                .info {
+                    width: 50.7%;
+                    z-index: 10;
+                    position: absolute;
+                    h3 {
+                        font: 2.47vw Lora, sans-serif;
+                        letter-spacing: 2px;
+                    }
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background: rgba(69, 69, 69, 0.702);
+                    top: 0;
+                }
+            }
+        }
+    } //==========================================================  ORDERS (ALL BESIDES about.html)   ==========================================================//
+    div.orders {
+        [class*='col'] {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        [class*='col']:first-child {
+            padding-left: 15px;
+        }
+        [class*='col']:last-child {
+            padding-right: 15px;
+        }
+
+        padding-top: 15px;
+        button {
+            position: relative;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            padding: 20px 0;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            font: 400 1.35vw Ubuntu, sans-serif;
+            i {
+                position: absolute;
+                right: 8%;
+            }
+            &.order-project {
+                background: #de2e34;
+                &:hover {
+                    background: #ff3c42;
+                }
+                &:focus {
+                    border: 1px solid #d21116;
+                    padding: 19px 0;
+                }
+                i {
+                    color: #ab2328;
+                }
+            }
+            &.count-kitchen {
+                background: #ec1622;
+                &:hover {
+                    background: #bf070f;
+                }
+                &:focus {
+                    border: 1px solid #ac0005;
+                    padding: 19px 0;
+                }
+                i {
+                    color: #800b0f;
+                }
+            }
+            &.appointment-consultation {
+                background: #b10104;
+                &:hover {
+                    background: #7f0104;
+                }
+                &:hover {
+                    border: 1px solid #af0100;
+                    padding: 19px 0;
+                }
+                i {
+                    color: #390002;
+                }
+            }
+        }
+    } //==========================================================  CLASSIC KITCHEN (index.html)   ==========================================================//
+    section.classic_kitchens {
+        margin-top: 30px;
+        color: #fff;
+        .container {
+            background: url('../img/Main/classic_kitchen_decorate_left.png') top left no-repeat, url('../img/Main/classic_kitchen_decorate_left.png') top right no-repeat;
+        }
+        .container>h2 {
+            color: #1b1b1b;
+            margin-top: 15px;
+            font: 2.250em Lora, sans-serif;
+        }
+        .container>p {
+            color: #9b9b9b;
+            font: 1.250em Ubuntu, sans-serif;
+        }
+        .grid {
+            margin-top: 35px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .grid-item {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .info {
+                    position: absolute;
+                    width: 80%;
+                    z-index: 10;
+                    h3 {
+                        margin: 0 auto;
+                        width: 66%;
+                        font-size: 1.875em;
+                        &:after {
+                            content: '';
+                            background: url('../img/Main/under_bg_title_kitchen.png') top center no-repeat;
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 21px;
+                            display: block;
+                        }
+                    }
+                    p {
+                        margin: 0 auto;
+                        padding-top: 10px;
+                        width: 66%;
+                    }
+                }
+                a.state {
+                    color: #fff;
+                    text-decoration: none;
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    bottom: 15px;
+                    right: 11px;
+                    font-size: 0.875em;
+                    .icon_in_order {
+                        transform: translateY(5px);
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                    .icon_in_stock {
+                        transform: translateY(3px);
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+                &-1 {
+                    width: 49%;
+                }
+                &-2 {
+                    width: 50%;
+                }
+                &-two-lines {
+                    width: 59.3%;
+                }
+                &-3 {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+                &-4 {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+                &-5 {
+                    margin-top: 10px;
+                    width: 39.6%;
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background: rgba(69, 69, 69, 0.702);
+                    top: 0;
+                    left: 0;
+                }
+                &:hover:after {
+                    background: rgba(69, 69, 69, 0.82);
+                }
+            }
+        }
+    } //==========================================================  MODERN KITCHEN (index.html)   ==========================================================//
+    section.modern_kitchens {
+        .container>h2 {
+            color: #1b1b1b;
+            margin-top: 15px;
+            font: 2.250em Lora, sans-serif;
+        }
+        .container>p {
+            color: #9b9b9b;
+            font: 1.250em Ubuntu, sans-serif;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .grid-item {
+                overflow: hidden;
+                position: relative;
+                margin-top: 15px;
+                .info {
+                    font-size: 1vw;
+                    color: #FFF;
+                    padding: 0 10px;
+                    position: absolute;
+                    bottom: 0;
+                    background: rgba(69, 69, 69, 0.702);
+                    z-index: 10;
+                    width: 45%;
+                    h3 {
+                        font-size: 2.250em;
+                        display: inline-block;
+                        max-width: 80%;
+                        &:after {
+                            content: '';
+                            display: block;
+                            background: #B3B2B1;
+                            width: 100%;
+                            height: 2px;
+                        }
+                    }
+                    &.left {
+                        left: 0;
+                    }
+                    &.right {
+                        right: 0;
+                    }
+                }
+                a.state {
+                    margin-bottom: 10px;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: right;
+                    display: inline-block;
+                    z-index: 10;
+                    bottom: 15px;
+                    right: 11px;
+                    font-size: 0.875em;
+                    font-weight: 300;
+                    .icon_in_order {
+                        transform: translateY(5px);
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                    .icon_in_stock {
+                        transform: translateY(3px);
+                        display: inline-block;
+                        margin-left: 10px;
+                    }
+                }
+
+                &-1 {
+                    width: 51.3%;
+                }
+                &-2 {
+                    width: 47.7%;
+                }
+                &-3 {
+                    width: 42.4%;
+                    .info {
+                        width: 65%;
+                    }
+                }
+                &-4 {
+                    width: 56.5%;
+                }
+                &-5 {
+                    width: 58.7%;
+                }
+                &-6 {
+                    width: 40.3%;
+                }
+                &-7 {
+                    width: 50.1%;
+                }
+                &-8 {
+                    width: 48.93%;
+                }
+                &-9 {
+                    width: 58.7%;
+                }
+                &-10 {
+                    width: 40.3%;
+                }
+                img {
+                    .transition(all,
+                    1s);
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    } //==========================================================  ROW INFO SHOP (index.html)   ==========================================================//
+    .row_info_shop_block .container {
+        color: #3E3E3E;
+        margin-top: 60px;
+        display: flex;
+        p {
+            margin-top: 10px;
+            width: 80%;
+            font-size: 1.125em;
+        }
+    } //==========================================================  SALE (index.html)   ==========================================================//
+    .sale {
+        background: #F1F1F1;
+        margin-top: 60px;
+        padding-bottom: 45px;
+        [class*='col'] {
+            padding-left: 7px;
+            padding-right: 7px;
+        }
+        h2 {
+            margin: 25px 0 30px 0;
+            font: 2.250em Lora, sans-serif;
+            color: #1b1b1b;
+        }
+        &-item {
+            border: 1px solid #bebebe;
+            background: #fff;
+            .info {
+                background: #fff;
+                position: relative;
+                width: 90%;
+                left: 5%;
+                margin-top: -15%;
+                padding: 20px 40px;
+                h3 {
+                    display: inline-block;
+                    margin-top: 0;
+                    color: #171616;
+                    font: 1.875em Lora, sans-serif;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid #e8e8e8;
+                }
+                >div {
+                    margin-top: 7px;
+                    &.sale-date {
+                        display: inline-block;
+                        color: #383838;
+                        font-size: 0.875em;
+                        border-bottom: 1px solid #e8e8e8;
+                        padding-bottom: 10px;
+                    }
+                    &.size,
+                    &.price,
+                    &.sale-procent {
+                        color: #767676;
+                        font-size: 1.500em;
+                        & .value {
+                            font-size: 0.833em;
+                            color: #000;
+                            font-weight: 500;
+                        }
+                    }
+                    &.sale-procent {
+                        span.wrap-procent {
+                            padding: 3px 5px;
+                            color: #FFF;
+                            background: #EC3232;
+                        }
+                    }
+                }
+            }
+            .wrap_img {
+                overflow: hidden;
+            }
+            img {
+                .transition(all,
+                1s);
+            }
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    } //==========================================================  ELEGANT ITALIAN KITCHEN (index.html)   ==========================================================//
+    section.elegant_italian_kitchen {
+        [class*='col']:first-child {
+            padding-right: 0;
+        }
+        [class*='col']:last-child {
+            padding-left: 0;
+        }
+        h3 {
+            color: #171616;
+            font: 2.250em Lora, sans-serif;
+            margin-bottom: 60px;
+        }
+        p {
+            font-size: 1.125em;
+            color: #6b6b6b;
+            line-height: 1.667;
+        }
+        img {
+            width: 100%;
+            display: block;
+            margin-top: 15px;
+        }
+    } //==========================================================  BREADCRUMB (ALL BESIDES index.html)   ==========================================================//
+    div.breadcrumbs {
+        margin-bottom: 0;
+        background: #FFF;
+        .breadcrumb {
+            margin-bottom: 0;
+            ul {
+                margin-bottom: 0;
+                li {
+                    position: relative;
+                    a {
+                        font-size: 1.125em;
+                        color: #696969;
+                    }
+                    &:not(:last-child):after {
+                        content: '\331';
+                        font-size: 19px;
+                        position: absolute;
+                        right: -2%;
+                        top: -42%;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        &.product {
+            margin-top: 10px;
+            .breadcrumb {
+                margin-bottom: 0;
+                background: transparent;
+                a.back {
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 0.875em;
+                    margin: 0 10px 10px 0;
+                    color: #080808;
+                    background: #e8e8e8;
+                    padding: 10px 12px;
+                    border-radius: 7px;
+                }
+                ul {
+                    display: inline-block;
+                    li a {
+                        font-size: 0.875em;
+                    }
+                }
+            }
+        }
+        &.contact {
+            margin-top: 10px;
+            .breadcrumb {
+                margin-bottom: 0;
+                ul {
+                    display: inline-block;
+                    li a {
+                        font-size: 0.875em;
+                    }
+                }
+            }
+        }
+        &.brends {
+            .breadcrumb {
+                padding-left: 0;
+                background: transparent;
+            }
+        }
+        &.stock,
+        &.accessories,
+        &.one_brend,
+        &.about {
+            .breadcrumb {
+                padding-left: 0;
+                background: transparent;
+                ul li a {
+                    font-size: 0.875em;
+                }
+            }
+        }
+    } //==========================================================  CATEGORIES (katalog.html)   ==========================================================//
+    div.categories {
+        padding: 14px 0;
+        background: #D3D3D3;
+        .container {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            a.category {
+                text-decoration: none;
+                color: #474747;
+                font-size: 1.250em;
+
+                display: block;
+                width: 20%;
+                >div {
+                    display: inline-block;
+                    margin-right: 10%;
+                }
+            }
+        }
+    } //==========================================================  ARMCHAIRS (katalog.html)  ==========================================================//
+    section.armchairs_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-around;
+            .grid-col-one {
+                width: 73%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            display: block;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 49%;
+                }
+                &-2 {
+                    width: 49.1%;
+                }
+                &-3 {
+                    width: 49%;
+                }
+                &-4 {
+                    width: 49.1%;
+                }
+                &-5 {
+                    width: 26%;
+                }
+            }
+        }
+    } //==========================================================  CUPBOARD (katalog.html)   ==========================================================//
+    section.cupboard_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-around;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            display: block;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 33.96%;
+                }
+                &-2 {
+                    width: 30.61%;
+                }
+                &-3 {
+                    width: 34.27%;
+                }
+            }
+        }
+    } //==========================================================  CUBSTONE (katalog.html)   ==========================================================//
+    section.cubstone_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            display: block;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 33.96%;
+                }
+            }
+        }
+    } //==========================================================  TABLE (katalog.html)   ==========================================================//
+    section.table_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            display: block;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 50.38%;
+                }
+                &-2 {
+                    width: 49%;
+                }
+                &-3 {
+                    width: 50.38%;
+                }
+                &-4 {
+                    width: 49%;
+                }
+                &-5 {
+                    width: 50.38%;
+                }
+                &-6 {
+                    width: 49%;
+                }
+            }
+        }
+    } //==========================================================  CHEST OF DRAWERS (katalog.html)   ==========================================================//
+    section.chest_of_drawers {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            display: block;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 50.45%;
+                }
+                &-2 {
+                    width: 49%;
+                }
+            }
+        }
+    } //==========================================================  SOFA (katalog.html)   ==========================================================//
+    section.sofa_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            display: block;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 33.97%;
+                }
+                &-2 {
+                    width: 30.61%;
+                }
+                &-3 {
+                    width: 34.12%;
+                }
+                &-4 {
+                    width: 33.97%;
+                }
+                &-5 {
+                    width: 30.61%;
+                }
+                &-6 {
+                    width: 34.12%;
+                }
+                &-7 {
+                    width: 33.97%;
+                }
+                &-8 {
+                    width: 30.61%;
+                }
+                &-9 {
+                    width: 34.12%;
+                }
+                &-10 {
+                    width: 33.97%;
+                }
+                &-11 {
+                    width: 30.61%;
+                }
+                &-12 {
+                    width: 34.12%;
+                }
+                &-13 {
+                    width: 33.97%;
+                }
+                &-14 {
+                    width: 30.61%;
+                }
+                &-15 {
+                    width: 34.12%;
+                }
+                &-16 {
+                    width: 51.14%;
+                }
+                &-17 {
+                    width: 48.16%;
+                }
+            }
+        }
+    } //==========================================================  WALLS AND SHELVES (katalog.html)   ==========================================================//
+    section.walls_and_shelves_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            display: block;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 33.91%;
+                }
+                &-2 {
+                    width: 31.23%;
+                }
+                &-3 {
+                    width: 33.26%;
+                }
+            }
+        }
+    } //==========================================================  CHAIR (katalog.html)   ==========================================================//
+    section.chair_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    align-items: center;
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                &-1 {
+                    width: 33.87%;
+                }
+                &-2 {
+                    width: 31.20%;
+                }
+                &-3 {
+                    width: 33.87%;
+                }
+                &-4 {
+                    width: 33.87%;
+                }
+                &-5 {
+                    width: 31.20%;
+                }
+                &-6 {
+                    width: 33.87%;
+                }
+                &-7 {
+                    width: 30.61%;
+                }
+            }
+        }
+    } //==========================================================  BED (katalog.html)   ==========================================================//
+    section.bed_berloni {
+        margin-top: 15px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #010101;
+        }
+        .grid {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .grid-item {
+                position: relative;
+                margin-bottom: 10px;
+                display: inline-table;
+                .info {
+                    bottom: 0;
+                    position: absolute;
+                    background: rgba(69, 69, 69, 0.702);
+                    padding: 4% 9%;
+                    h3 {
+                        font-size: 1.500em;
+                        font-weight: 400;
+                        margin-right: 10px;
+                        .name {
+                            margin-left: 10px;
+                        }
+                    }
+                    div {
+                        margin-left: 80%;
+                    }
+                }
+                &-1 {
+                    width: 34.04%;
+                }
+                &-2 {
+                    width: 31.22%;
+                }
+                &-3 {
+                    width: 33.35%;
+                }
+                &-4 {
+                    width: 50.53%;
+                }
+                &-5 {
+                    width: 48.93%;
+                }
+            }
+        }
+    } //==========================================================  PRODUCT (product.html)  ==========================================================//
+    section.product {
+        .product-item {
+            .photo {
+                position: relative;
+                .card {
+                    padding: 30px 20px;
+                    top: 2.5%;
+                    right: 2.5%;
+                    background: rgba(56, 56, 56, 0.91);
+                    position: absolute;
+                    h3 {
+                        margin-top: 0;
+                        font: 2.500em Lora, sans-serif;
+                    }
+                    div:not(.price) {
+                        color: #999494;
+                        font-size: 1.125em;
+                        & .value {
+                            color: #FFF;
+                        }
+                    }
+                    .price {
+                        margin: 20px 0;
+                        font-size: 1.875em;
+                    }
+                    .buttons {
+                        .order {
+                            display: inline-block;
+                            color: #FFF;
+                            font-size: 1.250em;
+                            padding: 12px 60px;
+                            background: #F83C40;
+                            border-radius: 4px;
+                            text-decoration: none;
+                        }
+                        .under-order {
+                            display: inline-block;
+                            font-size: 1.250em;
+                            color: #FFF;
+                            text-decoration: none;
+                            border: 3px solid #959595;
+                            padding: 4px 40px 8px 40px;
+                            border-radius: 4px;
+                            div {
+                                transform: translateY(5px);
+                                display: inline-block;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                }
+            }
+            h4 {
+                font: 2.250em Lora, sans-serif;
+                color: #000;
+                margin-bottom: 20px;
+            }
+            .description {
+                padding: 35px 20px;
+                border-radius: 5px;
+                border: 1px solid #d3d3d3;
+                p {
+                    color: #575757;
+                    font-size: 1.250em;
+                }
+            }
+        }
+    } //==========================================================  OTHER SECTIONS (product.html)  ==========================================================//
+    section.other_sections {
+        margin-top: 20px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #292727;
+            margin-bottom: 35px;
+        }
+        [class*='col'] {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .section {
+            margin-bottom: 10px;
+            border: 1px solid #bebebe;
+            background: #fff;
+            min-height: 385px;
+            img {
+                width: 100%;
+            }
+            .info {
+                padding: 20px 5px;
+                left: 5%;
+                width: 90%;
+                background: #FFF;
+                margin-top: -15%;
+                position: relative;
+                h3 {
+                    display: inline-block;
+                    font: 1.500em Lora, sans-serif;
+                    color: #292727;
+                    padding-bottom: 15px;
+                    border-bottom: 2px solid #e8e8e8;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 1.125em;
+                    color: #575757;
+                }
+            }
+        }
+    } //==========================================================  CONTACT (contact.html)  ==========================================================//
+    .bg_contact {
+        background: url('../img/Contact/bg.jpg') center center;
+    }
+
+    section.contact {
+        margin-top: 45px;
+        padding-bottom: 70px;
+        h2 {
+            display: inline-block;
+            font: 2.250em Lora, sans-serif;
+            color: #000;
+            padding-bottom: 3px;
+            border-bottom: 2px solid #9e9e9e;
+        }
+        .grid {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .grid-item {
+                padding: 20px 30px 25px;
+                margin: 0 1%;
+                background: #F2F2F2;
+                width: 25%;
+                border-radius: 7px;
+                border: 1px solid rgb(141, 141, 141);
+                h4 {
+                    display: inline-block;
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid #9e9e9e;
+                    font: 1.875em Lora, sans-serif;
+                    color: #000;
+                }
+                .phone {
+                    display: inline-block;
+                    a {
+                        color: #000;
+                        display: block;
+                        font-size: 1.500em;
+                    }
+                }
+                .location,
+                .email a {
+                    color: #000;
+                    font-size: 1.500em;
+                }
+            }
+        }
+    } //==========================================================  BRENDS (brends.html)  ==========================================================//
+    section.brends {
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #000;
+        }
+        p {
+            line-height: 1.667;
+            font-size: 1.125em;
+            color: #000;
+        }
+        .brend-2 {
+            position: relative;
+            .info {
+                width: 40%;
+                top: 5%;
+                right: 1px;
+                position: absolute;
+            }
+        }
+        .row-brend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .brend-3 {
+                width: 34.045%;
+            }
+            .brend-4 {
+                width: 27.48%;
+            }
+            .brend-5 {
+                width: 34.427%;
+            }
+        }
+        .brend-6 {
+            position: relative;
+            .info {
+                width: 40%;
+                bottom: 0%;
+                left: 0;
+                position: absolute;
+            }
+        }
+        .brend-1,
+        .brend-2,
+        .row-brend,
+        .brend-6,
+        .brend-7 {
+            margin-bottom: 30px;
+        }
+    } //==========================================================  STOCK (stock.html)  ==========================================================//
+    section.stock {
+        margin-top: 30px;
+        h2 {
+            font: 2.150em Lora, sans-serif;
+            color: #0d0c0c;
+        }
+        h3 {
+            font: 1.200em lora, sans-serif;
+            color: #0d0c0c;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #bfbebe;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        .info {
+            border: 1px solid #b5b5b5;
+            border-radius: 4px;
+            font-size: 1.150em;
+            padding: 10% 8%;
+        }
+        .description {
+            color: #100F0F;
+            font-style: italic;
+        }
+        .value {
+            color: #100F0F;
+        }
+        .discount {
+            display: block;
+            margin-top: 3px;
+            margin-left: -2%;
+            color: #100F0F;
+            .procent {
+                color: #fff;
+                padding: 2px 9px;
+                background: #F00005;
+            }
+        }
+        .additionally {
+            color: #100F0F;
+            display: block;
+            margin-top: 3px;
+        }
+
+        .bx-wrapper-stock {
+            .bx-controls-direction a {
+                width: 8%;
+                background-color: rgba(98, 98, 98, 0.722);
+            }
+        }
+        .stock-item-1 {
+            .info {
+                .attribute {
+                    .height,
+                    .size,
+                    .price {
+                        color: #797777;
+                        display: block;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+        .stock-item-2 {
+            margin-top: 80px;
+            h2 {
+                margin: 0 0 20px;
+            }
+            .info {
+                min-height: 340px;
+                .description {
+                    color: #100F0F;
+                    font-style: italic;
+                }
+                .attribute {
+                    .size,
+                    .price {
+                        color: #797777;
+                        display: block;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+        .stock-item-3 {
+            margin-top: 80px;
+            h2 {
+                margin: 0 0 20px;
+            }
+            .info {
+                min-height: 340px;
+                .carpet,
+                .kitchen {
+                    h3 {
+                        border: none;
+                    }
+                    .attribute {
+                        .size,
+                        .price {
+                            color: #797777;
+                            display: block;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+                .carpet {
+                    margin-top: 20px;
+                    border-top: 1px solid #b6b5b5;
+                }
+            }
+        }
+        .stock-item-4 {
+            transform: translateY(-30px);
+            h2 {
+                margin: 0 0 20px;
+            }
+            .info {
+                min-height: 340px;
+                .table,
+                .chair {
+                    h3 {
+                        margin: 15px 0 15px;
+                        border: none;
+                    }
+                    .attribute {
+                        .size,
+                        .price {
+                            color: #797777;
+                            display: block;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+                .chair {
+                    margin-top: 20px;
+                    border-top: 1px solid #b6b5b5;
+                }
+            }
+        }
+        .stock-item-5 {
+            margin-top: 30px;
+            h2 {
+                margin: 0 0 20px;
+            }
+            .info {
+                min-height: 360px;
+                h3 {
+                    margin: 15px 0 15px;
+                }
+                .attribute {
+                    .size,
+                    .price {
+                        color: #797777;
+                        display: block;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    } //==========================================================  KINDS ACCESSORIES (accessories.html)  ==========================================================//
+    div.kinds_accessories {
+        background: #D3D3D3;
+        padding: 15px 0;
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                color: #474747;
+                display: block;
+                font-size: 1.125em;
+                >div {
+                    display: inline-block;
+                    margin-right: 5%;
+                }
+                &.kind_accessory {
+                    &-1 {
+                        width: 15%;
+                    }
+                    &-2 {
+                        width: 30%;
+                    }
+                    &-3 {
+                        width: 25%;
+                    }
+                    &-4 {
+                        width: 18%;
+                    }
+                    &-5 {
+                        width: 12%;
+                    }
+                }
+            }
+        }
+    } //==========================================================  LIGHTNINGS  (accessories.html) ==========================================================//
+    section.lightnings {
+        h2 {
+            font: 2.150em Lora, sans-serif;
+            color: #000;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item {
+                margin-top: 10px;
+                position: relative;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5%;
+                    min-width: 50%;
+                    min-height: 30%;
+                    background: rgba(56, 56, 56, 0.88);
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    h3 {
+                        max-width: 100%;
+                        font-size: 1.250em;
+                        margin: 5px 0;
+                    }
+                    p {
+                        max-width: 100%;
+                        margin: 0;
+                    }
+                }
+                &-1,
+                &-2,
+                &-3,
+                &-5,
+                &-6,
+                &-7 {
+                    width: 23.816%;
+                }
+                &-4,
+                &-8 {
+                    width: 26.488%;
+                }
+            }
+        }
+    } //==========================================================  ACCESSORIES HANDING CABINETS (accessories.html)  ==========================================================//
+    section.accessories_handing_cabinets {
+        margin-top: 30px;
+        h2 {
+            font: 2.150em Lora, sans-serif;
+            color: #000;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item {
+                margin-top: 10px;
+                position: relative;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4%;
+                    min-width: 50%;
+                    max-width: 80%;
+                    min-height: 30%;
+                    background: rgba(56, 56, 56, 0.88);
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    h3 {
+                        max-width: 100%;
+                        font-size: 1.125em;
+                        margin: 5px 0;
+                        line-height: 1.1;
+                    }
+                }
+                &-1,
+                &-2,
+                &-3,
+                &-5,
+                &-6,
+                &-7 {
+                    width: 23.816%;
+                }
+                &-4,
+                &-8 {
+                    width: 26.488%;
+                }
+            }
+        }
+    } //==========================================================  TRAYS FOR CUTLERYS (accessories.html)  ==========================================================//
+    section.trays_for_cutlerys {
+        margin-top: 30px;
+        h2 {
+            font: 2.150em Lora, sans-serif;
+            color: #000;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item {
+                margin-top: 10px;
+                position: relative;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1%;
+                    min-width: 50%;
+                    max-width: 80%;
+                    min-height: 30%;
+                    background: rgba(56, 56, 56, 0.88);
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    h3 {
+                        max-width: 100%;
+                        font-size: 1.125em;
+                        margin: 5px 0;
+                        line-height: 1.1;
+                    }
+                }
+                &-1,
+                &-2,
+                &-3,
+                &-5,
+                &-6,
+                &-7 {
+                    width: 23.816%;
+                }
+                &-4,
+                &-8 {
+                    width: 26.488%;
+                }
+            }
+        }
+    } //==========================================================  SPARE PARTS (accessories.html)  ==========================================================//
+    section.spare_parts {
+        margin-top: 30px;
+        h2 {
+            font: 2.150em Lora, sans-serif;
+            color: #000;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item {
+                margin-top: 10px;
+                position: relative;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4%;
+                    min-width: 50%;
+                    max-width: 80%;
+                    min-height: 30%;
+                    background: rgba(56, 56, 56, 0.88);
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    h3 {
+                        max-width: 100%;
+                        font-size: 1.125em;
+                        margin: 5px 0;
+                        line-height: 1.1;
+                    }
+                }
+                &-1,
+                &-2,
+                &-3,
+                &-5,
+                &-6,
+                &-7 {
+                    width: 23.816%;
+                }
+                &-4,
+                &-8 {
+                    width: 26.488%;
+                }
+            }
+        }
+    } //==========================================================  SHELF (accessories.html)   ==========================================================//
+    section.shelf {
+        margin-top: 30px;
+        h2 {
+            font: 2.150em Lora, sans-serif;
+            color: #000;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &-item {
+                margin-top: 10px;
+                position: relative;
+                display: inline-table;
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 4%;
+                    min-width: 50%;
+                    max-width: 80%;
+                    min-height: 30%;
+                    background: rgba(56, 56, 56, 0.88);
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    h3 {
+                        max-width: 100%;
+                        font-size: 1.125em;
+                        margin: 5px 0;
+                        line-height: 1.1;
+                        margin: 0;
+                    }
+                    p {
+                        max-width: 100%;
+                        margin: 0;
+                    }
+                }
+                &-1,
+                &-2,
+                &-3,
+                &-5,
+                &-6,
+                &-7 {
+                    width: 23.816%;
+                }
+                &-4,
+                &-8 {
+                    width: 26.488%;
+                }
+            }
+        }
+    } //==========================================================  BREND (brend.html)   ==========================================================//
+    section.brend {
+        p {
+            margin: 15px 0 20px;
+            color: #424242;
+            font-size: 1.125em;
+        }
+        .product {
+            position: relative;
+            .info {
+                bottom: 0;
+                left: 0;
+                min-width: 50%;
+                max-width: 80%;
+                height: 20vh;
+                position: absolute;
+                background: rgba(64, 64, 64, 0.84);
+                display: table;
+                padding: 3% 2%;
+                .content {
+                    vertical-align: middle;
+                    display: table-cell;
+                    h4 {
+                        margin: 0;
+                        font-size: 1.125em;
+                    }
+                    .additionally {
+                        display: block;
+                        color: #DCDCDC;
+                    }
+                }
+            }
+        }
+    } //==========================================================  OTHER BRENDS (brend.html)   ==========================================================//
+    section.other_Brends {
+        margin-top: 30px;
+        h2 {
+            font: 2.250em Lora, sans-serif;
+            color: #000;
+        }
+        .slick-slider {
+            padding: 20px 8%;
+            border: 1px solid #999999;
+        }
+    } //==========================================================  ABOUT COMPANY (about.html)   ==========================================================//
+    section.about_company {
+        h2 {
+            margin-top: 0;
+            font: 2.0em Lora, sans-serif;
+            color: #000;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #dfdfdf;
+            display: inline-block;
+        }
+        p {
+            line-height: 1.3;
+            color: #474747;
+            font-size: 1.125em;
+            &.about_kitchen {
+                margin: 30px 0;
+                font-size: 1.500em;
+            }
+            &.every-detal {
+                font-size: 1.500em;
+                line-height: 1.1;
+            }
+        }
+    } //==========================================================  DIFFERENTIATES US FROM OTHERS (about.html)   ==========================================================//
+    section.differentiates_us_from_others {
+        margin-top: 30px;
+        padding: 30px 0;
+        background: #e8e8e8;
+        .container-item {
+            padding: 30px 75px;
+            border: 3px solid #fff;
+            border-radius: 3px;
+            h2 {
+                margin-top: 0;
+                font: 2.150em Lora, sans-serif;
+                color: #474747;
+            }
+            .item {
+                margin-top: 30px;
+                p {
+                    margin-top: 10px;
+                    font-style: italic;
+                    font-size: 1.400em;
+                    color: #1C1B1B;
+                }
+            }
+        }
+    } //==========================================================  BEST MATERIALS (about.html)   ==========================================================//
+    section.use_best_materials {
+        margin-top: 50px;
+        h2 {
+            display: inline-block;
+            margin-top: 0;
+            font: 2em Lora, sans-serif;
+            color: #000;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #dfdfdf;
+            margin-bottom: 30px;
+        }
+        p {
+            line-height: 1.3;
+            color: #474747;
+            font-size: 1.1em;
+        }
+    } //==========================================================  VIDEO ABOUT US SHOP (about.html)   ==========================================================//
+    section.video_about_us_shop {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        background: #F5F5F5;
+        h2 {
+            font: 1.9em Lora, sans-serif;
+            color: #100F0F;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    } //==========================================================  MAP (ALL)   ==========================================================//
+    div.map_container {
+        position: relative;
+        margin-top: 20px;
+        height: 300px;
+        #map {
+            top: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        &.contact {
+            height: 390px;
+        }
+        &.about {
+            margin-top: 0;
+        }
+    } //==========================================================  PRE FOOTER (ALL PAGES)  ==========================================================//
+    div.pre_footer {
+        margin-top: 20px;
+        img {
+            display: block;
+            margin: 10px 0 20px;
+        }
+
+        .numbers {
+            a {
+                font: 1.250em Lora, sans-serif;
+                margin-top: 5px;
+                color: @black;
+                display: inline-block;
+            }
+        }
+
+        p {
+            font-size: 1.250em;
+            color: #7b7b7b;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    } //==========================================================  FOOTER (ALL PAGES)  ==========================================================//
+    footer {
+        margin-top: 10px;
+        padding: 7px 0 7px;
+        background: #e8e8e8;
+        [class*='col']:first-child {
+            padding-right: 0;
+        }
+
+        [class*='col']:last-child {
+            padding-left: 0;
+        }
+
+        ul {
+            margin-bottom: 0;
+            li {
+                padding: 0 10px;
+                &:last-child {
+                    padding-right: 0;
+                }
+                a {
+                    font-size: 1.250em;
+                    display: inline;
+                    color: @black;
+                    text-decoration: none;
+                    padding: 0 0 8px;
+                    &:active,
+                    &:hover,
+                    &:focus {
+                        border-bottom: 4px solid @red;
+                        background: none;
+                        text-decoration: none;
+                        color: @black;
+                    }
+                }
+            }
+        }
+
+        .social-icons {
+            a {
+                color: #fff;
+                display: inline-block;
+                padding-top: 5px;
+                background: #909090;
+                margin: 0 4px;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                &:hover {
+                    background: #525252;
+                }
+            }
+        }
+    } //==========================================================  MODAL (ALL BESIDES about.html)  ==========================================================//
+    #count_the_project {
+        .modal-dialog {
+            min-width: 750px;
+            .modal-content {
+                .modal-header {
+                    button.close {
+                        opacity: 1;
+                    }
+                    border-bottom: none;
+                    h4 {
+                        margin-top: 30px;
+                        color: #383637;
+                        font-weight: 400;
+                        font-size: 1.250em;
+                    }
+                }
+                .modal-body {
+                    padding: 15px 65px;
+                    form {
+
+                        input,
+                        label {
+                            font-size: 1.1em;
+                            border-radius: 7px;
+                        }
+                        label {
+                            color: #222222;
+                            font-weight: 400;
+                        }
+                        .custom-input-file {
+
+                            padding: 3px 0;
+                            .wrap_old_file {
+                                overflow: hidden;
+                                display: inline-block;
+                                margin-left: 190px;
+                                input[type=file] {
+                                    transform: translateY(4px);
+                                    border-radius: 10px;
+                                    outline: none;
+                                    color: #222222;
+                                    font-size: 1em;
+                                    margin-left: -140px;
+                                }
+                            }
+                            &:before {
+                                content: 'Выбрать Файлы';
+                                color: #222222;
+                                position: absolute;
+                                background: #E9E9E9;
+                                z-index: 10;
+                                left: 15px;
+                                border-radius: 10px;
+                                padding: 6px 30px;
+                            }
+                        }
+
+                        button {
+                            margin-top: 40px;
+                            padding: 18px 0;
+                            border-radius: 7px;
+                            background: #FF2A34;
+                            width: 100%;
+                            border: none;
+                            font-size: 1.3em;
+                            outline: none;
+                            i {
+                                margin-left: 3%;
+                                color: #ab2328;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #appointment_for_consultation {
+        .modal-dialog .modal-content {
+            .modal-header {
+                .close {
+                    opacity: 1;
+                }
+                padding-bottom: 0;
+                border-bottom: none;
+                h4 {
+                    margin-bottom: 0;
+                    display: inline-block;
+                    font-weight: 400;
+                    font-size: 1.250em;
+                    color: #383637;
+                    border-bottom: 1px solid #d7d7d7;
+                }
+            }
+            .modal-body {
+
+                padding: 15px 65px;
+                p {
+                    font-size: 1.1em;
+                    color: #483637;
+                }
+                form {
+                    margin-top: 15px;
+                    input {
+                        font-size: 1.1em;
+                        border-radius: 7px;
+                    }
+                    button {
+                        margin-top: 20px;
+                        padding: 18px 0;
+                        border-radius: 7px;
+                        background: #FF2A34;
+                        width: 100%;
+                        border: none;
+                        font-size: 1.3em;
+                        outline: none;
+                        i {
+                            margin-left: 3%;
+                            color: #ab2328;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ImgPreview {
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    #ModalImgPreview {
+        display: none;
+        position: fixed;
+        z-index: 11;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    #ModalImg {
+        margin: auto;
+        display: block;
+        width: 35%;
+    }
+
+    #ModalImg {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes zoom {
+        from {
+            -webkit-transform: scale(0);
+            transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1);
+            transform: scale(1)
+        }
+    }
+
+    .ModalImgPreviewClose {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+    .ModalImgPreviewClose:hover,
+    .ModalImgPreviewClose:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    } //==========================================================   RESPONSIVE   ==========================================================//
+    @media (max-width: 767px) {
+        header {
+            text-align: center;
+            img {
+                margin: 0 auto;
+            }
+            .street {
+                text-align: center;
+                padding-right: 0;
+                &:after {
+                    content: none;
+                    display: none;
+                }
+            }
+            .number,
+            .street {
+                margin-top: 15px;
+            }
+        }
+
+        div.menu {
+            .navbar-collapse.in {
+                overflow: inherit;
+            }
+            ul {
+                margin-bottom: 10px;
+                >li {
+                    margin-top: 10px;
+                    >ul {
+                        left: -100%;
+                    }
+                }
+            }
+        }
+
+        div.orders {
+            [class*='col'] {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            button {
+                font-size: 1em;
+            }
+        }
+
+        section.classic_kitchens .grid .grid-item {
+            font-size: 2.5vw;
+            width: 100%;
+            &-two-lines {
+                width: 100%;
+            }
+            img {
+                width: 100%;
+            }
+            margin-top: 10px;
+            .state>div {
+                width: 5vw;
+                height: 5vw;
+                background-size: 100%;
+                margin-left: 1%;
+            }
+        }
+
+        section.modern_kitchens .grid .grid-item {
+            width: 100%;
+            margin-top: 10px;
+            .info {
+                font-size: 2.5vw;
+            }
+            &:hover {
+                img {
+                    position: inherit;
+                }
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+        div.row_info_shop_block .container {
+            flex-wrap: wrap;
+            justify-content: center;
+            &>div {
+                margin-top: 10px;
+                text-align: center;
+                >div,
+                p {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        section.sale .sale-item {
+            margin-bottom: 20px;
+            .info {
+                font-size: 2.5vw;
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+        section.elegant_italian_kitchen {
+            [class*='col']:first-child {
+                padding-right: 15px;
+            }
+            [class*='col']:last-child {
+                padding-left: 15px;
+            }
+        }
+
+        div.categories {
+            .container {
+                width: 95%;
+                a.category {
+                    width: auto;
+                }
+            }
+        }
+
+        section.armchairs_berloni,
+        section.cupboard_berloni,
+        section.cubstone_berloni,
+        section.table_berloni,
+        section.chest_of_drawers,
+        section.sofa_berloni,
+        section.walls_and_shelves_berloni,
+        section.chair_berloni,
+        section.bed_berloni {
+            font-size: 14px;
+            .grid {
+                flex-wrap: wrap;
+                .grid-item,
+                .grid-item img,
+                .grid-col-one {
+                    width: 100%;
+                }
+            }
+        }
+
+        section.product .product-item .photo {
+            .card {
+                font-size: 1.3vw;
+                padding: 1.3vw 0.8vw;
+                .price {
+                    margin: 1.3vw 0;
+                }
+                .buttons {
+                    .order {
+                        padding: 0.8vw 1.3vw;
+                    }
+                    .under-order {
+                        border-width: 0.3vw;
+                        padding: 0.1vw 1vw 0.4vw;
+                        div {
+                            transform: translateY(0.6vw);
+                            width: 2.3vw;
+                            height: 2.3vw;
+                        }
+                    }
+                }
+            }
+        }
+
+        section.other_sections {
+            font-size: 14px;
+            [class*='col'] {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        section.contact .grid {
+            font-size: 3vw;
+            .grid-item {
+                margin-bottom: 10px;
+                width: 70%;
+            }
+        }
+        section.brends .row-brend .brend-3,
+        section.brends .row-brend .brend-4,
+        section.brends .row-brend .brend-5 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        section.stock {
+            font-size: 12px;
+            .stock-item {
+                &-2 {
+                    margin-top: 10px;
+                }
+                &-1,
+                &-2,
+                &-3,
+                &-4,
+                &-5 {
+                    margin-top: 30px;
+                    transform: none;
+                }
+                &-1 .info,
+                &-2 .info,
+                &-3 .info,
+                &-4 .info,
+                &-5 .info {
+                    min-height: 250px;
+                }
+            }
+        }
+        div.kinds_accessories .container a.kind_accessory {
+            &-1,
+            &-2,
+            &-3,
+            &-4,
+            &-5 {
+                width: inherit;
+            }
+        }
+        section.lightnings,
+        section.accessories_handing_cabinets,
+        section.trays_for_cutlerys,
+        section.spare_parts,
+        section.shelf {
+            font-size: 3vw;
+            .grid .grid-item {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        section.brend {
+            font-size: 5vw;
+            .product {
+                margin-bottom: 10px;
+                img {
+                    width: 100%;
+                }
+                .info {
+                    padding: 2%;
+                }
+            }
+        }
+        section.about_company,
+        section.differentiates_us_from_others,
+        section.use_best_materials,
+        section.video_about_us_shop {
+            font-size: 12px;
+        }
+        section.differentiates_us_from_others {
+            .item {
+                text-align: center;
+                >div {
+                    margin: 0 auto;
+                }
+            }
+        }
+        div.pre_footer {
+            [class*='col']:first-child {
+                padding-right: 15px;
+            }
+            [class*='col']:last-child {
+                padding-left: 15px;
+            }
+            font-size: 14px;
+        }
+
+        footer {
+            font-size: 14px;
+            text-align: center;
+            ul li {
+                margin: 5px 0;
+            }
+            .social-icons {
+                margin-top: 10px;
+            }
+        }
+
+        #count_the_project .modal-dialog {
+            min-width: 90%;
+            .modal-content .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+                font-size: 13px;
+                form {
+
+                    .custom-input-file {
+                        &:before {
+                            left: 15px;
+                        }
+                        .wrap_old_file {
+                            margin-left: 165px;
+                            input[type=file] {
+                                margin-left: -116px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #appointment_for_consultation {
+            font-size: 14px;
+            .modal-dialog .modal-content .modal-body {
+                padding: 2%;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        section.classic_kitchens .grid .grid-item {
+            font-size: 14px;
+        }
+
+        div.row_info_shop_block .container {
+            flex-wrap: wrap;
+        }
+
+        section.sale .sale-item .info {
+            font-size: 12px;
+            padding: 20px 10px;
+        }
+
+        section.elegant_italian_kitchen {
+            [class*='col']:first-child {
+                padding-right: 15px;
+            }
+            [class*='col']:last-child {
+                padding-left: 15px;
+            }
+        }
+
+        div.categories {
+            .container {
+                width: 85%;
+            }
+        }
+
+        section.product .product-item .photo {
+            .card {
+                font-size: 12px;
+                padding: 10px 5px;
+                .price {
+                    margin: 10px 0;
+                }
+                .buttons {
+                    .order {
+                        padding: 5px 10px;
+                    }
+                    .under-order {
+                        padding: 1px 10px;
+                        div {
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+        section.contact .grid {
+            font-size: 12px;
+            .grid-item {
+                width: 31%;
+            }
+        }
+        section.stock {
+            font-size: 12px;
+            .stock-item {
+                &-3,
+                &-2 {
+                    margin-top: 30px;
+                }
+                &-1 .info,
+                &-2 .info,
+                &-3 .info,
+                &-4 .info,
+                &-5 .info {
+                    min-height: 250px;
+                }
+            }
+        }
+        section.lightnings,
+        section.accessories_handing_cabinets,
+        section.trays_for_cutlerys,
+        section.spare_parts,
+        section.shelf {
+            font-size: 10px;
+        }
+        section.brend {
+            font-size: 14px;
+            .product .info {
+                padding: 1%;
+            }
+        }
+        section.about_company,
+        section.differentiates_us_from_others,
+        section.use_best_materials,
+        section.video_about_us_shop {
+            font-size: 12px;
+        }
+        div.pre_footer {
+            font-size: 13px;
+        }
+
+        footer {
+            font-size: 14px;
+            ul li {
+                margin: 5px 0;
+            }
+            .social-icons {
+                margin-top: 10px;
+            }
+        }
+
+        #count_the_project .modal-dialog {
+            min-width: 700px;
+            .modal-content .modal-body {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        section.sale .sale-item .info {
+            font-size: 14px;
+            padding: 20px 20px;
+        }
+
+        section.elegant_italian_kitchen {
+            h3 {
+                margin-bottom: 30px;
+            }
+            p {
+                padding-right: 5px;
+            }
+            font-size: 13px;
+        }
+
+        div.categories {
+            .container {
+                width: 75%;
+            }
+        }
+
+        section.product .product-item .photo {
+            .card {
+                font-size: 14px;
+                padding: 20px 10px;
+                .price {
+                    margin: 10px 0;
+                }
+                .buttons {
+                    .order {
+                        padding: 5px 10px;
+                    }
+                    .under-order {
+                        padding: 1px 10px;
+                        div {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        section.contact .grid .grid-item {
+            width: 31%;
+        }
+        section.stock {
+            font-size: 14px;
+        }
+
+        section.lightnings,
+        section.accessories_handing_cabinets,
+        section.trays_for_cutlerys,
+        section.spare_parts,
+        section.shelf {
+            font-size: 14px;
+        }
+        section.brend {
+            font-size: 14px;
+            .product .info {
+                padding: 1%;
+            }
+        }
+        section.about_company,
+        section.differentiates_us_from_others,
+        section.use_best_materials,
+        section.video_about_us_shop {
+            font-size: 14px;
+        }
+        div.pre_footer {
+            font-size: 13px;
+        }
+
+        footer {
+            font-size: 15px;
+            ul li {
+                margin: 5px 0;
+            }
+        }
+
+        #count_the_project .modal-dialog {
+            .modal-content .modal-body {
+                form input[type=file]:after {
+                    width: 47%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {}
+
+    //==========================================================   IE   ==========================================================//
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        section.slider .bxslider .slide {
+            display: block;
+            .info {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        section.classic_kitchens .grid .grid-item {
+            display: block;
+            .info {
+                width: inherit;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                p {
+                    width: 60%;
+                }
+            }
+        }
+        section.lightnings,
+        section.accessories_handing_cabinets,
+        section.trays_for_cutlerys,
+        section.spare_parts,
+        section.shelf {
+            .grid .grid-item {
+                display: block;
+            }
+        }
+        #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type=file] {
+            margin-left: -340px;
+        }
+        @media (max-width:767px) {
+            section.classic_kitchens .grid .grid-item .info {
+                width: auto;
+            }
+        }
+    } //==========================================================   FIREFOX   ==========================================================//
+    @-moz-document url-prefix() {
+        #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type="file"] {
+            margin-left: -85px;
+        }
+        @media (max-width:767px) {
+            #count_the_project .modal-dialog .modal-content .modal-body form .custom-input-file .wrap_old_file input[type="file"] {
+                margin-left: -70px;
+            }
+        }
+    }
