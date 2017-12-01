@@ -1,0 +1,324 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .order_btn {
+    width: 100%;
+    text-align: center;
+  }
+  .order_btn a {
+    font-size: 19px;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .inverse-darken {
+    padding-bottom: 20px;
+  }
+  section.turnkey_value .photoluminescent_evacuation_plan,
+  section.turnkey_value .evacuation_plan_lamination .overlay-dark {
+    padding-bottom: 30px;
+  }
+  .form_calculate .title {
+    font-size: 13px;
+  }
+  .form_calculate label,
+  .form_calculate .selectize-input {
+    font-size: 10px;
+  }
+  .form_calculate .selectize-input {
+    padding: 8px 8px;
+  }
+  .form_calculate input[type="text"],
+  .form_calculate input[type="tel"] {
+    padding: 14px 8px;
+  }
+  header .contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .phone a {
+    font-size: 13px;
+  }
+  .mail a {
+    font-size: 14px;
+  }
+  .phone {
+    margin-right: 30px;
+  }
+  .phone .fa {
+    font-size: 22px;
+  }
+  .mail .fa {
+    font-size: 15px;
+  }
+  header {
+    padding-bottom: 30px;
+    position: relative;
+    background: url('../img/bg_top_mobile.jpg') 0 / cover no-repeat;
+    color: #fff;
+  }
+  header .phone a,
+  header .mail a {
+    color: #fff;
+  }
+  header .list_site {
+    margin-bottom: 30px;
+  }
+  header .content {
+    width: 65%;
+    margin: 0 auto;
+  }
+  header .list_site li {
+    font-size: 13.3px;
+  }
+  header:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.92);
+    top: 0;
+  }
+  section.why_required_plan .block .title {
+    font-size: 14px;
+  }
+  section.why_required_plan .required_for {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  section.why_required_plan .block {
+    width: 40%;
+  }
+  section.why_required_plan p {
+    font-size: 13px;
+  }
+  section.why_required_plan h3 {
+    font-size: 16px;
+  }
+  section.attention .special_offer {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  section.attention p {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  section.order_develop_plan p {
+    font-size: 12px;
+  }
+  section.order_develop_plan .order_btn {
+    margin-top: 15px;
+  }
+  section.demands h2 {
+    font-size: 11.44px;
+  }
+  section.demands .demands_blocks {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  section.demands .block {
+    width: 125px;
+    height: 125px;
+    padding: 15px;
+  }
+  section.demands .block p {
+    font-size: 10px;
+  }
+  section.demands h2 {
+    margin-bottom: 20px;
+  }
+  section.turnkey_value h2 {
+    margin-bottom: 0;
+  }
+  section.turnkey_value img {
+    margin-bottom: 30px;
+  }
+  section.turnkey_value .evacuation_plan_lamination .list_site li,
+  section.turnkey_value .evacuation_plan_paper .list_site li,
+  section.turnkey_value .evacuation_plan_plastic .list_site li,
+  section.turnkey_value .photoluminescent_evacuation_plan .list_site li {
+    font-size: 13px;
+  }
+  section.turnkey_value .list_site li:before {
+    width: 8px;
+    height: 8px;
+  }
+  section.turnkey_value .list_site li {
+    padding-left: 15px;
+  }
+  section.turnkey_value p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .form_calculate input[type="submit"] {
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 8px 0;
+  }
+  section.attention .PS {
+    font-size: 11px;
+    margin: 15px 0 20px;
+  }
+  section.attention h2 {
+    margin-bottom: 10px;
+  }
+  .reverse_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+  section.get_advice p {
+    font-size: 12px;
+  }
+  section.get_advice form .title {
+    font-size: 12px;
+    padding: 0 16%;
+  }
+  section.get_advice form input[type="submit"] {
+    font-size: 19px;
+  }
+  section.get_advice form input[type="tel"] {
+    font-size: 15px;
+  }
+  footer .copyright {
+    font-size: 9px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 27px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  .phone a {
+    font-size: 15px;
+  }
+  .mail a {
+    font-size: 16px;
+  }
+  .phone .fa {
+    font-size: 26px;
+  }
+  .mail .fa {
+    font-size: 18px;
+  }
+  header .list_site li {
+    font-size: 15px;
+  }
+  section.why_required_plan p {
+    font-size: 16px;
+  }
+  .order_btn a {
+    font-size: 15px;
+  }
+  section.why_required_plan .block .title {
+    font-size: 14px;
+  }
+  section.why_required_plan h3 {
+    font-size: 20px;
+  }
+  section.attention .special_offer {
+    font-size: 16px;
+  }
+  section.attention h2 {
+    font-size: 19px;
+  }
+  section.attention p {
+    font-size: 14px;
+  }
+  section.attention .PS {
+    font-size: 11px;
+  }
+  section.order_develop_plan p {
+    font-size: 14px;
+  }
+  section.demands .demands_blocks {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  section.demands .block {
+    width: 125px;
+    height: 125px;
+    padding: 15px;
+  }
+  section.demands .block p {
+    font-size: 10px;
+  }
+  section.turnkey_value .evacuation_plan_paper .list_site li {
+    font-size: 16px;
+  }
+  section.turnkey_value .evacuation_plan_plastic .list_site li {
+    font-size: 13px;
+  }
+  section.turnkey_value .list_site li:before {
+    width: 9px;
+    height: 9px;
+  }
+  section.turnkey_value .evacuation_plan_lamination .list_site li {
+    font-size: 14px;
+  }
+  section.turnkey_value .photoluminescent_evacuation_plan .list_site li {
+    font-size: 12px;
+  }
+  .form_calculate .title {
+    font-size: 13px;
+  }
+  .form_calculate label,
+  .form_calculate input,
+  .form_calculate .selectize-input {
+    font-size: 10px;
+  }
+  .form_calculate .calculate_cost_btn {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .form_calculate input[type="text"],
+  .form_calculate input[type="tel"] {
+    padding: 16px 9px;
+  }
+  .form_calculate .selectize-input {
+    padding: 9px 9px;
+  }
+  section.content_plan_evacuation .title {
+    font-size: 14px;
+  }
+  section.content_plan_evacuation ol li {
+    font-size: 12px;
+  }
+  section.get_advice p {
+    font-size: 12px;
+  }
+  section.get_advice form .title {
+    font-size: 12px;
+  }
+  section.get_advice form input[type="tel"] {
+    font-size: 10px;
+  }
+  section.get_advice form input[type="submit"] {
+    font-size: 13px;
+  }
+  footer .phone a,
+  footer .mail a {
+    font-size: 14px;
+  }
+  footer .copyright {
+    font-size: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .form_calculate input[type="submit"] {
+    font-size: 10px;
+  }
+}
