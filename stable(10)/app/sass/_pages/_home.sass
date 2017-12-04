@@ -1,0 +1,131 @@
+.isMain
+	div.about
+		+respond-to(sm)
+			font-size: 16px
+		background: $darkenaccent
+		padding: 30px 0
+		.years,.sucs_project,.partner_project
+			.count
+				font: 300 em(72px) RobotoCondensed,sans-serif
+				display: inline-block
+		.years,.sucs_project,.partner_project,.support
+			color: #fff
+			.desc
+				font: normal em(20px) RobotoCondensed,sans-serif
+				display: inline-block
+				margin-left: 15px
+				transform: translateY(-7px)
+		.support
+			background: #fff 
+			max-width: 250px
+			position: relative
+			padding: 8px 10px 12px
+			color: #000
+			+respond-to(md)
+				font-size: 12px
+			.time
+				font: 300 em(60px) RobotoCondensed,sans-serif
+			.time,.desc
+				display: inline-block
+			.desc
+				transform: translateY(7px)
+				margin-left: 5px
+				+respond-to(md)
+					margin-left: 0
+		.btn_supp
+			position: absolute
+			right: 0
+			top: 0
+			font: normal em(20px) RobotoCondensed,sans-serif
+			outline: none
+			display: inline-block
+			border: none
+			transition: color .5s
+			padding: 7px 11px
+			background: $accent
+			border-bottom: 1px solid #12b7bf
+			border-top: 1px solid #12b7bf
+			color: #FFF 
+			transform: rotate(270deg) translate(-31px,31px);
+			+respond-to(md)
+				transform: rotate(270deg) translate(-27px,31px);
+			&:hover
+				color: darken(#fff,80%)
+	section.welcome
+		+respond-to(sm)
+			font-size: 16px
+		h2
+			font: 300 em(72px) RobotoCondensed,sans-serif
+			margin: 0
+		.txt_1
+			font-size: em(16px)
+			line-height: 1.25
+			a
+				text-decoration: none
+				color: $accent
+				transition color .3s
+				&:hover
+					color: darken($accent,20%)
+		.txt_2
+		 	line-height: 1.25
+		 	padding: 0 14%
+		 	+respond-to(md)
+		 		padding: 0
+	section.advantages_and_testimonals
+		+respond-to(sm)
+			font-size: 18px
+		border-top: 1px solid #5c5c5c
+		border-bottom: 1px solid #5c5c5c
+		h3
+			font: normal em(24px) RobotoCondensed,sans-serif
+			margin: 0
+			+respond-to(xs)
+				margin-top: 10px 
+		p
+			line-height: 1.429
+			margin: 11px 0
+		.advantage
+			margin-bottom: 50px 
+		.testimonal
+			padding: 30px 73px 10px 50px
+			+respond-to(sm)
+				padding: 15px 36.5px 5px 25px
+			background: #F2F5F6 
+			margin-bottom: 55px
+			text-align: right
+			p
+				font: 300 italic em(14px) OpenSans,sans-serif
+				max-height: 80px
+				overflow: hidden
+				text-align: left
+		.author
+			transition: all .3s
+			font: 600 em(16px) OpenSans,sans-serif
+			color: $gray
+			display: inline-block
+			text-align: right
+			&:hover
+				color: lighten($gray, 20%)
+	section.widjets
+		+respond-to(sm)
+			font-size: 16px
+		h3
+			font: normal em(28px) RobotoCondensed,sans-serif
+		.widjet_1
+			img
+				float: left
+				margin-right: 28px
+		a
+			color: $gray
+			transition: color 0.4s
+			&:hover
+				color: darken($gray,50%)
+		.number,.mail,.site
+			margin-top: 6px 
+	section
+		padding: 50px 0
+		+respond-to(xs)
+			padding: 15px 0
+		
+		
+

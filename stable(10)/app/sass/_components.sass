@@ -1,0 +1,28 @@
+.list-site
+	list-style: none
+	padding-left: 0
+	li
+		margin: 5px 0
+		position: relative
+		a
+			text-decoration: none
+			color: $gray
+			padding-left: 25px
+			font-weight: normal
+			transition: color 0.4s
+			&:hover
+				color: darken($gray,50%)
+		&:before
+			content: "\f054"
+			position: absolute
+			top: 4px
+			color: $gray
+			font: bold em(16px) FontAwesome
+			display: inline-block
+.more
+	a
+		transition: all .4s
+		color: #464545
+		font: normal em(22px) RobotoCondensed,sans-serif
+		&:hover
+			color: lighten(#464545, 20%)

@@ -1,0 +1,58 @@
+.isServices
+	section.featured_services
+		padding: 20px 0 50px
+		+respond-to(xs)
+			padding: 0	
+		.title
+			a
+				color: $accent
+				text-decoration: none
+				transition: color .4s
+				font-size: em(16px)
+				font-weight: 600
+				&:hover
+					color: darken($accent,20%)
+		p
+			line-height: 1.5
+	section.services_we_work_plan
+		padding: 30px 0 40px
+		+respond-to(xs)
+			padding: 0
+		border-top: 1px solid #5c5c5c
+		border-bottom: 1px solid #5c5c5c
+		.title
+			+respond-to(sm)
+				margin-top: 5px 
+			a
+				font: normal em(24px) RobotoCondensed,sans-serif
+				color: #000
+				text-decoration: none
+				word-spacing: -3px
+				transition: color .4s
+				&:hover
+					color: lighten(#000,40%)
+		p
+			line-height: 1.5
+		.block_hww
+			margin-bottom: 50px
+			+respond-to(md)
+				margin-bottom: 20px 
+
+		.block_bp
+			margin-bottom: 25px 
+			+respond-to(md)
+				margin-bottom: 45px 
+			p
+				margin-bottom: 5px
+	section.methods
+		padding: 20px 0 40px
+		+respond-to(xs)
+			padding: 0 0 10px
+		p
+			margin-top: 0
+			line-height: 1.5 
+			word-spacing: -1px
+		.ft
+			font-weight: normal
+			+respond-to(xs)
+				margin-top: 5px 

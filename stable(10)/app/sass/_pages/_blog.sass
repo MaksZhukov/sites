@@ -1,0 +1,69 @@
+.isBlog
+	section.blog
+		padding: 20px 0 60px
+		+respond-to(xs)
+			padding: 10px 0 20px
+		.block_b
+			margin-bottom: 60px 
+			+respond-to(sm)
+				margin-bottom: 20px 
+		.date_day
+			width: 100%
+			margin-top: 40px
+			+respond-to(sm)
+				width: 67.5px
+			+respond-to(xs)
+				margin-top: 20px
+			height: 67.5px
+			background: $accent 
+			color: #fff
+			font-size: em(36px)
+			border-radius: 50%
+			text-align: center
+			padding-top: 4px
+		.date_month
+			font-weight: normal
+			font-size: em(24px)
+			+respond-to(sm)
+				margin-left: 10px 
+				text-align: left
+		.date_year
+			font-size: em(18px)
+			+respond-to(sm)
+				margin-left: 10px
+				text-align: left
+				margin-bottom: 10px 
+		.title
+			font-weight: normal
+			+respond-to(sm)
+				margin-top: 10px
+		.posted
+			font-style: italic
+			.author
+				color: $accent 
+				text-decoration: none 
+				transition: color .4s
+				&:hover
+					color: darken($accent,20%)
+		.comments
+			text-decoration: none
+			display: inline-block
+			+respond-to(sm)
+				margin-top: 10px
+			.fa
+				color: $accent
+				font-size: em(30px)
+			.count
+				display: inline-block
+				font-weight: normal
+				font-size: em(18px)
+				margin-left: 10px
+				transform: translateY(-3px)
+				color: #000 
+				transition: color .4s
+			&:hover
+				.count
+					color: $accent
+		p
+			line-height: 1.5 
+			margin-bottom: 15px 

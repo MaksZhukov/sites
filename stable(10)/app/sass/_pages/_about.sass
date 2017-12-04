@@ -1,0 +1,62 @@
+.isAbout
+	section.about_us
+		padding: 20px 0 50px
+		+respond-to(xs)
+			padding: 10px 0 15px
+		p
+			margin-top: 0
+			line-height: 1.5 
+			&:first-child
+				font-weight: normal
+				+respond-to(xs)
+				margin-top: 10px 
+	section.what_me_offer
+		padding: 40px 0 60px
+		+respond-to(xs)
+			padding: 10px 0 15px
+		border-top: 1px solid #5c5c5c
+		border-bottom: 1px solid #5c5c5c
+		h2
+			margin-bottom: 15px 
+		.date_day
+			width: 100%
+			+respond-to(xs)
+				width: 67.5px 
+			height: 67.5px
+			background: $accent 
+			color: #fff
+			font-size: em(36px)
+			border-radius: 50%
+			text-align: center
+			padding-top: 4px
+		.title
+			a
+				text-decoration: none
+				color: #000 
+				font-weight: normal
+				font-size: em(24px)
+				transition: color .4s
+				&:hover
+					color: lighten(#000,40%)
+		p
+			margin-top: 5px
+	section.our_staff
+		padding: 30px 0 60px
+		+respond-to(xs)
+			padding: 10px 0 15px
+		img
+			border: 1px solid #b0adad
+			margin-bottom: 25px
+			+respond-to(sm)
+				width: 100%
+
+		a
+			font: 600 em(16px) OpenSans,sans-serif
+			text-decoration: none
+			color: #5E5D5D
+			transition: color .4s
+			&:hover
+				color: darken(#000,40%)
+		p
+			margin: 5px 0 20px
+			line-height: 1.5 

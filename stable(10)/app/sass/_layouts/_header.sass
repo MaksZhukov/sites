@@ -1,0 +1,63 @@
+.logo,h1
+	float: left
+h1
+	font-size: em(60px)
+	margin-bottom: 30px
+	margin: 0px 0 0 20px
+	color: #000
+.header
+	background:url('../img/bg_header.jpg') top center / cover no-repeat
+	padding: 18px 0 50px
+	border-bottom: 1px solid #7f7f80
+	h2 
+		color: $accent
+		font-size: em(55px)
+		line-height: 1.3
+		margin: -17px 0 15px
+		+respond-to(xs)
+			margin-top: 0
+	p
+		color: #e6e5e5
+		font-size: em(30px)
+		margin-top: 0px
+	.block
+		&-1,&-2,&-3,&-4
+			text-decoration: none
+			transition: background .5s
+			width: 180px
+			height: 180px
+			float: left
+			padding-top: 40px
+			text-align: center
+			&:hover
+				background:#000
+			i
+				font-size: em(72px)
+				color: #FFF
+			span
+				display: block
+				font-size: em(18px)
+				color: #FFF 
+				margin-top: 10px
+		&-2,&-3
+			background: #00b1ba 
+		&-1,&-4
+			background: #088389 
+nav
+	margin-bottom: 35px
+	.main-menu
+		list-style: none
+		padding: 0
+		li
+			display: inline-block
+			margin-right: 33px
+			a
+				font-weight: 300
+				font-size: em(18px)
+				color: #FFF 
+				transition: color .5s
+				text-decoration: none
+				padding: 5px 0
+			&.active,&:hover,&:focus
+				a
+					color: $accent

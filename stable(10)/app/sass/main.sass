@@ -1,0 +1,102 @@
+@import "mixins"
+@import "functions"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "components"
+@import "icons"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-family: $default-font
+	font-size: $default-font-size
+	font-weight: $default-font-weight
+	color: $default-color
+	line-height: 1.65
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	opacity: 1
+
+h1,h2
+	font-family: RobotoCondensed,sans-serif
+	font-weight: 300
+h2
+	font-size: em(36px)
+.preloader
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	background: $accent
+	z-index: 100
+	.circle
+		margin: 0 auto
+		position: fixed
+		top: 50%
+		left: 50%
+		margin-top: -25px
+		margin-left: -25px
+		border-radius: 50%
+		width: 50px 
+		height: 50px
+		border: 1px solid #fff
+		animation: anim 1s linear infinite 
+
+@keyframes anim
+	0%
+		border: 5px solid $accent
+	100%
+		border: 1px solid #fff
+
+.clearfix
+	clear: both
+.text-center
+	text-align: center
+.text-right
+	text-align: right
+.img-responsive
+	max-width: 100%;
+	display: block;
+@import "_layouts/header"
+@import "_pages/home"
+@import "_pages/about"
+@import "_pages/services"
+@import "_pages/blog"
+@import "_pages/contacts"
+@import "_layouts/footer"

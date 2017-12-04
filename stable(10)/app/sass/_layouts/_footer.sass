@@ -1,0 +1,43 @@
+footer
+	border-top: 1px solid #5c5c5c
+	background: #00B1BA
+	padding: 20px 0
+	h4
+		font: 300 em(24px) RobotoCondensed,sans-serif
+		font-weight: 300 
+		display: inline-block
+		margin: 0
+	.privacy
+		display: inline-block
+		color: #4B4A4A
+		font-weight: normal
+		a
+			text-decoration: none
+	.designed
+		color: #6D6A6A
+		font-weight: normal
+		a
+			text-decoration: none
+	a
+		transition: color 0.4s
+		color: #6D6A6A
+		&:hover
+			color: #fffff2 
+#to_top
+	position: fixed
+	right: 40px
+	bottom: 20px
+	padding: 17px 8px
+	background: #6B6B6B
+	+respond-to(xs)
+		right: 10px
+    	bottom: 10px
+		padding: 10px 5px
+	display: none
+	i
+		transition: color .4s
+		color: #fff 
+		font-size: em(21.65px)
+	&:hover
+		i
+			color: #000

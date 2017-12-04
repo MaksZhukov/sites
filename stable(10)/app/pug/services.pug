@@ -1,0 +1,13 @@
+-var page= 'Services' 
+doctype html
+html(lang="ru")
+    include layouts/head.pug
+    body
+        include layouts/header.pug
+        +header('Home','About','Services','Blog','Contacts')
+        include pages/services.pug
+        include layouts/footer.pug
+        link(rel="stylesheet" href="css/main.min.css")
+        script(src="js/scripts.min.js")
+
+
