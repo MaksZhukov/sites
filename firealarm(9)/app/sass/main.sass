@@ -1,0 +1,750 @@
+@import "vars"
+@import "libs"
+@import "mixins"
+@import "functions"
+@import "components"
+@import "fonts"
+@import "icons"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  &:before, &:after
+  	-webkit-box-sizing: border-box
+  	-moz-box-sizing: border-box
+  	box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+h1
+  color: #064e74
+  margin: 0
+  font: bold em(18px) PTSans, sans-serif
+  display: inline-block
+  transform: translateY(25px)
+  text-transform: uppercase
+body
+  font-family: $default-font
+  font-size: $default-font-size
+  font-weight: $default-font-weight
+  color: $default-color
+  line-height: 1.2
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
+  opacity: 1
+
+.PS
+  margin-top: 15px
+  font-size: em(14px)
+  font-weight: bold
+  color: #fff
+
+.img-responsive
+  max-width: 100%
+  display: block
+
+.text-center
+  text-align: center
+.text-uppercase
+  text-transform: uppercase
+input[type="tel"]
+  font-weight: normal
+header,footer
+  position: relative
+  z-index: 11
+  padding-top: 25px
+  +respond-to(sm)
+    padding-top: 15px
+  font-family: PTSans,sans-serif
+  +respond-to(sm)
+    text-align: center
+  .row
+    margin-left: -30px
+    margin-right: -30px
+  .order_btn_call
+    margin-top: 45px
+    +respond-to(md)
+      margin-top: 40px
+    +respond-to(sm)
+      margin-top: 15px
+    a
+      +respond-to(md)
+        padding: 23px 53px
+
+.logo
+  a
+    white-space: nowrap
+    display: inline-block
+    text-decoration: none
+    white-space: nowrap
+    img
+      display: inline-block
+.adress
+  color: $gray
+  margin: 30px 0 20px 40px
+  white-space: nowrap
+  .fa
+    color: #117db2
+    margin: 0 15px 0 3px
+    font-size: em(20px)
+.email
+  margin-left: 40px
+  a
+    white-space: nowrap
+    color: $gray
+    .fa
+      color: #117db2
+      font-size: em(18px)
+      margin-right: 11px
+.phone
+  margin: 30px 0 20px 20px
+  +respond-to(sm)
+    margin: 0
+  a
+    white-space: nowrap
+    font-weight: bold
+    font-size: em(20px)
+    color: $blue
+    .fa
+      color: #117db2
+      font-size: em(18px)
+      margin-right: 16px
+.clock
+  white-space: nowrap
+  margin-left: 20px
+  +respond-to(sm)
+    margin: 15px 25px 0 0
+  color: $gray
+  text-decoration: none
+  .fa
+    color: $blue
+    color: #117db2
+    font-size: em(18px)
+    margin-right: 18px
+section.firea_larm
+  min-height: 985px
+  +respond-to(sm)
+    min-height: 1208px
+  +respond-to(xs)
+    min-height: 965px
+  +respond-to(480px)
+    min-height: 885px
+    font-size: 10px
+  margin-top: -105px
+  background: url('../img/bg_after_header.png') top center no-repeat,url('../img/bg_header.png') 50% -30px / cover  no-repeat
+  padding-top: 310px
+  +respond-to(xs)
+    padding-top: 230px
+  position: relative
+  z-index: 10
+  .row
+    margin-left: -30px
+    margin-right: -30px
+  h2
+    color: #fff
+    font-size: em(80px)
+    +respond-to(xs)
+      font-size: em(43.6px)
+    margin: 0
+    text-transform: uppercase
+    span:first-child
+      background: $red
+      padding: 25px 40px 0 20px
+    span:last-child
+      background: $red
+      padding: 0 40px 0 20px
+  p
+    margin-top: 20px
+    margin-bottom: 20px
+    margin-left: 20px
+    line-height: 1.333
+    font-size: em(36px)
+    +respond-to(xs)
+      font-size: em(19.62px)
+    font-weight: bold
+    text-transform: uppercase
+    text-shadow: 1px 7px 19px rgba(255, 255, 255, 1), 0px 0px 35px rgba(255, 255, 255, 1)
+  .send
+    margin-left: 20px
+  .what_provide
+    padding: 10px
+    margin-top: 48px
+    +respond-to(sm)
+      text-align: center
+    .provides
+      display: flex
+      justify-content: space-around
+      +respond-to(sm)
+        display: inline-block
+        .provide
+          margin-top: 10px
+          width: 100%;
+    background: rgba(0,0,0,0.53)
+    img
+      display: inline-block
+      float: left
+    .desc
+      display: inline-block
+      color: #fff
+      font-weight: bold
+      font-size: em(20px)
+      margin: 15px 0 0 30px
+      +respond-to(md)
+        margin-left: 20px
+      text-transform: uppercase
+section.our_services
+  +respond-to(480px)
+    font-size: 10px
+  position: relative
+  &:before
+    content: ''
+    top: -280px
+    left: 50%
+    margin-left: -1205px
+    border-radius: 50%
+    background-color: $blue
+    position: absolute
+    width: 2413px
+    height: 309px
+    display: block
+  h2
+    text-transform: uppercase
+    font-size: em(48px)
+    color: #fff
+    margin-top: -60px;
+    position: relative;
+    text-align: -webkit-center
+.our_services
+  background: url('../img/nut_big.png') 1585px 80px no-repeat
+.services
+  margin-top: 90px
+  padding: 0 20px
+  display: flex
+  justify-content: space-around
+  +respond-to(sm)
+    flex-wrap: wrap
+  +respond-to(xs)
+    justify-content: space-between
+  .service
+    +respond-to(md)
+      transform: scale(0.8)
+    +respond-to(sm)
+      transform: scale(1)
+      margin: 0 10px 15px
+    p
+      font: bold em(18px) ProximaNova, sans-serif
+      padding-left: 25px
+    img
+      box-shadow: 10px -10px 0 0 $red
+      border-radius: 50px
+section.need_help
+  position: relative
+  z-index: 10
+  font-family: ProximaNova, sans-serif
+  margin-top: 80px
+  padding-top: 100px
+  +respond-to(sm)
+    margin-top: 0
+    padding-top: 170px
+  +respond-to(480px)
+    padding-top: 147px
+  background: url('../img/bg_need_help.png') center no-repeat
+  +respond-to(sm)
+    background-position: 0 0
+  min-height: 600px
+  +respond-to(xs)
+    min-height: initial
+    padding-bottom: 30px
+  h2
+    text-align: left
+    font-size: em(48px)
+    +respond-to(sm)
+      font-size: 24px
+    font-weight: 300
+    color: #000
+  .title
+    font-size: em(36px)
+    +respond-to(sm)
+      font-size: em(15px)
+    +respond-to(480px)
+      margin-top: 30px
+    color: #fff
+    line-height: 1.3
+    margin-bottom: 50px
+  form
+    font-size: 24px
+    input
+      +respond-to(sm)
+        display: block
+        margin-bottom: 10px
+      +respond-to(xs)
+        margin: 0 auto 10px
+      +respond-to(480px)
+        font-size: 20px
+        width: 280px
+section.our_works
+  background: url('../img/nut_big.png') right 1600px top 150px no-repeat
+  +respond-to(md)
+    background: none
+  font-family: ProximaNova,sans-serif
+  position: relative
+  z-index: 9
+  &:before
+    content: ''
+    top: -220px
+    +respond-to(480px)
+      top: -170px
+    left: 50%
+    margin-left: -1205px
+    border-radius: 50%
+    background-color: $red
+    position: absolute
+    width: 2413px
+    height: 309px
+    display: block
+  .works
+    margin-top: 50px
+  h2
+    font-family: PTSans, sans-serif
+    font-size: em(48px)
+    color: #fff
+    position: relative
+    top: -30px
+  p
+    font-size: em(18px)
+    font-weight: bold
+    margin-bottom: 40px
+  img
+    margin: 0 auto
+section.fire_alarm_installation
+  position: relative
+  background: url('../img/nut_mid.png') 1700px 150px no-repeat
+  overflow: hidden
+  font-family: ProximaNova, sans-serif
+  &:before
+    content: ''
+    top: -220px
+    +respond-to(xs)
+      top: -200px
+    +respond-to(480px)
+      top: -170px
+    left: 50%
+    margin-left: -1205px
+    border-radius: 50%
+    background-color: $blue
+    position: absolute
+    width: 2413px
+    height: 309px
+    display: block
+  h2
+    color: #fff
+    position: relative
+    font-family: PTSans, sans-serif
+    font-size: em(48px)
+    +respond-to(sm)
+      font-size: em(36px)
+    +respond-to(xs)
+      margin-bottom: 40px
+    top: -25px
+  .title,.need_set
+    font-size: em(30px)
+    font-weight: 300
+    +respond-to(sm)
+      margin-top: 50px
+    +respond-to(xs)
+      font-size: em(18px)
+      margin-top: 10px
+    margin-bottom: 40px
+  .need_set
+    margin-bottom: 20px
+  .call
+    span
+      font: bold em(30px) PTSans, sans-serif
+      +respond-to(xs)
+        font-size: 18px
+      color: $blue
+    .phone
+      display: inline-block
+      +respond-to(xs)
+        display: block
+        margin-top: 15px
+        a
+          font-size: 26px
+      margin-top: 0
+section.special_offer
+  margin-top: 20px
+  padding: 30px 0
+  font-family: ProximaNova, sans-serif
+  background: url('../img/bg_special_offer.jpg') 0 / cover no-repeat
+  +respond-to(md)
+    background-position: 100%
+  h2
+    font-size: em(60px)
+    color: #fff
+    margin: 0
+    +respond-to(xs)
+      font-size: em(24px)
+  .service
+    color: $yellow
+    font-weight: bold
+    font-size: em(40px)
+    margin-bottom: 20px
+    +respond-to(xs)
+      font-size: em(24px)
+  .desc
+    font-size: em(30px)
+    color: #fff
+    margin-bottom: 20px
+    +respond-to(xs)
+      font-size: em(14px)
+  form
+    font-size: 24px
+    input[type="submit"]
+      font-size: 30px
+      padding: 17px 75px
+    input
+      +respond-to(sm)
+        display: block
+        margin-bottom: 10px
+      +respond-to(xs)
+        margin: 0 auto 10px
+      +respond-to(480px)
+        font-size: 20px
+        width: 280px
+section.repairs_fire_alarm
+  font-family: ProximaNova,sans-serif
+  background: url('../img/nut_mid.png') right 1700px top 200px no-repeat, url('../img/nut_small.png') right 1550px top 150px no-repeat
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    top: -220px
+    +respond-to(xs)
+      top: -200px
+    left: 50%
+    margin-left: -1205px
+    border-radius: 50%
+    background-color: $red
+    position: absolute
+    width: 2413px
+    height: 309px
+    display: block
+  h2
+    color: #fff
+    position: relative
+    font-family: PTSans, sans-serif
+    font-size: em(48px)
+    +respond-to(sm)
+      font-size: em(30px)
+      top: -15px
+    +respond-to(xs)
+      margin-bottom: 40px
+    top: -25px
+  .desc
+    +respond-to(sm)
+      margin-top: 70px
+    font-size: em(24px)
+    +respond-to(xs)
+      font-size: em(14px)
+    margin-bottom: 20px
+    font-weight: 300
+  .add_copmlex
+    font-size: em(30px)
+    +respond-to(xs)
+      font-size: em(23px)
+    font-weight: 300
+    margin-bottom: 45px
+
+section.package_proposal
+  padding: 30px 0
+  font-family: ProximaNova,sans-serif
+  background: urL('../img/bg_package_proposal.jpg') center / cover no-repeat
+  +respond-to(md)
+    background-position: 100%
+  h2
+    font-size: em(40px)
+    color: #fff
+    margin: 0
+    +respond-to(xs)
+      font-size: em(24px)
+  .desc
+    font-size: em(30px)
+    color: #fff
+    font-weight: 300
+    margin-bottom: 30px
+    span
+      display: inline-block
+      font-weight: bold
+      font-size:  em(20px)
+      color: $yellow
+      padding-bottom: 10px
+    +respond-to(xs)
+      font-size: em(18px)
+  form
+    font-size: 24px
+    input[type="submit"]
+      font-size: 30px
+      padding: 17px 75px
+    input
+      +respond-to(sm)
+        display: block
+        margin-bottom: 10px
+      +respond-to(xs)
+        margin: 0 auto 10px
+      +respond-to(480px)
+        font-size: 20px
+        width: 280px
+  .PS
+    +respond-to(xs)
+    font-size: em(8px)
+section.fire_alarm_design
+  background: url("../img/nut_mid.png") 1690px 150px no-repeat, url("../img/nut_small.png") 1560px 550px no-repeat, url("../img/nut_small.png") right 1650px top 280px no-repeat
+  font-family: ProximaNova, sans-serif
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    top: -220px
+    +respond-to(md)
+      top: -170px
+    +respond-to(sm)
+      top: -220px
+    +respond-to(xs)
+      top: -200px
+    +respond-to(480px)
+      top: -220px
+    left: 50%
+    margin-left: -1205px
+    border-radius: 50%
+    background-color: $red
+    position: absolute
+    width: 2413px
+    height: 309px
+    display: block
+  h2
+    color: #fff
+    position: relative
+    font-family: PTSans, sans-serif
+    font-size: em(48px)
+    +respond-to(sm)
+      font-size: em(30px)
+      top: -15px
+    +respond-to(xs)
+      margin-bottom: 40px
+      font-size: 24px
+      top: 0
+    top: -25px
+  .company
+    font-weight: 300
+    font-size: em(30px)
+    margin-bottom: 10px
+    +respond-to(xs)
+      margin-top: 100px
+      font-size: em(14px)
+    +respond-to(480px)
+      margin-top: 50px
+  .factor
+    font: bold em(30px) PTSans, sans-serif
+    color: $blue
+    +respond-to(xs)
+      font-size: em(18px)
+  p
+    font-weight: 300
+    font-size: em(24px)
+    margin-bottom: 30px
+    +respond-to(xs)
+      font-size: em(18px)
+  p:last-child
+    margin-top: 30px
+    max-width: 60%
+    +respond-to(sm)
+    max-width: 100%
+    +respond-to(xs)
+      font-size: em(14px)
+  section.need_help
+    margin-top: -120px
+    padding-top: 190px
+section.fire_safety_service
+  padding-bottom: 30px
+  font-family: ProximaNova, sans-serif
+  position: relative
+  &:before
+    content: ''
+    top: -220px
+    +respond-to(md)
+      top: -170px
+    +respond-to(sm)
+      top: -220px
+    +respond-to(xs)
+      top: -200px
+    left: 50%
+    margin-left: -1205px
+    border-radius: 50%
+    background-color: $red
+    position: absolute
+    width: 2413px
+    height: 309px
+    display: block
+  h2
+    color: #fff
+    position: relative
+    font-family: PTSans, sans-serif
+    font-size: em(48px)
+    +respond-to(sm)
+      font-size: em(30px)
+      top: -15px
+    +respond-to(xs)
+      margin-bottom: 40px
+      font-size: 24px
+      top: 0
+    top: -25px
+  p
+    text-align: justify
+    font-size: em(18px)
+    font-weight: 300
+    +respond-to(sm)
+      margin-top: 100px
+    +respond-to(xs)
+      margin-top: 50px
+
+section.conclusion_maintenance_contract
+  padding: 30px 0
+  font-family: ProximaNova,sans-serif
+  background: urL('../img/conclusion_of_a_contract.jpg') center / cover no-repeat
+  +respond-to(md)
+    background-position: 100%
+  h2
+    font-size: em(40px)
+    color: #fff
+    margin: 0
+    +respond-to(xs)
+      font-size: em(22px)
+  .free
+    color: #f6d51d
+    font-weight: bold
+    font-size: em(40px)
+    margin-bottom: 20px
+    +respond-to(xs)
+      font-size: em(30px)
+  .desc
+    font-size: em(30px)
+    +respond-to(xs)
+    color: #fff
+    font-weight: 300
+    margin-bottom: 30px
+    +respond-to(xs)
+      font-size: em(18px)
+  form
+    font-size: 24px
+    input[type="submit"]
+      font-size: 30px
+      padding: 17px 75px
+    input
+      +respond-to(sm)
+        display: block
+        margin-bottom: 10px
+      +respond-to(xs)
+        margin: 0 auto 10px
+      +respond-to(480px)
+        font-size: 20px
+        width: 280px
+section.fire_alarm_setup
+  background: url("../img/nut_mid.png") 1790px 630px no-repeat, url("../img/nut_small.png") 1600px 520px no-repeat, url("../img/nut_mid.png") right 1600px top 150px no-repeat
+  font-family: ProximaNova, sans-serif
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    top: -220px
+    +respond-to(md)
+      top: -170px
+    +respond-to(xs)
+      top: -200px
+    +respond-to(480px)
+      top: -170px
+    left: 50%
+    margin-left: -1205px
+    border-radius: 50%
+    background-color: $red
+    position: absolute
+    width: 2413px
+    height: 309px
+    display: block
+  h2
+    color: #fff
+    position: relative
+    font-family: PTSans, sans-serif
+    font-size: em(48px)
+    top: -25px
+    +respond-to(xs)
+      font-size: em(30px)
+      top: -10px
+  .title
+    margin-top: 50px
+    font-weight: 300
+    font-size: em(30px)
+    +respond-to(xs)
+      font-size: em(18px)
+  .etap
+    margin-top: 10px
+    font: bold em(30px) PTSans, sans-serif
+    color: $blue
+    +respond-to(xs)
+      font-size: em(18px)
+  p
+    font-weight: 300
+    font-size: em(24px)
+    +respond-to(xs)
+      font-size: em(18px)
+  ul
+    li:last-child
+      width: 75%
+  section.need_help
+    margin-top: -120px
+    padding-top: 190px
+footer
+  padding-bottom: 20px
+#form_order_call
+  display: none
+  margin: 0 5%
+  max-width: 500px
+  .title
+    font-size: em(20px)
+    margin-bottom: 20px
+  input
+    margin: 10px auto
+    width: 80%
+    display: block
+    &[type="text"],&[type="tel"]
+      border: 1px solid #c0c0c0
+      &:focus
+        border: 1px solid #8DB600
+        padding: 20px 19px
+
+
+

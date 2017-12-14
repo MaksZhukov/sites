@@ -1,0 +1,61 @@
+.btn-site-blue
+    color: #fff
+    outline: none
+    padding: 21px 74px
+    background: $blue
+    border-radius: 30px
+    text-decoration: none
+    display: inline-block
+    transition: background .4s
+    &:hover
+      background: darken($blue,15%)
+    &:hover,&:focus
+      text-decoration: none
+      outline: none
+      color: #fff
+.btn-site-yellow
+    font-weight: bold
+    outline: none
+    border: none
+    padding: 21px 20px
+    background: $yellow
+    border-radius: 30px
+    text-decoration: none
+    display: inline-block
+    transition: background .4s
+    &:hover
+      background: darken($yellow,25%)
+.inp-site-white
+  outline: none
+  border: none
+  padding: 21px 20px
+  width: 360px
+  margin-right: 25px
+  background: white
+  border-radius: 30px
+  text-decoration: none
+  display: inline-block
+  &:focus
+    border: 1px solid #8DB600
+    padding: 20px 19px
+.list-site
+  padding: 0
+  list-style: none
+  li
+    font: bold em(24px) ProximaNova, sans-serif
+    position: relative
+    margin-bottom: 15px
+    padding-top: 5px
+    padding-left: 55px
+    +respond-to(xs)
+      font-size: 18px
+    &:before
+      top: 0
+      left: 0
+      content: ''
+      width: 37px
+      height: 37px
+      display: block
+      position: absolute
+      background: url('../img/check_polygons_border.png') no-repeat
+
