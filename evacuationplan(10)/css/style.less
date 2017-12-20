@@ -169,7 +169,9 @@ h2{
     padding:12px;
   }
   input[type="text"], input[type="tel"] {
-    padding: 20px 12px;
+    box-sizing: content-box;
+    width: calc(~"100% - 30px");
+    padding: 3px 12px;
   }
   input[type="submit"]{
     width:100%;

@@ -34,7 +34,8 @@
   }
   .form_calculate input[type="text"],
   .form_calculate input[type="tel"] {
-    padding: 14px 8px;
+    width: calc(100% - 22px);
+    padding: 0 8px;
   }
   header .contact {
     text-align: center;
@@ -286,7 +287,8 @@
   }
   .form_calculate input[type="text"],
   .form_calculate input[type="tel"] {
-    padding: 16px 9px;
+    width: calc(100% - 24px);
+    padding: 1px 9px;
   }
   .form_calculate .selectize-input {
     padding: 9px 9px;

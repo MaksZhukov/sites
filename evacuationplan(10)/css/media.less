@@ -32,10 +32,10 @@
     .form_calculate .selectize-input {
         padding: 8px 8px;
     }
-    .form_calculate input[type="text"],
-    .form_calculate input[type="tel"] {
-        padding: 14px 8px;
-    }
+    .form_calculate input[type="text"], .form_calculate input[type="tel"]{
+        width: calc(~"100% - 22px");
+        padding: 0 8px;
+  }
     header .contact {
         text-align: center;
         margin-bottom: 20px;
@@ -289,26 +289,24 @@
         font-size: 12px;
     }
     .form_calculate {
-        .title {
-            font-size: 13px;
-        }
-        label,
-        input,
-        .selectize-input {
-            font-size: 10px;
-        }
-        .calculate_cost_btn {
-            font-size: 15px;
-            margin-top: 30px;
-        }
-        input[type="text"],
-        input[type="tel"] {
-            padding: 16px 9px;
-        }
-        .selectize-input {
-            padding: 9px 9px
-        }
+    .title {
+      font-size: 13px;
     }
+    label,input,.selectize-input{
+      font-size:10px;
+    }
+    .calculate_cost_btn{
+      font-size:15px;
+      margin-top:30px;
+    }
+    input[type="text"],input[type="tel"] {
+      width: calc(~"100% - 24px");
+        padding: 1px 9px;
+    }
+    .selectize-input{
+      padding:9px 9px
+    }
+  }
     section.content_plan_evacuation .title {
         font-size: 14px;
     }
