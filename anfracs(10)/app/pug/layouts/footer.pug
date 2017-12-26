@@ -1,0 +1,44 @@
+footer
+	.container.text-center
+		.row
+			.col-lg-offset-2.col-lg-8.col-md-offset-1.col-md-10
+				h2 Контакты
+				.phone_and_mail
+					.phone
+						i.fi.flaticon-phone-call
+						a(href="tel:+375445880988") +375(44)588-09-88
+					.mail
+						i.fi.flaticon-mail
+						a(href="mailto:+375445880988") info@anfraks.by
+				h3.text-uppercase
+					| хотите
+					span заказать индивидуальное изделие?
+				p.text-uppercase Заполните форму ниже и мы воплотим Вашу мечту в реальность!
+				form(data-form-type="Заказ индивидуального изделия")
+					.row
+						.col-sm-7
+							input(type="text",placeholder="Ваше имя", name="name")
+							input(type="tel",placeholder="Телефон", name="phone")
+							input(type="text",placeholder="E-mail", name="email")
+						.col-sm-5
+							select(name="type_product")
+								option
+								option Ковчег для святых мощей
+								option Сувениры
+								option Потир
+								option Оклад иконы "Николай Чудотворец"
+							textarea(placeholder="Задайте вопрос",name="message")
+					.row
+						input(type="submit",value="Отправить запрос").btn_site_gold
+#form_order_call
+	form.form_leave_number(data-form-type='Менеджер свяжется с вами')
+		input(type="text",placeholder="Ваше имя", name="name")
+		input(type="tel",placeholder="Телефон", name="phone")
+		select(name="type_product")
+			option
+			option Ковчег для святых мощей
+			option Сувениры
+			option Потир
+			option Оклад иконы "Николай Чудотворец"
+		input(type="submit",value="Отправить запрос").btn_site_gold
+
