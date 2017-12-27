@@ -19,7 +19,7 @@ $(function() {
             offsetY: 125, // the top offset of all points on the ellipse
             angle: 0, // the angle of the ellipse
             activeItem: 0, // used to influence which element is considered active
-            duration: 350,
+            duration: 850,
             className: 'item'
         });
         if ($(window).width()<768) {
@@ -28,6 +28,10 @@ $(function() {
         else{
             $('.slider3d').height($('.carousel .item.active').outerHeight());
         }
+       setInterval(function () {
+                carousel.cycleActive('next')
+            }
+            ,4000);
         var items3dslider = $('.carousel .item');
         items3dslider.click(function () {
             var index = items3dslider.index($(this));
@@ -54,14 +58,11 @@ $(function() {
                 }
                 if (index== 2){
                     carousel.cycleActive('previous');
+
                 }
             }
 
         });
-        setInterval(function () {
-                carousel.cycleActive('next')
-            }
-        ,3000);
         $('.main_slider').slick({
             slidesToShow: 5,
             variableWidth: true
