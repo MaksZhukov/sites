@@ -1,0 +1,489 @@
+include ../layouts/banner.pug
+include ../layouts/breadcrumb.pug
+.page
+    .container
+        .custom_title.text-center
+            h2 Угловые диваны
+        .row
+            include ../layouts/sidebar.pug
+            .col-12.col-md-8.col-lg-9
+                .main_content_category
+                    .row.align-items-center.justify-content-between.row_pagination_and_count_prod
+                        .col-auto
+                            .count_product_all
+                                |Всего:
+                                span.count 78
+                                |  товаров
+                        .col-auto
+                            .paginations
+                                ul.pagination
+                                    li
+                                        a(href="#") 1
+                                    li
+                                        a(href="#") 2
+                                    li
+                                        a(href="#") 3
+                                    li
+                                        a(href="#") 4
+                                    li
+                                        a(href="#") 5
+                                    li
+                                        a(href="#")
+                                            i.fa.fa-chevron-right
+                    .row
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .sale Распродажа
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                .desc
+                                    .cat Диван угловой
+                                    .name "Премьер"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 590 BYN
+                                        span.new 499 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см X
+                                        .param
+                                            .title глубина
+                                            .val 155 см X
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price.text-uppercase
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a.text-center(href="#") Купить
+                    .row.stock_wrap_container
+                        .col
+                            img(src="img/stock_page.jpg")
+                            .stock_wrap
+                                .content_stock.text-center
+                                    .title Акция
+                                    .txt скидки на угловые диваны
+                                    .proc %
+                            .cleatfix
+                    .row
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .sale Распродажа
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                .desc
+                                    .cat Диван угловой
+                                    .name "Премьер"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 590 BYN
+                                        span.new 499 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см X
+                                        .param
+                                            .title глубина
+                                            .val 155 см X
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price.text-uppercase
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a.text-center(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .sale Распродажа
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                .desc
+                                    .cat Диван угловой
+                                    .name "Премьер"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 590 BYN
+                                        span.new 499 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см X
+                                        .param
+                                            .title глубина
+                                            .val 155 см X
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price.text-uppercase
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a.text-center(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .sale Распродажа
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                        img.center-block(src="img/sofa_corner_min.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                        img.center-block(src="img/sofa_corner.jpg")
+                                .desc
+                                    .cat Диван угловой
+                                    .name "Премьер"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 590 BYN
+                                        span.new 499 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см X
+                                        .param
+                                            .title глубина
+                                            .val 155 см X
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a(href="#") Купить
+                        .col-12.col-md-6.col-lg-4
+                            .product
+                                .pictures
+                                    .thumbs
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                    .preview
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                        img.center-block(src="img/sofa.jpg")
+                                .desc
+                                    .cat Диван
+                                    .name "Вента"
+                                    .params
+                                        .param
+                                            .title длина
+                                            .val 250 см
+                                        .param
+                                            .title глубина
+                                            .val 155 см
+                                        .param
+                                            .title высота
+                                            .val 250 см
+                                    .price.text-uppercase
+                                        span.old 780 BYN
+                                        span.new 622 BYN
+                                    .buy_btn
+                                        a.text-center(href="#") Купить
+                    .row.justify-content-end.row_pagination_bottom
+                        .col-auto
+                            .paginations
+                                ul.pagination
+                                    li
+                                        a(href="#") 1
+                                    li
+                                        a(href="#") 2
+                                    li
+                                        a(href="#") 3
+                                    li
+                                        a(href="#") 4
+                                    li
+                                        a(href="#") 5
+                                    li
+                                        a(href="#")
+                                            i.fa.fa-chevron-right
+                    .row
+                        .col
+                            p.decsfurniture
+                                strong Мягкая мебель
+                                |  - это один из центральных предметов интерьера, который обуславливает атмосферу помещения, а также обеспечивает удобство пребывания. Благоустройству кухни в этой связи придается особое значение. Причем основную функцию для создания комфортной атмосферы играет кухонная мебель. И корпусная мебель - это основа любого современного интерьера. Назначение корпусной мебели, как и любой другой, заключается в том, чтобы уменьшить количество занимаемого мебелью места, а также в том, чтобы его грамотно использовать. 

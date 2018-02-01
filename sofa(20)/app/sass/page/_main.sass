@@ -1,0 +1,234 @@
+.is_main
+	.custom_title
+		margin-bottom: 60px 
+		&:before
+			height: 2px
+		h2
+			font-size: em(30px)
+	.banner_slider
+		margin-bottom: 80px 
+		.banner
+			display: flex
+			flex-direction: column
+			justify-content: center 
+			height: 600px
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center
+			&:after
+			    background: rgba(0, 0, 0, 0.18);
+		h2
+			margin-top: -100px 
+			color: #2f2b29
+			font-size: em(36px)
+			line-height: 48px
+			font-weight: 600
+		.slick-arrow
+			width: 55px
+			height: 55px
+			z-index: 1
+			&:before
+				display: none
+		.watch_btn
+			position: relative
+			z-index: 1
+			margin-top: 45px
+			a
+				border: 1px solid #ffffff
+		.slick-prev
+			left: 7%
+			background: url('../img/arrow_left_main_slider.png') no-repeat
+		.slick-next
+			background: url('../img/arrow_right_main_slider.png') no-repeat
+			right: 7%
+	.categories
+		.category
+			margin-bottom: 20px 
+			display: inline-block
+			img
+				display: block
+			.link_cat
+				text-decoration: none
+				display: flex
+				justify-content: space-around
+				align-items: center
+				width: 305px 
+				height: 62px 
+				box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35)
+			.txt
+				font-size: em(18px)
+				color: #ffffff
+			.link_cat
+				background-color: #ecb31b
+			&:hover
+				.picture
+					position: relative
+					&:after
+						content: ''
+						top: 0
+						left: 0
+						position: absolute
+						width: 100%
+						height: 100%  
+						background: rgba(0,0,0,0.2) 
+					&:before
+						content: ''
+						top: 14px
+						left: 16px
+						position: absolute
+						width: 90%
+						height: 90%
+						border: 1px solid #ffffff
+						z-index: 1
+				.link_cat
+					background-color: #b10636
+	.our_advantages
+		margin-bottom: 55px 
+		.advantage
+			width: 250px
+			height: 170px
+			border: 1px solid #d2d2d2
+			position: relative
+			display: inline-flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 30px 
+			&:after
+				content: ''
+				display: block
+				border: 1px solid #d2d2d2
+				position: absolute
+				top: 5px
+				left: 5px
+				height: 160px 
+				width: 240px 
+			.advantage_img
+				position: absolute
+				top: 50%
+				left: 0
+				box-shadow: 0 0 12px 10px #fff
+				transform: translate(-50%,-50%)
+				justify-content: center
+				width: 95px
+				height: 95px
+				display: flex
+				align-items: center
+				border-radius: 50%
+				background-color: #999999
+				z-index: 5
+				&:after
+					content: ''
+					position: absolute
+					top: 8px
+					left: 8px
+					display: block
+					border-radius: 50%
+					border: 1px solid #fff
+					width: 80px
+					height: 80px 
+			.content
+				display: inline-block
+				margin-left: 25% 
+				font-size: em(16px)
+				line-height: 24px
+				color: #484b50
+				width: 65% 
+				text-align: left
+				span
+					display: block
+					font-size: em(18px)
+					color: #000
+	.stock_wrap_container
+		margin-bottom: 79px 
+	.recall_block
+		background-position: center 
+		background-repeat: no-repeat
+		background-size: cover
+		margin-bottom: 80px
+		padding-top: 48px
+		position: relative
+		padding-bottom: 40px
+		&:before
+			content: ''
+			top: 0
+			left: 0
+			width: 100%
+			display: block
+			height: 100%  
+			position: absolute
+			background-color: #5d5c5c
+			opacity: 0.95
+		.custom_title	
+			h2
+				color: #FFF
+			.line_left,.line_right
+				background: #FFF 
+		.recall
+			position: relative
+			text-align: center
+			.name
+				margin-top: 25px 
+				color: #ecb31b
+				font-weight: 600
+				font-size: em(16px)
+				font-style: italic 
+			p
+				margin-top: 25px 
+				color: #fff
+				font-weight: 600
+				font-size: em(12px)
+				font-style: italic 
+				text-align: center
+			.picture
+				display: inline-block
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					left: 5px
+					top: 6px
+					border-radius: 50%
+					border: 1px solid #fff
+					width: 144px
+					height: 143px
+		.watch_all
+			margin-top: 30px 
+			display: inline-block
+			border: 1px solid #ffffff
+			border-radius: 10px
+			position: relative
+			padding: 11px 35px 9px 36px
+			a
+				text-decoration: none
+				color: #FFF 
+
+	.our_certificates
+		margin-bottom: 94px
+		.custom_title
+			margin-bottom: 74px
+		img
+			margin-bottom: 10px 
+.novelties_products
+	margin-bottom: 35px 
+	.product
+		margin-top: 45px
+		margin-bottom: 45px 
+	.slick-arrow
+		width: 40px
+		height: 40px
+		z-index: 10
+		top: 40%
+		&:before
+			display: none
+	.slick-prev
+		left: -60px
+		background: url('../img/arrow_left.png') no-repeat
+	.slick-next
+		background: url('../img/arrow_right.png') no-repeat
+		right: -60px
+	.slides_products
+		margin-bottom: -120px
+	  	position: relative
+		>.slick-list
+			padding-bottom: 120px
+			z-index: 10

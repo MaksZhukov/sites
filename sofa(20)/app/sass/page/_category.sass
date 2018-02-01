@@ -1,0 +1,271 @@
+.banner
+  height: 342px
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  position: relative
+  display: flex
+  align-items: center
+  &:after
+    top: 0
+    left: 0
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    background: rgba(0,0,0,0.48)
+  h2
+    position: relative
+    z-index: 1
+    margin: 0
+    color: #ffffff
+    font-size: em(60px)
+    font-weight: 600
+    line-height: 48px
+  p.spec
+    margin-top: 41px
+    position: relative
+    z-index: 1
+    line-height: 48px
+    font-weight: 400
+    font-size: em(36px)
+    color: #ecb31b
+.breadcrumbs
+  padding: 55px 0 43px
+  ul.breadcrumb
+    list-style: none
+    padding-left: 0
+    display: flex
+    a
+      color: #484b50
+      font-size: em(12px)
+    li:after
+      content: ''
+      display: inline-block
+      background: url('../img/arrow_breadcrumb.png') no-repeat
+      width: 24px
+      height: 7px
+      margin-left: 14px
+      margin-right: 17px
+    li:last-child:after
+      display: none
+    li.active
+        color: #b10636
+        font-size: em(12px)
+        text-decoration: none
+.page
+  margin-bottom: 60px
+.page.single_product
+  margin-bottom: 0 
+.sidebar
+  .widjets
+    padding-right: 17px
+    border-right: 2px solid #d7d7d7
+    padding-bottom: 50px
+  h3
+    font-size: 18px
+    padding-bottom: 39px
+    margin-bottom: 0
+    margin-top: 0
+    padding-right: 17px
+    border-right: 2px solid #d7d7d7
+  .widjet
+    .title
+      display: flex
+      justify-content: space-around
+      align-items: center
+      background-color: #ecb31b
+      padding: 8px
+      .cat_name
+        padding-left: 5px
+        font-size: em(12px)
+        color: #fff
+    .list_subcat
+      padding-left: 15%
+      margin: 5px 0 15px
+      list-style: none
+      a
+        text-decoration: none
+        color: #88878a
+        font-size: em(12px)
+        padding: 8px 0
+        &:hover
+          color: #b10636
+  .stock
+    margin-top: 15px
+    text-decoration: none
+    display: block
+    height: 491px
+    background-size: cover
+    background-position: center center
+    .content
+      font-size: 16px
+      padding-top: 32px
+      color: #fff
+      span
+        margin-bottom: 10px
+        display: block
+        font-size: em(30px)
+.row_pagination_and_count_prod,.row_pagination_bottom
+  .count_product_all
+    .count
+      font-weight: 600
+  .paginations
+    ul.pagination
+      padding-left: 0
+      list-style: none
+      display: flex
+      margin: 0
+      li
+        margin: 0 5.5px
+        display: inherit;
+        a
+          padding: 6px 10px 6px 9px
+          text-decoration: none
+          color: #fff
+          font-size: em(16px)
+          background-color: #b7b7b7
+        &:last-child
+          margin: 0
+          a
+            color: #b7b7b7
+            background: transparent
+            font-size: em(20px)
+.row_pagination_bottom
+  margin-top: 35px 
+.product
+  margin-top: 45px 
+  border: 1px solid #d7d7d7
+  position: relative
+  padding: 43px 10px 20px
+  .thumbs
+    width: 15%
+    position: absolute
+    opacity: 0
+    top: 2%
+    img
+      border: 1px solid #ebebeb
+      padding: 5px 2px
+  .preview
+    text-decoration: none
+    display: block
+    img
+      height: 140px 
+  .sale
+    position: absolute
+    background-color: #b10636
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35)
+    top: -5px
+    right: -5px
+    color: #fff
+    padding: 13px 16px 8px 19px
+    font-size: em(12px)
+  .desc
+    margin-left: 15px
+    margin-right: 15px
+  .cat
+    color: #999999
+    font-size: em(12px)
+  .name
+    margin-top: 9px
+    font-weight: 600
+    font-size: em(14px)
+  .params
+    display: none
+    .param
+      padding: 0 5px
+      .title
+        font-size: em(9px)
+        color: #9e9e9e
+      .val
+        margin-top: 2px
+        font-size: em(12px)
+        color: #46454c
+        &:after
+          content: 'x'
+          margin-left: 5px
+      &:last-child
+        .val:after
+          display: none
+  .buy_btn
+    display: none
+  .price
+    margin-top: 20px
+    display: flex
+    justify-content: space-between
+    .old
+      text-decoration: line-through
+      color: #9b9b9b
+      font-size: em(16px)
+    .new
+      color: #ecb31b
+      font-size: em(24px)
+  &:hover
+    width: 126%
+    margin-left: -13%
+    position: relative
+    z-index: 10
+    background: #fff
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.35)
+    position: absolute
+    .pictures
+      overflow: hidden
+    .thumbs
+      opacity: 1
+    .preview
+      width: 80%
+      display: block
+      float: right
+      img
+        height: auto 
+      .slick-slide
+        outline: none
+    .buy_btn
+      display: block
+    .params
+      display: flex
+  .slick-vertical .slick-slide
+    margin: 4px 0
+.stock_wrap_container
+  margin-top: 40px 
+  img
+    width: 50%
+    float: left
+  .stock_wrap
+    width: 50%
+    height: 100% 
+    float: right
+    background: #B10636
+    display: flex
+    justify-content: center
+    align-items: center
+  .content_stock
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 5px 0
+    border-radius: 50%
+    background: #FFF 
+    width: 160px
+    height: 160px
+    .title
+      color: #b10636
+      font-size: em(27px)
+      font-weight: 600 
+    .txt
+      margin-top: 10px 
+      font-size: em(14px)
+      font-weight: 600 
+      color: #b10636
+    .proc
+      margin-top: 8px 
+      font-weight: 600
+      color: #b10636
+      font-size: em(27px) 
+.decsfurniture
+  margin-top: 45px
+  color: #2b2c31
+  font-size: em(14px)
+  font-weight: 300
+

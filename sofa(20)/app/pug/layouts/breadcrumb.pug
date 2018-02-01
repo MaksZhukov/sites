@@ -1,0 +1,6 @@
+.breadcrumbs
+    .container
+        ul.breadcrumb
+            each item in breadcrumbs
+                li(class={active: item==page})
+                    a(href="#")= item

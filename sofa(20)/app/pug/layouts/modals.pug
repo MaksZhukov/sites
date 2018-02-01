@@ -1,0 +1,19 @@
+#form_callback
+	form.form_leave_number
+		.title.text-center
+			span.text-uppercase Оставте Ваш номер
+			| телефона и наш менеджер свяжется с вами в течение 5-ти минут
+		input.custom_input(type="text",placeholder='Введите ваше имя', name='name')
+		input.custom_input(type='tel',placeholder="Введите ваш номер телефона",name='phone')
+		input(type='submit', value='Заказать звонок')
+#form_order
+	form.form_checkout
+		.title.text-uppercase Оформить заказ
+		.row
+			.col-auto
+				.name_prod
+				.price
+				input.custom_input(type='tel',placeholder="Введите ваш телефон",name='phone')
+				button.submit Заказать
+			.col-auto
+				img(src="img/delivery_in_offer_modal.png")

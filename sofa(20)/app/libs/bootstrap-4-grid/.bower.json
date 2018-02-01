@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-4-grid",
+  "homepage": "https://github.com/m-spyratos/bootstrap-4-grid",
+  "version": "2.2.0",
+  "_release": "2.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.2.0",
+    "commit": "48959e0c1916c9ea735fc7d695cc8ebfd6a6afd4"
+  },
+  "_source": "https://github.com/m-spyratos/bootstrap-4-grid.git",
+  "_target": "^2.2.0",
+  "_originalSource": "https://github.com/m-spyratos/bootstrap-4-grid.git",
+  "_direct": true
+}

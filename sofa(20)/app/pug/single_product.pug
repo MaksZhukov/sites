@@ -1,0 +1,14 @@
+- var breadcrumbs = ['Главная','Каталог','Мягкая мебель','Угловые диваны','Диван угловой "Премьер"']
+- var page = 'Диван угловой "Премьер"'
+doctype html
+html(lang="ru")
+    include layouts/head.pug
+    body
+        include layouts/header.pug
+        include layouts/breadcrumb.pug
+        include pages/single_product.pug
+        include layouts/footer.pug
+        include layouts/modals.pug
+        link(rel="stylesheet" href="css/main.min.css")
+        script(src="//api-maps.yandex.ru/2.1/?lang=ru_RU",type="text/javascript")
+        script(src="js/scripts.min.js")
