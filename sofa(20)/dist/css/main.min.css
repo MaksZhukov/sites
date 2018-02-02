@@ -6304,7 +6304,13 @@ li.fancybox-thumbs-loading {
   padding: 10px 18px 8px 18px;
   font-size: 0.85714em;
   line-height: 24px;
-  color: #98999b; }
+  color: #98999b;
+  outline: none;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+  .custom_input:hover {
+    border-color: #c49310; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -6402,14 +6408,25 @@ header {
       margin: 0 5px; }
     .subheader ul.menu a {
       color: #fff;
-      font-size: 0.85714em; }
+      font-size: 0.85714em;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      .subheader ul.menu a:hover {
+        color: #ecb31b; }
   .subheader .call_back a {
     padding: 10px 9px;
     font-size: 0.78571em;
     border: 1px solid #fff;
     -webkit-border-radius: 10px;
             border-radius: 10px;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+    .subheader .call_back a:hover {
+      border-color: #ecb31b;
+      color: #ecb31b; }
 
 .banner {
   height: 342px;
@@ -6463,6 +6480,8 @@ header {
     .breadcrumbs ul.breadcrumb a {
       color: #484b50;
       font-size: 0.85714em; }
+      .breadcrumbs ul.breadcrumb a:hover {
+        color: black; }
     .breadcrumbs ul.breadcrumb li:after {
       content: '';
       display: inline-block;
@@ -6565,12 +6584,18 @@ header {
       color: #fff;
       font-size: 1.14286em;
       background-color: #b7b7b7; }
+      .row_pagination_and_count_prod .paginations ul.pagination li a:hover, .row_pagination_bottom .paginations ul.pagination li a:hover {
+        color: #9e9e9e;
+        background-color: #d1d1d1; }
     .row_pagination_and_count_prod .paginations ul.pagination li:last-child, .row_pagination_bottom .paginations ul.pagination li:last-child {
       margin: 0; }
       .row_pagination_and_count_prod .paginations ul.pagination li:last-child a, .row_pagination_bottom .paginations ul.pagination li:last-child a {
         color: #b7b7b7;
         background: transparent;
-        font-size: 1.42857em; }
+        font-size: 1.42857em;
+        -webkit-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out; }
 
 .row_pagination_bottom {
   margin-top: 35px; }
@@ -7126,7 +7151,12 @@ header {
     padding: 11px 35px 9px 36px; }
     .is_main .recall_block .watch_all a {
       text-decoration: none;
-      color: #FFF; }
+      color: #FFF;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+      .is_main .recall_block .watch_all a:hover {
+        color: #ecb31b; }
 
 .is_main .our_certificates {
   margin-bottom: 94px; }

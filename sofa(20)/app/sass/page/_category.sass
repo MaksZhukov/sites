@@ -39,6 +39,8 @@
     a
       color: #484b50
       font-size: em(12px)
+      &:hover
+        color: darken(#484b50,40%)
     li:after
       content: ''
       display: inline-block
@@ -125,12 +127,16 @@
           color: #fff
           font-size: em(16px)
           background-color: #b7b7b7
+          &:hover
+              color: darken(#b7b7b7,10%)
+              background-color: lighten(#b7b7b7,10%)
         &:last-child
           margin: 0
           a
             color: #b7b7b7
             background: transparent
             font-size: em(20px)
+            transition: all 0.3s ease-out
 .row_pagination_bottom
   margin-top: 35px 
 .product
