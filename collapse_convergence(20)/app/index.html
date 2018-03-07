@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <style>
+      body{
+         opacity: 0;
+         overflow-x: hidden;
+         }
+      html{
+         background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="background-image: url('../img/header_bg.jpg');">
+      <div class="top_header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-auto col-md col-auto"><a class="logo" href="#"><img src="img/logo.png" alt="Logo">
+                <div class="title text-uppercase"><span class="accent">авто</span>центр</div></a></div>
+            <div class="col-lg order-lg-0 order-1 col-12">
+              <ul class="menu text-uppercase">
+                <li><a href="#to_service">услуги</a></li>
+                <li><a href="#to_price">цены</a></li>
+                <li><a href="#to_review">отзывы</a></li>
+                <li><a href="#to_certificate">сертификаты</a></li>
+                <li><a href="#to_contact">контакты</a></li>
+              </ul>
+              <div class="btn_collapse"><span></span><span></span><span></span></div>
+            </div>
+            <div class="col-lg-auto order-lg-1 order-0 col-md col-sm-5 col">
+              <div class="btn_transparent d-none d-sm-block"><a class="modal" href="#order_call_form">Заказать звонок</a></div><a class="btn_call_back d-inline-block d-sm-none modal" href="#order_call_form"><i class="fi flaticon-phone-receiver"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_header">
+        <div class="container">
+          <div class="row justify-content-between phones_and_mode_operations">
+            <div class="col-auto">
+              <div class="mode_operation"><i class="fi flaticon-clock"></i>
+                <div class="txt">Режим работы:  пн-пт. 9.00-18.00</div>
+              </div>
+              <div class="address"><i class="fi flaticon-signs"></i>
+                <div class="txt">г. Минск, ул. Ботаническая, 10</div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="phone mts"><img src="img/mts_icon.png" alt="mts"><a href="tel:+375296952080">+375 (29) 695 20 80</a></div>
+              <div class="phone velcom"><img src="img/velcom_icon.png" alt="velcome"><a href="tel:+375296952080">+375 (29) 225 20 80</a></div>
+              <div class="phone simple"><i class="fi flaticon-phone-receiver"></i><a href="tel:+375172942328">+375 (17) 294 23 28</a></div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-lg-8 col-md-auto">
+              <h1><span class="accent">Авто</span>центр<span class="where">на Ботанической</span></h1>
+              <p><b>Развал-схождение</b> 	за 20 минут<br>от<span class="accent">	22 руб.</span></p>
+            </div>
+            <div class="col-lg-auto col-md-4">
+              <div class="sale_block">
+                <div class="content">
+                  <div class="txt">Для всех клиентов:</div>
+                  <div class="free text-uppercase">Бесплатно</div>
+                  <div class="time text-uppercase">c 9.00 - 10.00</div>
+                  <div class="add">Проверка установки
+                    <div class="span text-uppercase">углов колес</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-10">
+              <div class="txt_enrty text-uppercase">Записаться на развал-схождение:</div>
+              <form data-form-type="Запись на развал схождения" method="post">
+                <div class="inpt_transparent">
+                  <input type="text" placeholder="Введите имя" name="name">
+                </div>
+                <div class="inpt_transparent">
+                  <input type="tel" placeholder="Введите телефон" name="phone" required>
+                </div>
+                <div class="btn_painted">
+                  <input type="submit" value="Записаться">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="sub_header" style="background-image: url('../img/sub_header_bg.jpg');">
+      <div class="container">
+        <div class="row operation justify-content-lg-between justify-content-md-center">
+          <div class="col-xl-auto col-lg col-md-auto">
+            <div class="operation_txt">
+              <div class="title">Операцию<span class="accent"> развал-схождение</span> обычно
+                проводят в следующих случаях:
+              </div>
+              <div class="content">
+                <ul>
+                  <li>- при появлении неравномерного износа шин;</li>
+                  <li>- после ДТП;</li>
+                  <li>- после замены частей подвески или ее ремонта;</li>
+                  <li>- после сезонной замены шин;</li>
+                  <li>- если чувствуется изменение в «поведении» машины на дороге (например, увод в сторону)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-auto col-lg col-md-auto"><img class="img-responsive" src="img/operation.jpg" alt="Operation"></div>
+        </div>
+        <div class="row flex-row-reverse operation justify-content-lg-between justify-content-md-center">
+          <div class="col-xl-auto col-lg col-md-auto">
+            <div class="operation_txt">
+              <div class="title">
+                Мы работаем на оборудовании
+                фирмы<span class="accent"> Hunter</span> и поэтому Вы получите
+                превосходное качество работ
+              </div>
+              <div class="content">
+                <ul>
+                  <li>- углы измеряются с помощью четырех видеокамер с разрешением 2608×1952</li>
+                  <li>- для колесных дисков с выступающей ступицей или нестандартной формы используются специальные проставки которые поставляются в базовом комплекте</li>
+                  <li>- для измерения угла максимального поворота колес используются опциональные мишени</li>
+                  <li>- отсутствие контакта «металл»-«металл» гарантирует отсутствие повреждений на клиентских дисках любых конфигураций</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-auto col-lg col-md-auto"><img class="img-responsive" src="img/work.jpg" alt="we work"></div>
+        </div>
+        <div class="row video">
+          <h3 class="text-uppercase text-center">Смотрите видео о том, как работает Hunter</h3>
+          <iframe width="854" height="480" src="https://www.youtube.com/embed/1FVMQg5Ltew" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="our_advantages">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-5 d-none d-md-block"><img class="img-responsive" src="img/our_advantage_left.png" alt="Wheel"></div>
+          <div class="col">
+            <div class="custom_title"><span class="order_number">01.
+                <h2><span class="accent">Наши</span> преимущества</h2></span></div>
+            <div class="advantages">
+              <div class="row">
+                <div class="col-6 advantage">
+                  <div class="row align-items-center">
+                    <div class="col-lg-auto col-sm-5">
+                      <div class="wrap_img"><img src="img/our_advantage_1_icon.png" alt="Our advantage 1"></div>
+                    </div>
+                    <div class="col-lg col-sm-7">
+                      <div class="txt">Гарантия на все выполненные работы</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 advantage">
+                  <div class="row align-items-center">
+                    <div class="col-lg-auto col-sm-5">
+                      <div class="wrap_img"><img src="img/our_advantage_2_icon.png" alt="Our advantage 2"></div>
+                    </div>
+                    <div class="col-lg col-sm-7">
+                      <div class="txt">Опытные механики</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 advantage">
+                  <div class="row align-items-center">
+                    <div class="col-lg-auto col-sm-5">
+                      <div class="wrap_img"><img src="img/our_advantage_3_icon.png" alt="Our advantage 3"></div>
+                    </div>
+                    <div class="col-lg col-sm-7">
+                      <div class="txt">Низкие цены</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 advantage">
+                  <div class="row align-items-center">
+                    <div class="col-lg-auto col-sm-5">
+                      <div class="wrap_img"><img class="img-responsive" src="img/our_advantage_4_icon.png" alt="Our advantage 4"></div>
+                    </div>
+                    <div class="col-lg col-sm-7">
+                      <div class="txt">Узкая специализация</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_1" style="background-image: url('../img/banner_1_bg.png');">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col">
+            <div class="sale"><span>-</span>20<sup>%</sup></div>
+          </div>
+          <div class="col">
+            <div class="txt"><span class="first">развал-схождение</span><span class="second">Всего за<span>  22</span> руб</span></div>
+            <div class="btn_painted"><a class="modal" href="#enroll_form">Записаться</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price_for_service" id="to_price" style="background-image: url('../img/price_for_service_bg.jpg');">
+      <div class="container">
+        <div class="custom_title"><span class="order_number">02.
+            <h2><span class="accent">Цены</span> на услуги</h2></span></div>
+        <div class="services">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl col-lg-4 col-md-4 col-sm-12">
+              <div class="service side">
+                <div class="content">
+                  <div class="title">легковые</div>
+                  <div class="axis">1 ось</div>
+                  <div class="price"><span class="val">22</span> руб</div>
+                  <div class="btn_painted"><a class="modal" href="#enroll_form">Записаться</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl col-lg-4 col-md-4 col-sm-12">
+              <div class="service center">
+                <div class="content">
+                  <div class="title">легковые</div>
+                  <div class="axis">2 оси</div>
+                  <div class="price"><span class="val">28</span> руб</div>
+                  <div class="btn_painted"><a class="modal" href="#enroll_form">Записаться</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl col-lg col-md-4 col-sm-12">
+              <div class="service side">
+                <div class="content">
+                  <div class="title">микроавтобусы</div>
+                  <div class="axis">с maxi базой</div>
+                  <div class="price"><span class="val">32</span> руб</div>
+                  <div class="btn_painted"><a class="modal" href="#enroll_form">Записаться</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="title_normo_hour text-uppercase text-center">нормо-час на услуги СТО:</div>
+        <div class="normo_hours text-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-sm-6 col-12">
+              <div class="normo_hour">
+                <div class="content">
+                  <div class="title">С НДС для гос. организаций:</div>
+                  <div class="price"><span class="val">36</span> руб</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-6 col-12">
+              <div class="normo_hour">
+                <div class="content">
+                  <div class="title">С НДС для физ.лиц и хозрасчетных организаций:</div>
+                  <div class="price"><span class="val">40</span> руб</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our_service_station" id="to_service">
+      <div class="container">
+        <div class="custom_title"><span class="order_number">03.
+            <h2><span class="accent">Наше</span> СТО</h2></span></div>
+        <div class="slick_slider_service_station">
+          <div class="slide_service_station"><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_1.jpg" alt="Our service station 1"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_2.jpg" alt="Our service station 2"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_3.jpg" alt="Our service station 3"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_4.jpg" alt="Our service station 4"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_5.jpg" alt="Our service station 5"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_6.jpg" alt="Our service station 6"></a></div>
+          <div class="slide_service_station"><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_1.jpg" alt="Our service station 1"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_2.jpg" alt="Our service station 2"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_3.jpg" alt="Our service station 3"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_4.jpg" alt="Our service station 4"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_5.jpg" alt="Our service station 5"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_6.jpg" alt="Our service station 6"></a></div>
+          <div class="slide_service_station"><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_1.jpg" alt="Our service station 1"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_2.jpg" alt="Our service station 2"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_3.jpg" alt="Our service station 3"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_4.jpg" alt="Our service station 4"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_5.jpg" alt="Our service station 5"></a><a class="modal" href="#gallery_service_station"><img class="img-responsive" src="img/our_service_station_6.jpg" alt="Our service station 6"></a></div>
+        </div>
+        <div class="slick_slider_service_station_mobile">
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_1.jpg" alt="Our service station 1"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_2.jpg" alt="Our service station 2"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_3.jpg" alt="Our service station 3"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_4.jpg" alt="Our service station 4"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_5.jpg" alt="Our service station 5"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_6.jpg" alt="Our service station 6"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_1.jpg" alt="Our service station 1"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_2.jpg" alt="Our service station 2"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_3.jpg" alt="Our service station 3"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_4.jpg" alt="Our service station 4"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_5.jpg" alt="Our service station 5"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_6.jpg" alt="Our service station 6"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_1.jpg" alt="Our service station 1"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_2.jpg" alt="Our service station 2"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_3.jpg" alt="Our service station 3"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_4.jpg" alt="Our service station 4"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_5.jpg" alt="Our service station 5"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_6.jpg" alt="Our service station 6"></div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_2" style="background-image: url('../img/banner_2_bg.jpg');">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md col-sm-12">
+            <div class="txt">При записи на развал с нашего сайта получи<span class="sale_txt"> скидку</span><span class="proc_val"> 5<sup>%</sup></span></div>
+            <form data-form-type="Запись на развал схождения" method="post">
+              <div class="inpt_transparent">
+                <input type="text" placeholder="Введите имя" name="name">
+              </div>
+              <div class="inpt_transparent">
+                <input type="tel" placeholder="Введите телефон" name="phone" required>
+              </div>
+              <div class="btn_painted">
+                <input type="submit" value="Записаться">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-auto col-sm">
+            <div class="sale_block">
+              <div class="content">
+                <div class="txt">Для всех клиентов:</div>
+                <div class="free text-uppercase">Бесплатно</div>
+                <div class="time text-uppercase">c 9.00 - 10.00</div>
+                <div class="add">Проверка установки
+                  <div class="span text-uppercase">углов колес</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="add_services">
+      <div class="container">
+        <div class="custom_title"><span class="order_number">04.
+            <h2><span class="accent">Дополнительные</span> услуги</h2></span></div>
+        <div class="row text-center add_service_row justify-content-sm-center">
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_1.png" alt="additional service 1">
+                <div class="desc">Регулировка установки углов колес</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_2.png" alt="additional service 2">
+                <div class="desc">Шиномонтаж</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_3.png" alt="additional service 3">
+                <div class="desc">Замена тормозных колодок</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_4.png" alt="additional service 4">
+                <div class="desc">Замена масла в двигателе, КПП, АКПП</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_5.png" alt="additional service 5">
+                <div class="desc">Ремонт глушителя</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_6.png" alt="additional service 6">
+                <div class="desc">Регулировка света фар</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_7.png" alt="additional service 7">
+                <div class="desc">Диагностика и ремонт подвески</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4">
+            <div class="add_service">
+              <div class="content"><img src="img/add_service_8.png" alt="additional service 8">
+                <div class="desc">Замена ремней ГРМ</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our_certificates" id="to_certificate">
+      <div class="container">
+        <div class="custom_title"><span class="order_number">05.
+            <h2><span class="accent">Сертификаты</span> - гарантия качества</h2></span></div>
+      </div>
+      <div class="certificates">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md col-sm-6 col-12 ceriticate">
+              <div class="wrap_img"><img class="img-responsive" src="img/certificate_1.png" alt="certificate 1"></div>
+            </div>
+            <div class="col-md col-sm-6 col-12 ceriticate">
+              <div class="wrap_img"><img class="img-responsive" src="img/certificate_2.png" alt="certificate 2"></div>
+            </div>
+            <div class="col-md col-sm-6 col-12 ceriticate">
+              <div class="wrap_img"><img class="img-responsive" src="img/certificate_3.png" alt="certificate 3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_3" style="background-image: url('../img/banner_3_bg.jpg');">
+      <div class="container">
+        <div class="custom_title"><span class="order_number">06.
+            <h2><span class="accent">Запишитесь</span> на развал-схождение</h2></span></div>
+        <div id="calendar"></div>
+        <form data-form-type="Запись на развал схождения" method="post">
+          <div class="inpt_transparent">
+            <input type="text" placeholder="Введите имя" name="name">
+          </div>
+          <div class="inpt_transparent">
+            <input type="tel" placeholder="Введите телефон" name="phone" required>
+          </div>
+          <div class="btn_painted">
+            <input type="submit" value="Записаться">
+          </div>
+          <input type="hidden" name="date">
+        </form>
+      </div>
+    </section>
+    <section class="our_reviews" id="to_review">
+      <div class="container">
+        <div class="custom_title"><span class="order_number">07.
+            <h2><span class="accent">Отзывы</span> о нас</h2></span></div>
+        <div class="slick_slider_reviews">
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_1.png" alt="Review logo 1"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_2.png" alt="Review logo 2"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_3.png" alt="Review logo 3"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_4.png" alt="Review logo 4"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_1.png" alt="Review logo 1"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_2.png" alt="Review logo 2"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_3.png" alt="Review logo 3"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_4.png" alt="Review logo 4"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_1.png" alt="Review logo 1"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_2.png" alt="Review logo 2"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_3.png" alt="Review logo 3"></a></div>
+          <div class="slide_review"><a class="modal" href="#review_modal"><img class="img-responsive" src="img/logo_review_4.png" alt="Review logo 4"></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="mode_of_operation_and_contacts" id="to_contact">
+      <div class="container">
+        <div class="row align-items-center justify-content-sm-center">
+          <div class="col-md col-sm-auto">
+            <div class="info"><img src="img/clock_icon.png" alt="Clock icon">
+              <div class="desc">Режим работы:<br>пн-пт. 9.00 - 18.00</div>
+            </div>
+          </div>
+          <div class="col-md col-sm-auto">
+            <div class="info"><img src="img/map_icon.png" alt="Map icon">
+              <div class="desc">г. Минск,<br>ул. Ботаническая, 10</div>
+            </div>
+          </div>
+          <div class="col-md col-sm-auto">
+            <div class="info"><i class="fi flaticon-technology"></i>
+              <div class="desc"><a href="tel+375296952080">+375 (29) 695 20 80</a><a href="tel+375296952080">+375 (29) 695 20 80</a><a href="tel+375296952080">+375 (29) 695 20 80</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="map"></section>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto"><a class="logo" href="#"><img src="img/logo.png" alt="Logo">
+              <div class="title text-uppercase"><span class="accent">авто</span>центр</div></a></div>
+          <div class="col">
+            <ul class="menu text-uppercase">
+              <li><a href="#to_service">услуги</a></li>
+              <li><a href="#to_price">цены</a></li>
+              <li><a href="#to_review">отзывы</a></li>
+              <li><a href="#to_certificate">сертификаты</a></li>
+              <li><a href="#to_contact">контакты</a></li>
+            </ul>
+            <div class="btn_collapse"><span></span><span></span><span></span></div>
+          </div>
+          <div class="col-auto">
+            <div class="btn_transparent"><a class="modal" href="#order_call_form">Заказать звонок</a></div>
+          </div>
+        </div>
+        <div class="copy">Copyright © 2018  Автоцентр</div>
+      </div>
+    </footer>
+    <div class="modal_window" id="order_call_form">
+      <form data-form-type="Заказ звонка" method="post">
+        <div class="close">&times;</div>
+        <div class="title"><span class="first_l">оставьте свой номер</span><span class="second_l">и мы вам перезвоним</span><span class="thirt_l">в течение 5 минут</span></div>
+        <div class="inpt_transparent">
+          <input type="tel" placeholder="Введите телефон">
+        </div>
+        <div class="btn_painted">
+          <input type="submit" value="Заказать звонок">
+        </div>
+        <div class="PS">* Мы не передаем данные третьим лицам</div>
+      </form>
+    </div>
+    <div class="modal_window" id="enroll_form">
+      <form data-form-type="Запись на развал схождения" method="post">
+        <div class="close">&times;</div>
+        <div class="title"><span class="first_l">записаться</span><span class="second_l">на развал-схождение</span><span class="thirt_l">Мы вам перезвоним в течение 5 минут</span></div>
+        <div class="inpt_transparent">
+          <input type="tel" placeholder="Введите телефон">
+        </div>
+        <div class="btn_painted">
+          <input type="submit" value="Заказать звонок">
+        </div>
+        <input type="hidden" name="title">
+        <input type="hidden" name="axis">
+        <input type="hidden" name="price">
+        <div class="PS">* Мы не передаем данные третьим лицам</div>
+      </form>
+    </div>
+    <div class="modal_window" id="gallery_service_station">
+      <div class="slider_content">
+        <div class="close">&times;</div>
+        <div class="slick_slider_gallery">
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_1_preview.jpg" alt="Our service station 1"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_2_preview.jpg" alt="Our service station 2"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_3_preview.jpg" alt="Our service station 3"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_4_preview.jpg" alt="Our service station 4"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_5_preview.jpg" alt="Our service station 5"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_6_preview.jpg" alt="Our service station 6"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_1_preview.jpg" alt="Our service station 1"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_2_preview.jpg" alt="Our service station 2"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_3_preview.jpg" alt="Our service station 3"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_4_preview.jpg" alt="Our service station 4"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_5_preview.jpg" alt="Our service station 5"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_6_preview.jpg" alt="Our service station 6"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_1_preview.jpg" alt="Our service station 1"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_2_preview.jpg" alt="Our service station 2"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_3_preview.jpg" alt="Our service station 3"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_4_preview.jpg" alt="Our service station 4"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_5_preview.jpg" alt="Our service station 5"></div>
+          <div class="slide"><img class="img-responsive" src="img/our_service_station_6_preview.jpg" alt="Our service station 6"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_window" id="review_modal">
+      <div class="wrap_review">
+        <div class="close">&times;</div>
+        <div class="review"><img class="img-responsive" src="img/review_1.jpg" alt="Review 1"></div>
+        <div class="review"><img class="img-responsive" src="img/review_2.jpg" alt="Review 2"></div>
+        <div class="review"><img class="img-responsive" src="img/review_3.jpg" alt="Review 3"></div>
+        <div class="review"><img class="img-responsive" src="img/review_4.jpg" alt="Review 4"></div>
+        <div class="review"><img class="img-responsive" src="img/review_1.jpg" alt="Review 1"></div>
+        <div class="review"><img class="img-responsive" src="img/review_2.jpg" alt="Review 2"></div>
+        <div class="review"><img class="img-responsive" src="img/review_3.jpg" alt="Review 3"></div>
+        <div class="review"><img class="img-responsive" src="img/review_4.jpg" alt="Review 4"></div>
+        <div class="review"><img class="img-responsive" src="img/review_1.jpg" alt="Review 1"></div>
+        <div class="review"><img class="img-responsive" src="img/review_2.jpg" alt="Review 2"></div>
+        <div class="review"><img class="img-responsive" src="img/review_3.jpg" alt="Review 3"></div>
+        <div class="review"><img class="img-responsive" src="img/review_4.jpg" alt="Review 4"></div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

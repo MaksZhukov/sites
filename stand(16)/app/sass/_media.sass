@@ -1,0 +1,245 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1366px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1032px)
+  html
+    font-size: 7px
+  body
+    font-size: 14px
+  ul.menu li
+    padding: 1px 10px
+  section.sub_header .free_check_out:before
+    border: 21px solid transparent
+    border-right: 21px solid #fff
+    border-bottom: 21px solid #fff
+  section.sub_header .free_check_out:after
+    border: 21px solid transparent
+    border-top: 21px solid #fff
+    border-right: 21px solid #fff
+  section.banner_1
+    .row_btn
+      flex-direction: column
+      .inpt_white
+        margin-bottom: 20px
+  .stand .row_with_PS + .performance
+    margin-top: 0
+  .stand .PS
+    margin: 7px 0
+  section.banner_3 .stock
+    margin: 0
+  section.banner_4
+    padding: 7rem 0 10rem
+  section.banner_5
+    background: $accent
+    padding: 4rem 0 5rem
+  section.classification .title
+    font-size: 12px
+  section.production .slider_production .slide
+    margin: 0 10px
+  section.shipping_and_payment .delivery
+    max-width: 610px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  html
+    font-size: 4px
+  body
+    font-size: 12px
+  header
+    font-size: 14px
+  header ul.menu
+    display: none
+  ul.menu
+    li
+      padding-left: 0
+    li:last-child
+      border-right: 1px solid #cccccc
+  header .btn_collapse_menu
+    height: 30px
+    width: 40px
+    flex-direction: column
+    display: flex
+    justify-content: space-between
+    cursor: pointer
+    span
+      width: 100%
+      height: 3px
+      background: $accent
+      display: block
+  header .order_call_mobile
+    display: inline-block
+    a
+      border: 1px solid $accent
+      display: block
+      color: $accent
+      font-size: 27px
+      padding: 0 5px
+      border-radius: 4px
+  .stand .picture
+    width: inherit
+    min-height: inherit
+  section.banner_1,section.banner_3
+    padding: 14rem 0 15rem
+  section.banner_1
+    .window_bg
+      background: none
+      width: initial
+      height: initial
+      .content
+        position: initial
+        transform: none
+  section.banner_2
+    padding: 14rem 0 9.5rem
+    font-size: 10px
+    min-height: inherit
+  section.production .slider_production .slick-arrow.slick-prev
+    left: -25px
+  section.production .slider_production .slick-arrow.slick-next
+    right: -25px
+  .modal_wrapper#form_order_call .modal_window
+    background-position: 112% 200%
+  section.banner_6
+    padding: 90px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+  header
+    font-size: 15px
+    img
+      max-width: 80%
+    .phone
+      text-align: right
+      white-space: nowrap
+    .row > div
+      padding: 0 9px
+  section.sub_header .form_bg
+    background-image: none
+    height: inherit
+    width: inherit
+    background: #f9f9f9
+    border-radius: 20px
+    padding: 10px 15px
+    margin-top: 40px
+  section.banner_1 .row_btn .inpt_white,section.banner_4 form.banner .inpt_white,section.banner_6 .inpt_white
+    margin-right: 0
+  form.banner .row_btn
+    align-items: center
+  section.banner_1 .window_bg .content
+    margin: auto
+  section.banner_4 form.banner .row_btn
+    flex-direction: column
+    &> div
+      margin-bottom: 10px
+  section.stand_standart_size .stand_standart
+    flex-direction: column
+  section.stand_standart_size .stand_standart .desc
+    margin-left: 0
+    margin-top: 5px
+  section.banner_6
+    font-size: 9px
+    background-size: cover
+  section.banner_6 .row_btn
+    flex-direction: column
+    > div
+      margin-bottom: 10px
+  section.production .slider_production
+    padding: 0 20px
+  section.production .slider_production .slick-arrow.slick-prev
+    left: -10px
+  section.production .slider_production .slick-arrow.slick-next
+    right: -10px
+  footer ul.menu
+    flex-wrap: wrap
+  .modal_wrapper#form_order_call .modal_window,.modal_wrapper .modal_window
+    background-image: none
+    form
+      text-align: center
+      .inpt_white,.btn_pained
+        margin: 10px auto
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1032px)
+  section.banner_4,section.sub_header,section.banner_5
+    background-size: 100% 100%
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1367px)
+  /**/
+
+@media only screen and (max-width : 1920px)
+  section.banner_5 .left_procents>span.proc_1
+    left: -25%
+  section.banner_5 .left_procents>span.val
+    left: 20%
+  section.banner_5 .left_procents>span.proc_2
+    right: 30%
+@media only screen and (max-width : 1780px)
+  section.banner_5 .left_procents>span.proc_1
+    left: -15%
+  section.banner_5 .left_procents>span.val
+    left: 27%
+  section.banner_5 .left_procents>span.proc_2
+    right: 23%
+@media only screen and (max-width : 1660px)
+  section.banner_5 .left_procents>span.proc_1
+    left: -6%
+  section.banner_5 .left_procents>span.val
+    left: 32%
+  section.banner_5 .left_procents>span.proc_2
+    right: 22%
+@media only screen and (max-width : 1540px)
+  section.banner_5 .left_procents>span.proc_1
+    left: 3%
+  section.banner_5 .left_procents>span.val
+    left: 38%
+  section.banner_5 .left_procents>span.proc_2
+    right: 20%
+@media only screen and (max-width : 1367px)
+  section.banner_5 .left_procents>span.proc_1
+    left: -11%
+  section.banner_5 .left_procents>span.val
+    left: 23%
+  section.banner_5 .left_procents>span.proc_2
+    right: 33%
+@media only screen and (max-width : 1220px)
+  section.banner_5 .left_procents>span.proc_1
+    left: -4%
+  section.banner_5 .left_procents>span.val
+    left: 28%
+  section.banner_5 .left_procents>span.proc_2
+    right: 33%
+@media only screen and (max-width : 1130px)
+  section.banner_5 .left_procents>span.proc_1
+    left: 4%
+  section.banner_5 .left_procents>span.val
+    left: 33%
+  section.banner_5 .left_procents>span.proc_2
+    right: 33%

@@ -1,0 +1,41 @@
+.modal_wrapper#form_order_call
+    .modal_window
+        a.close(href="#") &times;
+        form(action="mail.php", method="post")
+            .title Оставьте ваш номер
+            .sub_title мы Вам перезвоним в ближайшее время
+            .inpt_white
+                input(type="text", required, name="name", placeholder="Имя")
+            .inpt_white
+                input(type="tel", required, name="name", placeholder="Номер телефона")
+            .btn_pained.blue
+                input(type="submit", value="Заказать звонок")
+            .PS
+                | *мы не передаем Вашу персональную информацию
+                | третьим лицам
+            input(type="hidden", name="form_type", value="Заказ звонка")
+.modal_wrapper#form_become_customer
+    .modal_window
+        a.close(href="#") &times;
+        form(action="mail.php", method="post")
+            .row.align-items-center
+                .col.col-sm-9
+                    .title Оставьте ваш номер
+                    .sub_title
+                        | чтобы стать нашим
+                        br
+                        span постоянным клиентом
+                    .inpt_white
+                        input(type="text", required, name="name", placeholder="Имя")
+                    .inpt_white
+                        input(type="tel", required, name="phone", placeholder="Номер телефона")
+                    .btn_pained.blue
+                        input(type="submit", value="Стать клиентом")
+                    .PS
+                        | *мы не передаем Вашу персональную информацию
+                        | третьим лицам
+                    input(type="hidden", name="form_type", value="Стать клиентом")
+                .col-3.d-none.d-sm-block
+                    .stock
+                        span скидка
+                        span - 10 %

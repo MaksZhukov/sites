@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <style>
+      body{
+         opacity: 0;
+         overflow-x: hidden;
+         }
+      html{
+         background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center justify-content-xl-between">
+          <div class="col-auto"><a class="logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+            <h1 class="d-none">Стенды</h1>
+          </div>
+          <div class="col-12 col-md-auto order-5 order-md-0">
+            <ul class="menu">
+              <li><a href="#to_main">Главная</a></li>
+              <li><a href="#to_product">Продукция</a></li>
+              <li><a href="#to_production">Производство</a></li>
+              <li><a href="#to_stock">Акции</a></li>
+              <li><a href="#to_delivery">Доставка</a></li>
+              <li><a href="#to_contacts">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="col col-sm-auto">
+            <div class="phone"><i class="fi flaticon-technology"></i><a href="tel:+375293003030">+375 (29) 300-30-30</a></div>
+          </div>
+          <div class="w-100 d-none d-lg-block"></div>
+          <div class="col d-none d-md-block">
+            <div class="order_call"><a class="modal" href="#form_order_call">Заказать звонок</a></div>
+          </div>
+          <div class="col d-block d-md-none">
+            <div class="row align-items-center justify-content-end flex-nowrap">
+              <div class="col-auto">
+                <div class="order_call_mobile"><a class="modal" href="#form_order_call"><i class="fi flaticon-phone-receiver"></i></a></div>
+              </div>
+              <div class="col-auto">
+                <div class="btn_collapse_menu"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="sub_header" id="to_main">
+      <div class="container">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-md-6 col-12">
+            <h2>
+              <div class="r_1">Изготовим<span class="blue"> стенды</span></div><br>
+              <div class="r_2">любой формы и конструкции</div>
+            </h2>
+            <div class="free_check_out text-uppercase">бесплатный выезд<br>специалиста-консультанта в день обращения</div>
+            <div class="services">
+              <div class="service text-center"><img src="img/service_icon_1.png" alt="Service icon 1">
+                <div class="txt">
+                  Любые
+                  размеры  и варианты
+                  исполнения
+                </div>
+              </div>
+              <div class="service text-center"><img src="img/service_icon_2.png" alt="Service icon 2">
+                <div class="txt">
+                  Подбор
+                  изображений на
+                  любую тематику
+                </div>
+              </div>
+              <div class="service text-center"><img src="img/service_icon_3.png" alt="Service icon 3">
+                <div class="txt">
+                  Разработка
+                  вашего уникального
+                  дизайна
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-auto col-auto col-md-6">
+            <div class="form_bg text-center">
+              <form action="mail.php" method="post">
+                <div class="title text-uppercase">Оставьте заявку</div>
+                <div class="sub_title">
+                  и получите бесплатную
+                  консультацию
+                </div>
+                <div class="inpt_white">
+                  <input type="text" placeholder="Имя" name="name">
+                </div>
+                <div class="inpt_white">
+                  <input type="tel" required placeholder="Номер телефона" name="phone">
+                </div>
+                <div class="btn_pained blue">
+                  <input type="submit" value="Получить консультацию">
+                </div>
+                <input type="hidden" value="Получить консультацию" name="form_type">
+              </form>
+              <div class="PS">
+                *мы не передаем Вашу персональную
+                информацию третьим лицам
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_1">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm-auto col-12">
+            <div class="window_bg">
+              <div class="content text-center">
+                <div class="title text-uppercase">
+                  Собственное
+                  производство
+                </div>
+                <div class="desc">
+                  лучшая цена и быстрый
+                  срок изготовления
+                </div><a class="look" href="#to_production">Смотреть &raquo;</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <form class="banner text-center" action="mail.php" method="post">
+              <div class="title">Оставьте свой номер – мы вам перезвоним</div>
+              <div class="row_btn">
+                <div class="inpt_white">
+                  <input type="tel" name="phone" required placeholder="Номер телефона">
+                </div>
+                <div class="btn_transparent">
+                  <input type="submit" value="Заказать звонок">
+                </div>
+              </div>
+              <div class="PS">*мы не передаем Вашу персональную информацию третьим лицам</div>
+              <input type="hidden" name="form_type" value="Оставьте свой номер – мы вам перезвоним">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stand_fire_safety" id="to_product">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>Стенды по пожарной безопасности</h2>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/fire_safety_stands_1.jpg" alt="Fire safety stand 1"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд по пожарной безопасности 1</div>
+                <div class="row row_with_PS">
+                  <div class="col-xl-6 col-lg">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 35 р. 60 к.</span></div>
+                    <div class="size"><b>Размеры:</b> 400 х 770 мм.</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="PS">
+                      Возможно комплектование
+                      листовками с необходимой
+                      информацией - всегда в наличии.<br><b>Цена за 1</b> шт.<b> 1,4 р.</b>
+                    </div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 4 кармана для листов формата А4;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 28 р. 48 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд по пожарной безопасности 1">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/fire_safety_stands_2.jpg" alt="Fire safety stand 2"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд по пожарной безопасности 2</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 40 р.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 490 х 770 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 36 р.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд по пожарной безопасности 2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/fire_safety_stands_3.jpg" alt="Fire safety stand 3"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд по пожарной безопасности 2</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 161 р. 33 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 1200 х 2100 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (5 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 129 р. 70 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд по пожарной безопасности 3">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_2">
+      <div class="container">
+        <div class="row align-items-center justify-content-xl-around justify-content-center">
+          <div class="col-auto">
+            <div class="questions">Остались<br>вопросы?</div>
+          </div>
+          <div class="col col-xl-auto">
+            <form class="banner text-center" action="mail.php" method="post">
+              <div class="title">Оставьте свой номер – мы вам перезвоним</div>
+              <div class="row_btn">
+                <div class="inpt_white">
+                  <input type="tel" name="phone" required placeholder="Номер телефона">
+                </div>
+                <div class="btn_transparent">
+                  <input type="submit" value="Заказать звонок">
+                </div>
+              </div>
+              <div class="PS">*мы не передаем Вашу персональную информацию третьим лицам</div>
+              <input type="hidden" name="form_type" value="Оставьте свой номер – мы вам перезвоним">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stand_kindergarten">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>Стенды для детского сада</h2>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stands_kindergarten_1.jpg" alt="Stand kindergarten 1"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд для детского сада 1</div>
+                <div class="row">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 19 р. 33 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 500 х 500 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 1 карман для листа формата А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 15 р. 47 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд для школы 1">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stands_kindergarten_2.jpg" alt="Stand kindergarten 2"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд для детского сада 2</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 85 р.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 850 х 900 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 4 кармана для листов формата А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 68 р.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд для школы 2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stands_kindergarten_3.jpg" alt="Stand kindergarten 3"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд для детского сада 3</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 98 р. 53 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 800 х 1200 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 5 карманов для листов формата А4;<br>- полноцветная печать на самоклеющейся пленке;<br>- пластик ПВХ (4 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 78 р. 83 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд для школы 3">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stand_for_school">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>Стенды для школ</h2>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stands_for_school_1.jpg" alt="Stand for school 1"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд для школы 1</div>
+                <div class="row">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 48 р. 60 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 490 х 770 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 9 карманов для листов формата А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (4 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 38 р. 80 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд для школы 1">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stands_for_school_2.jpg" alt="Stand for school 2"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд для школы 2</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 81 р. 87</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 800 х 900 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 6 карманов для листов формата А4;<br>- полноцветная печать на самоклеющейся пленке;<br>- пластик ПВХ (4 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 65 р. 49 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд для школы 2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stands_for_school_3.jpg" alt="Stand for school 3"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд для школы 3</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 112 р. 80 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 800 х 1200 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 6 карманов для листов формата А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (4 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 90 р. 24 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд для школы 3">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_3" id="to_stock">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-auto">
+            <div class="stock">Акция -20%</div>
+          </div>
+          <div class="col col-lg-8 col-xl">
+            <form class="banner text-center" action="mail.php" method="post">
+              <div class="title">
+                Закажите два стенда одной категории и получите
+                20% скидку на все последующие
+              </div>
+              <div class="row_btn">
+                <div class="inpt_white">
+                  <input type="tel" name="phone" required placeholder="Номер телефона">
+                </div>
+                <div class="btn_transparent">
+                  <input type="submit" value="Заказать звонок">
+                </div>
+              </div>
+              <div class="PS">*мы не передаем Вашу персональную информацию третьим лицам</div>
+              <input type="hidden" name="form_type" value="Закажите два стенда и получите 20% скидку на все последующие">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stand_consumer_corner">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>Уголок потребителя</h2>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/customer_corner_1.jpg" alt="Customer corner 1"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Уголок потебителя 1</div>
+                <div class="row">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 35 р. 60 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 500 х 800 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 4 кармана для листов формата А4;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 28 р. 48 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Уголок потебителя 1">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/customer_corner_2.jpg" alt="Customer corner 2"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Уголок потебителя 2</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 40 р. 33 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 500 х 800 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- З кармана для листов формата А4, 1 объемный карман формата<br>А5 либо А4;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 32 р. 27 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Уголок потебителя 2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/customer_corner_3.jpg" alt="Customer corner 3"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Уголок потебителя 3</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 70 р. 47 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 790 х 840 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 5 карманов для листов формата А4,1 объемный карман формата<br>А5 либо А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (4 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 56 р. 37 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Уголок потебителя 3">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stand_information">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>стенды информация</h2>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stand_information_1.jpg" alt="Stand information 1"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд информация 1</div>
+                <div class="row">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 35 р. 60 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 500 х 800 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 4 кармана для листов формата А4;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 28 р. 48 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд информация 1">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stand_information_2.jpg" alt="Stand information 2"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд информация 2</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 51 р.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 790 х 840 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- З кармана для листов формата А4, 1 объемный карман формата<br>А5 либо А4;<br>- пластик ПВХ (З мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 40 р. 80 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд информация 2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stand_information_3.jpg" alt="Stand information 3"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд информация 3</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 80 р. 60 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 840 х 1040 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 5 карманов для листов формата А4,1 объемный карман формата<br>А5 либо А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (4 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 56 р.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд информация 3">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_4">
+      <div class="container">
+        <form class="banner text-center" action="mail.php" method="post">
+          <div class="title">Оставьте заявку и получите бесплатную консультацию</div>
+          <div class="row_btn">
+            <div class="inpt_white">
+              <input type="text" name="name" placeholder="Имя">
+            </div>
+            <div class="inpt_white">
+              <input type="tel" name="phone" required placeholder="Номер телефона">
+            </div>
+            <div class="btn_pained blue">
+              <input type="submit" value="Получить консультацию">
+            </div>
+          </div>
+          <div class="PS">*мы не передаем Вашу персональную информацию третьим лицам</div>
+          <input type="hidden" name="form_type" value="Оставьте заявку и получите бесплатную консультацию">
+        </form>
+      </div>
+    </section>
+    <section class="stand_ot_and_tb">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>стенды по ОТ и ТБ</h2>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stand_ot_and_tb_1.jpg" alt="Stand ot and tb 1"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд по ОТ и ТБ 1</div>
+                <div class="row">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 37 р. 87 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 600 х 900 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (З мм) с бортиками (объемный) и подвесами.</div>
+                <div class="add">При заказе более 5 шт. Цена: 30 р. 29 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд по ОТ и ТБ 1">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stand">
+          <div class="row no-gutters align-items-center">
+            <div class="col-sm-5 col-md-auto">
+              <div class="picture"><img class="img-responsive" src="img/stand_ot_and_tb_2.jpg" alt="Stand ot and tb 2"></div>
+            </div>
+            <div class="col col-xl-8">
+              <div class="desc">
+                <div class="title">Стенд по ОТ и ТБ 2</div>
+                <div class="row align-items-center">
+                  <div class="col-xl-4">
+                    <div class="price"><span class="txt"><b>Цена:</b></span><span class="val"> 107 р. 40 к.</span></div>
+                  </div>
+                  <div class="col">
+                    <div class="size"><b>Размеры:</b> 1100 х 1300 мм.</div>
+                  </div>
+                </div>
+                <div class="performance"><b>Исполнение:</b><br>- 1 карман для листов формата А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (4 мм).</div>
+                <div class="add">При заказе более 5 шт. Цена: 85 р. 92 к.</div>
+                <form action="mail.php" method="post">
+                  <div class="inpt_white">
+                    <input type="tel" name="phone" required placeholder="Номер телефона">
+                  </div>
+                  <div class="btn_pained accent">
+                    <input type="submit" value="Заказать">
+                  </div>
+                  <input type="hidden" name="form_type" value="Стенд по ОТ и ТБ 2">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="stand">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-auto col-sm-5">
+                  <div class="picture"><img class="img-responsive" src="img/stand_ot_and_tb_3.jpg" alt="Stand OT and TB 3"></div>
+                </div>
+                <div class="col col-xl-8">
+                  <div class="desc">
+                    <div class="title">Стенд по ОТ и ТБ 3</div>
+                    <div class="row align-items-center">
+                      <div class="col-xl-4">
+                        <div class="price"><span class="txt"><b>Цена:</b></span>
+                          <span class="val">79 р. 07 к.</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="size"><b>Размеры:</b>
+1000 х 1200 мм.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="performance"><b>Исполнение:</b><br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (4 мм).
+                    </div>
+                    <div class="add">При заказе более 5 шт. Цена: 63 р. 25 к.</div>
+                    <form action="mail.php" method="post">
+                      <div class="inpt_white">
+                        <input type="tel" name="phone" required placeholder="Номер телефона">
+                      </div>
+                      <div class="btn_pained accent">
+                        <input type="submit" value="Заказать">
+                      </div>
+                      <input type="hidden" name="form_type" value="Стенд по ОТ и ТБ 3">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    <section class="stand_medical_establishment">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>стенды для медицинских учреждений</h2>
+        </div>
+            <div class="stand">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-auto col-sm-5">
+                  <div class="picture"><img class="img-responsive" src="img/stand_medical_establishment_1.jpg" alt="Stand medical establishment 1"></div>
+                </div>
+                <div class="col col-xl-8">
+                  <div class="desc">
+                    <div class="title">Стенд для медицинских учреждений 1</div>
+                    <div class="row align-items-center">
+                      <div class="col-xl-4">
+                        <div class="price"><span class="txt"><b>Цена:</b></span>
+                          <span class="val">79 р. 07 к.</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="size"><b>Размеры:</b>
+900 х 900 мм.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="performance"><b>Исполнение:</b><br>- 6 карманов для листов формата А4;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (4 мм).
+                    </div>
+                    <div class="add">При заказе более 5 шт. Цена: 63 р. 25 к.</div>
+                    <form action="mail.php" method="post">
+                      <div class="inpt_white">
+                        <input type="tel" name="phone" required placeholder="Номер телефона">
+                      </div>
+                      <div class="btn_pained accent">
+                        <input type="submit" value="Заказать">
+                      </div>
+                      <input type="hidden" name="form_type" value="Стенд для медицинских учреждений 1">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stand">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-auto col-sm-5">
+                  <div class="picture"><img class="img-responsive" src="img/stand_medical_establishment_2.jpg" alt="Stand medical establishment 2"></div>
+                </div>
+                <div class="col col-xl-8">
+                  <div class="desc">
+                    <div class="title">Стенд для медицинских учреждений 2</div>
+                    <div class="row align-items-center">
+                      <div class="col-xl-4">
+                        <div class="price"><span class="txt"><b>Цена:</b></span>
+                          <span class="val">150 р. 27 к.</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="size"><b>Размеры:</b>
+980 х 1600 мм.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="performance"><b>Исполнение:</b><br>- 4 кармана для листов формата А4;<br>- 1 карман 1000 х 700;<br>- пластик ПВХ (5 мм).
+                    </div>
+                    <div class="add">При заказе более 5 шт. Цена: 120 р. 21 к.</div>
+                    <form action="mail.php" method="post">
+                      <div class="inpt_white">
+                        <input type="tel" name="phone" required placeholder="Номер телефона">
+                      </div>
+                      <div class="btn_pained accent">
+                        <input type="submit" value="Заказать">
+                      </div>
+                      <input type="hidden" name="form_type" value="Стенд для медицинских учреждений 2">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stand">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-auto col-sm-5">
+                  <div class="picture"><img class="img-responsive" src="img/stand_medical_establishment_3.jpg" alt="Stand medical establishment 3"></div>
+                </div>
+                <div class="col col-xl-8">
+                  <div class="desc">
+                    <div class="title">Стенд для медицинских учреждений 3</div>
+                    <div class="row align-items-center">
+                      <div class="col-xl-4">
+                        <div class="price"><span class="txt"><b>Цена:</b></span>
+                          <span class="val">258 р. 27 к.</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="size"><b>Размеры:</b>
+1400 х 2035 мм.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="performance"><b>Исполнение:</b><br>- карманы для вкладышей формата 50 х 60, 50 х 250, 50 х 150;<br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (5 мм).
+                    </div>
+                    <div class="add">При заказе более 5 шт. Цена: 206 р. 61 к.</div>
+                    <form action="mail.php" method="post">
+                      <div class="inpt_white">
+                        <input type="tel" name="phone" required placeholder="Номер телефона">
+                      </div>
+                      <div class="btn_pained accent">
+                        <input type="submit" value="Заказать">
+                      </div>
+                      <input type="hidden" name="form_type" value="Стенд для медицинских учреждений 3">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    <section class="banner_5">
+      <div class="container">
+        <div class="row">
+          <div class="col d-none d-lg-block">
+            <div class="left_procents"><span class="proc_1">%</span><span class="val">10</span><span class="proc_2">%</span></div>
+          </div>
+          <div class="col-lg-5 col-xl-6">
+            <div class="title text-center">
+              Постоянным
+              клиентам скидка
+              10%
+            </div>
+            <div class="btn_transparent"><a class="modal" href="#form_become_customer">Стать клиентом</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stand_production">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>стенды для производств</h2>
+        </div>
+            <div class="stand">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-auto col-sm-5">
+                  <div class="picture"><img class="img-responsive" src="img/stand_production_1.jpg" alt="Stand production 1"></div>
+                </div>
+                <div class="col col-xl-8">
+                  <div class="desc">
+                    <div class="title">Стенд для производств 1</div>
+                    <div class="row align-items-center">
+                      <div class="col-xl-4">
+                        <div class="price"><span class="txt"><b>Цена:</b></span>
+                          <span class="val">54 р.</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="size"><b>Размеры:</b>
+600 х 850 мм.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="performance"><b>Исполнение:</b><br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (З мм).
+                    </div>
+                    <div class="add">При заказе более 5 шт. Цена: 28 р. 80 к.</div>
+                    <form action="mail.php" method="post">
+                      <div class="inpt_white">
+                        <input type="tel" name="phone" required placeholder="Номер телефона">
+                      </div>
+                      <div class="btn_pained accent">
+                        <input type="submit" value="Заказать">
+                      </div>
+                      <input type="hidden" name="form_type" value="Стенд для производств 1">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stand">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-auto col-sm-5">
+                  <div class="picture"><img class="img-responsive" src="img/stand_production_2.jpg" alt="Stand production 2"></div>
+                </div>
+                <div class="col col-xl-8">
+                  <div class="desc">
+                    <div class="title">Стенд для производств 2</div>
+                    <div class="row align-items-center">
+                      <div class="col-xl-4">
+                        <div class="price"><span class="txt"><b>Цена:</b></span>
+                          <span class="val">54 р.</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="size"><b>Размеры:</b>
+600 х 850 мм.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="performance"><b>Исполнение:</b><br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (З мм).
+                    </div>
+                    <div class="add">При заказе более 5 шт. Цена: 28 р. 80 к.</div>
+                    <form action="mail.php" method="post">
+                      <div class="inpt_white">
+                        <input type="tel" name="phone" required placeholder="Номер телефона">
+                      </div>
+                      <div class="btn_pained accent">
+                        <input type="submit" value="Заказать">
+                      </div>
+                      <input type="hidden" name="form_type" value="Стенд для производств 2">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="stand">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-auto col-sm-5">
+                  <div class="picture"><img class="img-responsive" src="img/stand_production_3.jpg" alt="Stand production 3"></div>
+                </div>
+                <div class="col col-xl-8">
+                  <div class="desc">
+                    <div class="title">Стенд для производств 3</div>
+                    <div class="row align-items-center">
+                      <div class="col-xl-4">
+                        <div class="price"><span class="txt"><b>Цена:</b></span>
+                          <span class="val">54 р.</span>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="size"><b>Размеры:</b>
+600 х 850 мм.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="performance"><b>Исполнение:</b><br>- полноцветная печать на самоклеющейся пленке под ламинацией;<br>- пластик ПВХ (З мм).
+                    </div>
+                    <div class="add">При заказе более 5 шт. Цена: 28 р. 80 к.</div>
+                    <form action="mail.php" method="post">
+                      <div class="inpt_white">
+                        <input type="tel" name="phone" required placeholder="Номер телефона">
+                      </div>
+                      <div class="btn_pained accent">
+                        <input type="submit" value="Заказать">
+                      </div>
+                      <input type="hidden" name="form_type" value="Стенд для производств 3">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </section>
+    <section class="stand_standart_size">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>стенды по стандартным размерам</h2>
+        </div>
+        <div class="row justify-content-center no-gutters">
+          <div class="col-auto order-1 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_1.jpg" alt="Stand standart size 1">
+              <div class="desc">
+                Размер:
+                <b>250*500</b><br>Цена:
+                <b>13р.73к.</b><br><i>При заказе более 5 шт.<br>Цена: 10р.99к.</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto order-2 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_2.jpg" alt="Stand standart size 2">
+              <div class="desc">
+                Размер:
+                <b>540*500</b><br>Цена:
+                <b>25р.</b><br><i>При заказе более 5 шт.<br>Цена: 20р.</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto order-5 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_3.jpg" alt="Stand standart size 3">
+              <div class="desc">
+                Размер:
+                <b>800*500</b><br>Цена:
+                <b>38р.60к.</b><br><i>При заказе более 5 шт.<br>Цена: 22р.28к.</i>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 d-none d-lg-block"></div>
+          <div class="col-auto order-3 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_4.jpg" alt="Stand standart size 4">
+              <div class="desc">
+                Размер:
+                <b>540*830</b><br>Цена:
+                <b>35р.60к.</b><br><i>При заказе более 5 шт.<br>Цена: 28р.48к.</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto order-6 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_5.jpg" alt="Stand standart size 5">
+              <div class="desc">
+                Размер:
+                <b>800*830</b><br>Цена:
+                <b>61р.67к.</b><br><i>При заказе более 5 шт.<br>Цена: 49р.33к.</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto order-8 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_6.jpg" alt="Stand standart size 6">
+              <div class="desc">
+                Размер:
+                <b>1070*830</b><br>Цена:
+                <b>80р.60к.</b><br><i>При заказе более 5 шт.<br>Цена: 64р.48к.</i>
+              </div>
+            </div>
+          </div>
+          <div class="w-100 d-none d-lg-block"></div>
+          <div class="col-auto order-7 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_7.jpg" alt="Stand standart size 7">
+              <div class="desc">
+                Размер:
+                <b>880*830</b><br>Цена:
+                <b>64р.67к.</b><br><i>При заказе более 5 шт.<br>Цена: 51р.73к.</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto order-9 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_8.jpg" alt="Stand standart size 8">
+              <div class="desc">
+                Размер:
+                <b>1330*830</b><br>Цена:
+                <b>101р.20к.</b><br><i>При заказе более 5 шт.<br>Цена: 80р.96к.</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto order-4 order-md-0">
+            <div class="stand_standart"><img src="img/stand_standart_size_9.jpg" alt="Stand standart size 9">
+              <div class="desc">
+                Размер:
+                <b>360*700</b><br>Цена:
+                <b>48р.47к.</b><br><i>При заказе более 5 шт.<br>Цена: 38р.77к.</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_6">
+      <div class="container">
+        <form class="banner text-center" action="mail.php" method="post">
+          <div class="title"><span class="text-uppercase">Цены на изготовление стендов</span><br><span>по индивидуальным размерам уточняйте у менеджера</span></div>
+          <div class="sub_title text-uppercase">Оставьте заявку и узнайте стоимость стенда</div>
+          <div class="row_btn">
+            <div class="inpt_white">
+              <input type="text" name="size" required placeholder="Размер стенда">
+            </div>
+            <div class="inpt_white">
+              <input type="text" name="pocket" required placeholder="Количество карманов">
+            </div>
+            <div class="inpt_white">
+              <input type="text" name="construction" required placeholder="Конструкция">
+            </div>
+          </div>
+          <div class="row_btn">
+            <div class="inpt_white">
+              <input type="tel" name="phone" placeholder="Телефон">
+            </div>
+            <div class="btn_transparent">
+              <input type="submit" value="Узнать стоимость">
+            </div>
+          </div>
+          <div class="PS">*мы не передаем Вашу персональную информацию третьим лицам</div>
+          <input type="hidden" name="form_type" value="Оставьте заявку и узнайте стоимость стенда">
+        </form>
+      </div>
+    </section>
+    <section class="classification">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>Классификация</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-auto col-md-4 col-sm-6 col-auto">
+            <div class="classific">
+              <div class="title">С карманами</div><img class="img-responsive" src="img/classification_1.jpg" alt="Classification 1">
+            </div>
+          </div>
+          <div class="col-lg-auto col-md-4 col-sm-6 col-auto">
+            <div class="classific">
+              <div class="title">С перекидными системами</div><img class="img-responsive" src="img/classification_2.jpg" alt="Classification 2">
+            </div>
+          </div>
+          <div class="col-lg-auto col-md-4 col-sm-6 col-auto">
+            <div class="classific">
+              <div class="title">напольные (мобильные)</div><img class="img-responsive" src="img/classification_3.jpg" alt="Classification 3">
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-lg-auto">
+            <div class="classific">
+              <div class="title">С подсветкой</div><img class="img-responsive" src="img/classification_4.jpg" alt="Classification 4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="production" id="to_production">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>Производство</h2>
+        </div>
+        <div class="slider_production">
+          <div class="slide"><img class="img-responsive" src="img/production_1.jpg" alt="Production 1"></div>
+          <div class="slide"><img class="img-responsive" src="img/production_2.jpg" alt="Production 2"></div>
+          <div class="slide"><img class="img-responsive" src="img/production_3.jpg" alt="Production 3"></div>
+          <div class="slide"><img class="img-responsive" src="img/production_3.jpg" alt="Production 4"></div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_3">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-auto">
+            <div class="stock">Акция -20%</div>
+          </div>
+          <div class="col col-lg-8 col-xl">
+            <form class="banner text-center" action="mail.php" method="post">
+              <div class="title">
+                Закажите два стенда одной категории и получите
+                20% скидку на все последующие
+              </div>
+              <div class="row_btn">
+                <div class="inpt_white">
+                  <input type="tel" name="phone" required placeholder="Номер телефона">
+                </div>
+                <div class="btn_transparent">
+                  <input type="submit" value="Заказать звонок">
+                </div>
+              </div>
+              <div class="PS">*мы не передаем Вашу персональную информацию третьим лицам</div>
+              <input type="hidden" name="form_type" value="Закажите два стенда и получите 20% скидку на все последующие">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shipping_and_payment" id="to_delivery">
+      <div class="container">
+        <div class="delivery">
+          <h2>Доставка и оплата</h2>
+          <ol>
+            <li>
+              Доставка по Минску
+              <b class="text-uppercase">бесплатно.</b>
+            </li>
+            <li>
+              Доставка по РБ осуществляется
+              <b class="text-uppercase">бесплатно</b>
+              при стоимости
+              заказа свыше 100 бел.руб.
+            </li>
+            <li>
+              Доставка осуществляется после оплаты заказа на расчетный счет
+              поставщика, либо наличными курьеру при доставке заказа.
+            </li>
+            <li>
+              Доставим заказ в
+              <b class="text-uppercase"></b>
+              удобное для Вас время и место.
+            </li>
+            <li>Время и место доставки предварительно согласовывается.</li>
+          </ol>
+          <div class="wrap_img d-none d-md-block"><img src="img/car_delivery.png" alt="Car delivery"></div>
+        </div>
+      </div>
+    </section>
+    <footer id="to_contacts">
+      <div class="container">
+        <div class="custom_title text-center">
+          <h2>Контакты</h2>
+        </div>
+        <div class="row align-items-center justify-content-xl-between">
+          <div class="col-auto"><a class="logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+            <h1 class="d-none">Стенды</h1>
+          </div>
+          <div class="col-12 col-xl-auto col-sm">
+            <ul class="menu">
+              <li><a href="#to_main">Главная</a></li>
+              <li><a href="#to_product">Продукция</a></li>
+              <li><a href="#to_production">Производство</a></li>
+              <li><a href="#to_stock">Акции</a></li>
+              <li><a href="#to_delivery">Доставка</a></li>
+              <li><a href="#to_contacts">Контакты</a></li>
+            </ul>
+            <div class="btn_collapse_menu d-block d-md-none"><span></span><span></span><span></span></div>
+          </div>
+          <div class="col-auto">
+            <div class="phone"><i class="fi flaticon-technology"></i><a href="tel:+375293003030">+375 (29) 300-30-30</a></div>
+          </div>
+          <div class="w-100 d-none d-lg-block"></div>
+          <div class="col">
+            <div class="order_call"><a class="modal" href="#form_order_call">Заказать звонок</a></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <div class="copy">Copyright © 2018 Стенды</div>
+          </div>
+          <div class="col"><a class="delivery" href="http://amtex.by/">Разработка компании Amtex</a></div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal_wrapper" id="form_order_call">
+      <div class="modal_window"><a class="close" href="#">&times;</a>
+        <form action="mail.php" method="post">
+          <div class="title">Оставьте ваш номер</div>
+          <div class="sub_title">мы Вам перезвоним в ближайшее время</div>
+          <div class="inpt_white">
+            <input type="text" required name="name" placeholder="Имя">
+          </div>
+          <div class="inpt_white">
+            <input type="tel" required name="name" placeholder="Номер телефона">
+          </div>
+          <div class="btn_pained blue">
+            <input type="submit" value="Заказать звонок">
+          </div>
+          <div class="PS">
+            *мы не передаем Вашу персональную информацию
+            третьим лицам
+          </div>
+          <input type="hidden" name="form_type" value="Заказ звонка">
+        </form>
+      </div>
+    </div>
+    <div class="modal_wrapper" id="form_become_customer">
+      <div class="modal_window"><a class="close" href="#">&times;</a>
+        <form action="mail.php" method="post">
+          <div class="row align-items-center">
+            <div class="col col-sm-9">
+              <div class="title">Оставьте ваш номер</div>
+              <div class="sub_title">чтобы стать нашим<br><span>постоянным клиентом</span></div>
+              <div class="inpt_white">
+                <input type="text" required name="name" placeholder="Имя">
+              </div>
+              <div class="inpt_white">
+                <input type="tel" required name="phone" placeholder="Номер телефона">
+              </div>
+              <div class="btn_pained blue">
+                <input type="submit" value="Стать клиентом">
+              </div>
+              <div class="PS">
+                *мы не передаем Вашу персональную информацию
+                третьим лицам
+              </div>
+              <input type="hidden" name="form_type" value="Стать клиентом">
+            </div>
+            <div class="col-3 d-none d-sm-block">
+              <div class="stock"><span>скидка</span><span>- 10 %</span></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

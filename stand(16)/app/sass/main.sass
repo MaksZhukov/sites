@@ -1,0 +1,718 @@
+@import "vars"
+@import "mixins"
+@import "fonts"
+@import "functions"
+@import "libs"
+@import "additional"
+@import "components"
+@import "icons"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+body input:focus::placeholder,
+body textarea:focus::placeholder
+	color: transparent
+body a:hover,
+body input:hover,
+body button:hover
+	transition: all .3s ease-out
+body a
+	text-decoration: none
+body input
+	outline: none
+html
+	font-size: 10px
+
+html, body
+	height: 100%
+
+body
+	font-family: $default-font
+	font-size: $default-font-size
+	font-weight: $default-font-weight
+	color: $default-color
+	line-height: 1.5
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	opacity: 1
+	margin: 0
+a
+	text-decoration: none
+section
+	overflow: hidden
+header
+	border-bottom: 1px solid gray
+	background: $white
+	position: fixed
+	width: 100%
+	top: 0
+	padding-top: 1.8rem
+	z-index: 10
+.phone
+	.fi
+		font-size: em(20px)
+	a
+		font-family: Prata, sans-serif
+		color: $black
+.order_call
+	text-align: right
+	a
+		font-family: YesevaOne, sans-serif
+		text-decoration: underline
+		color: $blue
+		&:hover
+			color: $accent
+ul.menu
+	list-style: none
+	margin: 0
+	padding: 0
+	display: flex
+	li
+		padding: 1px 18px
+		border-right: 1px solid #cccccc
+		&:last-child
+			border: none
+			padding-right: 0
+		&:first-child
+			padding-left: 0
+		a
+			padding: 5px
+			font-family: AlegreyaSans,sans-serif
+			font-weight: 500
+			color: $black
+			&:hover
+				color: $accent
+section.sub_header
+	padding-top: 4rem
+	min-height: 741px
+	background: url('../img/sub_header_bg.png') no-repeat
+	background-position: bottom
+	font-family: AlegreyaSans, sans-serif
+	h2
+		display: inline-block
+		font-size: 1em
+		font-family: Prata, sans-serif
+		line-height: 1
+		margin-bottom: 2.5rem
+		&:before
+			content: ''
+			width: 100%
+			height: 1px
+			background: $blue
+			display: block
+			margin-bottom: 2.5rem
+		.r
+			&_1
+				font-size: em(48px)
+			&_2
+				font-size: em(32px)
+	.free_check_out
+		font-weight: bold
+		font-size: em(18px)
+		background: $accent
+		padding: 8px 20px
+		position: relative
+		margin-bottom: 5rem
+		&:after
+			content: ''
+			position: absolute
+			right: 0
+			top: 0
+			border: 18px solid transparent
+			border-top: 18px solid $white
+			border-right: 18px solid $white
+		&:before
+			content: ''
+			position: absolute
+			right: 0
+			bottom: 0
+			border: 18px solid transparent
+			border-right: 18px solid $white
+			border-bottom: 18px solid $white
+	.services
+		display: flex
+		justify-content: space-between
+		.service
+			padding: 0 10px
+		.txt
+			font-size: em(18px)
+			margin-top: 1rem
+			font-weight: 500
+	.form_bg
+		width: 442px
+		height: 479px
+		margin-left: auto
+		padding-top: 100px
+		background: url('../img/form_bg.png') no-repeat
+		form
+			max-width: 250px
+			margin: 0 auto
+			.title
+				font-size: em(24px)
+				font-weight: bold
+				color: $blue
+			.sub_title
+				font-size: em(18px)
+				font-weight: 500
+				margin-bottom: 2rem
+			.inpt_white
+				margin-bottom:
+				max-width: 240px
+			.btn_pained,.inpt_white
+				margin: 0 auto 2rem
+		.PS
+			max-width: 250px
+			margin: 0 auto
+			font-size: em(14px)
+section.banner_1
+	position: relative
+	background: $accent
+	overflow: hidden
+	margin-bottom: 7rem
+	&:after
+		position: absolute
+		content: ''
+		width: 2500px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		bottom: -165px
+		z-index: 1
+	&:before
+		position: absolute
+		content: ''
+		width: 2300px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		top: -150px
+		z-index: 1
+	.window_bg
+		background: url('../img/frame.png') no-repeat
+		width: 395px
+		height: 367px
+		position: relative
+		z-index: 2
+		.content
+			transform: rotate(-6deg)
+			position: absolute
+			top: 130px
+			left: 70px
+			max-width: 250px
+		.title
+			font-weight: 500
+			font-family: Montserrat, sans-serif
+			font-size: em(24px)
+			margin-bottom: 8px
+			&:after
+				margin-top: 8px
+				content: ''
+				display: block
+				width: 40%
+				left: 30%
+				position: relative
+				height: 1px
+				background: $black
+		.desc
+			font-family: AlegreyaSans, sans-serif
+			font-size: em(24px)
+			line-height: 1
+			margin-bottom: 10px
+		a.look
+			font-size: em(18px)
+			font-weight: bold
+			font-family: Roboto, sans-serif
+			color: $white
+form.banner
+	font-family: AlegreyaSans,sans-serif
+	.title
+		font-size: em(31px)
+		margin-bottom: 2.5rem
+	.row_btn
+		display: flex
+		justify-content: center
+		margin-bottom: 2.5rem
+	.inpt_white
+		margin-right: 2.4rem
+		input
+			font-size: em(18px)
+	.PS
+		font-size: em(18px)
+.stand
+	margin-bottom: 6rem
+	.picture
+		padding: 1.3rem 2.2rem 1rem
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19)
+		border: 1px solid #ebebeb
+		width: 285px
+		display: flex
+		min-height: 370px
+		align-items: center
+		justify-content: center
+	.desc
+		padding: 2rem 8% 2.2rem 10%
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19)
+		border: 1px solid #ebebeb
+	.title
+		font-family: AlegreyaSans, sans-serif
+		font-size: em(30px)
+		font-weight: bold
+		margin-bottom: 1rem
+	.price
+		font-family: Roboto, sans-serif
+		.val
+			font-style: italic
+			font-size: em(30px)
+			color: $accent
+	.PS
+		padding: .5rem 1.2rem .2rem
+		text-align: center
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+		border-radius: 10px
+		background-color: rgba(4,135,125,0.2)
+		max-width: 215px
+		font-family: AlegreyaSans, sans-serif
+		font-size: em(14px)
+	.row_with_PS + .performance
+		margin-top: -20px
+	.performance
+		margin-bottom: 1.5rem
+	.add
+		font-family: Roboto, sans-serif
+		font-style: italic
+		font-weight: bold
+		margin-bottom: 2rem
+	form
+		display: flex
+	.inpt_white
+		max-width: 200px
+		margin-right: 2rem
+		input
+			border: 1px solid $accent
+	.btn_pained
+		max-width: 170px
+
+section.banner_2
+	overflow: hidden
+	min-height: 298px
+	background: #08b1a3 url('../img/banner_2_bg.png') center / cover no-repeat
+	padding: 8rem 0 6.5rem
+	color: $white
+	margin-bottom: 7rem
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		width: 2500px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		bottom: -165px
+		z-index: 1
+	&:before
+		position: absolute
+		content: ''
+		width: 2300px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		top: -150px
+		z-index: 1
+	.questions
+		font-family: Prata, sans-serif
+		font-size: em(58px)
+		line-height: 1.1
+section.stand_kindergarten,
+section.stand_for_school,
+section.stand_fire_safety,
+section.stand_consumer_corner,
+section.stand_information,
+section.stand_ot_and_tb,
+section.stand_medical_establishment,
+section.stand_production,
+section.stand_standart_size,
+section.stand_standart_size,
+section.classification,
+section.production
+	margin-bottom: 5rem
+	.custom_title
+		margin-bottom: 5rem
+section.banner_3
+	position: relative
+	background: $accent
+	overflow: hidden
+	padding: 8rem 0 9rem
+	color: $white
+	margin-bottom: 7rem
+	&:after
+		position: absolute
+		content: ''
+		width: 2500px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		bottom: -165px
+		z-index: 1
+	&:before
+		position: absolute
+		content: ''
+		width: 2300px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		top: -150px
+		z-index: 1
+	.stock
+		width: 204px
+		height: 204px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-family: Prata, sans-serif
+		font-size: em(48px)
+		font-weight: bold
+		line-height: 1.2
+		text-align: center
+		border-radius: 50%
+		background: $white
+		color: $accent
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19)
+	form.banner
+		.title
+			font-weight: bold
+section.banner_4
+	padding: 15rem 0 28rem
+	margin-bottom: 5rem
+	background: url('../img/banner_4.png') center no-repeat
+	.title
+		font-size: em(30px)
+		font-family: Prata, sans-serif
+		font-weight: bold
+	.inpt_white
+		max-width: 200px
+		input
+			border: 1px solid $blue
+	.btn_pained
+		max-width: 215px
+section.banner_5
+	padding: 11rem 0 13rem
+	margin-bottom: 5rem
+	background: url('../img/banner_5_bg.png') center no-repeat
+	color: $white
+	.title
+		font-size: em(36px)
+		font-family: Prata, sans-serif
+		margin-bottom: 5rem
+	.btn_transparent
+		margin: auto
+	.left_procents
+		height: 100%
+		position: relative
+		> span
+			color: $blue
+			font-family: Prata, sans-serif
+			font-size: em(60px)
+			font-weight: bold
+			position: absolute
+			&.proc_1
+				left: -52px
+				top: 130px
+			&.val
+				top: 110px
+				left: 132px
+			&.proc_2
+				right: 187px
+				top: 90px
+section.stand_standart_size
+	.stand_standart
+		display: flex
+		align-items: flex-start
+		margin: 0 6px 4rem
+		img
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35)
+		.desc
+			margin-left: 9px
+			font-family: Roboto, sans-serif
+			font-size: em(12px)
+			i
+				display: block
+				margin-top: 5px
+				font-size: em(14.5px)
+section.banner_6
+	background: #08b1a3 url('../img/banner_2_bg.png') center / cover no-repeat
+	padding: 6.5rem 0 6rem
+	margin-bottom: 5rem
+	position: relative
+	&:after
+		position: absolute
+		content: ''
+		width: 2500px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		bottom: -165px
+		z-index: 1
+	&:before
+		position: absolute
+		content: ''
+		width: 2300px
+		height: 200px
+		left: 50%
+		transform: translateX(-50%)
+		background: $white
+		display: block
+		border-radius: 50%
+		top: -150px
+		z-index: 1
+	.title
+		font-size: 16px
+		color: $white
+		font-family: Prata, sans-serif
+		font-weight: bold
+		margin-bottom: 1.5rem
+		span:first-child
+			font-size: em(30px)
+		span:last-child
+			font-size: em(24px)
+	.sub_title
+		font-family: AlegreyaSans, sans-serif
+		font-size: em(24px)
+		margin-bottom: 1.5rem
+	.inpt_white,.btn_transparent
+		max-width: 200px
+section.classification
+	.classific
+		margin-bottom: 3.5rem
+	.title
+		position: relative
+		text-transform: uppercase
+		font-family: AlegreyaSans, sans-serif
+		font-size: em(18px)
+		text-align: center
+		background: $accent
+		padding: 2rem 0
+		&:after
+			top: 100%
+			left: 50%
+			border: solid transparent
+			content: ""
+			height: 0
+			width: 0
+			position: absolute
+			pointer-events: none
+			border-top-color: $accent
+			border-width: 20px
+			margin-left: -20px
+	img
+		box-shadow: 0 10px 21px rgba(0, 0, 0, 0.19)
+section.production
+	.slider_production
+		.slick-track
+			display: flex
+			align-items: center
+			padding-bottom: 20px
+		.slide
+			outline: none
+		img
+			margin: auto
+			box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2)
+		.slick-arrow
+			width: 22px
+			height: 58px
+			&:before
+				display: none
+			&.slick-next
+				background: url('../img/arrow_right.png') no-repeat
+				right: -50px
+			&.slick-prev
+				background: url('../img/arrow_left.png') no-repeat
+				left: -50px
+section.shipping_and_payment
+	padding-top: 7rem
+	padding-bottom: 8.8rem
+	.delivery
+		border: 2px solid $blue
+		border-radius: 12px
+		padding: 5rem 9rem 4rem
+		position: relative
+		max-width: 780px
+		margin: auto
+	h2
+		position: absolute
+		line-height: 1
+		text-align: center
+		font-size: em(30px)
+		font-family: AlegreyaSans, sans-serif
+		transform: translateY(-50%)
+		background: $white
+		margin: 0
+		top: 0
+		right: 25%
+		left: 25%
+		&:first-letter
+			color: $blue
+			font-size: em(30px)
+	ol
+		padding: 0
+		li
+			font-size: em(18px)
+			font-family: Roboto, sans-serif
+			margin-bottom: 1.5rem
+	.wrap_img
+		position: absolute
+		top: 50%
+		right: 0
+		background: $white
+		transform: translate(50%,-50%)
+footer
+	overflow: hidden
+	padding-top: 3.5rem
+	background: url('../img/footer_bg.jpg') center / cover no-repeat
+	padding-bottom: 4rem
+	.custom_title
+		margin-bottom: 9.5rem
+	.delivery,.copy
+		padding: 5px 0
+	.delivery
+		color: $black
+		&:hover
+			color: #fff
+.modal_wrapper
+	display: none
+	position: fixed
+	background: rgba(0,0,0,0.5)
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 15
+	.modal_window
+		max-width: 550px
+		width: 100%
+		margin: auto
+		box-shadow: 0 13px 16px 2px rgba(8, 8, 9, 0.35)
+		background: $white
+		position: relative
+		transform: translateY(-50%)
+		top: 50%
+		.close
+			position: absolute
+			top: 5px
+			right: 15px
+			font-size: 40px
+			line-height: 1
+			z-index: 5
+			color: $blue
+			cursor: pointer
+			&:hover
+				color: $accent
+		form
+			padding: 3.5rem 7.5rem 2rem
+			font-family: AlegreyaSans, sans-serif
+			.title
+				font-size: em(24px)
+				color: $blue
+				text-transform: uppercase
+				font-weight: bold
+			.sub_title
+				font-size: em(18px)
+				font-weight: 500
+				margin-bottom: 3rem
+				span
+					text-transform: uppercase
+			.inpt_white,.btn_pained
+				max-width: 240px
+				margin-bottom: 12px
+			.inpt_white
+				input
+					border: 1px solid $blue
+			.btn_pained
+				margin-bottom: 20px
+				input
+					padding-top: 9px
+					padding-bottom: 9px
+					font-size: em(20px)
+			.PS
+				font-size: em(14px)
+	&#form_order_call
+		.modal_window
+			background: #fff url('../img/cup_pencil.png') 112% 80% no-repeat
+	&#form_become_customer
+		.modal_window
+			.sub_title
+				margin-bottom: 1rem
+			.stock
+				margin-left: -50px
+				width: 137px
+				height: 137px
+				box-shadow: 0 8px 16px 2px rgba(8, 8, 9, 0.14)
+				background: $blue
+				border-radius: 50%
+				font-family: Prata, sans-serif
+				color: $white
+				display: flex
+				flex-direction: column
+				align-items: center
+				border: 2px solid $white
+				justify-content: center
+				span:first-child
+					font-size: em(18px)
+					text-transform: uppercase
+					font-weight: bold
+				span:last-child
+					font-size: em(36px)
+					font-weight: bold
+
+@import "media"
+

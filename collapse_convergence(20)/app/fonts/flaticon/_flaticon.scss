@@ -1,0 +1,47 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 23/02/2018 10:51
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/flaticon/Flaticon.eot");
+  src: url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/flaticon/Flaticon.woff") format("woff"),
+       url("../fonts/flaticon/Flaticon.ttf") format("truetype"),
+       url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-phone-receiver:before { content: "\f100"; }
+.flaticon-technology:before { content: "\f101"; }
+.flaticon-signs:before { content: "\f102"; }
+.flaticon-clock:before { content: "\f103"; }
+    
+    $font-Flaticon-phone-receiver: "\f100";
+    $font-Flaticon-technology: "\f101";
+    $font-Flaticon-signs: "\f102";
+    $font-Flaticon-clock: "\f103";

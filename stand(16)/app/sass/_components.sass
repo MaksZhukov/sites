@@ -1,0 +1,82 @@
+.inpt_white
+  max-width: 265px
+  width: 100%
+  input
+    width: 100%
+    font-weight: 300
+    color: #7a7a7b
+    padding: 10px 15px
+    font-family: AlegreyaSans,sans-serif
+    font-size: em(16px)
+    border-radius: 10px
+    border: none
+.btn_transparent
+  max-width: 265px
+  width: 100%
+  input,a
+    text-align: center
+    width: 100%
+    font-family: AlegreyaSans,sans-serif
+    font-weight:  bold
+    font-size: em(18px)
+    border-radius: 10px
+    border: 2px solid $white
+    padding: 8px 15px
+    display: block
+    cursor: pointer
+    background: transparent
+    color: $white
+    &:hover
+      background: rgba(255,255,255, 0.3)
+.btn_pained
+  max-width: 240px
+  width: 100%
+  &.blue
+    input
+      background: $blue
+      &:hover
+        background: $accent
+  &.accent
+    input
+      background: $accent
+      &:hover
+        background: $blue
+  input
+    text-align: center
+    width: 100%
+    font-family: AlegreyaSans,sans-serif
+    font-weight:  bold
+    font-size: em(18px)
+    border-radius: 10px
+    padding: 10px 15px
+    color: $white
+    border: none
+    cursor: pointer
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.19)
+.custom_title
+  h2
+    font-size: em(30px)
+    font-weight: 500
+    margin: 0
+    font-family: AlegreyaSans, sans-serif
+    display: inline-block
+    position: relative
+    &:first-letter
+      color: $blue
+      font-size: em(30px)
+    &:after
+      content: ''
+      height: 2px
+      background: $blue
+      width: 1000%
+      left: 110%
+      position: absolute
+      top: 60%
+    &:before
+      content: ''
+      height: 2px
+      background: $blue
+      width: 1000%
+      right: 110%
+      position: absolute
+      top: 60%

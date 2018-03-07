@@ -1,0 +1,97 @@
+.btn_transparent
+  display: inline-block
+  width: 212px
+  a
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.36)
+    border: 2px solid $accent
+    color: $white
+    text-align: center
+    border-radius: 21px
+    display: block
+    padding: 12px 10px
+    text-transform: uppercase
+    font-size: em(14px)
+    font-weight: bold
+    font-family: Montserrat,sans-serif
+    transition: background .3s
+    background-image: none
+    &:hover
+      color: $white
+      background: linear-gradient(to right, #da0000 0%, #dc035a 100%)
+.btn_painted
+  max-width: 250px
+  width: 100%
+  input,a
+    font-family: Montserrat,sans-serif
+    text-align: center
+    display: block
+    width: 100%
+    padding: 12px 10px
+    outline: none
+    text-transform: uppercase
+    font-weight: 500
+    border: none
+    box-shadow: 0 5px 14px 1px rgba(21, 6, 52, 0.29)
+    background: linear-gradient(to right, rgb(218, 0, 0) 0%, rgb(220, 3, 90) 100%)
+    border-radius: 21px
+    color: $white
+    font-size: em(14px)
+    cursor: pointer
+    transition: background .3s
+    &:hover
+      background: transparent
+      border: 2px solid $accent
+      padding: 10px 8px
+.inpt_transparent
+  max-width: 250px
+  width: 100%
+  input
+    font-family: Montserrat,sans-serif
+    display: block
+    outline: none
+    width: 100%
+    padding: 9px 27px
+    color: $white
+    border-radius: 21px
+    border: 1px solid rgb(255, 255, 255)
+    background-color: rgba(255,255,255,0.2)
+    font-weight: 500
+    font-size: em(16px)
+    &::placeholder
+      color: $white
+.custom_title
+  .order_number
+    font-family: AllertaStencil, sans-serif
+    font-size: em(180px)
+    font-weight: bold
+    color: $gray
+    position: relative
+    display: block
+  h2
+    position: absolute
+    top: 30%
+    transform: translateX(-30px)
+    white-space: nowrap
+    font-size: 0.167em
+    color: $black
+    display: inline-block
+    margin: 0
+    &:before
+      content: ''
+      position: absolute
+      width: 18px
+      height: 18px
+      background: $accent
+      border-radius: 50%
+      display: block
+      top: calc(51% - 9px)
+      right: -7.5rem
+    &:after
+      position: absolute
+      top: calc(51% - 1px)
+      right: calc(-1000% - 7.5rem)
+      content: ''
+      height: 2px
+      width: 1000%
+      display: block
+      background: $accent

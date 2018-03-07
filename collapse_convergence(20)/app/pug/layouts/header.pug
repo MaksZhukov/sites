@@ -1,0 +1,82 @@
+header(style="background-image: url('../img/header_bg.jpg')")
+	.top_header
+		.container
+			.row.align-items-center
+				.col-lg-auto.col-md.col-auto
+					a(href="#").logo
+						img(src="img/logo.png", alt="Logo")
+						.title.text-uppercase
+							span.accent авто
+							| центр
+				.col-lg.order-lg-0.order-1.col-12
+					ul.menu.text-uppercase
+						li
+							a(href="#to_service") услуги
+						li
+							a(href="#to_price") цены
+						li
+							a(href="#to_review") отзывы
+						li
+							a(href="#to_certificate") сертификаты
+						li
+							a(href="#to_contact") контакты
+					.btn_collapse
+						span
+						span
+						span
+				.col-lg-auto.order-lg-1.order-0.col-md.col-sm-5.col
+					.btn_transparent.d-none.d-sm-block
+						a(href="#order_call_form").modal Заказать звонок
+					a.btn_call_back.d-inline-block.d-sm-none.modal(href="#order_call_form")
+						i.fi.flaticon-phone-receiver
+	.bottom_header
+		.container
+			.row.justify-content-between.phones_and_mode_operations
+				.col-auto
+					.mode_operation
+						i.fi.flaticon-clock
+						.txt Режим работы:  пн-пт. 9.00-18.00
+					.address
+						i.fi.flaticon-signs
+						.txt г. Минск, ул. Ботаническая, 10
+				.col-auto
+					.phone.mts
+						img(src="img/mts_icon.png", alt="mts")
+						a(href="tel:+375296952080") +375 (29) 695 20 80
+					.phone.velcom
+						img(src="img/velcom_icon.png", alt="velcome")
+						a(href="tel:+375296952080") +375 (29) 225 20 80
+					.phone.simple
+						i.fi.flaticon-phone-receiver
+						a(href="tel:+375172942328") +375 (17) 294 23 28
+			.row.justify-content-between
+				.col-lg-8.col-md-auto
+					h1
+						span.accent Авто
+						| центр
+						span.where на Ботанической
+					p
+						b Развал-схождение
+						|  	за 20 минут
+						br
+						| от
+						span.accent 	22 руб.
+				.col-lg-auto.col-md-4
+					.sale_block
+						.content
+							.txt Для всех клиентов:
+							.free.text-uppercase Бесплатно
+							.time.text-uppercase c 9.00 - 10.00
+							.add
+								| Проверка установки
+								.span.text-uppercase углов колес
+				.col-xl-8.col-lg-10
+					.txt_enrty.text-uppercase Записаться на развал-схождение:
+					form(data-form-type="Запись на развал схождения", method="post")
+						.inpt_transparent
+							input(type="text", placeholder="Введите имя", name="name")
+						.inpt_transparent
+							input(type="tel", placeholder="Введите телефон", name="phone", required)
+						.btn_painted
+							input(type="submit", value="Записаться")
+

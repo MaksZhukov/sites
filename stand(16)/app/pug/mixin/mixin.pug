@@ -1,0 +1,34 @@
+mixin stand(img,alt,title,price,size,addPrice,performance)
+    .stand
+        .row.no-gutters.align-items-center
+            .col-md-auto.col-sm-5
+                .picture
+                    img.img-responsive(src="img/"+img+".jpg", alt=alt)
+            .col.col-xl-8
+                .desc
+                    .title=title
+                    .row.align-items-center
+                        .col-xl-4
+                            .price
+                                span.txt
+                                    b Цена:
+                                |
+                                |
+                                span.val=price
+                        .col
+                            .size
+                                b Размеры:
+                                |
+                                | #{size}
+                    .performance
+                        b Исполнение:
+                        each val in performance
+                            br
+                            | #{val}
+                    .add При заказе более 5 шт. Цена: #{addPrice}
+                    form(action="mail.php", method="post")
+                        .inpt_white
+                            input(type="tel", name="phone", required, placeholder="Номер телефона")
+                        .btn_pained.accent
+                            input(type="submit", value="Заказать")
+                        input(type="hidden", name="form_type" value=title)
