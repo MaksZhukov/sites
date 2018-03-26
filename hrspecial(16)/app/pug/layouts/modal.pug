@@ -1,0 +1,59 @@
+.modal_overlay#form_order_call
+    .modal_wrapper
+        .modal
+            a(href="#").modal_close &times;
+            .title оставьте свой номер
+            .subtitle и мы Вам перезвоним
+            form(action="#" method="post")
+                .inpt_transparent
+                    input(type="tel" placeholder="Введите номер телефона" name="phone" required)
+                .btn_fill.red
+                    input(type="submit" value="заказать звонок" name="form_send")
+                input(type="hidden" value="Заказ звонка" name="form_type")
+.modal_overlay#form_order_service
+    .modal_wrapper
+        .modal
+            a(href="#").modal_close &times;
+            form(action="#" method="post" enctype="multipart/form-data")
+                .row
+                    .col
+                        input(type="text" placeholder="Имя" name="name")
+                        input(type="tel" placeholder="Контактный номер" name="phone")
+                    .col
+                        input(type="text" placeholder="Компания" name="company")
+                        input(type="text" placeholder="Email" name="mail")
+                    .col-12
+                        textarea(placeholder="Сообщение" name="message" rows="6")
+                    .col-12
+                        label
+                            i.fi.flaticon-paper-clip-outline
+                            span Прикрепить файл
+                            input(type="file" name="file_aspirant" required accept=".pdf,.docx,.doc")
+                .row_btn
+                    .btn_fill.red
+                        input(type="submit" value="отправить" name="form_send")
+                    .btn_transparent
+                        input(type="reset" value="очистить")
+.modal_overlay#certificate_preview
+    .modal_wrapper
+        .modal
+            a(href="#").modal_close &times;
+            .preview
+                .stuff
+                    img.img-responsive(src="img/certificate_1_1_preview.jpg" alt="Certificat 1 1")
+                    img.img-responsive(src="img/certificate_1_2_preview.jpg" alt="Certificat 1 2")
+                    img.img-responsive(src="img/certificate_1_3_preview.jpg" alt="Certificat 1 3")
+                    img.img-responsive(src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4")
+                    img.img-responsive(src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4")
+                .stuff
+                    img.img-responsive(src="img/certificate_1_1_preview.jpg" alt="Certificat 1 1")
+                    img.img-responsive(src="img/certificate_1_2_preview.jpg" alt="Certificat 1 2")
+                    img.img-responsive(src="img/certificate_1_3_preview.jpg" alt="Certificat 1 3")
+                    img.img-responsive(src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4")
+                    img.img-responsive(src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4")
+                .stuff
+                    img.img-responsive(src="img/certificate_1_1_preview.jpg" alt="Certificat 1 1")
+                    img.img-responsive(src="img/certificate_1_2_preview.jpg" alt="Certificat 1 2")
+                    img.img-responsive(src="img/certificate_1_3_preview.jpg" alt="Certificat 1 3")
+                    img.img-responsive(src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4")
+                    img.img-responsive(src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4")

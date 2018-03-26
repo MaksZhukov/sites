@@ -1,0 +1,60 @@
+header
+    .container
+        .row.align-items-center
+            .col-md-auto.order-md-0.order-1.col-md.col-auto
+                a.logo(href="/")
+                    img(src="img/logo.png" alt="logo")
+            .col.d-md-none.d-block.order-3
+                .btn_collapse_menu
+                    span
+                    span
+                    span
+            .col.order-md-0.order-4.col-12.col-md
+                ul.menu
+                    li
+                        a(href="#to_about_company" data-to) о компании
+                    li
+                        a.sub_menu(href="#") услуги
+                        ul
+                            li
+                                a(href="#to_service" data-to) Рекрутинг
+                            li
+                                a(href="#to_service" data-to) Хедхантинг
+                            li
+                                a(href="#to_service" data-to) Executive Search
+                            li
+                                a(href="#to_service" data-to) Тестирование кандидатов
+                            li
+                                a(href="#to_vacancy" data-to) Вакансии
+
+
+                    li
+                        a(href="#to_team" data-to) команда
+                    li
+                        a(href="#to_price" data-to) цены
+                    li
+                        a(href="#to_vacancy" data-to) вакансии
+            .col-md-auto.order-md-0.order-2.col-auto
+                .phone
+                    span +375-29-124-44-77
+                .contacts_and_timework
+                    .timework
+                        i.fi.flaticon-time
+                        .txt
+                            | Время работы:
+                            br
+                            | Пн-Пт: с 10-00 до 19-00
+                    .mail
+                        i.fi.flaticon-mail
+                        a(href="mailto:Info@hr-special.by") Info@hr-special.by
+                    .skype
+                        i.fi.flaticon-skype
+                        a(href="skype:Info@hr-special.by?call") Info@hr-special.by
+                    .viber
+                        i.fi.flaticon-viber
+                        a(href="viber://chat?number=+375291244477") +375-29-124-44-77
+                    .telegram
+                        i.fi.flaticon-telegram
+                        a(href="tg://resolve?domain=+375291244477") +375-29-124-44-77
+                    .btn_transparent
+                        a.modal_link(href="#form_order_call") Заказать звонок

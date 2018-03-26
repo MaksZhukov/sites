@@ -1,0 +1,425 @@
+nav
+    .container
+        ul.menu
+            li
+                a(href="#to_about_us") О нас
+            li
+                a(href="#to_prepare") Препараты
+            li
+                a(href="#to_certificate") Сертификаты
+            li
+                a(href="#to_recall") Отзывы
+            li
+                a(href="#to_delivery_and_pay") Доставка и оплата
+            li
+                a(href="#to_contacts") Контакты
+    .btn_collapse_menu
+        span
+        span
+        span
+section.banner_1(style="background-image: url('../img/banner_1_bg.jpg')")
+    .container
+        .row
+            .col-auto.d-none.d-lg-block
+                img(src="img/banner_1_img.png" alt="Img banner 1")
+            .col
+                .row.align-items-center.justify-content-lg-end.justify-content-md-between
+                    .col-xl-auto.col-lg-8.col-md-7
+                        .txt
+                            p.text-uppercase
+                                b современные препараты
+                            p.text-uppercase
+                                | для лечения
+                            p.text-uppercase гепатита С
+                            p
+                                | Доказанная эффективность лечения
+                                |
+                                b 98%
+                        form(action="#" method="post")
+                            .inpt_transparent
+                                input(type="tel", placeholder="Введите телефон" name="phone")
+                            .btn_painted
+                                input(type="submit", value="Получить консультацию")
+                            input(type="hidden", value="Консультация" name="form_type")
+                    .col-lg-auto.col-md-auto.col-sm-auto
+                        .delivery
+                            .content
+                                span
+                                b Доставка
+                                |
+                                | по РБ:
+                                span от 2-х часов
+section.about_manufacturer#to_about_us
+    .container
+        .info
+            h2 О производителе
+            .content
+                img.img-responsive(src="img/logo_manufacturer.png" alt="Logo manufacturer")
+                p
+                    | Компания
+                    |
+                    b Marcyrl Pharmaceutical Industries
+                    |
+                    | (Египет) является одной из ведущих компаний фармацевтической
+                    | промышленности страны , которая разрабатывает, производит и продает широкий спектр лекарственных
+                    | препаратов для лечения гепатита С.
+                    | Для лечения гепатита С компания  Marcyrl Pharmaceutical Industries выпускает дженерик Совальди - MPIVIROPACK,
+                    | дженерик Харвони - MPIVIROPACK PLUS, дженерик даклатасвира - Daclavirocyrl.
+                    | Выбор препаратов зависит от того, какой генотип вируса обнаружен у человека. Схемы лечения средствами,
+                    | содержащими софосбвувир, одобрены всемирной организацией здравоохранения.
+section.preparation#to_prepare
+    .container
+        h2 Препараты для лечения гепатита С
+        .row.no-gutters.justify-content-between
+            .col-xl-auto.col-lg-6
+                .preparat
+                    .title MPIVIROPACK
+                    .content
+                        .row.no-gutters.align-items-center.justify-content-center
+                            .col-auto
+                                img(src="img/preparation_1.png" alt="Preparation 1")
+                            .col-sm.col-12
+                                .name Софосбувир (Совалди)
+                                .sub_name
+                                    | MPIviropack указывается в комбинации с другими
+                                    | лекарственными средствами для лечения хронического
+                                    | гепатита C (CHC) у взрослых.
+                                .desc
+                                    | Действующее вещество: Sofosbuvir
+                                    br
+                                    | Дозировка: 400 мг
+                                    br
+                                    | Лекарственная форма: капсуловидные таблетки
+                                    br
+                                    | Оригинальное название: Sovaldi
+                                    br
+                                    | Количество: 28 таблеток
+                                    br
+                                    | Производитель: Marcyrl Pharm. Ind. ( Egypt )
+                                .price
+                                    span.val 93 $
+                                    span.add (от 1 уп 110 $)
+                                form(action="#" method="post")
+                                    .inpt_transparent
+                                        input(type="tel", placeholder="Введите телефон" name="phone")
+                                    .btn_painted
+                                        input(type="submit", value="Заказать")
+                                    input(type="hidden", value="Софосбувир (Совалди)" name="form_type")
+            .col-xl-auto.col-lg-6
+                .preparat
+                    .title MPIVIROPACK PLUS
+                    .content
+                        .row.no-gutters.align-items-center.justify-content-center
+                            .col-auto
+                                img(src="img/preparation_2.png" alt="Preparation 2")
+                            .col-sm.col-12
+                                .name Дженерик Харвони
+                                .sub_name
+                                    | MPIVIROPACK PLUS -  это одна из последних разработок в
+                                    | области лечения гепатита. Он является аналогом
+                                    | препарата Харвони. Препарат принимается для лечения
+                                    | вируса гепатита C четырех генотипов.
+                                .desc
+                                    | Действующее вещество: Sofosbuvir 400 мг + Ledipasvir 90 мг
+                                    br
+                                    | Дозировка: 490 мг
+                                    br
+                                    | Лекарственная форма: капсуловидные таблетки
+                                    br
+                                    | Оригинальное название: Harvoni
+                                    br
+                                    | Количество: 28 таблеток
+                                    br
+                                    | Производитель: Marcyrl Pharm. Ind. ( Egypt )
+                                .price
+                                    span.val 180 $
+                                    span.add (от 1 уп 210 $)
+                                form(action="#" method="post")
+                                    .inpt_transparent
+                                        input(type="tel", placeholder="Введите телефон" name="phone")
+                                    .btn_painted
+                                        input(type="submit", value="Заказать")
+                                    input(type="hidden", value="Дженерик Харвони" name="form_type")
+            .col-xl-auto.col-lg-6
+                .preparat
+                    .title Daclavirocyrl
+                    .content
+                        .row.no-gutters.align-items-center.justify-content-center
+                            .col-auto
+                                img(src="img/preparation_3.png" alt="Preparation 3")
+                            .col-sm.col-12
+                                .name Даклатасвир (Daklinza)
+                                .sub_name
+                                    | Даклавироцирлик показан в сочетании с другими
+                                    | лекарственными средствами для лечения хронической
+                                    | инфекции вируса гепатита С (HCV) у взрослых.
+                                .desc
+                                    | Действующее вещество: Daclatasvir
+                                    br
+                                    | Дозировка:	60 мг
+                                    br
+                                    | Лекарственная форма	: округлые таблетки
+                                    br
+                                    | Оригинальное название: Daclinza
+                                    br
+                                    | Количество: 28 таблеток
+                                    br
+                                    | Торговое название: Daclavirocyrl
+                                    br
+                                    | Производитель: Marcyrl Pharm. Ind. ( Egypt )
+                                .price
+                                    span.val 80 $
+                                    span.add (от 1 уп 95 $)
+                                form(action="#" method="post")
+                                    .inpt_transparent
+                                        input(type="tel", placeholder="Введите телефон" name="phone")
+                                    .btn_painted
+                                        input(type="submit", value="Заказать")
+                                    input(type="hidden", value="Даклатасвир (Daklinza)" name="form_type")
+            .col-xl-auto.col-lg-6
+                .preparat
+                    .title MPIVIROPACK PLUS
+                    .content
+                        .row.no-gutters.align-items-center.justify-content-center
+                            .col-auto
+                                img(src="img/preparation_4.png" alt="Preparation 4")
+                            .col-sm.col-12
+                                .name Дженерик Харвони
+                                .sub_name
+                                    | MPIVIROPACK PLUS -  это одна из последних разработок в
+                                    | области лечения гепатита. Он является аналогом
+                                    | препарата Харвони. Препарат принимается для лечения
+                                    | вируса гепатита C четырех генотипов.
+                                .desc
+                                    | Действующее вещество: Sofosbuvir 400 мг + Ledipasvir 90 мг
+                                    br
+                                    | Дозировка: 490 мг
+                                    br
+                                    | Лекарственная форма: капсуловидные таблетки
+                                    br
+                                    | Оригинальное название: Harvoni
+                                    br
+                                    | Количество: 28 таблеток
+                                    br
+                                    | Производитель: Marcyrl Pharm. Ind. ( Egypt )
+                                .price
+                                    span.val 180 $
+                                    span.add (от 1 уп 210 $)
+                                form(action="#" method="post")
+                                    .inpt_transparent
+                                        input(type="tel", placeholder="Введите телефон" name="phone")
+                                    .btn_painted
+                                        input(type="submit", value="Заказать")
+                                    input(type="hidden", value="Даклатасвир (Daklinza)" name="form_type")
+section.banner_2(style="background: url('../img/banner_2_img_2.png') 73% 70% no-repeat , linear-gradient(to right, #1dadb1 0%, #18d1d5 46%, #505566 98%, #505566 100%)")
+    .container
+        .row
+            .col-auto.d-none.d-lg-block
+                img(src="img/banner_2_img_1.png" alt="banner Left img")
+            .col
+                .txt
+                    p
+                        | Здоровая печень за
+                        |
+                        b 12
+                        |
+                        | недель
+                    p.text-uppercase живи полноценно!
+                form(action="#" method="post")
+                    .inpt_transparent
+                        input(type="tel", placeholder="Введите телефон" name="phone")
+                    .btn_painted
+                        input(type="submit", value="Узнать подробнее")
+                    input(type="hidden", value="Здоровая печень за 12 недель" name="form_type")
+section.fake_sofosbuir(style="background: url('../img/fake_sofosbuir_img_1.jpg') -15% 80% no-repeat, url('../img/fake_sofosbuir_img_2.jpg') 1470px 20% no-repeat")
+    .container
+        h2 Основные признаки подделки софосбувира
+        p
+            | Признаки, по которым поддельный софосбувир можно отличить от оригинального, на первый
+            | взгляд, незначительны: нарушенная целостность упаковки, отличия в шрифте надписей на упаковке,
+            | орфографические ошибки в инструкции. Чтобы не купить подделку софосбувира, следует
+            | внимательно осмотреть препарат перед покупкой: изучите упаковку препарата, оцените её
+            | качество, шрифт, проверьте наличие орфографических ошибок.]
+        .ladder
+            .etag
+                .number 1
+                .content
+                    .title
+                        .txt Упаковка
+                    p
+                        | Поддельный фальсифицированный софосбувир способно
+                        | выдать качество полиграфии: в описании оригинального
+                        | лекарства никогда не может быть опечаток и орфографических
+                        | ошибок, текст на упаковке обязательно должен быть хорошо
+                        | виден, без размытости и пятен. Следует обратить внимание
+                        | на качество бумаги и картона.
+            .etag
+                .content
+                    .title
+                        .txt Внешний вид таблеток
+                    p
+                        | В инструкции написано, что из себя представляют таблетки:
+                        | форма таблеток, цвет, размер. Описание должно
+                        | соответствовать тому, что вы видите в реальности.
+                        | Софосбувир выпускается исключительно только в
+                        | таблетках 400 мг, он не выпускается в капсулах, ампулах
+                        |  или в таблетках в другой дозировке.
+                .number 2
+            .etag
+                .number 3
+                .content
+                    .title
+                        .txt Номер партии и штрихкод
+                    p
+                        | На каждой упаковке обязательно должны быть номер партии,
+                        | срок годности и штрихкод лекарственного препарата.
+section.certificates#to_certificate
+    .container.text-center
+        h2 Сертификаты
+        p
+            | Сертификаты на исследования, разработку и производство
+            br
+            | фармацевтической продукции компании Marcyrl Pharmaceutical Industries
+        .slider_certificate
+            .slide
+                img.img-responsive(src="img/certificate_1.jpg" alt="Certificate 1")
+            .slide
+                img.img-responsive(src="img/certificate_2.jpg" alt="Certificate 2")
+            .slide
+                img.img-responsive(src="img/certificate_3.jpg" alt="Certificate 3")
+            .slide
+                img.img-responsive(src="img/certificate_3.jpg" alt="Certificate 3")
+.video_and_our_advantages.text-center
+    section.video
+        .container
+            h2 Смотрите видео
+            p Из этого видео вы узнаете, как отличить оригинальные препараты от подделки, а также о курсе лечения гепатита.
+            .video_frame
+                iframe(src="https://www.youtube.com/embed/1ZIPaZnVAYg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+    section.advantages
+        .container
+            .wrap
+                .our_advantages
+                    h2 Почему обращаются именно к нам
+                    .content
+                        .advantage
+                            img(src="img/our_advantage_1.png" alt="Our advantage 1")
+                            .desc
+                                | Стоимость без наценок
+                                | и скрытых платежей
+                        .advantage
+                            img(src="img/our_advantage_2.png" alt="Our advantage 2")
+                            .desc
+                                | Препараты действительно
+                                | излечивают от Гепатита С
+                        .advantage
+                            img(src="img/our_advantage_3.png" alt="Our advantage 3")
+                            .desc
+                                | Доставка по РБ: от 2 часов
+section.our_recall#to_recall
+    .container
+        h2 Отзывы наших покупателей
+        p
+            | У нас только положительные отзывы о лечении, сертификаты и химическая экспертиза на лекарства, а также фото ПЦР
+            | анализа до и после терапии людей, которые покупали лекарства у нас, говорят о нашей надёжности и качестве
+            | доставляемых нашей компанией лекарств из  Египта.
+        .list_recall
+            .recall.active
+                .name Дмитрий, г Минск
+                .mes
+                    | “Вылечился от гепатита С, принимал
+                    | препарат 6 недель и уже за месяц вирус болезни
+                    | врачи не обнаружили...”
+                .prof
+                    .before
+                        .title до терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_before_therapy_1.png" alt="Before therapy 1")
+                    .after
+                        .title после терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_after_therapy_1.png" alt="After therapy 1")
+            .recall.active
+                .name Алексей, г Минск
+                .mes
+                    | “Вылечился от гепатита С, принимал
+                    | препарат 6 недель и уже за месяц вирус болезни
+                    | врачи не обнаружили...”
+                .prof
+                    .before
+                        .title до терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_before_therapy_1.png" alt="Before therapy 1")
+                    .after
+                        .title после терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_after_therapy_1.png" alt="After therapy 1")
+            .recall.active
+                .name Алексей, г Минск
+                .mes
+                    | “Вылечился от гепатита С, принимал
+                    | препарат 6 недель и уже за месяц вирус болезни
+                    | врачи не обнаружили...”
+                .prof
+                    .before
+                        .title до терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_before_therapy_1.png" alt="Before therapy 1")
+                    .after
+                        .title после терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_after_therapy_1.png" alt="After therapy 1")
+            .recall
+                .name Алексей, г Минск
+                .mes
+                    | “Вылечился от гепатита С, принимал
+                    | препарат 6 недель и уже за месяц вирус болезни
+                    | врачи не обнаружили...”
+                .prof
+                    .before
+                        .title до терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_before_therapy_1.png" alt="Before therapy 1")
+                    .after
+                        .title после терапии
+                        a.modal(href="#recall_preview")
+                            img.img-responsive(src="img/recall_after_therapy_1.png" alt="After therapy 1")
+        .btn_transparent
+            a.see_more(href="#") Смотреть еще
+        .PS
+            | *Можете присылать свои отзывы и комментарии на почту
+            |
+            a(href="info@sofosbuvirs.com") info@sofosbuvirs.com
+            |
+            | или на
+            |
+            a(href="+375257297057") WhatsApp/Viber +375 25 7297057
+            | ,
+            br
+            | МЫ ОБЯЗАТЕЛЬНО ОПУБЛИКУЕМ ИХ НА САЙТЕ В ЭТОМ РАЗДЕЛЕ
+section.banner_3(style="background-image: url('../img/banner_3_bg.jpg')")
+    .container
+        .row.justify-content-between
+            .col-xl-auto.col-md-6
+                .txt
+                    p Закажите обратный звонок
+                    p.text-uppercase на консультацию
+                form(action="#" method="post")
+                    .inpt_transparent
+                        input(type="tel", placeholder="Введите телефон" name="phone")
+                    .btn_painted
+                        input(type="submit", value="Заказать звонок")
+                    input(type="hidden", value="Обратный звонок" name="form_type")
+            .col-lg-auto.col-md-6
+                .remember
+                    .content
+                        .title помните!
+                        .desc
+                            | Назначать лечение может только Ваш лечащий
+                            | врач на основании истории Вашей болезни.
+
+
+
+
+
+

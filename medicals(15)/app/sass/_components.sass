@@ -1,0 +1,49 @@
+.btn_painted,.btn_transparent
+  width: 100%
+  a
+    padding: 6px
+  input
+    padding: 8px 6px
+  a,input
+    text-align: center
+    width: 100%
+    display: block
+    border-radius: 18px
+    font-weight: bold
+    outline: none
+    border: none
+    cursor: pointer
+    font-family: "Century Gothic", sans-serif
+.btn_transparent
+  max-width: 195px
+  a,input
+    background: transparent
+    border: 1px solid $accent
+    font-size: em(16px)
+    color: $accent
+    &:hover
+      background-color: $accent
+      color: $white
+.btn_painted
+  max-width: 205px
+  a,input
+    background-image: linear-gradient(to right, #1dadb1 0%, #16d4de 100%)
+    color: $white
+    font-size:  em(14px)
+    &:hover
+      background-image: none
+      background-color: transparent
+      color: $accent
+      border: 1px solid $accent
+.inpt_transparent
+  max-width: 195px
+  width: 100%
+  input
+    font-family: "Century Gothic", sans-serif
+    outline: none
+    width: 100%
+    display: block
+    border: 1px solid $white
+    padding: 9px 20px 7px
+    border-radius: 17px
+    background: rgba(255,255,255,0.3)

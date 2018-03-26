@@ -1,0 +1,90 @@
+.btn_transparent
+  max-width: 115px
+  width: 100%
+  a,input
+    width: 100%
+    text-align: center
+    display: block
+    outline: none
+    border: 1px solid $accent
+    color: $accent
+    font-size:  em(12px)
+    border-radius: 13px
+    color: $accent
+    background: transparent
+    cursor: pointer
+    font-family: SegoeUI, sans-serif
+  a
+    padding: 3.5px 5px 5px
+  input
+    padding: 6px 5px
+
+.btn_fill
+  max-width: 192px
+  width: 100%
+  &.dropdown
+    position: relative
+    > a, > input
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        right: 15px
+        top: calc(50% - 2px)
+        border: 5px solid transparent
+        border-top: 5px solid $purpure
+  &.purpure
+    > a, >input
+      color: $purpure
+      background-image: linear-gradient(to top, rgba(134, 67, 160, 1) 0%, rgba(255, 255, 255, 1) 100%)
+  &.red
+    > a, >input
+      color: $white
+      background: #da2766
+  > a, > input
+    box-shadow: 0 7px 21px rgba(21, 6, 54, 0.4)
+    width:  100%
+    text-align: center
+    font-weight: 600
+    display: block
+    border-radius: 17px
+    cursor: pointer
+    font-family: SegoeUI, sans-serif
+  > a
+    padding: 4.5px 0 6.5px
+  > input
+    padding: 6.5px 0 8.5px
+    border: none
+    outline: none
+.inpt_transparent
+  max-width: 170px
+  width: 100%
+  input
+    font-family: SegoeUI, sans-serif
+    outline: none
+    display: block
+    padding: 7px 18px 9px
+    border-radius: 17px
+    width: 100% 
+    border: 1px solid rgba(#e2e3e5, 0.5)
+    font-size: em(12px)
+    background-color: rgba(#e2e3e5, 0.1)
+    color: rgba(#e2e3e5, 0.64)
+    &::placeholder,&:required:valid
+      color: rgba(#e2e3e5, 0.64)
+.custom_title
+    font-weight: 600
+    margin: 0 0 3rem
+    font-size: em(24px)
+    color: #38394a
+    &.c
+      &:after
+        margin-left: auto
+        margin-right: auto 
+    &:after
+      margin-top: 6px
+      display: block
+      content: ''
+      height: 3px
+      width: 72px
+      background: $accent

@@ -1,0 +1,236 @@
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+  .preparat .title
+    font-size: 40px
+  .preparat
+    max-width: 575px
+    width: 100%
+    margin-left: 10px
+    margin-right: 10px
+  section.fake_sofosbuir
+    background: transparent
+  section.video .video_frame
+    width: inherit
+  .list_recall .recall
+    width: 32.5%
+  .list_recall .recall .prof .before
+    margin-right: 5px
+  section.banner_3
+    font-size: 12px
+  section.delivery_and_pay
+    font-size: 13px
+  .preparat .inpt_transparent
+    margin-right: 10px
+    input
+      padding-left: 10px
+      padding-right: 5px
+//Medium: ≥768px
++media-breakpoint-down(md)
+  .row_phones
+    flex-wrap: wrap
+    .phone_icons
+      justify-content: center
+    > div
+      width: 100%
+      &.phone
+        text-align: center
+  .preparat
+    margin-left: auto
+    margin-right: auto
+  .ladder
+    font-size: 10px
+    .etag:nth-child(2n) .title:before,.etag:nth-child(2n+1) .title:before
+      top: 67%
+  .slider_certificate .slide
+    margin: 0 5px
+  section.advantages
+    font-size: 12px
+  .list_recall .recall .prof
+    font-size: 12px
+  section.banner_3 .txt
+    font-size: 10px
+//Small: ≥576px
++media-breakpoint-down(sm)
+  html
+    font-size: 5px
+  section.about_manufacturer .info .content
+    flex-wrap: wrap
+    justify-content: center
+    img
+      margin-right: 0
+  h2
+    line-height: 1.2
+  .slider_certificate .slick-arrow.slick-prev
+    left: -10px
+  .slider_certificate .slick-arrow.slick-next
+    right: -10px
+  .slider_certificate
+    padding: 0 20px
+  section.advantages
+    font-size: 9px
+    .content > div
+      width: 33%
+  section.our_recall
+    text-align: center
+    p
+      max-width: 100%
+  section.our_recall .btn_transparent
+    margin-left: auto
+    margin-right: auto
+  section.our_recall .PS
+    min-width: 100%
+  .list_recall
+    justify-content: center
+    .recall
+      width: 100%
+  section.banner_1 .delivery
+    margin-top: 15px
+    margin-bottom: 80px
+  .ladder
+    font-size: 12px
+  .ladder .number,.ladder .etag:nth-child(2n+1):after,.ladder .etag:nth-child(2n) .title:before,.ladder .etag:nth-child(2n):after,.ladder .etag:last-child:nth-child(2n+1):before,.ladder .etag:nth-child(2n+1) .title:before
+    display: none
+  .ladder .content
+    max-width: 100%
+    padding: 0
+  .ladder .etag:nth-child(2n) p
+    text-align: left
+    padding-left: 0
+  .ladder .etag:nth-child(2n) .title
+    text-align: left
+    .txt
+      padding: 0
+  section.banner_3 .txt
+    text-align: center
+  section.banner_3 .remember
+    margin: auto
+  form
+    justify-content: center
+    margin-bottom: 10px
+  .delivery_and_pay_with_footer
+    background: transparent
+  footer
+    padding-top: 20px
+    background: linear-gradient(to right, #1dadb1 0%, #18d1d5 100%)
+  header .btn_painted
+    margin: auto
+    max-width: initial
+    width: initial
+    text-align: center
+    a
+      background: none
+      color: $gray
+      border-radius: 0
+      max-width: initial
+      width: initial
+      display: inline-block
+      border-bottom: 1px dashed
+      padding: 0
+      &:hover
+        border: none
+  .row_phones
+    justify-content: space-between
+    > div
+      width: auto
+    &.phone
+      font-size: 13px
+  footer .row_phones
+    flex-direction: column
+  .row_phones .phone:first-child
+    margin-right: 0
+  .row_phones .phone_icons a .fi
+    margin: 0 3px
+  .menu
+    flex-direction: column
+    display: none
+  nav
+    position: fixed
+    width: 100%
+    padding: 0
+    z-index: 20
+    margin: 0
+  header
+    margin-top: 0
+    background: $white
+    width: 100%
+    z-index: 20
+    position: fixed
+    top: 0
+  .btn_collapse_menu
+    height: 20px
+    width: 30px
+    position: absolute
+    right: 15px
+    top: -20px
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    span
+      height: 3px
+      display: block
+      width: 100%
+      background: $gray
+
+//Extra small: >0
++media-breakpoint-down(xs)
+  section.about_manufacturer .info h2
+    font-size: 15px
+  footer .row_phones
+    flex-direction: column
+  section.delivery_and_pay p:nth-child(6)
+    max-width: 100%
+  form
+    flex-direction: column
+    align-items: center
+    .inpt_transparent
+      margin-right: 0
+      margin-bottom: 10px
+  section.advantages .our_advantages h2
+    font-size: 15px
+  section.advantages .our_advantages .content
+    flex-wrap: wrap
+    .advantage
+      width: 280px
+  section.banner_2
+    height: auto
+  section.banner_2 .txt
+    font-size: 10px
+    text-align: center
+  .preparat .content img
+    margin-right: 0
+  .preparat form
+    align-items: flex-start
+  section.about_manufacturer .info
+    padding: 20px 10px 10px
+  header .row_phones
+    .phone
+      font-size: 13px
+  section.banner_1 .txt
+    text-align: center
+  section.banner_1 .delivery
+    margin-right: auto
+    margin-left: auto
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)

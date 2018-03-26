@@ -1,0 +1,761 @@
+@import "vars"
+@import "mixins"
+@import "fonts"
+@import "functions"
+@import "libs"
+@import "additional"
+@import "components"
+@import "icons"
+
+*
+	box-sizing: border-box
+	&:before, &:after
+		box-sizing: border-box
+
+*::placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+body input:focus::placeholder,
+body textarea:focus::placeholder
+	color: transparent
+body a:hover,
+body input:hover,
+body button:hover
+	transition: all .3s ease-out
+body a
+	text-decoration: none
+html
+	font-size: 10px
+
+html, body
+	height: 100%
+
+body
+	font-family: $default-font
+	font-size: $default-font-size
+	font-weight: $default-font-weight
+	color: $default-color
+	line-height: 1.65
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	opacity: 1
+	margin: 0
+
+header,footer
+	margin-top: 1.2rem
+	.btn_painted
+		width: 170px
+header.fixed
+	position: fixed
+	width: 100%
+	background: $white
+	z-index: 10
+	top: 0
+	margin-top: 0
+	.logo
+		padding: 5px
+		margin-bottom: 0
+		border: none
+		&:after,&:before
+			display: none
+		.txt:after
+			display: none
+	+ nav
+		margin-top: 0
+		position: fixed
+		width: 100%
+		z-index: 10
+.logo
+	border: 1px solid $accent
+	display: block
+	padding: 10px 15px 20px
+	color: transparent
+	background-image: linear-gradient(to right, #1dadb1 0%, #16d4de 100%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	background-clip: text
+	font-size: em(24px)
+	font-weight: bold
+	position: relative
+	margin-bottom: 20px
+	&.ie
+		background-image: none
+		color: $accent
+	.txt
+		&:after
+			content: ''
+			background: $white url('../img/logo.png') center no-repeat
+			display: block
+			width: 50px
+			height: 41px
+			position: absolute
+			bottom: -17px
+			left: calc(50% - 22px)
+	&:after
+		content: ''
+		position: absolute
+		display: block
+		width: 28%
+		height: 1px
+		left: 15px
+		bottom: 4px
+		background: $accent
+	&:before
+		content: ''
+		position: absolute
+		display: block
+		width: 28%
+		height: 1px
+		right: 15px
+		bottom: 4px
+		background: $accent
+.row_phones
+	display: flex
+	align-items: center
+	.phone:first-child
+		margin-right: 15px
+	a
+		color: $gray
+		b
+			font-size: em(16px)
+	.phone_icons
+		display: flex
+		a
+			display: inline-block
+			.fi
+				border: 1px solid $accent
+				border-radius: 50%
+				padding: 5px
+				width: 31px
+				height: 30px
+				display: block
+				margin: 0 9.5px
+			&:nth-child(1) .fi
+				padding: 1px 1px 1px 4.7px
+				&:before
+					border-radius: 50%
+					padding: 5px
+					background: #2dae1c
+					color: $white
+					font-size: 10px
+				&:after
+					content: ''
+					border: 3px solid transparent
+					border-top: 4px solid #2dae1c
+					transform: rotate(30deg) translate(-7px,-12px)
+					display: inline-block
+			&:nth-child(2) .fi
+				padding: 1px 1px 1px 4px
+				&:before
+					border-radius: 50%
+					padding: 5px
+					background: #76428b
+					color: $white
+					font-size: 10px
+			&:nth-child(3) .fi
+				padding: 2px 1px 1px 2.7px
+				&:before
+					padding: 5px
+					color: $accent
+nav
+	background-image: linear-gradient(to right, #1dadb1 0%, #18d1d5 100%)
+	padding: 12px 0 13px
+	margin-top: 5px
+.menu
+	list-style: none
+	margin: 0
+	padding: 0 20px
+	display: flex
+	justify-content: space-between
+	li
+		a
+			padding: 5px
+			color: $white
+			font-weight: bold
+			&:hover
+				color: lighten($gray, 0.5)
+section.banner_1
+	min-height: 433px
+	padding-top: 2.7rem
+	margin-bottom: 8rem
+	background: center / cover no-repeat
+	.txt
+		margin-top: 3rem
+		line-height: 1
+		margin-bottom: 3rem
+		p
+			margin: 0
+		p:nth-child(1)
+			font-size: em(36px)
+		p:nth-child(2)
+			font-size: em(36px)
+			margin-bottom: 1.3rem
+		p:nth-child(3)
+			font-size: em(60px)
+			font-weight: bold
+			-webkit-text-fill-color: transparent
+			background-image: linear-gradient(to right, #1dadb1 0%, #18d1d5 28%, #505566 81%, #505566 100%)
+			background-clip: text
+			display: inline-block
+			&.ie
+				background-image: none
+				color: $accent
+		p:nth-child(4)
+			margin-top: 2rem
+			font-size: em(24px)
+			color: $accent
+			b
+				font-size: em(21px)
+	.delivery
+		width: 126px
+		height: 126px
+		border: 1px solid $accent
+		padding: 9px
+		border-radius: 50%
+		.content
+			font-family: Montserrat, sans-serif
+			background-color: rgba($accent,0.6)
+			background-image: linear-gradient(to left, rgba(127, 35, 142, 0.2) 0%, rgba(0, 0, 0, 0) 100%)
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			color: $white
+			display: flex
+			flex-direction: column
+			text-align: center
+			justify-content: center
+			span:last-child
+				font-size: em(12px)
+form
+	display: flex
+	.inpt_transparent
+		margin-right: 2.5rem
+	.btn_painted
+		input
+			border: 1px solid $white
+
+section.about_manufacturer
+	margin-bottom: 7rem
+	.info
+		border: 1px solid $accent
+		position: relative
+		padding: 5.2rem 7rem 3.5rem
+		h2
+			position: absolute
+			top: 0
+			transform: translateY(-100%)
+			background: $white
+			padding: 0 30px
+			left: 15%
+			font-size: em(36px)
+		.content
+			display: flex
+			align-items: center
+			img
+				margin-right: 5rem
+section.preparation
+	margin-bottom: 7.5rem
+	h2
+		font-size: em(34px)
+.preparat
+	width: 575px
+	margin-bottom: 3.5rem
+	.inpt_transparent
+		margin-right: 2rem
+	.inpt_transparent,.btn_painted
+		max-width: 140px
+		input
+			font-size: em(11px)
+	.title
+		font-size: em(60px)
+		color: $lightgray
+		line-height: 0.8
+		text-transform: uppercase
+	.content
+		background: $lightgray
+		padding: 30px 18px
+		.name
+			font-size: em(16px)
+			font-weight: bold
+			color: $black
+		.sub_name,.desc
+			margin-bottom: 1rem
+			font-size: em(12px)
+		img
+			margin-right: 4rem
+		.price
+			margin-bottom: 1.5rem
+			.val
+				font-size: em(30px)
+				font-family: OpenSans, sans-serif
+				font-weight: 600
+				color: $accent
+				margin-right: 15px
+			.add
+				font-size: em(16px)
+section.banner_2
+	height: 267px
+	padding-top: 1.3rem
+	margin-bottom: 4.2rem
+	.btn_painted
+		input:hover
+			color: $white
+			border: 1px solid $white
+	.txt
+		line-height: 1.2
+		margin: 3rem 0
+		p
+			margin: 0
+		p:nth-child(1)
+			font-size: em(36px)
+			color: $white
+			font-weight: bold
+			b
+				font-size: em(20px)
+		p:nth-child(2)
+			font-size: em(42px)
+			color: $white
+section.fake_sofosbuir
+	margin-bottom: 6rem
+	.container
+		padding: 0 9%
+	h2
+		font-size: em(36px)
+		& + p
+			max-width: 90%
+.ladder
+	margin-top: 4rem
+	padding-bottom: 2rem
+	.etag
+		display: flex
+		justify-content: center
+		position: relative
+		&:nth-child(2n)
+			p
+				padding-left: 20%
+				text-align: right
+			&:after
+				content: ''
+				height: calc(100% - 60px)
+				width: 1px
+				background: #18d1d5
+				position: absolute
+				top: 80px
+				right: 15%
+				display: block
+			.title
+				text-align: right
+				position: relative
+				background: $white
+				z-index: 1
+				.txt
+					padding: 0 0 0 5rem
+				&:before
+					content: ''
+					height: 1px
+					width: 100%
+					background: #18d1d5
+					position: absolute
+					z-index: -1
+					top: 50%
+					left: -10px
+					display: block
+		&:nth-child(2n+1)
+			&:after
+				content: ''
+				height: calc(100% - 60px)
+				width: 1px
+				background: #18d1d5
+				position: absolute
+				top: 80px
+				left: 15%
+				display: block
+			.title
+				text-align: left
+				position: relative
+				background: $white
+				z-index: 1
+				.txt
+					padding: 0 5rem 0 0
+				&:before
+					content: ''
+					height: 1px
+					width: 100%
+					background: #18d1d5
+					position: absolute
+					z-index: -1
+					top: 50%
+					right: -10px
+					display: block
+		&:last-child
+			&:nth-child(2n):before
+				content: ''
+				height: 1px
+				width: 15%
+				background: #18d1d5
+				position: absolute
+				bottom: -20px
+				right: 15%
+				display: block
+			&:nth-child(2n+1):before
+				content: ''
+				height: 1px
+				width: 15%
+				background: #18d1d5
+				position: absolute
+				bottom: -20px
+				left: 15%
+				display: block
+		&:first-child
+			.title:before
+				display: none
+	.content
+		max-width: 70%
+		padding: 0 5rem 5rem
+	.number
+		width: 80px
+		height: 80px
+		background: #1dadb1
+		font-size: em(24px)
+		font-weight: bold
+		color: $white
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+	.title
+		font-size: em(24px)
+		.txt
+			display: inline-block
+			background: $white
+section.certificates
+	padding-top: 4rem
+	position: relative
+	color: $white
+	h2
+		font-size: em(36px)
+		margin: 0
+	p
+		margin: 0
+		margin-bottom: 4rem
+		font-size: em(18px)
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		top: 0
+		left: 0
+		height: 80%
+		background: #1cb6ba
+		z-index: -1
+.slider_certificate
+	.slick-arrow
+		width: 31px
+		height: 60px
+		&:before
+			display: none
+		&.slick-next
+			background: url('../img/arrow_right.png') no-repeat
+			right: -40px
+		&.slick-prev
+			left: -40px
+			background: url('../img/arrow_left.png') no-repeat
+	.slide
+		outline: none
+	img
+		margin: auto
+.video_and_our_advantages
+	padding: 8rem 0
+	background: linear-gradient(to bottom,  transparent 40%, rgba(24, 208, 212, 0) 40%,#1daeb2  100%)
+section.video
+	h2
+		font-size: em(36px)
+		margin: 0
+	p
+		font-size: em(18px)
+	.video_frame
+		width: 980px
+		height: 500px
+		margin: auto
+		iframe
+			width: 100%
+			height: 100%
+section.advantages
+	padding-top: 9.5rem
+	color: $white
+	.wrap
+		padding-top: 20px
+		overflow: hidden
+	.our_advantages
+		position: relative
+		border: 2px solid $white
+		border-top: 0
+		.content
+			padding: 6rem 0 7rem
+			display: flex
+			justify-content: space-around
+			flex-wrap: wrap
+			.advantage
+				max-width: 280px
+				.desc
+					margin-top: 1.5rem
+					font-size: em(20px)
+					font-weight: bold
+		h2
+			font-size: em(36px)
+			position: absolute
+			margin: 0
+			left: 50%
+			white-space: nowrap
+			line-height: 1
+			transform: translate(-50%,-50%)
+			&:after
+				content: ''
+				position: absolute
+				width: 100%
+				top: calc(50% - 1px)
+				height: 2px
+				background: $white
+				right: -108%
+			&:before
+				content: ''
+				position: absolute
+				width: 100%
+				top: calc(50% - 1px)
+				height: 2px
+				left: -108%
+				background: $white
+section.our_recall
+	padding-top: 5rem
+	padding-bottom: 8.3rem
+	h2
+		font-size: em(36px)
+		margin: 0
+	p
+		font-size: em(16px)
+		max-width: 85%
+	.btn_transparent
+		margin-bottom: 3rem
+		a
+			padding: 4px
+	.PS
+		font-weight: bold
+		max-width: 75%
+.list_recall
+	justify-content: space-between
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 4rem
+	.recall
+		padding: 2rem 1.5rem
+		max-width: 375px
+		background-color: #ebeef5
+		margin-bottom: 10px
+		display: none
+		.name
+			font-weight: bold
+			margin-bottom: .5rem
+		.mes
+			font-size: em(12px)
+			min-height: 100px
+			max-width: 90%
+		.prof
+			text-align: center
+			display: flex
+			justify-content: space-between
+			.before,.after
+				max-width: 49%
+			.title
+				color: $accent
+				font-weight: bold
+		&.active
+			display: block
+section.banner_3
+	padding: 5.5rem 0 4.5rem
+	margin-bottom: 7rem
+	background: center / cover no-repeat
+	z-index: 1
+	position: relative
+	color: $white
+	&:after
+		content: ''
+		background-image: linear-gradient(to right, rgba(#1dadb1,0.6) 0%, rgba(#505566,0.6) 100%)
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		z-index: -1
+	.txt
+		margin-bottom: 3rem
+		line-height: 1.2
+		p
+			margin: 0
+		p:first-child
+			font-weight: bold
+			font-size: em(36px)
+		p:last-child
+			font-size: em(42px)
+	.btn_painted
+		input
+			font-size: em(16px)
+			padding-top: 6px
+			padding-bottom: 6px
+			&:hover
+				color: $white
+				border: 1px solid $white
+	.inpt_transparent
+		input
+			background: rgba(#fff,0.7)
+	.remember
+		text-align: center
+		max-width: 445px
+		border: 1px solid $white
+		padding: 5px
+		.content
+			border: 1px solid $white
+			padding: 2.5rem 2rem
+		.title
+			font-size: em(24px)
+			text-transform: uppercase
+			font-weight: bold
+			color: $accent
+		.desc
+			font-size: em(16px)
+section.delivery_and_pay
+	margin-bottom: 16rem
+	h2
+		font-size: em(36px)
+		line-height: 1
+	p
+		font-size: em(16px)
+		&:nth-child(3),&:nth-child(4),&:nth-child(5)
+			font-weight: bold
+		&:nth-child(5)
+			margin-bottom: 0.5rem
+		&:nth-child(6)
+			margin-top: 0
+			max-width: 63%
+footer
+	padding-bottom: 3rem
+	.btn_painted
+		a
+			border: 1px solid $white
+	.logo
+		border-color: $white
+		color: $white
+		background-image: linear-gradient(to right, #fff 0%,#fff 100%)
+		&.ie
+			color: $white
+		.txt:after
+			background: url('../img/logo_footer.png') center no-repeat
+		&:after,&:before
+			background: $white
+	.row_phones .phone_icons a
+		.fi
+			border-color: $white
+		&:nth-child(3) .fi:before
+			color: $white
+
+.modal_overlay
+	display: none
+	background-color: rgba(#152226, 0.5)
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 50
+	.modal_wrapper
+		padding: 0 20px
+		transform: translateY(-50%)
+		position: relative
+		top: 50%
+	.modal
+		margin: auto
+		position: relative
+	.close
+		position:  absolute
+		top: -19px
+		right: -19px
+		box-shadow: 0 5px 8px rgba(21, 6, 54, 0.15)
+		background: $white
+		width: 38px
+		color: $accent
+		height: 38px
+		border-radius: 50%
+		font-size: 40px
+		line-height: 1
+		display: flex
+		justify-content: center
+		align-items: center
+		&:hover
+			background: $accent
+			color: $white
+	&#form_order_call
+		.modal
+			max-width: 750px
+			padding: 5.5rem 7.5rem 6.5rem
+			background: url('../img/bg_modal.png') no-repeat
+		form
+			display: block
+			.title
+				margin-bottom: 3rem
+				span
+					display: block
+					line-height: 1.4
+				span:nth-child(1)
+					color: $white
+					font-size: em(28px)
+					text-transform: uppercase
+					font-weight: bold
+				span:nth-child(2)
+					color: $black
+					text-transform: uppercase
+					font-size: em(22px)
+				span:nth-child(3)
+					color: $black
+					font-size: em(18px)
+			.inpt_transparent,.btn_painted
+				max-width: 250px
+				input::placeholder,input
+					color: $white
+				input
+					padding-top: 11px
+					padding-bottom: 11px
+					border-radius: 21px
+			.inpt_transparent
+				margin-bottom: 1.7rem
+				input
+					font-size: em(16px)
+			.btn_painted
+				margin-bottom: 2.5rem
+				input
+					background-image: linear-gradient(to left, #0bafb1 0%, #0bafb1 1%, #4c6070 100%)
+					text-transform: uppercase
+					&:hover
+						background: transparent
+						border-color: $white
+			.PS
+				font-weight: 300
+				font-family: Montserrat, sans-serif
+				color: $black
+	&#recall_preview
+		.modal_wrapper
+			display: flex
+		.modal
+			max-width: 90vw
+			max-height: 95vh
+		.recall
+			img
+				display: none
+@import "media"
+

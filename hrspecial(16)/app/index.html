@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <meta name="theme-color" content="#000">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-auto order-md-0 order-1 col-md col-auto"><a class="logo" href="/"><img src="img/logo.png" alt="logo"></a></div>
+          <div class="col d-md-none d-block order-3">
+            <div class="btn_collapse_menu"><span></span><span></span><span></span></div>
+          </div>
+          <div class="col order-md-0 order-4 col-12 col-md">
+            <ul class="menu">
+              <li><a href="#to_about_company" data-to>о компании</a></li>
+              <li><a class="sub_menu" href="#">услуги</a>
+                <ul>
+                  <li><a href="#to_service" data-to>Рекрутинг</a></li>
+                  <li><a href="#to_service" data-to>Хедхантинг</a></li>
+                  <li><a href="#to_service" data-to>Executive Search</a></li>
+                  <li><a href="#to_service" data-to>Тестирование кандидатов</a></li>
+                  <li><a href="#to_vacancy" data-to>Вакансии</a></li>
+                </ul>
+              </li>
+              <li><a href="#to_team" data-to>команда</a></li>
+              <li><a href="#to_price" data-to>цены</a></li>
+              <li><a href="#to_vacancy" data-to>вакансии</a></li>
+            </ul>
+          </div>
+          <div class="col-md-auto order-md-0 order-2 col-auto">
+            <div class="phone"><span>+375-29-124-44-77</span></div>
+            <div class="contacts_and_timework">
+              <div class="timework"><i class="fi flaticon-time"></i>
+                <div class="txt">Время работы:<br>Пн-Пт: с 10-00 до 19-00</div>
+              </div>
+              <div class="mail"><i class="fi flaticon-mail"></i><a href="mailto:Info@hr-special.by">Info@hr-special.by</a></div>
+              <div class="skype"><i class="fi flaticon-skype"></i><a href="skype:Info@hr-special.by?call">Info@hr-special.by</a></div>
+              <div class="viber"><i class="fi flaticon-viber"></i><a href="viber://chat?number=+375291244477">+375-29-124-44-77</a></div>
+              <div class="telegram"><i class="fi flaticon-telegram"></i><a href="tg://resolve?domain=+375291244477">+375-29-124-44-77</a></div>
+              <div class="btn_transparent"><a class="modal_link" href="#form_order_call">Заказать звонок</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="banner_1" style="background-image: url('../img/banner_1_bg.jpg')">
+      <div class="container">
+        <div class="txt">
+          <h1><span>H</span><span>R</span>
+            Special
+          </h1>
+          <h2>Экспертный подбор и оценка персонала</h2>
+          <h3>ДЛЯ ВСЕХ ВИДОВ БИЗНЕСА</h3>
+          <p>*Закрываем вакансии каждый день</p>
+        </div>
+        <div class="row_btn">
+          <div class="btn_fill purpure dropdown"><a class="dropdown_employer" href="#">Работодателю</a>
+            <ul class="employer">
+              <li><a href="#to_service" data-to>Рекрутинг</a></li>
+              <li><a href="#to_service" data-to>Хедхантинг</a></li>
+              <li><a href="#to_service" data-to>Executive Search</a></li>
+              <li><a href="#to_service" data-to>Тестирование кандидатов</a></li>
+              <li><a href="#to_vacancy" data-to>Вакансии</a></li>
+            </ul>
+          </div>
+          <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+          <div class="btn_fill purpure dropdown"><a class="dropdown_aspirant" href="#">Соискателю</a>
+            <div class="aspirant">
+              <div class="desc">
+                Загрузить резюме, и получить
+                возможность найти работу
+                своей мечты
+              </div>
+              <form action="#" method="post" enctype="multipart/form-data">
+                <label><i class="fi flaticon-paper-clip-outline"></i>
+                  <div class="txt">Прикрепить файл</div>
+                  <input type="file" id="file_aspirant_banner_1" name="file_aspirant" required accept=".pdf,.docx,.doc">
+                </label>
+                <input type="hidden" name="form_type" value="Соискатель">
+                <div class="btn_transparent">
+                  <input type="submit" value="Отправить" name="form_send">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about_us" id="to_about_company">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-1 offset-0">
+            <div class="about">
+              <div class="txt">
+                <p><b>H<span>R</span>
+                    Special</b>- успешная команда, занимающаяся подбором
+                  и оценкой персонала в различных сферах бизнеса.
+                </p>
+                <p>
+                  Мы найдем
+                  <b>лучших специалистов</b>
+                  , которые идеально подойдут именно Вам.
+                  Наши кандидаты справятся с любыми задачами и станут надежной
+                  частью команды, многократно повысив прибыль Вашей Компании.
+                </p>
+                <p>Группы Компании с актуальной и полезной информацией:</p>
+              </div>
+              <div class="row_link_groups"><a href="https://www.linkedin.com/company/hr-special/"><i class="fi flaticon-linkedin"></i></a><a href="https://www.facebook.com/hr.special.by/"><i class="fi flaticon-facebook"></i></a><a href="https://vk.com/hr_special"><i class="fi flaticon-vk"></i></a><a href="https://t.me/HR_Special"><i class="fi flaticon-telegram"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="what_expect">
+      <div class="container">
+        <div class="row">
+          <div class="col offset-md-1 offset-0">
+            <h2 class="custom_title">Чего ожидать от работы с HR Special?</h2>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col offset-md-1 offset-0">
+            <div class="expect">
+              <div class="wrap_img"><img src="img/expect_icon_1.png" alt="Expect iron 1"></div>
+              <div class="name">
+                ТЕХНИЧЕСКАЯ ГРАМОТНОСТЬ
+                И СКОРОСТЬ ПОДБОРА
+              </div>
+              <div class="desc">
+                Наш опыт и знания позволяют
+                оперативно предоставлять Вам только
+                релевантных специалистов.
+              </div>
+            </div>
+          </div>
+          <div class="col offset-md-1 offset-0">
+            <div class="expect">
+              <div class="wrap_img"><img src="img/expect_icon_2.png" alt="Expect icon 2"></div>
+              <div class="name">
+                ПОЛНОЕ
+                СОПРОВОЖДЕНИЕ
+              </div>
+              <div class="desc">
+                На всех этапах переговоров мы
+                сопровождаем Ваше взаимодействие
+                с кандидатом до принятия
+                предложения о работе.
+              </div>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col offset-md-1 offset-0">
+            <div class="expect">
+              <div class="wrap_img"><img src="img/expect_icon_3.png" alt="Expect icon 3"></div>
+              <div class="name">
+                ГИБКАЯ ЦЕНОВАЯ
+                ПОЛИТИКА
+              </div>
+              <div class="desc">
+                Различные ценовые предложения,
+                подходящие именно Вам.
+              </div>
+            </div>
+          </div>
+          <div class="col offset-md-1 offset-0">
+            <div class="expect">
+              <div class="wrap_img"><img src="img/expect_icon_4.png" alt="Expect icon 4"></div>
+              <div class="name">
+                ГАРАНТИЯ
+                НА КАНДИДАТОВ
+              </div>
+              <div class="desc">
+                При увольнении сотрудника в течение
+                4 месяцев бесплатно и оперативно
+                ищем замену.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our_service" id="to_service" style="background-image: url('../img/our_service_bg.jpg')">
+      <div class="container">
+        <h2 class="custom_title c text-center">Наши услуги</h2>
+        <div class="row">
+          <div class="col-md-5 offset-md-1 offset-0">
+            <div class="service">
+              <div class="content">
+                <div class="row_img_name"><img src="img/our_service_icon_1.png" alt=" Our Serivce 1">
+                  <div class="name custom_title c">Рекрутинг</div>
+                </div>
+                <div class="desc">
+                  Глубокая экспертиза и знание рынка позволяют нам
+                  быстро и эффективно найти требуемых специалистов,
+                  с учетом самых жестких требований Заказчика.
+                  Наши кандидаты не только полностью соответствуют
+                  профессиональным и личностным критериям своей
+                  профессии, но и подходят именно Вашей
+                  корпоративной культуре.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="service">
+              <div class="content">
+                <div class="row_img_name"><img src="img/our_service_icon_2.png" alt=" Our Serivce 2">
+                  <div class="name custom_title c">Хедхантинг</div>
+                </div>
+                <div class="desc">
+                  Если Вы знаете, кого именно хотите привлечь в компанию,
+                  но не знаете, как это сделать, мы сможем помочь.
+                  Привлекаем конкретных топ-менеджеров и узких
+                  специалистов, которые еще не задумывались о смене
+                  работы. Это филигранный процесс, который начинается
+                  с изучения биографии человека, его интересов
+                  и заканчивается в тот момент, когда сотрудник
+                  приходит к Вам.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1 offset-0">
+            <div class="service">
+              <div class="content">
+                <div class="row_img_name"><img src="img/our_service_icon_3.png" alt=" Our Serivce 3">
+                  <div class="name custom_title c">Executive Search</div>
+                </div>
+                <div class="desc">
+                  Топовые специалисты не ищут работу, их резюме и
+                  контакты не находятся в открытом доступе. Именно за
+                  таких сотрудников на рынке идет ожесточенная борьба.
+                  Для их поиска необходимо разрабатывать и применять
+                  индивидуальный подход. Executive Search позволяет
+                  нашей команде произвести точечный поиск для
+                  закрытия управленческих и узкоспециализированных
+                  профессионалов.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="service">
+              <div class="content">
+                <div class="row_img_name"><img src="img/our_service_icon_4.png" alt=" Our Serivce 4">
+                  <div class="name custom_title c">Тестирование кандидатов</div>
+                </div>
+                <div class="desc">
+                  Методики оценки действующих сотрудников Вашей
+                  Компании и потенциальных кандидатов с помощью
+                  психометрических и когнитивных тестов. При помощи
+                  тестирования Вы получите всю необходимую
+                  информацию о специалисте. При этом большим
+                  преимуществом является наличие в структуре тестов
+                  шкал достоверности, позволяющих определить
+                  надежность результатов.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+      </div>
+    </section>
+    <section class="why_we_the_best" id="to_price">
+      <div class="container">
+        <h2 class="text-center c custom_title">Почему мы лучшие?</h2>
+        <div class="advantage_txt">ПРЕИМУЩЕСТВА СОТРУДНИЧЕСТВА С HR SPECIAL</div>
+        <div class="row justify-content-center">
+          <div class="col-lg col-md-6 d-none d-md-block">
+            <div class="advantage">
+              <div class="title">самостоятельный поиск</div>
+              <div class="txt top">
+                <p>
+                  Вы платите
+                  <b>903$</b>
+                  в месяц:
+                </p>
+                <p>- 480$ зарплата менеджера по персоналу;</p>
+                <p>- 168$ - налоговые отчисления;</p>
+                <p>- размещение вакансий и доступ к базе резюме:</p>
+                <p>LinkedIn - 90$, jobs.tut.by - 165$.</p>
+              </div>
+              <div class="txt bot">
+                <ul>
+                  <li>
+                    Высокая загруженность менеджера по персоналу
+                    не позволит оперативно закрывать необходимое
+                    количество разноплановых вакансий.
+                  </li>
+                  <li>Временные затраты:
+                    <ul>
+                      <li>- 80 часов на поиск специалиста начального уровня.</li>
+                      <li>- 160 часов на поиск специалиста среднего уровня.</li>
+                      <li>- 240 часов на поиск топ-специалиста.</li>
+                    </ul>
+                  </li>
+                  <li>Отсутствие необходимой экспертизы и опыта.</li>
+                  <li>
+                    Если кандидат не прошел испытательный срок,
+                    необходимо повторно тратить время и деньги.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-6 d-none d-md-block">
+            <div class="advantage">
+              <div class="title">кадровые агентства</div>
+              <div class="txt top">
+                <p>
+                  Вы платите от
+                  <b>10</b>
+                  до
+                  <b>25%</b>
+                  от годового дохода специалиста
+                </p>
+              </div>
+              <div class="txt bot">
+                <ul>
+                  <li>
+                    Вы не знаете, кто именно ищет Вам сотрудников.
+                    В большинстве кадровых агентств поиском
+                    специалистов занимаются вчерашние студенты,
+                    не имеющие соответствующего образования и опыта.
+                  </li>
+                  <li>
+                    Параллельное ведение одним и тем же
+                    сотрудником по поиску персонала большого
+                    количества проектов: еще большее снижение качества
+                    и скорости подбора кандидатов.
+                  </li>
+                  <li>Отсутствие индивидуального подхода к Клиентам.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-md-6 col-auto">
+            <div class="advantage red">
+              <div class="title">HR Special</div>
+              <div class="txt top">
+                <p>
+                  Вы платите от
+                  <b>8</b>
+                  до
+                  <b>14%</b>
+                  от годового дохода специалиста
+                </p>
+                <p>
+                  Либо фиксированная цена по согласованию
+                  (в зависимости от уровня позиции).
+                </p>
+              </div>
+              <div class="txt bot">
+                <ul>
+                  <li>
+                    Глубокая экспертиза и многолетний опыт в
+                    подборе персонала.
+                  </li>
+                  <li>Гибкая ценовая политика.</li>
+                  <li>Индивидуальный подход к каждому Клиенту.</li>
+                  <li>
+                    На всех этапах переговоров мы сопровождаем
+                    ваше взаимодействие с кандидатом, до принятия
+                    предложения о работе.
+                  </li>
+                  <li>
+                    Соответствующее высшее образование в области
+                    управления персоналом.
+                  </li>
+                  <li>
+                    При увольнении сотрудника в течение 4 месяцев
+                    бесплатно и оперативно ищем замену.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_2" style="background-image: url('../img/banner_2_bg.jpg')">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-auto">
+            <div class="txt">
+              <p>нужно срочно закрыть вакансию?</p>
+              <p> <span>Оставьте заявку сейчас</span><span>Начнем поиск кандидата в течение часа!</span></p>
+            </div>
+            <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+          </div>
+          <div class="col-auto">
+            <div class="custom_title"><span>H</span><span>R</span> 
+              Special
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our_team" id="to_team">
+      <div class="container">
+        <div class="row">
+          <div class="col offset-0 offset-md-1">
+            <h2 class="custom_title">Команда</h2>
+          </div>
+        </div>
+        <div class="slider_team">
+          <div class="slide">
+            <div class="row no-gutters">
+              <div class="col-sm-auto offset-lg-1 col-12"><img class="photo img-responsive" src="img/team_people_photo_1.jpg" alt="Team people 1">
+                <div class="row_contacts"><a href="https://www.linkedin.com/in/romanboguslavskij/"><i class="fi flaticon-linkedin"></i></a><a href="https://www.facebook.com/roman.boguslavskij"><i class="fi flaticon-facebook"></i></a><a href="skype:Boguslawski@hr-special.by?call"><i class="fi flaticon-sk"></i></a><a href="https://t.me/Roman_Boguslawski"><i class="fi flaticon-telegram"></i></a><a href="mailto:Boguslawski@hr-special.by"><i class="fi flaticon-team-mail"></i></a></div>
+              </div>
+              <div class="col-sm col-12">
+                <div class="name">Богуславский Роман</div>
+                <div class="txt">
+                  <p><b>Образование:</b></p>
+                  <p>2016-2018</p>
+                  <p>Бизнес-школа EMAS</p>
+                  <div class="add_info"><a href="#">Executive MBA: Стратегический менеджмент</a>
+                    <div class="content">-  Бизнес-аналитика в управлении компанией<br>-  Стратегический менеджмент и мышление. Лидерство и мотивация персонала. Создание личного бренда руководителя
+                      -  Корпоративное управление и риски. Юридическое обеспечение бизнеса<br>-  Управление проектами<br>-  HR-менеджмент. Управление человеческими ресурсами<br>-  Финансовый менеджмент. Бюджетирование. Управленческий учёт<br>-  Управление продажами. Построение отдела продаж. Ведение переговоров<br>-  Личная эффективность. Тайм-менеджмент<br>-  Бизнес-планирование<br>-  Управление производством. Производство с быстрой реакцией (QRM)<br>-  Стратегический менеджмент. Анализ и аудит рынка и компании<br>-  Стратегический менеджмент. Стратегия компании<br>-  Стратегический маркетинг. Маркетинг-менеджмент<br>-  Стратегический менеджмент. Управление изменениями. Эффективная реализация решений<br>-  Стратегический менеджмент. Управление корпоративной культурой<br>-  Транспортная логистика международных грузоперевозок.<br>-  Международный бизнес. Правила и нормы ЕС, ЕАЭС, ВТО<br>-  Проектирование бизнес-процессов<br>-  Управление знаниями. Самообучающаяся компания
+                      <div class="back"><i class="fi flaticon-next"></i></div>
+                    </div>
+                  </div>
+                  <p>2015-2016</p>
+                  <p>Институт бизнеса и менеджмента технологий Белорусского государственного университета</p>
+                  <p>Факультет информационных технологий и управления </p>
+                  <p>Управление персоналом</p>
+                  <p>2005-2011 </p>
+                  <p>Минский инновационный университет </p>
+                  <p>Факультет правоведения </p>
+                  <p>Юрист со знанием экономики</p>
+                  <p><b>Опыт работы:</b></p>
+                  <p>- Управленческий опыт 3,5 года (начальник отдела, зам. начальника управления).</p>
+                  <p>- 10 лет в сфере машиностроения. Управление контроля качества.</p>
+                  <p>- Менеджер по персоналу в IT компании (банковское программное обеспечение, бизнес-приложения).</p>
+                </div>
+              </div>
+              <div class="col-12 offset-lg-1 col-xl-10 offset-md-0">
+                <div class="certificates"><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_1.jpg" alt="Certificate 1 1"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_2.jpg" alt="Certificate 1 2"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_3.jpg" alt="Certificate 1 3"></a></div>
+                <div class="btn_transparent"><a class="watch_all" href="#">Смотреть всё</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row no-gutters">
+              <div class="col-sm-auto offset-lg-1 col-12"><img class="photo img-responsive" src="img/team_people_photo_1.jpg" alt="Team people 1">
+                <div class="row_contacts"><a href="https://www.linkedin.com/in/romanboguslavskij/"><i class="fi flaticon-linkedin"></i></a><a href="https://www.facebook.com/roman.boguslavskij"><i class="fi flaticon-facebook"></i></a><a href="skype:Info@hr-special.by?call"><i class="fi flaticon-vk"></i></a><a href="mailto:Info@hr-special.by"><i class="fi flaticon-team-mail"></i></a></div>
+              </div>
+              <div class="col-sm col-12">
+                <div class="name">Богуславский Роман</div>
+                <div class="txt">
+                  <p><b>Образование:</b></p>
+                  <p>2016-2018</p>
+                  <p>Бизнес-школа EMAS</p>
+                  <div class="add_info"><a href="#">Executive MBA: Стратегический менеджмент</a>
+                    <div class="content">-  Бизнес-аналитика в управлении компанией<br>-  Стратегический менеджмент и мышление. Лидерство и мотивация персонала. Создание личного бренда руководителя
+                      -  Корпоративное управление и риски. Юридическое обеспечение бизнеса<br>-  Управление проектами<br>-  HR-менеджмент. Управление человеческими ресурсами<br>-  Финансовый менеджмент. Бюджетирование. Управленческий учёт<br>-  Управление продажами. Построение отдела продаж. Ведение переговоров<br>-  Личная эффективность. Тайм-менеджмент<br>-  Бизнес-планирование<br>-  Управление производством. Производство с быстрой реакцией (QRM)<br>-  Стратегический менеджмент. Анализ и аудит рынка и компании<br>-  Стратегический менеджмент. Стратегия компании<br>-  Стратегический маркетинг. Маркетинг-менеджмент<br>-  Стратегический менеджмент. Управление изменениями. Эффективная реализация решений<br>-  Стратегический менеджмент. Управление корпоративной культурой<br>-  Транспортная логистика международных грузоперевозок.<br>-  Международный бизнес. Правила и нормы ЕС, ЕАЭС, ВТО<br>-  Проектирование бизнес-процессов<br>-  Управление знаниями. Самообучающаяся компания
+                      <div class="back"><i class="fi flaticon-next"></i></div>
+                    </div>
+                  </div>
+                  <p>2015-2016</p>
+                  <p>Институт бизнеса и менеджмента технологий Белорусского государственного университета</p>
+                  <p>Факультет информационных технологий и управления </p>
+                  <p>Управление персоналом</p>
+                  <p>2005-2011 </p>
+                  <p>Минский инновационный университет </p>
+                  <p>Факультет правоведения </p>
+                  <p>Юрист со знанием экономики</p>
+                  <p><b>Опыт работы:</b></p>
+                  <p>- Управленческий опыт 3,5 года (начальник отдела, зам. начальника управления).</p>
+                  <p>- 10 лет в сфере машиностроения. Управление контроля качества.</p>
+                  <p>- Менеджер по персоналу в IT компании (банковское программное обеспечение, бизнес-приложения).</p>
+                </div>
+              </div>
+              <div class="col-12 offset-lg-1 col-xl-10 offset-md-0">
+                <div class="certificates"><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_1.jpg" alt="Certificate 1 1"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_2.jpg" alt="Certificate 1 2"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_3.jpg" alt="Certificate 1 3"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_4.jpg" alt="Certificate 1 4"></a><a class="modal_link" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_4.jpg" alt="Certificate 1 4"></a></div>
+                <div class="btn_transparent"><a class="watch_all" href="#">Смотреть всё</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="row no-gutters">
+              <div class="col-sm-auto offset-lg-1 col-12"><img class="photo img-responsive" src="img/team_people_photo_1.jpg" alt="Team people 1">
+                <div class="row_contacts"><a href="https://www.linkedin.com/in/romanboguslavskij/"><i class="fi flaticon-linkedin"></i></a><a href="https://www.facebook.com/roman.boguslavskij"><i class="fi flaticon-facebook"></i></a><a href="skype:Info@hr-special.by?call"><i class="fi flaticon-vk"></i></a><a href="mailto:Info@hr-special.by"><i class="fi flaticon-team-mail"></i></a></div>
+              </div>
+              <div class="col-sm col-12">
+                <div class="name">Богуславский Роман</div>
+                <div class="txt">
+                  <p><b>Образование:</b></p>
+                  <p>2016-2018</p>
+                  <p>Бизнес-школа EMAS</p>
+                  <div class="add_info"><a href="#">Executive MBA: Стратегический менеджмент</a>
+                    <div class="content">-  Бизнес-аналитика в управлении компанией<br>-  Стратегический менеджмент и мышление. Лидерство и мотивация персонала. Создание личного бренда руководителя
+                      -  Корпоративное управление и риски. Юридическое обеспечение бизнеса<br>-  Управление проектами<br>-  HR-менеджмент. Управление человеческими ресурсами<br>-  Финансовый менеджмент. Бюджетирование. Управленческий учёт<br>-  Управление продажами. Построение отдела продаж. Ведение переговоров<br>-  Личная эффективность. Тайм-менеджмент<br>-  Бизнес-планирование<br>-  Управление производством. Производство с быстрой реакцией (QRM)<br>-  Стратегический менеджмент. Анализ и аудит рынка и компании<br>-  Стратегический менеджмент. Стратегия компании<br>-  Стратегический маркетинг. Маркетинг-менеджмент<br>-  Стратегический менеджмент. Управление изменениями. Эффективная реализация решений<br>-  Стратегический менеджмент. Управление корпоративной культурой<br>-  Транспортная логистика международных грузоперевозок.<br>-  Международный бизнес. Правила и нормы ЕС, ЕАЭС, ВТО<br>-  Проектирование бизнес-процессов<br>-  Управление знаниями. Самообучающаяся компания
+                      <div class="back"><i class="fi flaticon-next"></i></div>
+                    </div>
+                  </div>
+                  <p>2015-2016</p>
+                  <p>Институт бизнеса и менеджмента технологий Белорусского государственного университета</p>
+                  <p>Факультет информационных технологий и управления </p>
+                  <p>Управление персоналом</p>
+                  <p>2005-2011 </p>
+                  <p>Минский инновационный университет </p>
+                  <p>Факультет правоведения </p>
+                  <p>Юрист со знанием экономики</p>
+                  <p><b>Опыт работы:</b></p>
+                  <p>- Управленческий опыт 3,5 года (начальник отдела, зам. начальника управления).</p>
+                  <p>- 10 лет в сфере машиностроения. Управление контроля качества.</p>
+                  <p>- Менеджер по персоналу в IT компании (банковское программное обеспечение, бизнес-приложения).</p>
+                </div>
+              </div>
+              <div class="col-12 offset-lg-1 col-xl-10 offset-md-0">
+                <div class="certificates"><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_1.jpg" alt="Certificate 1 1"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_2.jpg" alt="Certificate 1 2"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_3.jpg" alt="Certificate 1 3"></a><a class="modal_link active" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_4.jpg" alt="Certificate 1 4"></a><a class="modal_link" href="#certificate_preview"><img class="img-responsive" src="img/certificate_1_4.jpg" alt="Certificate 1 4"></a></div>
+                <div class="btn_transparent"><a class="watch_all" href="#">Смотреть всё</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vacancy_we_close" id="to_vacancy">
+      <div class="container">
+        <h2 class="custom_title">Основные вакансии, которые мы закрываем</h2>
+        <div class="vacancies">
+          <div class="tabs">
+            <div class="tab active">IT, Телеком</div>
+            <div class="tab">Топ менеджеры</div>
+            <div class="tab">Фармацевтика и медицина</div>
+            <div class="tab">Продажи и маркетинг</div>
+            <div class="tab">Административное направление</div>
+            <div class="tab">Ритейл</div>
+            <div class="tab">Логистика</div>
+            <div class="tab">Бухгалтерия и финансы</div>
+            <div class="tab">Юриспруденция</div>
+            <div class="tab">Управление персоналом</div>
+            <div class="tab">Машиностроение, промышленность</div>
+            <div class="tab">Другие специалисты</div>
+          </div>
+          <div class="contents">
+            <div class="content active">
+              <div class="row justify-content-lg-around justify-content-md-between">
+                <div class="col-auto">
+                  <div class="txt"><b>BACKEND:</b><br>Java<br>PHP<br>Ruby<br>Python<br>Ruby<br>Go<br>.NET</div>
+                </div>
+                <div class="col-auto">
+                  <div class="txt"><b>FRONTEND:</b><br>JavaScript<br>IOS<br>Android<br>UX</div>
+                </div>
+                <div class="col-auto">
+                  <div class="txt"><b>DELIVERY:</b><br>Architect<br>DevOps<br>QA<br>Analist<br>Manager</div>
+                </div>
+                <div class="col-auto">
+                  <div class="txt"><b>GAMEDEV:</b><br>Unity<br>C++<br>Artist<br>Animator<br>Designer</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Генеральный Директор<br>Заместитель Директора<br>Заместитель директора по информационным технологиям<br>Технический Директор<br>Руководитель юридического отдела<br>Финансовый Директор<br>Коммерческий Директор</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Руководитель отдела маркетинга<br>Руководитель логистического комплекса<br>Руководитель учебного центра<br>Директор по развитию<br>HR BP<br>Управляющий гостиницей<br>Руководитель службы логистики</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Marketing Manager<br>Category Manager<br>Area Sales Manager<br>Project Manager<br>Brand Manager<br>KAM<br>Business Controller<br>Logistic manager<br>Customer Service Manager<br>Head of Medical Affairs</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Purchasing specialist<br>Account manager<br>Медицинский представитель<br>Медицинский советник<br>Менеджер по продажам медицинских изделий<br>Руководитель группы аптек<br>Заведующий аптеки<br>Менеджер по ВЭД<br>Специалист по программе лояльности <br>Личный врач</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Руководитель отдела маркетинга<br>Маркетолог<br>Brand  manager<br>Трейд - маркетолог<br>Маркетер<br>Дизайнер<br>SMM менеджер<br>Digital Marketing<br>SEO специалист<br>Иллюстратор<br>Визуальный мерчендайзер<br>Менеджер по продукту<br>PR менеджер<br>Координатор отдела маркетинга<br>Аналитик<br>Коммерческий Директор</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Начальник отдела продаж<br>Региональный менеджер<br>Менеджер по продажам<br>Супервайзер<br>Менеджер по работе с клиентами<br>Менеджер по работе с ключевыми клиентами<br>Менеджер по развитию<br>Менеджер по тендерным продажам<br>Менеджер по продажам B2B<br>Менеджер по продажам B2C<br>Менеджер по работе с дистрибьюторами</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Секретарь<br>Личный помощник<br>Специалист по кадрам<br>Оператор по обработке данных<br>Специалист по документообороту<br>Travel manager<br>Оператор call-центра</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Администратор<br>Менеджер по организации учебного процесса<br>Синхронный переводчик<br>Переводчик<br>Оператор call-центра</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Руководитель сети магазинов<br>Директор магазина<br>Менеджер по ассортименту<br>Мерчендайзер<br>Тайный покупатель</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Визуальный мерчендайзер<br>Продавец- консультант<br>Региональный менеджер<br>Заместитель Директора магазина</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Директор по логистике<br>Специалист по транспортной логистике<br>Менеджер по продажам логистических услуг<br>Специалист по таможенному оформлению<br>Менеджер по бронированию<br>Водитель<br>Руководители склада<br>Начальник отдела продаж<br>Менеджер по международным перевозкам<br>Специалист по нормированию складских запасов<br>Менеджер по развитию<br>Эксперт по управлению качеством<br>Логист</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Координатор по железнодорожным операциям<br>Специалист по организации перевозок<br>Специалист по тендерам<br>Специалист по складской логистике<br>Экспедитор<br>Специалист по работе с ключевыми клиентами<br>Специалист по организации контейреных перевозок<br>Менеджер проектов<br>Менеджер проектов по негабаритным перевозкам<br>Специалист по лизингу</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Финансовый Директор<br>Главный бухгалтер<br>Бухгалтер<br>Бизнес -аналитик<br>CRM  менеджер<br>Финансовый аналитик,<br>Внутренний аудитор<br> Экономист</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Оценщик<br>Специалист по управленческому учету<br>Налоговый аудитор<br>Инвестиционный аналитик<br>Специалист по планированию Специалист по МСФО <br>Оператор 1С</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Начальник юридического отдела<br>Начальник отдела взыскания задолженностей<br>Главный юрисконсульт<br>Юрисконсульт<br>Помощник юриста</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Юрисконсульт (претензионно-исковая работа)<br>Специалист по работе с претензиями<br>Специалист по взысканию дебиторской задолженности</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">HR BP<br>HRG<br>HRM<br>Рекрутер<br>HR admin<br>Менеджер по внутренним коммуникациям<br>Специалист по обучению<br>Менеджер по развитию</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Event manager<br>HR аналитик<br>Специалист по работе с иностранными сотрудниками<br>Hr pr специалист<br>Специалист по дистанционному обучению<br>Менеджер по компенсациям и льготам</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <div class="txt">Начальник цеха<br>Заместитель начальника цеха<br>Начальник участка<br>Мастер<br>Старший мастер<br>Начальник отдела контроля качества<br>Мастер отдела контроля качества<br>Инженер по качеству</div>
+                </div>
+                <div class="col">
+                  <div class="txt">Инженер по охране труда<br>Инженер-технолог<br>Инженер- конструктор<br>Слесарь МСР<br>Сварщик на машинах контактной сварки<br>Электрик<br>Маляр<br>Литейщики пластмасс</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+            <div class="content">
+              <div class="row justify-content-around">
+                <div class="col-md-auto col text-center">
+                  <div class="txt">Быстро и качественно подберем для Вас специалиста!</div>
+                </div>
+              </div>
+              <div class="btn_fill red"><a class="modal_link" href="#form_order_service">Заказать услуги</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner_3" style="background-image: url('../img/banner_3_bg.jpg')">
+      <div class="container">
+        <h2 class="custom_title text-center c">Остались вопросы по подбору и оценке персонала?</h2>
+        <div class="txt">
+          <p>Оставьте заявку</p>
+          <p>и наш специалист свяжется с Вами</p>
+        </div>
+        <form action="#" method="post">
+          <div class="inpt_transparent">
+            <input type="text" placeholder="Введите ваше имя" name="name">
+          </div>
+          <div class="inpt_transparent">
+            <input type="tel" placeholder="Введите Ваш телефон" name="phone" required>
+          </div>
+          <div class="btn_fill purpure">
+            <input type="submit" value="Оставить заявку" name="form_send">
+          </div>
+          <input type="hidden" value="Вопросы по подбору и оценке персонала" name="form_type">
+        </form>
+      </div>
+    </section>
+    <footer style="background-image: url('../img/footer_bg.jpg')">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto d-none d-md-block"><a class="logo" href="/"><img src="img/logo.png" alt="Logo"></a></div>
+          <div class="col-sm offset-sm-1 col-12 offset-0">
+            <div class="contacts"><b>Контакты:</b>
+              <div class="phone_foot"><a href="tel:+375291244477">+375-29-124-44-77</a></div>
+              <div class="timework">Время работы: Пн-Пт с 10-00 до 19-00</div>
+              <div class="mail"><a href="mailto:Info@hr-special.by">Info@hr-special.by</a></div>
+            </div>
+            <div class="row_links"><a href="tg://resolve?domain=+375291244477"><i class="fi flaticon-telegram"></i></a><a href="viber://chat?number=+375291244477"><i class="fi flaticon-viber"></i></a><a href="skype:Info@hr-special.by?call"><i class="fi flaticon-sk"></i></a></div>
+            <div class="groupe_company">
+              <div class="title">Группы компании:</div>
+              <div class="row_link_groups"><a href="https://www.linkedin.com/company/hr-special/"><i class="fi flaticon-linkedin"></i></a><a href="https://www.facebook.com/hr.special.by/"><i class="fi flaticon-facebook"></i></a><a href="https://vk.com/hr_special"><i class="fi flaticon-vk"></i></a><a href="https://t.me/HR_Special"><i class="fi flaticon-telegram"></i></a></div>
+            </div>
+          </div>
+          <div class="col-sm col-12">
+            <div class="txt">
+              <p>© hr-solutions.by, 2018 Все права защищены</p><br>
+              <p>
+                Любое использование, либо копирование материалов
+                или подборки материалов сайта, элементов дизайна и
+                оформления допускается лишь с разрешения
+                правообладателя и только со ссылкой на источник:
+                hr-solutions.by
+              </p><br>
+              <p>ИП Богуславский Р.В.<br>УНП №192987646<br>выдан Минским горисполкомом 25.10.2017</p>
+            </div>
+          </div>
+          <div class="col-sm-auto col-12">
+            <ul class="menu_footer">
+              <li><a href="#to_about_company" data-to>о компании</a></li>
+              <li><a href="#to_service" data-to>услуги</a></li>
+              <li><a href="#to_team" data-to>команда</a></li>
+              <li><a href="#to_price" data-to>цены</a></li>
+              <li><a href="#to_vacancy" data-to>вакансии</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal_overlay" id="form_order_call">
+      <div class="modal_wrapper">
+        <div class="modal"><a class="modal_close" href="#">&times;</a>
+          <div class="title">оставьте свой номер</div>
+          <div class="subtitle">и мы Вам перезвоним</div>
+          <form action="#" method="post">
+            <div class="inpt_transparent">
+              <input type="tel" placeholder="Введите номер телефона" name="phone" required>
+            </div>
+            <div class="btn_fill red">
+              <input type="submit" value="заказать звонок" name="form_send">
+            </div>
+            <input type="hidden" value="Заказ звонка" name="form_type">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal_overlay" id="form_order_service">
+      <div class="modal_wrapper">
+        <div class="modal"><a class="modal_close" href="#">&times;</a>
+          <form action="#" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col">
+                <input type="text" placeholder="Имя" name="name">
+                <input type="tel" placeholder="Контактный номер" name="phone">
+              </div>
+              <div class="col">
+                <input type="text" placeholder="Компания" name="company">
+                <input type="text" placeholder="Email" name="mail">
+              </div>
+              <div class="col-12">
+                <textarea placeholder="Сообщение" name="message" rows="6"></textarea>
+              </div>
+              <div class="col-12">
+                <label><i class="fi flaticon-paper-clip-outline"></i><span>Прикрепить файл</span>
+                  <input type="file" name="file_aspirant" required accept=".pdf,.docx,.doc">
+                </label>
+              </div>
+            </div>
+            <div class="row_btn">
+              <div class="btn_fill red">
+                <input type="submit" value="отправить" name="form_send">
+              </div>
+              <div class="btn_transparent">
+                <input type="reset" value="очистить">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal_overlay" id="certificate_preview">
+      <div class="modal_wrapper">
+        <div class="modal"><a class="modal_close" href="#">&times;</a>
+          <div class="preview">
+            <div class="stuff"><img class="img-responsive" src="img/certificate_1_1_preview.jpg" alt="Certificat 1 1"><img class="img-responsive" src="img/certificate_1_2_preview.jpg" alt="Certificat 1 2"><img class="img-responsive" src="img/certificate_1_3_preview.jpg" alt="Certificat 1 3"><img class="img-responsive" src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4"><img class="img-responsive" src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4"></div>
+            <div class="stuff"><img class="img-responsive" src="img/certificate_1_1_preview.jpg" alt="Certificat 1 1"><img class="img-responsive" src="img/certificate_1_2_preview.jpg" alt="Certificat 1 2"><img class="img-responsive" src="img/certificate_1_3_preview.jpg" alt="Certificat 1 3"><img class="img-responsive" src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4"><img class="img-responsive" src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4"></div>
+            <div class="stuff"><img class="img-responsive" src="img/certificate_1_1_preview.jpg" alt="Certificat 1 1"><img class="img-responsive" src="img/certificate_1_2_preview.jpg" alt="Certificat 1 2"><img class="img-responsive" src="img/certificate_1_3_preview.jpg" alt="Certificat 1 3"><img class="img-responsive" src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4"><img class="img-responsive" src="img/certificate_1_4_preview.jpg" alt="Certificat 1 4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

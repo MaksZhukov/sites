@@ -1,0 +1,172 @@
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1307px
++media-breakpoint-down(xl)
+//Large: ≥1000px
++media-breakpoint-down(lg)
+  body
+    font-size: 14px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+  html
+    font-size: 4px
+  ul.menu
+    padding-left: 0
+  .advantage
+    margin-bottom: 10px
+  .contacts_and_timework
+    width: calc(100% - 30px)
+  section.our_team:before,section.our_team:after
+    bottom: 30px
+  .service .content .row_img_name .name
+    text-align: center
+  .vacancies .contents
+    padding-left: 2%
+    padding-right: 2%
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+  ul.menu
+    display: none
+  .btn_collapse_menu
+    display: flex
+  ul.menu > li:hover:after
+    width: 10%
+  section.about_us .about
+    margin-left: 0
+  .vacancies
+    flex-direction: column
+    .tabs
+      width: 100%
+    .contents
+      width: 100%
+      .btn_fill
+        margin-top: 15px
+  section.banner_2
+    font-size: 12px
+  .modal_overlay#certificate_preview .modal_wrapper
+    padding-left: 25px 
+    display: flex
+  .vacancies .tabs .tab:after
+    transform: rotate(90deg)
+  .vacancies
+    .tabs
+      background: none
+      .tab.active
+        border-radius: 3px
+    .contents
+      border-radius: 3px
+      display: none
+      .content
+        display: block
+        &:last-child
+          .txt
+            font-size: em(12px)
+      &:last-child
+        .content
+          .txt
+            font-size: 20px
+      &.active
+        display: block
+
+//Extra small: >0
++media-breakpoint-down(xs)
+  .custom_title
+    text-align: center
+    &:after
+      margin: auto
+  section.banner_1 .row_btn
+    flex-direction: column
+    align-content: center
+    .btn_fill
+      margin: 0 auto 10px
+      &:last-child
+        margin-right: auto
+  .slider_team .slide .photo
+    margin: auto
+  section.banner_3 form
+    flex-direction: column
+    > *
+      margin: 0 auto 10px
+      &:nth-child(3)
+        margin-right: auto
+  .menu_footer
+    padding-left: 0
+  section.banner_2
+    font-size: 7px
+  section.what_expect
+    font-size: 10px
+  header .row
+    margin: 0 -5px
+    > div
+      padding: 0 5px
+  .phone
+    padding-right: 10px
+  .btn_collapse_menu
+    width: 30px
+  section.about_us .about
+    font-size: 10px
+    padding: 5px
+  section.banner_1
+    padding: 10px 0
+    font-size: 8px
+  .slider_team:before
+    display: none
+  .contacts_and_timework
+    width: calc(100% - 10px)
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
+  body
+    font-size: 18px
+  section.banner_1
+    min-height: 950px
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+  .contacts_and_timework
+    width: calc(100% - 30px) 
+    padding-left: 1.3rem
+    padding-right: 1.3rem
+  .btn_transparent
+    max-width: 140px 
+  .fi.flaticon-telegram,.fi.flaticon-skype,.contacts_and_timework>div.viber .fi
+    width: 20px
+    height: 20px
+  .contacts_and_timework>div.viber .fi
+    font-size: 11px 
+  .advantage .top
+    height: 180px
+  .advantage .bot
+    min-height: 280px 
+  .modal_overlay#form_order_service .modal form textarea
+    background-size: 100% 35.3px
+    background-position: 0 33px
+  .vacancies .tabs
+    width: 350px
+  .inpt_transparent,section.banner_3 form .btn_fill
+    max-width: 200px
+  .btn_fill
+    max-width: 240px
+  .vacancies .contents .btn_fill,section.banner_2 .btn_fill,section.our_service .btn_fill
+    max-width: 200px
+  .advantage
+    max-width: inherit
+  section.about_us .about:before
+    left: -108px
