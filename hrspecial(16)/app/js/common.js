@@ -89,8 +89,11 @@ $(function() {
                 $('<div class="contents"><div class="content">'+ $('.vacancies > .contents .content').eq(index).html()+'</div></div>').insertAfter($(this));
             });
             $('.vacancies > .contents').remove();
+            $('.vacancies > .tab').eq(0).addClass('active');
+            $('.vacancies .contents').eq(0).addClass('active');
+            $('.vacancies > .contents').eq(0).addClass('active');
             $('.vacancies .tab').click(function () {
-                $('.vacancies .tab,.vacancies .content').removeClass('active');
+                !$(this).hasClass('active') ? $('.vacancies .tab,.vacancies .contents').removeClass('active') : false;
                 $(this).toggleClass('active');
                 $(this).next().toggleClass('active');
             });
