@@ -1,0 +1,33 @@
+section.contacts
+  .container
+    h2.text-center Valuing your time front and center!
+    .row
+      .col-12.col-md-4
+        h3 CONTACTS
+        p
+          | Phone: 555.234.6789
+          br
+          | Fax: 555.234.6789
+          br
+          | Email:
+          |
+          a(href="#") irepair@demolink.org
+        p Address: 87 Tennesee hwy., Washington, DC, USA, 22406
+      .col-12.col-md-8
+        form.contact(action="#" method="post")
+          h5 We review and accept business requests on a 24/7 basis. Contact us now...
+          .inpt_white
+            .fa.fa-user
+            input(type="text" placeholder="Your Name" name="name")
+          .inpt_white
+            .fa.fa-envelope
+            input(type="text" placeholder="Your e-mail" name="mail")
+          .inpt_white
+            .fa.fa-phone
+            input(type="text" placeholder="Your phone" name="phone" required)
+          .inpt_white
+            .fa.fa-leaf
+            textarea(placeholder="Your Message" rows="10" name="message")
+          input.read_more(type="submit" value="Send")
+#map
+

@@ -1,0 +1,314 @@
+@import "vars"
+@import "mixins"
+@import "fonts"
+@import "functions"
+@import "libs"
+@import "additional"
+@import "components"
+@import "icons"
+
+*
+  box-sizing: border-box
+  &:before, &:after
+    box-sizing: border-box
+
+*::placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+body input:focus::placeholder,
+body textarea:focus::placeholder
+  color: transparent
+
+body a:hover,
+body input:hover,
+body button:hover
+  transition: all .3s ease-out
+
+body a
+  text-decoration: none
+
+html
+  font-size: 10px
+
+html, body
+  height: 100%
+
+body
+  font-family: $default-font
+  font-size: $default-font-size
+  font-weight: $default-font-weight
+  color: $default-color
+  line-height: 1.65
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
+  opacity: 1
+  margin: 0
+
+.header-site
+  top: 0
+  position: fixed
+  width: 100%
+  background: #fff
+  padding: 1rem 0
+  border-bottom: 3px solid $accent
+  z-index: 10
+
+.header-menu
+  list-style: none
+  padding: 0
+  margin: 0
+  .header-menu-li
+    padding: 5px 4px
+    display: inline-block
+    &:hover
+      .header-menu-link
+        border-bottom: 2px solid $accent
+    .header-menu-link
+      transition-property: color
+      padding: 5px
+      text-transform: uppercase
+      color: #333333
+
+.skype
+  display: flex
+  .tel-skype
+    display: block
+    margin-left: 5px
+    color: #48565D
+    border-bottom: 1px dashed #48565D
+
+.tel
+  .tel-viber
+    font-size: em(20px)
+    color: #333
+
+.s-service-1c
+  padding-top: 4rem
+  .title
+    border-bottom: 6px solid $accent
+  h2, h4
+    margin: 0
+  h4
+    margin-bottom: 1rem
+  .img-responsive
+    margin: auto
+  .title-list-marker
+    text-align: center
+    font-size: 14px
+    margin: 1rem 0
+
+.list-marker
+  list-style: none
+  margin: 0
+  list-style-image: url("../img/icon_marker.png")
+  &-li
+    margin: 3px 0
+
+.find-out-cost
+  display: inline-block
+  margin-top: 2rem
+  background: #34b134
+  border: 1px solid #333
+  border-radius: 3px
+  color: #fff
+  font-size: 18px
+  padding: 13px 14px
+  font-weight: bold
+
+.s-service-1c-include
+  margin-top: 1rem
+  &-title
+    font-size: em(30px)
+    font-weight: normal
+    &:before
+      margin-bottom: 2rem
+      content: ''
+      height: 12px
+      background: $accent
+      width: %
+      display: block
+
+.sevice-include
+  display: flex
+  flex-wrap: wrap
+  margin: 4rem 10% 0
+  width: 80%
+  &-item
+    width: 25%
+    text-align: center
+    margin-bottom: 2rem
+  &-img
+    width: 80px
+    height: 80px
+  &-title
+    font-size: em(18px)
+    font-weight: bold
+  &-wrap-info
+    position: relative
+    display: inline
+  &-info
+    position: absolute
+    bottom: 30px
+    left: 8px
+    transform: translateX(-50%)
+    z-index: 1
+    background: rgba(0, 0, 0, 0.8)
+    border-radius: 6px
+    padding: 1rem
+    color: #fff
+    max-width: 320px
+    min-width: 200px
+    font-size: 12px
+    display: none
+    &:after
+      position: absolute
+      content: ''
+      bottom: -20px
+      left: calc(50% - 10.5px)
+      border: 10px solid transparent
+      z-index: -1
+      border-top: 10px solid rgba(0, 0, 0, 0.8)
+  &-icon-info
+    transform: translateY(5px)
+    position: relative
+    z-index: 1
+    padding: 2px
+    &:hover
+      z-index: 2
+      & + .sevice-include-info
+        display: block
+
+.s-guarantee-high-quality-service
+  margin-top: 8rem
+  &-title
+    font-size: em(30px)
+    font-weight: normal
+    border-bottom: 1px solid #eee
+    padding-bottom: 2rem
+    margin-bottom: 4rem
+
+.guarantee
+  &-title
+    font-weight: bold
+    font-size: 18px
+    margin-bottom: 1rem
+  &-img
+    max-width: 68px
+  &-item
+    margin-bottom: 3rem
+
+.s-results-automation
+  margin-bottom: 6rem
+  &-title
+    text-align: center
+    margin-bottom: 4rem
+  &-img
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 2rem
+
+.s-how-we-work
+  &-title
+    text-transform: uppercase
+    margin-bottom: 3rem
+    position: relative
+    &-span
+      padding: 0 20px
+      background: #fff
+      position: relative
+    &:before
+      content: ''
+      display: block
+      height: 3px
+      position: absolute
+      background: $accent
+      width: 100%
+      top: 50%
+      margin-top: -1.5px
+
+.how-we-work
+  margin-bottom: 5rem
+  &-item
+    margin-bottom: 4rem
+
+.s-our-clients
+  margin-bottom: 4rem
+  &-title
+    margin-bottom: 4rem
+
+.clients-list
+  &-item
+    margin-bottom: 3rem
+  &-img
+    max-height: 60px
+    width: 80px
+
+.footer-site
+  margin-bottom: 5rem
+  .container
+    border-top: 3px solid $accent
+  &-menu
+    padding: 4rem
+    list-style: none
+    margin: 0
+    &-li
+      display: inline-block
+      margin: 0 4rem
+    &-link
+      color: #4F5E67
+
+.modal-overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.3)
+  z-index: 20
+  padding: 0 25px
+  display: none
+  .modal
+    position: relative
+    max-width: 400px
+    margin: auto
+    top: 50%
+    transform: translateY(-50%)
+    background: #fff
+    text-align: center
+    padding: 20px
+    border-radius: 5px
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    &-close
+      background: transparent
+      position: absolute
+      top: 0
+      right: 0
+      font-size: 30px
+      outline: none
+      border: none
+      cursor: pointer
+    input
+      display: block
+      margin: 10px auto
+      max-width: 320px
+      height: 40px
+      width: 100%
+      padding: 0 20px
+    input[type="submit"]
+      background: $accent
+      outline: none
+      border: none
+      cursor: pointer
+
+@import "media"
+

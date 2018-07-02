@@ -1,0 +1,30 @@
+<svg width="72" height="72" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>howToWork-3</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-15680 -13319)">
+<g id="howToWork-3">
+<g id="Group 30">
+<g id="Group 5.1">
+<g id="Rectangle 4">
+<use xlink:href="#path0_fill" transform="translate(15680 13319)" fill="#FFD205"/>
+</g>
+</g>
+<g id="graphIcon-5">
+<g id="Group">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(15697.6 13338.3)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(15697.6 13349.3)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 72 0L 72 72L 0 72L 0 0Z"/>
+<path id="path1_fill" d="M 33.0938 4.4125L 27.5781 4.4125L 27.5781 2.20625C 27.5781 0.987848 26.5903 0 25.3719 0C 24.1535 0 23.1656 0.987848 23.1656 2.20625L 23.1656 4.4125L 12.1344 4.4125L 12.1344 2.20625C 12.1344 0.987848 11.1465 0 9.92812 0C 8.70972 0 7.72187 0.987848 7.72187 2.20625L 7.72187 4.4125L 2.20625 4.4125C 0.987711 4.4125 0 5.40021 0 6.61875L 0 8.825L 35.3 8.825L 35.3 6.61875C 35.3 5.40021 34.3123 4.4125 33.0938 4.4125Z"/>
+<path id="path2_fill" d="M 0 19.8563C 0 21.0748 0.987711 22.0625 2.20625 22.0625L 33.0938 22.0625C 34.3123 22.0625 35.3 21.0748 35.3 19.8563L 35.3 0L 0 0L 0 19.8563ZM 24.2687 4.4125L 28.6812 4.4125L 28.6812 8.825L 24.2687 8.825L 24.2687 4.4125ZM 15.4437 4.4125L 19.8562 4.4125L 19.8562 8.825L 15.4437 8.825L 15.4437 4.4125ZM 15.4437 13.2375L 19.8562 13.2375L 19.8562 17.65L 15.4437 17.65L 15.4437 13.2375ZM 6.61875 4.4125L 11.0312 4.4125L 11.0312 8.825L 6.61875 8.825L 6.61875 4.4125ZM 6.61875 13.2375L 11.0312 13.2375L 11.0312 17.65L 6.61875 17.65L 6.61875 13.2375Z"/>
+</defs>
+</svg>

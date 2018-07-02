@@ -1,0 +1,712 @@
+@import "vars"
+@import "mixins"
+@import "fonts"
+@import "functions"
+@import "libs"
+@import "additional"
+@import "components"
+@import "icons"
+
+*
+  box-sizing: border-box
+  &:before, &:after
+    box-sizing: border-box
+
+body input:focus::placeholder,
+body textarea:focus::placeholder
+  color: transparent
+
+body a:hover,
+body a:hover .fa,
+body input:hover,
+body button:hover
+  transition: all .3s ease-out
+
+body a
+  text-decoration: none
+
+body input,
+body a,
+body textarea
+  outline: none
+
+html
+  font-size: 10px
+
+html, body
+  height: 100%
+
+body
+  font-family: $default-font
+  font-size: $default-font-size
+  font-weight: $default-font-weight
+  color: $default-color
+  line-height: 1.65
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
+  opacity: 1
+  margin: 0
+.slick-slide
+  outline: none
+a:hover
+  color: $accent
+  .fa
+    color: $accent
+h1,h2,h3,h4,h5,h6
+  margin: 0
+h1
+  font-style: normal
+  font-weight: 700
+  font-size: em(80px)
+  line-height: 1
+  font-family: Montserrat, sans-serif
+  letter-spacing: 11px
+  text-align: inherit
+  color: #391f68
+h2
+  font-style: normal
+  font-weight: 700
+  font-size: em(72px)
+  line-height: 1.5
+  font-family: Montserrat, sans-serif
+  letter-spacing: 1px
+  text-align: inherit
+  color: #391f68
+h3
+  font-style: normal
+  font-weight: 700
+  font-size: em(36px)
+  line-height: 1.3
+  font-family: Montserrat, sans-serif
+  letter-spacing: 1px
+  text-align: inherit
+  color: #391f68
+h4
+  font-style: normal
+  font-weight: 700
+  font-size: em(24px)
+  line-height: 1
+  font-family: Montserrat, sans-serif
+  letter-spacing: 0
+  text-align: inherit
+  color: #391f68
+h5
+  font-style: normal
+  font-weight: 700
+  font-size: 16px
+  line-height: 1.25
+  font-family: Lato, sans-serif
+  letter-spacing: 0
+  text-align: inherit
+  color: #391f68
+h6
+  font-style: normal
+  font-weight: 700
+  font-size: em(16px)
+  line-height: 1
+  font-family: Lato, sans-serif
+  letter-spacing: 0
+  text-align: inherit
+  color: #425166
+p
+  font-size: em(16px)
+header
+  background-color: #391f68
+  a
+    color: #FFF
+  .fa
+    color: #FFF
+  .top_left
+    font-size: 12px
+    display: flex
+    -webkit-align-items: center
+    align-items: center
+    > *
+      margin: 7px
+    .fa
+      padding-right: 10px
+      font-size: 16px
+
+.list_social
+  padding: 0
+  margin: 0
+  list-style: none
+  li
+    &:first-child
+      margin-left: 0
+    display: inline-block
+    margin-left: 20px
+.subheader
+  width: 100%
+  padding-top: 10px
+  z-index: 100
+  background: #391f68
+  form
+    width: 70%
+    input
+      background: none
+      border: none
+      outline: none
+      font-size: 16px
+      font-family: Lato, sans-serif
+      color: #fff
+      font-weight: 300
+      width: 100%
+      &::placeholder
+        color: #fff
+  .search
+    margin-left: 15px
+    .fa
+      color: #fff
+      cursor: pointer
+      &:hover
+        color: $accent
+        transition: all .3s ease
+.isHome .subheader
+  background: transparent
+  position: absolute
+
+.menu
+  display: flex
+  list-style: none
+  justify-content: flex-end
+  margin: 0
+  > li
+    position: relative
+    .submenu
+      border-top: 2px solid $accent
+      background: rgb(57, 72, 93)
+      position: absolute
+      z-index: 999
+      top: 120%
+      left: -999em
+      visibility: hidden
+      margin: 0
+      -webkit-transition: 200ms linear
+      -o-transition: 200ms linear
+      transition: 200ms linear
+      -webkit-transition-property: top, opacity, visibility
+      -o-transition-property: top, opacity, visibility
+      transition-property: top, opacity, visibility
+      opacity: 0
+      list-style: none
+      padding: 15px 0
+      margin-top: -2px
+      width: 10em
+      li
+        padding: 8px 13px
+        a
+          color: #fff
+          &:hover
+            color: $accent
+    > a
+      padding: 20px 13px 25px
+      text-transform: uppercase
+      font-size: 12px
+      position: relative
+      color: #fff
+      font-weight: 700
+      display: block
+      &:after
+        content: ""
+        position: absolute
+        left: 50%
+        bottom: 0
+        height: 0
+        width: 0
+        background: $accent
+        transition: .3s all ease
+    &:hover
+      a
+        color: $accent
+        &:after
+          left: 0
+          height: 4px
+          width: 100%
+    &:hover
+      .submenu
+        top: 100%
+        left: 0
+        visibility: visible
+        opacity: 1
+        transform: translateX(0%)
+section.breadcrumbs
+  background: #f8fafb
+  padding: 20px 0 15px
+  .breadcrumb
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: flex-end
+    li
+      &:after
+        content: '|'
+        font-size: 15px
+      &:last-child
+        &:after
+          display: none
+      a
+        padding: 5px 8px
+        font-weight: 300
+        font-size: 16px
+.main_slider
+  overflow: hidden
+  &.slick-slider
+    margin-bottom: 0
+  .slick-dots
+    right: 1%
+    width: 30px
+    top: 50%
+    li
+      background: #ffffff
+      border-width: 0px
+      border-style: solid
+      border-color: #222222
+      border-color: RGBA(34,34,34,1)
+      margin: 7px
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      button:before
+        display: none
+      &.slick-active
+        box-shadow: 0px 0px 6px 6px RGBA(255,255,255,0.5)
+
+  .slide
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 800px
+    .container,.content
+      height: 100%
+    .content
+      font-family: Montserrat, sans-serif
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      flex-direction: column
+      color: #fff
+      h2
+        font-size: em(72px)
+        margin: 0
+        line-height: 1
+        color: #FFF 
+      h1
+        margin: 0
+        line-height: 1
+        font-size: em(100px)
+        text-transform: uppercase
+        margin-bottom: 40px
+        color: #fff
+      a
+        padding: 13px 28px
+        color: #fff
+        text-transform: uppercase
+        background: $accent
+        border: 2px solid $accent
+        &:hover
+          background: transparent
+          border-color: #fff
+section.welcome
+  display: flex
+  .left_side
+    width: 50%
+    padding: 7.6rem 0rem 7rem 0rem
+    h6
+      margin-top: 40px
+    p
+      margin-bottom: 30px
+  .right_side
+    width: 50%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+section.why_us
+  display: flex
+  .left_side
+    width: 45%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  .right_side
+    width: 55%
+    padding: 10rem 0rem 4rem 0rem
+    h3
+      margin-bottom: 4rem 
+.why_we_list
+  .fa
+    font-size: 40px
+    color: $accent
+    margin-right: 20px 
+  h4
+    font-family: Montserrat, sans-serif
+    font-size: em(22px) 
+    margin: 1.5rem 0
+  .why
+    margin-bottom: 2rem 
+section.testimonals
+  overflow: hidden
+  display: flex
+  .left_side
+    padding: 8rem 0 1rem
+    width: 55%
+    h3
+      margin-bottom: 4rem 
+  .right_side
+    width: 45%
+.testimonals_slider
+  text-align: right
+  .slick-dots
+    bottom: -6rem
+    text-align: right
+    li
+      &.slick-active
+        button
+          box-shadow: 0 0 0 6px rgba(66,81,102,0.21)
+          border-radius: 50%
+      button
+        width: 10px
+        height: 10px 
+        &:before
+          font-size: 12px 
+          color: #425166
+          top: -4px
+          left: -5px
+          opacity: 1
+          border-radius: 50%
+  p
+    font-size: em(16px)
+    min-height: 150px
+  .name
+    margin-top: 3.5rem 
+    color: $accent
+    font-weight: 700
+    font-size: em(24px)
+section.proffestial_fast
+  padding: 22.5rem 0px
+  margin-top: -135px
+  text-align: right
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  h2
+    font-size: em(59px)
+    line-height: 1.3
+    color: #FFF
+  h1
+    line-height: 1.1
+    font-size: em(75px)
+    color: #FFF
+    margin-bottom: 4rem 
+section.what_we_repair
+  padding: 6rem 0
+  .service
+    margin-bottom: 20px 
+    .fa
+      display: block
+      text-align: center
+      font-size: 40px
+      color: $accent 
+      margin-right: 20px 
+    a
+      color: #391f68
+      &:hover
+        color: $accent
+section.latest_news
+  display: flex
+  .left_side
+    width: 45%
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  .right_side
+    width: 55%
+    padding: 10rem 0rem 4rem 0rem
+    h3
+      margin-bottom: 4rem
+.news
+  h4 a
+    color: #391f68
+    &:hover
+      color: $accent
+  time
+    a
+      color: $accent
+      &:hover
+        color: #391f68
+  .new
+    margin-bottom: 5rem
+section.our_clients
+  padding: 11.5rem 0 6rem
+  .client
+    margin-bottom: 6rem
+    img
+      margin-right: 3rem
+    .desc
+      padding: 3rem 3rem 3rem 6rem
+      border-left: 2px solid #d9dce0
+      p
+        font-size: em(16px)
+  .brands
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+section.get_in_touch
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  padding: 11.5rem 0 11rem
+  h3
+    letter-spacing: 5px
+    color: #fff
+    margin-bottom: 4.5rem
+form
+  .inpt_white
+    display: flex
+    background: #f6f6f6
+    margin-bottom: 25px
+    min-height: 59px
+    .fa
+      padding: 15px 25px 0
+      font-size: 24px
+    input,textarea
+      font-weight: 300
+      font-family: Lato, sans-serif
+      background: transparent
+      border: none
+      outline: none
+      font-size: 16px
+      width: 100%
+    textarea
+      resize: none
+      padding-top: 20px
+footer
+  padding: 6rem 0
+  background: #323232
+  text-align: center
+  a
+    color: #fff
+  .logo
+    display: block
+    margin-bottom: 20px
+section.copyright
+  padding: 15px 0
+  background: #242424
+  p
+    text-align: center
+    margin: 0
+section.about_us
+  padding-bottom: 4rem 
+  h2
+    margin: 5rem 0
+  p
+    font-size: em(24px)
+    font-weight: 300
+    
+section.core_values
+  background: #391f68
+  padding: 7rem 0
+  h3
+    color: #fff
+  ol
+    list-style: none
+    padding: 0
+    counter-reset: item
+    li
+      &:before
+        content: counter(item, decimal-leading-zero) ". "
+        counter-increment: item
+        color: $accent 
+        position: absolute
+        top: 0
+        left: 0
+      margin: 1rem 0
+      position: relative
+      padding-left: 30px
+      color: #fff
+      font-size: em(16px)
+      font-weight: 300
+section.our_history
+  padding: 6rem 0
+  h3
+    margin: 5rem 0
+  p
+    font-size: em(20px)
+    font-weight: 300
+section.title_services
+  padding: 4rem 0
+  h2
+    font-size: em(52px)
+section.our_services
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  padding: 10rem 0
+  position: relative
+  z-index: 1 
+  &:after
+    content: ''
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    z-index: -1 
+    background: rgba(0,0,0, 0.5)   
+  h2,p
+    color: #FFF 
+section.what_we_repair
+  img
+    margin-bottom: 4rem 
+  a:not(.read_more)
+    color: #391f68
+    &:hover
+      color: $accent 
+  .read_more
+    margin-top: 20px 
+    color: #FFF
+    font-weight: 300
+    font-family: Lato, sans-serif
+section.contacts
+  padding: 8rem 0
+  h2
+    margin-bottom: 20px
+  p
+    font-weight: 300
+  a
+    color: $accent
+    &:hover
+      color: #391f68
+  form
+    box-shadow: 0px 0px 40px -15px rgba(0,0,0,0.5)
+    background: #fff
+    padding: 2.5rem
+    h5
+      margin-bottom: 25px
+      margin-left: 15px
+      font-size: em(18px)
+  .read_more
+    margin-bottom: 1.5rem
+section.p404
+  padding: 8rem 0
+  h1
+    color: $accent
+  h2
+    margin: 15px 0
+  .read_more
+    font-weight: 300
+    font-family: Lato, sans-serif
+    margin-bottom: 6rem
+  h4
+    margin-bottom: 4rem
+  form
+    max-width: 530px
+    margin: auto
+    input
+      padding-left: 20px
+section.news
+  padding: 6rem 0
+.list_news
+  .new
+    margin-bottom: 8rem
+    img
+      margin-bottom: 3rem
+    p
+      margin: 3rem 0
+      font-weight: 300
+    .read_more
+      font-weight: 300
+      font-family: Lato, sans-serif
+    .list_social
+      margin-top: 10px
+      a
+        color: #767676
+    .posted
+      margin-top: 3rem
+      font-size: 12px
+      display: flex
+      a
+        padding: 2px 3px
+        color: $accent
+        &:hover
+          color: #391f68
+          .by
+            color: $accent
+        .by
+          color: #391f68
+#map
+  width: 100%
+  height: 500px
+#toTop
+  width: 58px
+  height: 58px
+  position: fixed
+  z-index: 99
+  -webkit-border-radius: 50% 
+  border-radius: 50%
+  right: 20px
+  bottom: 80px
+  display: flex
+  -webkit-justify-content: center 
+  justify-content: center 
+  -webkit-align-items: center
+  align-items: center
+  background: $accent
+  &:hover
+    background: #391f68
+  .fa
+    color: #FFF
+    font-size: 30px
+
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.3)
+  z-index: 20
+  padding: 0 25px
+  display: none
+  &-content
+    position: relative
+    max-width: 600px
+    margin: auto
+    top: 50%
+    transform: translateY(-50%)
+  &-close
+    position: absolute
+    top: 0
+    right: 0
+    outline: none
+    border: none
+    cursor: pointer
+    background: none
+    font-size: 25px
+  &-service
+    &-content
+      text-align: center
+      padding: 2rem
+      background: #fff
+  &-order-service
+    &-content
+      max-width: 400px
+    &-form
+      padding: 2rem
+      background: #fff
+    &-inpt,&-txtarea,&-btn
+      display: block
+      max-width: 320px
+      width: 100%
+      margin: 10px auto
+      border: 1px solid #323232
+    &-inpt,&-txtarea
+      padding: 10px
+    &-txtarea
+      min-height: 100px
+@import "media"
+

@@ -1,0 +1,75 @@
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+  .header-site
+    font-size: 12px
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+  .find-out-cost
+    padding-top: 5px
+    padding-bottom: 5px
+  .sevice-include-item
+    width: 33.3%
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+  html
+    font-size: 5px
+  .btn-collapse-menu
+    border: 1px solid $accent
+    background: none
+    width: 30px
+    padding: 5px
+    border-radius: 5px
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 30px
+    margin-left: auto
+    .inner-line
+      display: block
+      height: 3px
+      width: 18px
+      background: $accent
+  .header-menu
+    display: none
+    .header-menu-li
+      display: block
+  .sevice-include
+    margin-right: 0
+    margin-left: 0
+    width: 100%
+  .sevice-include-item
+    width: 100%
+  .sevice-include-info
+    min-width: 180px
+  .guarantee-desc
+    margin-bottom: 3rem
+
+//Extra small: >0
++media-breakpoint-down(xs)
+  .tel .tel-viber
+    font-size: 14px
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)
