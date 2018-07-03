@@ -1,7 +1,5 @@
 **/node_modules/
-**/.bowerrc
-**/gulpfile.js
-**/package.json
+**/wordpress/
 **/package-lock.json
 **/.vscode
 **/.idea

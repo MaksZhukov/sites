@@ -1,0 +1,35 @@
+{
+  "name": "optimizedhtml",
+  "version": "1.0.0",
+  "description": "OptimizedHTML - Start HTML Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maks Zhukov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "emitty": "^1.4.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-minify": "0.0.14",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rsync": "0.0.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-tinypng-nokey": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglify-es": "^1.0.1",
+    "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "node-sass": "^4.8.3"
+  },
+  "optionalDependencies": {}
+}
