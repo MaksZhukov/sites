@@ -1,0 +1,803 @@
+@import "vars"
+@import "mixins"
+@import "fonts"
+@import "functions"
+@import "libs"
+@import "additional"
+@import "components"
+@import "icons"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+html
+	font-size: 10px
+
+html, body
+	height: 100%
+
+body
+  margin: 0
+  font-family: $default-font
+  font-size: $default-font-size
+  font-weight: $default-font-weight
+  color: $default-color
+  line-height: 1.65
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
+  opacity: 1
+
+a,input[type="submit"]
+  text-decoration: none
+  transition: all 0.3s
+  outline: none
+input:focus
+  &::placeholder
+    color: transparent
+
+header
+  background: $blue
+  position: fixed
+  z-index: 100
+  width: 100%
+  top: 0
+  nav
+    position: relative
+ul.menu
+  padding: 2rem 0
+  list-style: none
+  margin: 0
+  display: flex
+  justify-content: space-around
+  a
+    padding: 5px
+    display: block
+    font-weight: 500
+    font-size: em(22px)
+    color: $white
+    &:hover
+      color: $accent
+.btn_collapse
+  display: none
+  width: 60px
+  height: 40px
+  position: absolute
+  right: 0
+  top: 0
+  cursor: pointer
+  span
+    width: 100%
+    height: 5px
+    display: block
+    background: $accent
+h1
+  margin: 0
+section.sub_header
+  margin-top: 86px
+  background: url('../img/sub_header_bg.png') center /cover no-repeat
+  padding: 3rem 0 50rem
+  .phone
+    a
+      color: $white
+      font-size: em(24px)
+      &:hover
+        color: $accent
+  .btn_order
+    margin-top: 1rem
+  h2
+    margin: 0
+    font-size: em(60px)
+    color: $white
+    max-width: 75%
+    line-height: 1.3
+    position: relative
+    span
+      color: $accent
+    &:after
+      content: ''
+      height: 8px
+      position: absolute
+      width: 35%
+      background: $accent
+      bottom: -4rem
+      left: 0
+  .PS
+    margin: 10.5rem 0 5rem
+    font-size: em(30px)
+    color: #fff
+  form
+    max-width: 435px
+    width: 100%
+    padding: 3.5rem
+    background-color: rgba(#0a0909, 0.8)
+    border: 1px solid $white
+    border-radius: 15px
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5)
+    .title
+      color: $white
+      font-size: em(24px)
+      font-weight: 500
+      margin-bottom: 5rem
+      span
+        color: $accent
+    .input_type_1
+      margin-bottom: 4.5rem
+      padding: 0 10%
+    .info
+      font-size: em(18px)
+      color: $white
+      font-weight: 300
+      margin-bottom: 3.8rem
+      position: relative
+      &:before
+        top: -2rem
+        left: 34%
+        display: block
+        content: ''
+        width: 32%
+        height: 2px
+        background: $accent
+        position: absolute
+section.banner_1
+  padding: 10rem 0 9rem
+  margin: 10rem 0 11rem
+  background: url('../img/banner_1_bg.jpg') center / cover no-repeat
+  position: relative
+  &:after
+    content: ''
+    background: rgba(0,0,0,0.1)
+    position: absolute
+    width: 100%
+    height: 100%
+    display: block
+    top: 0
+    left: 0
+  .container
+    position: relative
+    z-index: 1
+  .under_line
+    margin-bottom: 3rem
+  h2
+    font-size: em(36px)
+    color: $white
+    &:after
+      bottom: -5rem
+      height: 4px
+  .add_info
+    font-size: em(30px)
+    font-weight: 300
+    color: $white
+    margin-bottom: 7rem
+  .btn_type_2
+    a
+      padding-left: 40px
+      padding-right: 40px
+section.our_services
+  margin-bottom: 10rem
+  margin-top: -8rem
+  .our_service
+    margin-bottom: 10rem
+  .content
+    padding-left: 4rem
+  h3
+    margin-top: 0
+    color: $blue
+    font-size: em(30px)
+    font-weight: 500
+    margin-bottom: 1.5rem
+  ul
+    margin: 0
+    padding: 0
+    li
+      font-size: em(16px)
+      padding: 2px 0
+  .price
+    font-size: em(24px)
+    font-weight: 500
+    margin-bottom: 4rem
+    ul
+      padding-left: 0
+      margin: 0
+      list-style: none
+      li
+        font-size: inherit
+  p
+    margin: 0
+    font-size: em(16px)
+    color: $gray
+  .san_book_block
+    position: relative
+    padding: 5rem 1rem 5rem 4.5rem
+    width: 85%
+    box-shadow: inset 0 0 5px rgba(252, 252, 252, 0.75)
+    border-radius: 15px
+    background-color: $blue
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0) 100%)
+    h2
+      margin: 0
+      font-size: em(32px)
+      color: $white
+    img
+      position: absolute
+      right: -180px
+      top: -30px
+section.banner_2
+  padding: 4rem 0 7rem
+  background: url('../img/banner_2_bg.jpg') center / cover no-repeat
+  position: relative
+  &:after
+    content: ''
+    background-color: rgba(24, 31, 60, 0.6)
+    position: absolute
+    width: 100%
+    height: 100%
+    display: block
+    top: 0
+    left: 0
+  .container
+    position: relative
+    z-index: 1
+  h2
+    margin: 0
+    font-size: em(60px)
+    color: $accent
+    margin-bottom: 4rem
+  p
+    font-size: em(36px)
+    color: $white
+    margin: 0
+    margin-bottom: 6.5rem
+  form
+    display: flex
+    justify-content: space-around
+section.additional_services
+  background: url('../img/add_service_bg.jpg') center / cover no-repeat
+  padding: 8rem 0 9rem
+  position: relative
+  &:after
+    content: ''
+    background-color: rgba(0,0,0,0.2)
+    position: absolute
+    width: 100%
+    height: 100%
+    display: block
+    top: 0
+    left: 0
+  .container
+    position: relative
+    z-index: 1
+  h2
+    font-size: em(48px)
+    color: $gray
+  .content
+    padding: 5rem 1rem 6.5rem
+    background: $white
+    min-height: 390px
+    margin-bottom: 2rem
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      color: $gray
+      margin-bottom: 1rem
+      font-size: em(24px)
+      font-weight: 500
+  .price
+    font-size: em(24px)
+    font-weight: bold
+  .add_info
+    font-size: em(36px)
+    color: $gray
+    font-weight: 300
+    margin-top: 7rem
+    margin-bottom: 6rem
+  form
+    display: flex
+    justify-content: space-around
+  input[type="submit"]
+    padding-left: 35px
+    padding-right: 35px
+section.banner_3
+  background: url('../img/banner_3_bg.png') center / cover no-repeat
+  padding-top: 9rem
+  padding-bottom: 29rem
+  .content
+    width: 80%
+  h2
+    font-weight: 800
+    color: $accent
+    font-size: em(48px)
+    margin: 0
+  .txt
+    font-size: em(36px)
+    color: $gray
+    margin-bottom: 6rem
+  form
+    display: flex
+    justify-content: space-around
+    input:not([type="submit"])
+      width: 280px
+    input[type="submit"]
+      padding-left: 40px
+      padding-right: 40px
+section.executed_works
+  padding-top: 8rem
+  .under_line
+    margin-bottom: 7rem
+  .executed_work
+    margin-bottom: 2.5rem
+    display: flex
+    position: relative
+    img
+      width: 50%
+  .row
+    .col-12:nth-child(1)
+      .executed_work
+        &:after
+          content: 'после'
+          display: block
+          position: absolute
+          bottom: 5%
+          left: 66%
+          font-size: em(21px)
+          font-weight: bold
+          color: $accent
+        &:before
+          content: 'до'
+          display: block
+          position: absolute
+          bottom: 5%
+          font-size: em(21px)
+          font-weight: bold
+          color: $white
+          left: 20%
+section.how_we_work
+  h2:after
+    width: 30%
+    margin-left: 35%
+  .work_map
+    position: relative
+    .icon_plus
+      width: 45px
+      height: 45px
+      background: $accent
+      border-radius: 50%
+      display: inline-block
+      box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5)
+      cursor: pointer
+      position: relative
+      z-index: 1
+      &:after
+        transform: translate(9px,6px)
+        content: ''
+        width: 19px
+        height: 4px
+        background: $white
+        display: inline-block
+      &:before
+        transform: translate(20px,13px)
+        content: ''
+        width: 4px
+        height: 19px
+        background: $white
+        display: inline-block
+      &:hover
+        &+.content
+          display: flex
+    .work
+      position: absolute
+      .content
+        display: none
+        position: absolute
+        font-weight: 300
+        font-size: em(30px)
+        color: $white
+        padding-left: 2rem
+        padding-right: 2rem
+        border-radius: 15px
+        border: 1px solid $white
+        background-color: rgba(0,0,0,0.5)
+        width: 251px
+        height: 136px
+        align-items: center
+        justify-content: center
+        text-align: center
+        line-height: 1.3
+    .work_floor
+      bottom: 6%
+      left: 51%
+    .work_surface
+      bottom: 12%
+      left: 31%
+    .work_vacuum
+      left: 25%
+      top: 63%
+    .work_furniture
+      left: 24.5%
+      top: 50%
+    .work_tile
+      left: 45%
+      top: 35%
+    .work_plate
+      left: 45%
+      top: 52%
+    .work_sink
+      left: 76%
+      top: 65%
+    .work_window
+      left: 70%
+      top: 34%
+    .top_r
+      bottom: 20px
+      left: 20px
+    .top_l
+      bottom: 20px
+      right: 20px
+    .bot_l
+      top: 20px
+      right: 20px
+section.calculate
+  padding: 10rem 0 12rem
+  .content_tab_2_right,.content_tab_2_left
+    display: none
+  .content_tab_1_right,.content_tab_2_right
+    padding: 4rem 4.5rem 3.5rem 4rem
+    border: 1px solid #464646
+    background-color: #ebebeb
+    border-radius: 15px
+    h3
+      font-size: em(24px)
+      color: $blue
+      span
+        font-weight: bold
+        color: $black
+    .room_txt,.bathroom_txt,.time_txt,.to_pay .txt
+      margin-left: 5px
+    table
+      width: 100%
+      padding: 2rem 10% 0
+      margin-bottom: 5rem
+      position: relative
+      &:before
+        content: ''
+        height: 2px
+        width: 270px
+        left: 0
+        top: 0
+        transform: translateX(-50%)
+        margin-left: 50%
+        background: $accent
+        position: absolute
+      &:after
+        content: ''
+        height: 2px
+        width: 270px
+        bottom: 70px
+        left: 0
+        transform: translateX(-50%)
+        margin-left: 50%
+        background: $accent
+        position: absolute
+      tr
+        td:first-child
+          text-align: left
+          color: $gray
+          font-size: em(23px)
+          font-weight: 300
+        td:last-child
+          text-align: right
+          color: $black
+          font-size: em(24px)
+          font-weight: 700
+        &:last-child
+          td
+            padding-top: 3rem
+          td:last-child
+            font-size: em(29px)
+  .tabs
+    display: flex
+    margin-bottom: 3rem
+    .tab
+      border-radius: 15px
+      padding: 13px 10px
+      font-size: em(24px)
+      font-weight: bold
+      color: $gray
+      border: 1px solid #4083be
+      width: 50%
+      cursor: pointer
+      &.active
+        background: $blue
+        color: $white
+  .content_left
+    .title
+      color: $gray
+      font-weight: 500
+      font-size: em(18px)
+      text-align: left
+      margin-bottom: 1rem
+    .calc_room_bathroom,.calc_date_time,.calc_frequency_harvesting,.payment_methods,.calc_window
+      display: flex
+      margin-bottom: 3rem
+      justify-content: space-between
+    .calc_room,.calc_bathroom
+      width: 49.5%
+      display: flex
+      .remove
+        height: 64px
+        width: 25%
+        border-top-left-radius: 15px
+        border-bottom-left-radius: 15px
+        border: 1px solid $blue
+        font-size: em(51px)
+        color: $gray
+        outline: none
+        background: transparent
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+      .res
+        width: 70%
+        border: 1px solid $blue
+        border-right: none
+        border-left: none
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: em(18px)
+        color: $gray
+        font-weight: 300
+        .val
+          margin-right: 5px
+      .add
+        font-size: em(30px)
+        color: $blue
+        height: 64px
+        width: 25%
+        outline: none
+        background: transparent
+        border-top-right-radius: 15px
+        border-bottom-right-radius: 15px
+        border: 1px solid $blue
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+    .calc_date,.calc_time
+      border-radius: 15px
+      border: 1px solid $blue
+      height: 64px
+      display: flex
+      justify-content: space-around
+      align-items: center
+      width: 49.5%
+      label,select,.selectize-input .item
+        font-size: em(18px)
+        color: $gray
+        font-weight: 300
+        font-family: Roboto, sans-serif
+        input
+          font-family: Roboto, sans-serif
+          font-size: em(14px)
+          color: $gray
+          font-weight: 300
+      input,select,.selectize-control
+        width: 100px
+        border: none
+        outline: none
+      .selectize-control
+        display: flex
+      .selectize-input
+        box-shadow: none
+        border: none
+        text-align: left
+      .selectize-control.single .selectize-input:after
+        border: 10px solid transparent
+        border-top: 10px solid $blue
+        right: 10px
+        margin-top: -4px
+      .selectize-control.single .selectize-input.dropdown-active:after
+        border: 10px solid transparent
+        border-bottom: 10px solid $blue
+        margin-top: -16px
+      &:not(.calc_time)
+        label
+          position: relative
+          margin-right: 15px
+          &:after
+            content: ''
+            border: 10px solid transparent
+            border-top: 10px solid $blue
+            position: absolute
+            right: -15px
+            top: 50%
+            margin-top: -4px
+          &.active
+            &:after
+              border: 10px solid transparent
+              border-bottom: 10px solid $blue
+              margin-top: -16px
+    .one_week,.one_2_week,.one_month,.one_times
+      cursor: pointer
+      width: 120px
+      height: 120px
+      border-radius: 15px
+      border: 1px solid $blue
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      .proc
+        font-weight: 500
+        font-size: em(35px)
+        color: $blue
+        .val
+          margin: 0 3px
+      .txt
+        font-weight: 300
+        font-size: em(14px)
+        color: $gray
+      &.active
+        background: $blue
+        .txt,.proc
+          color: #fff
+    .payment_methods
+      .method
+        border-radius: 15px
+        border: 1px solid $blue
+        height: 64px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 49.5%
+        color: $black
+        font-weight: bold
+        font-size: em(24px)
+        cursor: pointer
+        &.active
+          color: $white
+          background: $blue
+
+  .under_line
+    margin-bottom: 9rem
+footer
+  background: $blue
+  padding: 8rem 0 5rem
+  .under_line
+    margin-bottom: 2rem
+    h2
+      color: $white
+      font-size: em(35px)
+      margin-bottom: 3rem
+      &:after
+        height: 5px
+        width: 270px
+        margin-left: 0
+    h3
+      font-size: em(30px)
+      color: $white
+      &:after
+        height: 4px
+        width: 105px
+        margin-top: 1rem
+        margin-left: calc(50% - 52.5px)
+  .phone a,.mail a,address,.copyright
+      font-size: em(24px)
+      color: $white
+      font-weight: 300
+      font-style: normal
+  a:hover
+      color: $accent
+  .copyright
+    font-weight: bold
+    margin-top: 9rem
+section.develop
+  a
+    margin: 10px auto
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: underline
+    img
+      margin-right: 15px
+    max-width: 300px
+.modal_window
+  position: fixed
+  z-index: 999
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background: rgba(0,0,0,0.2)
+  display: none
+  align-items: center
+  justify-content: center
+  form
+    text-align: center
+    position: relative
+    margin: 0 10px
+    max-width: 440px
+    width: 100%
+    border: 1px solid $blue
+    border-radius: 15px
+    background: $white
+    padding: 3rem 6rem
+    .close
+      right: 15px
+      top: 10px
+      font-size: 30px
+      line-height: 1
+      position: absolute
+      cursor: pointer
+    .title
+      line-height: 1.4
+      font-weight: bold
+      font-size: em(24px)
+      color: $blue
+      margin-bottom: 2rem
+    label
+      text-align: left
+      display: block
+      margin-bottom: 1rem
+    .input_type_1
+      margin-bottom: 2.5rem
+      input
+        border-radius: 15px
+        font-size: em(18px)
+        border: none
+        padding-top: 15px
+        padding-bottom: 15px
+        font-weight: 300
+        &:focus::placeholder
+          color: transparent
+        &::placeholder
+          color: #8a8a8f
+          font-weight: 300
+    .btn_type_2
+      margin-top: 2rem
+      input
+        padding-left: 50px
+        padding-right: 50px
+    textarea
+      width: 100%
+      resize: none
+      height: 100px
+      outline: none
+      border: none
+      box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.7)
+      border-radius: 15px
+      padding: 15px
+
+@import "media"
+
