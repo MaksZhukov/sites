@@ -1,0 +1,141 @@
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+  section.production-category
+    background: #dbdcde
+    .categories
+      flex-wrap: wrap
+      justify-content: flex-start
+      .category
+        margin: 0 1rem 2rem
+  section.monitoring-motor-hydraulic-oils .stage-work .work .wrap-icon:before
+    right: -110px
+  section.last-news .news
+    flex-wrap: wrap
+    .new
+      margin-bottom: 2rem
+      width: initial
+
+//Medium: ≥768px
++media-breakpoint-down(md)
+  html
+    font-size: 8px
+  ul.menu li a
+    padding-left: 1rem
+    padding-right: 1rem
+  section.our-advantages .advantages .advantage
+    width: 100%
+  section.monitoring-motor-hydraulic-oils .stage-work
+    justify-content: center
+    flex-wrap: wrap
+    .work
+      margin-bottom: 20px
+      .wrap-icon:before
+        display: none
+  .page-category .filters
+    flex-direction: column
+    .filter
+      margin-bottom: 1rem
+      &:last-child
+        margin-bottom: 0
+  .page-category .products-list .product
+    max-width: 220px
+  .single-product .wrap-img
+    margin-bottom: 20px
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+  html
+    font-size: 5px
+  .btn-collapse-menu
+    margin-right: 2rem
+  ul.menu
+    flex-direction: column
+    display: none
+    li
+      a
+        text-align: right
+  nav
+    padding: 10px 0
+    .search
+      width: 100%
+      margin-left: auto
+      height: 25px
+      form
+        width: 100%
+        input
+          padding-right: 30px
+          width: 100%
+  section.banner_1
+    font-size: 12px
+  section.about-company,section.banner-2
+    font-size: 14px
+  footer
+    text-align: center
+    form
+      flex-direction: column
+      align-items: center
+      .inpt
+        margin-bottom: 1rem
+        width: 250px
+  .modal-overlay #order-call
+    text-align: center
+    form
+      > div
+        margin-left: auto
+        margin-right: auto
+    background-image: none
+  aside
+    width: 100%
+  .single-product .characteristics
+    .characteristic-name
+      width: 40%
+    .characteristic-val
+      width: 60%
+
+//Extra small: >0
++media-breakpoint-down(xs)
+  header
+    font-size: 12px
+    .btn.w170
+      width: 140px
+  section.banner-1
+    font-size: 8px
+    .content
+      margin: 0
+  section.last-news .news .new img
+    max-width: 120px
+  footer .foot-menu
+    margin-top: 20px
+  .modal-overlay
+    #order-call,#get-consultation
+      font-size: 12px
+      padding: 20px
+  .modal-overlay #order-call
+    form
+      > div
+        width: 100%
+  section.production-category .categories
+    justify-content: center
+
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)

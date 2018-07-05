@@ -1,0 +1,13 @@
+- var breadcrumbs = ['Главная','Статьи','Как выбирают моторное масло эксперты?'];
+doctype html
+html(lang="ru")
+    include layouts/head.pug
+    body
+        include layouts/header.pug
+        include layouts/breadcrumbs.pug
+        include pages/single-article.pug
+        include layouts/footer.pug
+        include layouts/modalOrderCall.pug
+        script(src="js/scripts.min.js")
+
+

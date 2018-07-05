@@ -1,0 +1,13 @@
+- var breadcrumbs = ['Главная','Новости','FUCHS: инновационное предприятие'];
+doctype html
+html(lang="ru")
+    include layouts/head.pug
+    body
+        include layouts/header.pug
+        include layouts/breadcrumbs.pug
+        include pages/single-news.pug
+        include layouts/footer.pug
+        include layouts/modalOrderCall.pug
+        script(src="js/scripts.min.js")
+
+

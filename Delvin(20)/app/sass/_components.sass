@@ -1,0 +1,94 @@
+.btn
+  &.w170
+    width: 170px
+  &.w200
+    width: 200px
+  &.w250
+    width: 250px
+  &.transparent
+    a, input
+      background-color: transparent
+      border: 1px solid $blue
+      color: $blue
+      transition-property: background-color, color
+      padding-top: 7px
+      padding-bottom: 7px
+      &:hover
+        background: $accent
+        color: $default-color
+        border: none
+        padding-top: 8px
+        padding-bottom: 8px
+  &.accent
+    box-shadow: 0 9px 13px rgba(29, 32, 37, 0.25)
+    a, input
+      background: $accent
+      padding-top: 9px
+      padding-bottom: 9px
+      &:hover
+        background: #fff
+        color: $blue
+  &.blue
+    a, input
+      background: $blue
+      color: #fff
+      padding-top: 6px
+      padding-bottom: 6px
+      &:hover
+        background: transparent
+        color: $blue
+    border: 1px solid $blue
+  a, input
+    text-align: center
+    display: block
+    outline: none
+    line-height: 1.65
+    background: transparent
+    border: none
+    width: 100%
+    cursor: pointer
+    font-size: 14px
+
+.inpt
+  &.w190
+    width: 190px
+  &.w250
+    width: 250px
+  &.gray
+    input
+      background-color: #e5e5e5
+      padding-top: 16px
+      padding-bottom: 16px
+  input
+    font-size: 14px
+    font-weight: 300
+    background: #fff
+    outline: none
+    border: none
+    width: 100%
+    padding: 11px 14px 9px
+    &::placeholder
+      color: $default-color
+.drop
+  position: absolute
+  outline: none
+  display: block
+  border: none
+  background: none
+  top: 0
+  height: 100%
+  right: 0
+  cursor: pointer
+  &:after
+    content: '›'
+    display: flex
+    align-items: center
+    padding-bottom: 3px
+    height: 100%
+    font-size: 30px
+    line-height: 1
+    color: #353539
+  &-down
+    transform: rotate(90deg)
+
+
